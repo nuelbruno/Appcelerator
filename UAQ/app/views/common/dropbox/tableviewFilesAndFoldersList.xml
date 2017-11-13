@@ -1,0 +1,4 @@
+<Alloy>
+	<TableView id="tableviewFilesAndFoldersList" class="tableview" onClick="tableviewClicked">
+	</TableView>
+</Alloy>

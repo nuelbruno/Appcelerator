@@ -1,0 +1,93 @@
+"#backView" :{
+	top : 30,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,//120,
+	backgroundColor : "transparent",
+	borderColor : Alloy.Globals.path.SeparatorColor,
+	borderRadius : 2,
+	layout : "vertical"
+}
+
+
+".viewProperty":{
+	top : 0,
+	width : "100%",
+	height : 40,
+}
+".viewProperty[formFactor=tablet]":{
+	height : 45,
+}
+
+".lblTitleProperty":{
+	width : "42%",
+	height : "100%",
+	text : "UserName",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font16,
+}
+
+".lblTitleProperty[if=Alloy.Globals.isEnglish]":{
+	textAlign : "left"
+}
+
+".lblTitleProperty[if!=Alloy.Globals.isEnglish]":{
+	textAlign : "right"
+}
+
+".colonProperty":{
+	width : "2%",
+	height : "100%",
+	text : ":",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font20,
+	textAlign : "center",
+}
+
+".txtFldProperty":{
+	width : "46%",
+	height : "100%",
+	text : "UserName",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font16,
+	backgroundColor : "transparent"
+}
+
+".txtFldProperty[if=Alloy.Globals.isEnglish]":{
+	textAlign : "left"
+}
+
+".txtFldProperty[if!=Alloy.Globals.isEnglish]":{
+	textAlign : "right"
+}
+
+".separator":{
+	width : "100%",
+	height : 1,
+	backgroundColor : Alloy.Globals.path.SeparatorColor,	
+}
+
+
+"#submitView" :{
+	top : 50,
+	height : 35,
+	width : 140,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#submitView[formFactor=tablet]" :{
+	height : 40,	
+}
+
+"#lblSubmit" :{
+	width : 100,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+
+"#lblSubmit[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}

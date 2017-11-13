@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewRow id="tblRowIsupplier">
+		<View id="backRowView">
+			<ImageView id="iconView"></ImageView>
+			<Label id="lblTitle"></Label>
+		</View>
+		<View id="rowSeparator"></View>
+	</TableViewRow>
+</Alloy>

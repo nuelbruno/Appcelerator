@@ -1,0 +1,93 @@
+<Alloy>
+	<Window id="winTakamulHome" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="topNavView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="navBarProperty">
+						<View class="backView" onClick="closeWindow">
+							<ImageView class="imgBackBtn"></ImageView>
+						</View>
+						<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+						<Button id="btnNavLogin" class="navBarRightTextButton" onClick="PopUPLoginForm"></Button>
+					</View>
+				</View>
+			</View>
+			<View id="NewRequestView" class="viewProperty" onClick="openNewRequestList">
+				<ImageView id="imgNewRequest" class="imgProperty"></ImageView>
+				<Label id="lblNewRequest" class="labelProperty"></Label>
+			</View>
+			<View  class="separator"></View>
+			<View id="RequestView" class="viewProperty" onClick="openRequestList">
+				<ImageView id="imgRequest" class="imgProperty"></ImageView>
+				<Label id="lblRequest" class="labelProperty"></Label>
+			</View>
+			<View  class="separator"></View>
+			<View id="userRegistrationView" class="viewProperty" onClick="openRegistration">
+				<ImageView id="imgvRegistration" class="imgProperty"></ImageView>
+				<Label id="lblRegistration" class="labelProperty"></Label>
+			</View>
+			<View  class="separator"></View>
+			<View id="changePasswordView" class="viewProperty" onClick="openChangePassword">
+				<ImageView id="imgChangePassword" class="imgProperty"></ImageView>
+				<Label id="lblChangePassword" class="labelProperty"></Label>
+				<View  class="separator" bottom="0"></View>
+			</View>
+		</View>
+		<View id="backView"></View>
+		<View id="loginView" class="loginView">
+			<View id="topView" class="titleBG">
+				<Button id="btnLogin" class="btnLogin" onClick="doLogin"></Button>
+				<Button id="btnCancel" class="btnLogin" onClick="closeLoginView"></Button>
+			</View>
+			<Label id="lblLoginDesc" class="lblLoginDesc"></Label>
+			<View id="credentialView" class="credentialView">
+				<View id="usernameView" class="credentialBackView">
+					<ImageView id="imgUserName" class="imgLoginUser"></ImageView>
+					<TextField id="txtUsername" class="txtLoginFldProperty"></TextField>
+				</View>
+				<View id="hSeparator" class="hSeparator"></View>
+				<View id="passwordView" class="credentialBackView">
+					<ImageView id="imgPassword" class="imgLoginPassword"></ImageView>
+					<TextField id="txtPassword" class="txtLoginFldProperty"></TextField>
+				</View>
+			</View>
+			<Button id="btnLoginBig" class="btnLoginBig" onClick="doLogin"></Button>
+			<Button id="btnRegistrationBig" class="btnLoginBig" onClick="gotoRegistration"></Button>
+			<Label id="lblForgotPassword" class="lblProperty" onClick="showForgotPasswordView"></Label>
+		</View>
+		<View id="changePwdPopupView" class="loginView">
+			<View id="topChangePwdView" class="titleBG">
+				<Button id="btnChangePwd" class="btnLogin" onClick="callChangePwd"></Button>
+				<Button id="btnChangePwdCancel" class="btnLogin" onClick="closeChangePwdView"></Button>
+			</View>
+			<Label id="lblOldPwd" class="lblLoginDesc"></Label>
+			<View id="txtOldPwdbackView">
+				<TextField id="txtOldPwd"></TextField>
+			</View>
+			<Label id="lblChangePwd" class="lblLoginDesc"></Label>
+			<View id="txtChangePwdbackView">
+				<TextField id="txtNewPwd"></TextField>
+			</View>
+			<Label id="lblChangeConfirmPwd" class="lblLoginDesc"></Label>
+			<View id="txtChangeConfirmPwdbackView">
+				<TextField id="txtNewConfirmPwd"></TextField>
+			</View>
+			<Button id="btnChangePwdBig" class="btnLoginBig" onClick="callChangePwd"></Button>
+			<Label  class="lblProperty"></Label>
+		</View>
+		<View id="forgotPasswordView" class="loginView">
+			<View id="topforgotPwdView" class="titleBG">
+				<Button id="btnForgotPwd" class="btnLogin"></Button>
+				<Button id="btnForgotPwdCancel" class="btnLogin" onClick="closeForgotPasswordView"></Button>
+			</View>
+			<Label id="lblForgotUserName" class="lblLoginDesc"></Label>
+			<View id="txtForgotPwdbackView">
+				<TextField id="txtForgotUserName" class="txtLoginFldProperty"></TextField>
+			</View>
+			<Button id="btnForgotPwdBig" class="btnLoginBig" onClick="callForgotPwd"></Button>
+			<Label  class="lblProperty"></Label>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

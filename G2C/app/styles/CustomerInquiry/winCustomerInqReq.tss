@@ -1,0 +1,139 @@
+".nameViewProperty" :{
+	top : 15,
+	left : 5,
+	right : 5,
+	height : Titanium.UI.SIZE,
+	borderRadius : 5,
+	borderColor : Alloy.Globals.path.grayColor,
+	borderWidth : 0.5,
+	layout : "vertical",
+	backgroundColor : "transprent"
+}
+".nameViewProperty[formFactor=tablet]" :{
+	left : 10,
+	right : 10,
+}
+".viewProperty" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	height : Titanium.UI.SIZE,//35,
+	backgroundColor : Alloy.Globals.path.whiteColor
+}
+".viewProperty[formFactor=tablet]" :{
+	height : Titanium.UI.SIZE,//45,
+}
+".labelProperty" :{
+	top : 10,
+	bottom : 10,
+	width : 130,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font13Bold,
+	color : "black",
+}
+".labelProperty[formFactor=tablet]" :{
+	width : 160,
+	font : Alloy.Globals.path.font17Bold,
+}
+".textFieldProperty" :{
+	top : 10,
+	bottom : 10,
+	height : Titanium.UI.SIZE,//"100%",
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	hintText:Alloy.Globals.selectedLanguage.enterHintText
+}
+".textFieldProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font17,
+}
+".hSeperatorProperty" :{
+	left : 0,
+	right : 0,
+	height : 0.5,
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.grayColor
+}
+"#requestTypeView":{
+	backgroundColor : "transparent"
+}
+"#commentsView":{
+	height : 90
+}
+"#commentsView[formFactor=tablet]":{
+	height : 120
+}
+"#lblcomments":{
+	top : 10,
+}
+"#txtComments":{
+	top : 0,
+	bottom : 5,
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	hintText:Alloy.Globals.selectedLanguage.enterHintText
+}
+"#txtComments[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17,
+}
+"#btnSend":{
+	top : 25,
+	left : 50,
+	right : 50,
+	height : 35,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+}
+"#btnSend[formFactor=tablet]":{
+	top : 35,
+	left : 80,
+	right : 80,
+	height : 45,
+	font : Alloy.Globals.path.font20,
+}
+"#lblContactGov":{
+	top : 20,
+	left : 50,
+	right : 50,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+"#lblContactGov[formFactor=tablet]":{
+	top : 25,
+	left : 80,
+	right : 80,
+	font : Alloy.Globals.path.font16,
+}
+"#imgBackView":{
+	top : 15,
+	bottom : 30,
+	borderColor : Alloy.Globals.path.navBarColor,
+	borderWidth : 3,
+	borderRadius : 5,
+	left : 50,
+	right : 50,
+	height : 90,
+	backgroundColor : Alloy.Globals.path.whiteColor,
+}
+"#imgBackView[formFactor=tablet]":{
+	top : 20,
+	left : 80,
+	right : 80,
+	height : 150
+}
+"#imgGovLog":{
+	height : 52,
+	width : 90,
+	image : Alloy.Globals.path.myGovLogo,	
+	bottom : 20,
+}
+"#imgGovLog[formFactor=tablet]":{
+	height : 90,
+	width : 130,
+	image : Alloy.Globals.path.myGovLogo,
+	bottom : 20	
+}

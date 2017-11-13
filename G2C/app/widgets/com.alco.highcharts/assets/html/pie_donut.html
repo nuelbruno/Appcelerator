@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!--<meta name="viewport" content="width=device-width">-->
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_Pie_donut.js"></script>
+		<script src="exporting.js"></script>
+		<!--<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>-->
+		<script type="text/javascript">
+			function plotChart(arr, mtd, ytd,a,a,a,a,a,a,isArabic) {
+				new Highcharts.Chart({
+					chart : {
+						renderTo : 'container',
+						marginLeft : 0,
+						marginRight : 0,
+						marginTop : 0,
+						marginBottom : 0,
+						plotBackgroundColor : null,
+						plotBorderWidth : 0,
+						plotShadow : false,
+						height : ytd,
+						width : ytd + 30,
+					},
+					title : {
+						text : '', //'85%',
+						align : 'center',
+						verticalAlign : 'middle',
+						y : 10
+					},
+					legend : {
+						rtl : isArabic
+					},
+					tooltip : {
+						useHTML : true,
+						headerFormat : '<table><tr><td style="text-align: center; font-size:12px">{point.key}</td></tr>',
+						pointFormat : '<tr><td style="text-align: center; font-size:12px"><font color="white">{series.name}</font>{point.percentage:.0f}%</td></tr></table>',//'{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions : {
+						pie : {
+							dataLabels : {
+								enabled : false,
+								//distance: -50,
+								style : {
+									fontWeight : 'bold',
+									color : 'white',
+									textShadow : '0px 1px 2px black'
+								}
+							},
+							showInLegend : false
+							//startAngle: -90,
+							//endAngle: 90,
+							//startAngle: 0,
+							//endAngle: 180,
+							//center: ['50%', '75%']
+						}
+					},
+					series : [{
+						type : 'pie',
+						name : '_',
+						innerSize : '80%',
+						data : arr
+					}]
+					// series: [{
+					// type: 'pie',
+					// name: 'Browser share',
+					// innerSize: '80%',
+					// data: [
+					// ['Availble',   80.0],
+					// ['Spent',       20.0]
+					// ]
+					// }]
+
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

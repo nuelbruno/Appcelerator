@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="winVatTaxWeb" class="win">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<Button id="btnSubmit" onClick="submitTax"></Button>
+		</View>
+		<View id="backView" class="UserSatisbackView"></View>
+		<View id="popView" class="UserSatispopView">
+			<View id="topBackView" class="popTopViewProperty">
+				<Label id="lblUserSatisfaction" class="lblUserSatisfaction"></Label>
+			</View>
+			<Label id="lblSuggestion" class="lblUserSuggestion"></Label>
+			<View  class="separator" height="1" top="30"></View>
+			<View id="viewFeedback" class="viewUserSatisFeedback">
+				<Label id="lblFeedback" class="lblUserSatisFeedback" onClick="openUserSatisfaction"></Label>
+				<Label id="lblSkip" class="lblUserSatisSkip" onClick="closePopUP"></Label>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

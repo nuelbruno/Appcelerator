@@ -1,0 +1,23 @@
+<Alloy>
+	<View id="bottomToolBarView" class="bottomToolBarViewProperty">
+		<View id="btnTopArrow" class="btnTopArrowProperty" onClick="openBottomToolBar">
+			<ImageView id="imgBottomBarArrow" class="imgBottomBarArrowProperty" />
+		</View>
+		<View id="barBackView" class="barBackViewProperty">
+			<View id="barButtonView" class="barButtonViewProperty">
+				<View id="btnSystemInstruction" buttonId="btnSystemInstruction" class="barButtonPropertyView">
+					<ImageView id="btnSystemInstructionImageview"  buttonId="btnSystemInstruction" class="barButtonProperty"  />
+				</View>
+				<View id="btnSystemFeedback"  buttonId="btnSystemFeedback"  class="barButtonPropertyView" >
+					<ImageView id="btnSystemFeedbackImageview" buttonId="btnSystemFeedback" class="barButtonProperty"   />
+				</View>
+				<View id="btnSystemChangeTheme" buttonId="btnSystemChangeTheme"  class="barButtonPropertyView">
+					<ImageView id="btnSystemChangeThemeImageview" buttonId="btnSystemChangeTheme" class="barButtonProperty"  />
+				</View>
+				<View id="btnFontChange" buttonId="btnFontChange"  class="barButtonPropertyView">
+					<ImageView id="btnFontChangeImageview" buttonId="btnFontChange" class="barButtonProperty"  />
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

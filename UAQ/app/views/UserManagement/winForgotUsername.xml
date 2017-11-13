@@ -1,0 +1,43 @@
+<Alloy>
+	<Window id="winForgotUsername" class="win" onOpen="winOpen">
+		<ScrollView id="viewForgotUserName">
+			<View class="forgetUserView" onClick="hideuserLicense">
+				<ImageView id="imgIndividual" class="iconProperty"></ImageView>
+				<Label id="lblIndividual"></Label>
+			</View>
+			<View class="forgetUserView1" onClick="hideuserEmirate">
+				<ImageView id="imgEstablishment" class="iconProperty"></ImageView>
+				<Label id="lblEstablishment"></Label>
+			</View>
+			<View id="userEmiratesView">
+				<TextField id="txtfieldEmirateId" class="LoginTxtfldProperty" onBlur="blurEvent_txtfieldEmirateId" onFocus="focusEvent_txtfieldEmirateId" maxLength="18" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+			</View>
+			<Label id="labelUserMandatory"></Label>
+			<View id="userPassportView">
+				<TextField id="txtfieldPassport" class="LoginTxtfldProperty"/>
+			</View>
+			<View id="userLicenseUserView">
+				<Label class="validField" text="*"></Label>
+				<View id="userLicenseView">
+					<TextField id="txtfieldLicense" maxLength="20" class="LoginTxtfldProperty"/>
+				</View>
+			</View>
+			<View id="userEmailView">
+				<Label class="validField" text="*"></Label>
+				<View id="userEmailUserView">
+					<TextField id="txtfieldMail" class="LoginTxtfldProperty" onBlur="validateEmail" keyboardType="Titanium.UI.KEYBOARD_EMAIL"/>
+				</View>
+			</View>
+			<View id="viewMobile">
+				<Label class="validField" text="*"></Label>
+				<View id="userMobileView">
+					<TextField id="txtfieldMobile" class="LoginTxtfldProperty" onBlur="blurEvent_txtfieldMobile" onFocus="focusMobileNumber1"  maxLength="11" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+				</View>
+			</View>
+			<View id="viewForgotUserNameButtonBack">
+				<Button id="btnUserSubmit" onClick="submitForgotUsername"></Button>
+				<Button id="btnCancel" onClick="cancelForgotUsername"></Button>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,82 @@
+<Alloy>
+	<Window id="winAddress" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				
+			</View>
+		</View>
+		
+		<ScrollView id="scrollView">
+			
+			<Label id="lblAdressDetails" class="lblHeaderProperty"></Label>
+			<Label class="lblEngNoProperty"></Label>
+			<View id="addressView" class="viewBackProperty">
+					<View class="viewMandatoryProperty">
+						<Label id="lblCountryAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblCountry" class="lblTitleProperty"></Label>	
+					</View>
+					<Label id="lblCountryValue" class="txtFldProperty" onClick="selectCountry"></Label>
+					<ImageView class="separator"></ImageView>
+					<!-- <Label id="lblBranchNo" class="lblTitleProperty"></Label>	
+					<TextField id="txtBranchNoValue" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView> 
+					<Label id="lblBankNo" class="lblTitleProperty"></Label>	
+					<TextField id="txtBankNoValue" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>-->
+					<View class="viewMandatoryProperty">
+						<Label id="lblBankNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblBankName" class="lblTitleProperty"></Label>	
+					</View>
+					<Label id="lblBankNameValue" class="txtFldProperty" onClick="selectBankName"></Label>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblBranchNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblBranchName" class="lblTitleProperty"></Label>	
+					</View>
+					<Label id="lblBranchNameValue" class="txtFldProperty" onClick="selectBranchName"></Label>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblAccountNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblAccountName" class="lblTitleProperty"></Label>	
+					</View>
+					<TextField id="txtAccountNameValue" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblBankAccNoAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblBankAccNo" class="lblTitleProperty"></Label>	
+					</View>
+					<TextField id="txtBankAccNo" class="txtFldProperty"></TextField>
+					
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblCurrencyAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblCurrency" class="lblTitleProperty"></Label>
+					</View>
+					<Label id="lblCurrencyValue" class="txtFldProperty" onClick="selectCurrency"></Label>
+						
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblIBANNoAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblIBANNo" class="lblTitleProperty"></Label>	
+					</View>
+					<TextField id="txtIBANNO" class="txtFldProperty"></TextField>	
+						
+				</View>				
+			
+			<View id="submitView" onClick="submitForm">
+				<Label id="lblSubmit"></Label>
+			</View>	
+			
+		</ScrollView>
+		
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+		
+	</Window>
+</Alloy>

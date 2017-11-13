@@ -1,0 +1,82 @@
+<Alloy>
+	<Window id="winFederalBudgetDetails" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty">
+				</View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn">
+						</ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn">
+						</ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty">
+					</Label>
+				</View>
+			</View>
+			<View id="budgetActivityView" onClick="showBudgetView">
+				<Label id="lblBudgetActivity">
+				</Label>
+			</View>
+			<View id="chartView">
+				<View id="normalChartView">
+					<Widget src="com.alco.highcharts" id="normalChart" class="chartViewProperty" />
+				</View>
+			</View>
+		</View>
+		<View id="TableBackView" onClick="hideTableView">
+		</View>
+		<View id="slidingView">
+			<View id="sectionView">
+				<Label id="lblCode" class="lblSectionProperty">
+				</Label>
+				<Label id="lblDesc" class="lblSectionProperty">
+				</Label>
+				<Label id="lblTotal" class="lblSectionProperty">
+				</Label>
+			</View>
+			<TableView id="tableView">
+			</TableView>
+		</View>
+		<View id="fullTransparentView" onClick="showBudgetView">
+		</View>
+		<View id="budgetView">
+			<TableView id="budgetTableView">
+			</TableView>
+			<ImageView id="imgClose" onClick="showBudgetView">
+			</ImageView>
+		</View>
+		<View id="transparentView" onClick="showHideView">
+		</View>
+		<View id="chartStyleView">
+			<Label id="lblChart">
+			</Label>
+			<View id="pieChartView" class="chartViewProperty" onClick="pieChartSelected">
+				<ImageView id="icnPieChart" class="icnChartProperty">
+				</ImageView>
+				<Label id="lblPieChart" class="lblChartProperty">
+				</Label>
+			</View>
+			<ImageView class="separatorProperty">
+			</ImageView>
+			<View id="barChartView" class="chartViewProperty" onClick="barChartSelected">
+				<ImageView id="icnBarChart" class="icnChartProperty">
+				</ImageView>
+				<Label id="lblBarChart" class="lblChartProperty">
+				</Label>
+			</View>
+			<ImageView class="separatorProperty">
+			</ImageView>
+			<View class="bottomView">
+				<View class="doneBtnView" onClick="chartTypeSelected">
+					<Label id="lblChartDone" class="lblDone">
+					</Label>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

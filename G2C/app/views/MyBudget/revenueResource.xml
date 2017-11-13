@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="backView">
+		<!-- <Label id="lblTitle"></Label> -->
+		<TextField id="lblTitle" class="revenueTextBoxProperty1" bubbleParent="false" maxLength="20"></TextField>
+		<TextField id="txtValue" class="revenueTextBoxProperty" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD" bubbleParent="false" onBlur="calculateTotalAmount" maxLength="5"></TextField>
+	</View>
+</Alloy>

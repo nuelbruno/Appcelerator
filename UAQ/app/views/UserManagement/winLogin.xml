@@ -1,0 +1,112 @@
+<Alloy>
+	<Window id="winLogin" class="win" onOpen="winOpen">
+		<View id="viewLogin">
+			<View class="loginBackView">
+				<ImageView id="imageviewUserName" class="iconProperty"></ImageView>
+				<TextField id="textfieldUserName" class="LoginTxtProperty"/>
+			</View>
+			<View class="loginBackView">
+				<ImageView id="imageviewPassword" class="iconProperty"></ImageView>
+				<TextField id="textfieldPassword" class="LoginTxtProperty"/>
+			</View>
+			<View id="viewButtonBack">
+				<Button id="btnSignIn" onClick="SubmitLogin"></Button>
+				<Button id="btnRegister" onClick="UserRegistration"></Button>
+			</View>
+			<Label id="labelForgotUsername" onClick="showForgotUsernamePopup"></Label>
+			<Label id="labelForgotPassword" onClick="showForgotPopup"></Label>
+			<Label id="activateAccountlbl" onClick="activateAccount"></Label>
+			<Label id="labelSkip" onClick="SkipLogin"></Label>
+		</View>
+		
+		<!-- FORGOT USERNAME
+			 <ScrollView id="viewForgotUserName">
+			<View class="forgetUserView" onClick="hideuserLicense">
+				<ImageView id="imgIndividual" class="iconProperty"></ImageView>
+				<Label id="lblIndividual"></Label>
+			</View>
+			
+			<View class="forgetUserView1" onClick="hideuserEmirate">
+				<ImageView id="imgEstablishment" class="iconProperty"></ImageView>
+				<Label id="lblEstablishment"></Label>
+			</View>
+			<View id="userEmiratesView">
+				<TextField id="txtfieldEmirateId" class="LoginTxtfldProperty" maxLength="18" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+			</View>
+			<Label id="labelUserMandatory"></Label>
+			<View id="userPassportView">
+				<TextField id="txtfieldPassport" class="LoginTxtfldProperty"/>
+			</View>
+			<View id="userLicenseUserView">
+				<Label class="validField" text="*"></Label>
+				<View id="userLicenseView">
+					<TextField id="txtfieldLicense" maxLength="20" class="LoginTxtfldProperty"/>
+				</View>
+			</View>
+			<View id="userEmailView">
+				<Label class="validField" text="*"></Label>
+				<View id="userEmailUserView">
+					<TextField id="txtfieldMail" class="LoginTxtfldProperty" onBlur="validateEmail" keyboardType="Titanium.UI.KEYBOARD_EMAIL"/>
+				</View>
+			</View>	
+			<View id="viewMobile">
+				<Label class="validField" text="*"></Label>
+				<View id="userMobileView">
+					<TextField id="txtfieldMobile" class="LoginTxtfldProperty" maxLength="11" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+				</View>
+			</View>		
+			<View id="viewForgotUserNameButtonBack">
+				<Button id="btnUserSubmit" onClick="submitForgotUsername"></Button>
+				<Button id="btnCancel" onClick="cancelForgotUsername"></Button>
+			</View>
+		</ScrollView> -->
+		
+		<!-- VIEW FORGOT PASSSWORD
+		
+		<ScrollView id="viewForgot">
+			<View class="forgetPasswordView" onClick="hidepwdLicense">
+				<ImageView id="imgPwdIndividual" class="iconProperty"></ImageView>
+				<Label id="lblPwdIndividual"></Label>
+			</View>
+			<View class="forgetPasswordView1" onClick="hidepwdEmirate">
+				<ImageView id="imgPwdEstablishment" class="iconProperty"></ImageView>
+				<Label id="lblPwdEstablishment"></Label>
+			</View>
+			<View id="pwdEmiratesView">
+				<TextField id="textfieldEmirateId" class="LoginTxtfldProperty" maxLength="18" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+			</View>
+			<Label id="labelPwdMandatory">OR</Label>
+			<View id="pwdPassportView">
+				<TextField id="textfieldPassport" class="LoginTxtfldProperty"/>
+			</View>	
+			<View id="pwdLicenseView">
+				<Label class="validField" text="*"></Label>
+				<View id="pwdLicense">
+					<TextField id="textfieldLicense" maxLength="20" class="LoginTxtfldProperty"/>
+				</View>
+			</View>
+			<View id="pwdUserNameView">
+				<Label class="validField" text="*"></Label>		
+				<View id="pwdUserView">
+					<TextField id="txtfieldUserName" class="LoginTxtfldProperty"/>
+				</View>
+			</View>				
+			<View id="pwdMobileNoView">
+				<Label class="validField" text="*"></Label>
+				<View id="pwdMobileView">
+					<TextField id="textfieldMobile" class="LoginTxtfldProperty" maxLength="11" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD"/>
+				</View>
+			</View>
+			
+			
+			<View id="viewForgotButtonBack">
+				<Button id="btnPasswordSubmit" onClick="submitForgotData"></Button>
+				<Button id="btnPasswordCancel" onClick="closeForgotPopup"></Button>
+			</View>
+		</ScrollView> -->
+		
+		
+		<ScrollableView id="scrllableviewHelpScreen" backgroundColor="transparent" opacity="0" onScroll="_eventScrollableViewScroll"></ScrollableView>
+		<Label id="lblFinishRight5" class="classLblFinishRight1" onClick="_eventCloseHelpScreen" opacity="0" color="#B43335"></Label>
+	</Window>
+</Alloy>

@@ -1,0 +1,415 @@
+<Alloy>
+	<Window id="winResumeRegistration" class="win" onOpen="windowOpened" onClose="windowClosed">
+		
+		<View id="winView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				<View id="saveBackView" onClick="submitForm">
+					<Label id="lblSave"></Label>
+					<ImageView id="imgSaveBtn"></ImageView>
+				</View>
+			</View>
+		</View>
+		<View id="stepsView">
+			<View class="stepBackView">
+				<View id="step1View" class="stepViewProperty" onClick="showView1">
+					<Label id="lblStep1" class="lblStepProperty"></Label>
+				</View>
+				<View id="step2View" class="stepViewProperty" onClick="showView2">
+					<Label id="lblStep2" class="lblStepProperty"></Label>
+				</View>
+				<View id="step3View" class="stepViewProperty" onClick="showView3">
+					<Label id="lblStep3" class="lblStepProperty"></Label>
+				</View>
+				<View id="step4View" class="stepViewProperty" onClick="showView4">
+					<Label id="lblStep4" class="lblStepProperty"></Label>
+				</View>
+			</View>
+		</View>
+		<View id="backMainView">
+			
+			<ScrollView id="view1">
+				
+				<View id="sectionView1" class="sectionViewProperty">
+					<Label id="lblBasicInfo" class="lblSectionTitle"></Label>
+				</View>	
+				
+				<Label id="lblCompanyDetails" class="lblHeaderProperty"></Label>
+				
+				<View id="basicDetailsView" class="viewBackProperty">
+					<View class="viewMandatoryProperty">
+						<Label id="lblCompanyNameArAstrik" class="astricPropertyVT"></Label>	
+						<Label id="lblCompanyNameAr" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtCompanyNameAr" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewMandatoryProperty">
+						<Label id="lblCompanyRegNoArAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblCompanyRegNo" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtCompanyRegNo" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblCompanyNameEnArAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblCompanyNameEn" class="lblTitleProperty"></Label>	
+					</View>
+					<TextField id="txtCompanyNameEn" class="txtFldProperty"></TextField>
+				</View>	
+				
+				<Label id="lblContactInfo" class="lblHeaderProperty"></Label>
+				
+				<View id="contactInfoView" class="viewBackProperty">
+					<View class="viewMandatoryProperty">
+						<Label id="lblContactNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblContactName" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtContactName" class="txtFldProperty"></TextField>
+					<!-- <View class="viewMandatoryProperty">
+						<Label id="lblFirstNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblFirstName" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtFirstName" class="txtFldProperty"></TextField> -->
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewMandatoryProperty">
+						<Label id="lblEmailIdAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblEmailId" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtEmailId" class="txtFldProperty"></TextField>
+					<!-- <ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblContactNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblContactName" class="lblTitleProperty"></Label>	
+					</View>	
+					<TextField id="txtContactName" class="txtFldProperty"></TextField> -->
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewMandatoryProperty">
+					<Label id="lblMobileNoAstrik" class="astricProperty"></Label>
+					<View id="innerMobileView" class="innerViewProperty">
+						<Label id="lblMobileNo" class="innerTitleProperty"></Label>
+						<TextField id="txtMobileNo" class="innerTxtFldProperty"></TextField>
+					</View>
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+					<Label id="lblTelNoAstrik" class="astricProperty"></Label>
+					<View id="innerTelView" class="innerViewProperty">
+						<Label id="lblTelNo" class="innerTitleProperty"></Label>
+						<TextField id="txtTelNo" class="innerTxtFldProperty"></TextField>
+					</View>
+					</View>
+					
+				</View>	
+					
+			</ScrollView>
+			
+			<ScrollView id="view2">
+				
+				<View id="sectionView2" class="sectionViewProperty">
+					<Label id="lblHeaderCompanyDetails" class="lblSectionTitle"></Label>
+				</View>	
+				
+				<Label id="lblBasicClassification" class="lblHeaderProperty"></Label>
+				<Label class="lblEngNoProperty"></Label>
+				<!-- <Label id="lblClassification" class="lblHeaderProperty"></Label> -->
+				
+				<View id="companyDetailsView" class="viewBackProperty">
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblCertificate1Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblCertificate1" class="lblClassicProperty"></Label>	
+					</View>
+					<TextField id="txtCertificate1" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblExpiryDate1Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblExpiryDate1" class="lblClassicProperty"></Label>	
+					</View>
+					
+					<Label id="lblExpiryDate1Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblCertificate2Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblCertificate2" class="lblClassicProperty"></Label>	
+					</View>
+					<TextField id="txtCertificate2" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblExpiryDate2Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblExpiryDate2" class="lblClassicProperty"></Label>	
+					</View>
+					<Label id="lblExpiryDate2Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblCertificate3Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblCertificate3" class="lblClassicProperty"></Label>	
+					</View>
+					<TextField id="txtCertificate3" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					
+					<View class="viewClassicMandatoryProperty">
+						<Label id="lblExpiryDate3Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblExpiryDate3" class="lblClassicProperty"></Label>	
+					</View>
+					<Label id="lblExpiryDate3Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+					
+				</View>	
+				
+				<View id="addressDetailsView" class="innerViewProperty" onClick="openAddressWindow">
+					<Label id="lblAddressDetails"></Label>
+					<Label id="lblPlus"></Label>
+				</View>
+				
+				<Label id="lblAddressMandatory" class="lblMandatoryProperty"></Label>
+				
+				<View id="addressSectionView" class="tableSectionProperty">
+					<Label id="lblSecAddressName" class="lblSectionProperty"></Label>
+					<Label id="lblSecAddressDetail" class="lblSectionProperty"></Label>
+				</View>
+				
+					
+				<View id="bgAddressTableView">
+				<ListView id="addressTableViewItems" defaultItemTemplate="addressTemplate">
+					<Templates>
+						<ItemTemplate name="addressTemplate" id="addressRow">
+							<!-- <View id="viewContents"> -->
+								<Label id="lblRowAddressName" bindId="lblRowAddressName"></Label>
+								<Label id="lblRowAddressDetail" bindId="lblRowAddressDetail"></Label>
+							<!-- </View> -->
+							<ImageView class="tableSeparator"></ImageView>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="addressElements" id="addressListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsAddress" class="lblNoItemsProperty"></Label>
+				</View>	
+				
+				
+				<View id="bankDetailsView" class="innerViewProperty" onClick="openBankWindow">
+					<Label id="lblBankDetails"></Label>
+					<Label id="lblBankPlus"></Label>
+				</View>
+				
+				<Label id="lblBankMandatory" class="lblMandatoryProperty"></Label>	
+					
+				<View id="bankSectionView" class="tableSectionProperty">
+					<Label id="lblSecBankAccNo" class="lblSectionProperty"></Label>
+					<Label id="lblSecBankName" class="lblSectionProperty"></Label>
+				</View>
+				
+					
+				<View id="bgBankTableView">
+				<ListView id="bankTableViewItems" defaultItemTemplate="bankTemplate">
+					<Templates>
+						<ItemTemplate name="bankTemplate" id="bankRow">
+							<!-- <View id="viewContents"> -->
+								<Label id="lblRowBankAccNo" bindId="lblRowBankAccNo"></Label>
+								<Label id="lblRowBankName" bindId="lblRowBankName"></Label>
+							<!-- </View> -->
+							<ImageView class="tableSeparator"></ImageView>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="bankElements" id="bankListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsBank" class="lblNoItemsProperty"></Label>
+				</View>	
+				
+				
+				<View id="contactDetailsView" class="innerViewProperty" onClick="openContactWindow">
+					<Label id="lblContactDetails"></Label>
+					<Label id="lblContactPlus"></Label>
+				</View>
+				
+				<View id="contactSectionView" class="tableSectionProperty">
+					<Label id="lblSecContactName" class="lblSectionProperty"></Label>
+					<Label id="lblSecContactPhNo" class="lblSectionProperty"></Label>
+				</View>
+				
+				<View id="bgContactTableView">
+				<ListView id="contactTableViewItems" defaultItemTemplate="contactTemplate">
+					<Templates>
+						<ItemTemplate name="contactTemplate" id="contactRow">
+							<!-- <View id="viewContents"> -->
+								<Label id="lblRowContactName" bindId="lblRowContactName"></Label>
+								<Label id="lblRowContactPhNo" bindId="lblRowContactPhNo"></Label>
+							<!-- </View> -->
+							<ImageView class="tableSeparator"></ImageView>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="contactElements" id="contactListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsContact" class="lblNoItemsProperty"></Label>
+				</View>		
+					
+				<View id="securityQuestionView" class="innerViewProperty" onClick="openSecurityWindow" height="0">
+					<Label id="lblSecurityQuestion"></Label>
+					<Label id="lblSecurityQuestionPlus"></Label>
+				</View>
+					
+					
+			</ScrollView>
+			
+			<ScrollView id="view3">
+				
+				<View id="sectionView3" class="sectionViewProperty">
+					<Label id="lblAdditionalInfo" class="lblSectionTitle"></Label>
+				</View>	
+				
+				<Label id="lblCompanyAdditionalDetails" class="lblHeaderProperty"></Label>
+				<Label class="lblEngNoProperty"></Label>
+				<View id="companyAdditionalDetailsView" class="viewBackProperty">
+					<View class="viewMandatoryProperty">
+						<Label id="lblLegalEntityAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblLegalEntity" class="lblTitleProperty"></Label>	
+					</View>
+					<Label id="lblLegalEntityValue" class="txtFldProperty" onClick="selectLegalEntity"></Label>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblGeneralDirectorAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblGeneralDirector" class="lblTitleProperty"></Label>	
+					</View>
+					<Label id="lblGeneralDirectorValue" class="txtFldProperty" onClick="selectGeneralDirectory"></Label>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblGeneralDirectorNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblGeneralDirectorName" class="lblTitleProperty"></Label>	
+					</View>
+					<TextField id="txtGeneralDirectorName" class="txtFldProperty"></TextField>
+				</View>	
+				
+				
+				<View id="activityView" class="innerViewProperty" onClick="openActivityWindow">
+					<Label id="lblActivity"></Label>
+					<Label id="lblActivityPlus"></Label>
+				</View>
+				
+				<Label id="lblActivityMandatory" class="lblMandatoryProperty"></Label>
+				
+				<View id="activitySectionView" class="tableSectionProperty">
+					<Label id="lblSecActivity"></Label>
+				</View>
+				
+					
+					
+				<View id="bgActivityTableView">
+				<ListView id="activityTableViewItems" defaultItemTemplate="activityTemplate">
+					<Templates>
+						<ItemTemplate name="activityTemplate" id="activityRow">
+								<Label id="lblRowActivityName" bindId="lblRowActivityName"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+								<View id="deleteActivityView" bindId="deleteActivityView">
+										<ImageView id="icnDeleteActivity" bindId="icnDeleteActivity"></ImageView>
+								</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="activityElements" id="activityListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsActivity" class="lblNoItemsProperty"></Label>
+				</View>	
+				
+				
+				
+				<View id="partnerView" class="innerViewProperty" onClick="openPartnerWindow">
+					<Label id="lblPartner"></Label>
+					<Label id="lblPartnerPlus"></Label>
+				</View>
+				
+				<Label id="lblPartnerMandatory" class="lblMandatoryProperty"></Label>	
+					
+				<View id="partnersSectionView" class="tableSectionProperty">
+					<Label id="lblSecPartnerOwnerName" class="lblSectionProperty"></Label>
+					<Label id="lblSecPartnerNationality" class="lblSectionProperty"></Label>
+				</View>
+				
+					
+					
+				<View id="bgPartnersTableView">
+				<ListView id="partnersTableViewItems" defaultItemTemplate="partnersTemplate">
+					<Templates>
+						<ItemTemplate name="partnersTemplate" id="partnersRow">
+								<Label id="lblRowPartnersName" bindId="lblRowPartnersName"></Label>
+								<Label id="lblRowPartnersNationality" bindId="lblRowPartnersNationality"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+								<View id="deletePartnerView" bindId="deletePartnerView">
+										<ImageView id="icnDeletePartner" bindId="icnDeletePartner"></ImageView>
+								</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="partnersElements" id="partnersListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsPartners" class="lblNoItemsProperty"></Label>
+				</View>	
+				
+			</ScrollView>
+			
+			<ScrollView id="view4">
+				
+				<View id="sectionView4" class="sectionViewProperty">
+					<Label id="lblAttachementsInfo" class="lblSectionTitle"></Label>
+				</View>	
+				
+				
+				<View id="AttachmentsView" class="innerViewProperty" onClick="openAttachmentsWindow">
+					<Label id="lblAttachment"></Label>
+					<Label id="lblAttachmentPlus"></Label>
+				</View>
+				
+				
+				<View id="attachmentsSectionView" class="tableSectionProperty">
+					<Label id="lblSecAttachmentTitle" class="lblSectionProperty"></Label>
+					<Label id="lblSecAttachmentCategory" class="lblSectionProperty"></Label>
+				</View>
+				
+				
+				<View id="bgAttachmentTableView">
+				<ListView id="attachmentsTableViewItems" defaultItemTemplate="attachmentTemplate">
+					<Templates>
+						<ItemTemplate name="attachmentTemplate" id="attachmentRow">
+								<Label id="lblRowAttachmentsTitle" bindId="lblRowAttachmentsTitle"></Label>
+								<Label id="lblRowAttachmentCategory" bindId="lblRowAttachmentCategory"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="contactElements" id="attachmentListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsAttachment" class="lblNoItemsProperty"></Label>
+				</View>	
+				
+				
+				<!-- 
+				<View id="bgPartnersTableView">
+				<ListView id="partnersTableViewItems" defaultItemTemplate="partnersTemplate">
+					<Templates>
+						<ItemTemplate name="partnersTemplate" id="partnersRow">
+								<Label id="lblRowPartnersName" bindId="lblRowPartnersName"></Label>
+								<Label id="lblRowPartnersNationality" bindId="lblRowPartnersNationality"></Label>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="partnersElements" id="partnersListSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItemsPartners" class="lblNoItemsProperty"></Label>
+				</View>	
+				 -->		
+				
+				
+				
+			</ScrollView>
+			
+			
+		</View>
+		</View>	
+		
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+
+	</Window>
+</Alloy>

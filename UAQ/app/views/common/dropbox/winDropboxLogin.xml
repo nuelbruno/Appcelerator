@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="winDropboxLogin" class="windowPortrait" onOpen="windowOpened" onClose="windowClosed">
+		<View id="viewNavBar" class="viewNavBar">
+			<Button id="buttonBack" class="buttonBack buttonNavBar" onClick="closeWindow"/>
+			<Label id="labelNavBarTitle" class="labelNavBar"/>
+		</View>
+		<View id="viewWebviewContainer" class="container">
+			<WebView id="webviewDropbox" />
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="winFilesAndFoldersList" class="win" onOpen="windowOpened" onClose="windowClosed">
+	<View layout="vertical" id="viewDropbox">
+		<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty" onClick="closeWindow"></Label>
+					<Button id="logoutButton" class="logoutButton" onClick="logoutDropbox"/>
+				</View>
+			</View>
+		<ScrollableView id="scrollableview" class="container" onScrollEnd="showHideSubFolders"/>
+	</View>	
+	</Window>
+</Alloy>

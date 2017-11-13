@@ -1,0 +1,57 @@
+<Alloy>
+	<Window id="winPurchaseOrder" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View class="searchBgViewProperty">
+				<View id="searchView" class="searchViewProperty">
+					<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+					<TextField id="txtSearch" onChange="searchList" class="txtSearchProperty"></TextField>
+				</View>
+			</View>
+			<View id="mainBackViewAll">
+				<ListView id="tblISupplierList" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="tblRow">
+							<View id="topBackView" bindId="topBackView" touchEnabled="false">
+								<Label id="lblOrderNumber" bindId="lblOrderNumber"></Label>
+								<Button id="btnStatus" bindId="btnStatus"></Button>
+								<ImageView id="imgUpDown" bindId="imgUpDown"></ImageView>
+							</View>
+							<!-- <View id="separatorView" class="separator" platform="android"></View> -->
+							<View id="mainBackView" bindId="mainBackView" top="45">
+								<Label id="lblDescription" bindId="lblDescription"></Label>
+								<View id="entityView" class="backViewProperty" bindId="entityView">
+									<Label id="lblEntityTitle" class="titlePropety" bindId="lblEntityTitle"></Label>
+									<Label id="lblEntityValue" class="valueProperty" bindId="lblEntityValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="orderDateView" class="backViewProperty" bindId="orderDateView">
+									<Label id="lblOrdDateTitle" class="titlePropety" bindId="lblOrdDateTitle"></Label>
+									<Label id="lblOrdDateValue" class="valueProperty" bindId="lblOrdDateValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="amountView" class="backViewProperty" bindId="amountView">
+									<Label id="lblAmoutTitle" class="titlePropety" bindId="lblAmoutTitle"></Label>
+									<Label id="lblAmoutValue" class="valueProperty" bindId="lblAmoutValue"></Label>
+								</View>
+								<Button id="btnViewInv" bindId="btnViewInv" onClick="openInvoices"></Button>
+							</View>
+							<View class="separator" bottom="0"></View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="elements" id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoRecord" class="lblNoRecordFound"></Label>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

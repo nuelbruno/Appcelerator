@@ -1,0 +1,39 @@
+<Alloy>
+	<Window id="winVisionMission" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<WebView id="webView"></WebView>
+
+			<!--
+			<ScrollView id="scrollView">
+
+			<View id="mainView">
+
+			<ImageView id="imgView"></ImageView>
+
+			<Label id="lblVision" class="lblTitleProperty"></Label>
+			<Label id="lblVisionValue" class="lblTitleValueProperty"></Label>
+			<View class="separator"></View>
+			<Label id="lblMission" class="lblTitleProperty"></Label>
+			<Label id="lblMissionValue" class="lblTitleValueProperty"></Label>
+			<View class="separator"></View>
+
+			</View>
+
+			</ScrollView>
+			-->
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

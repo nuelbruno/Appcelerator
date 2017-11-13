@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_GFS_Asse_Lia.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, xAxis, ytd, xLabel, yLabel, budget, axisFontSize, margin_left,abc,isArabic) {
+				//	Ti.API.info('Webview: plotChart()');
+				//	Ti.API.info('arrNormal Bar =' +JSON.stringify(arr));
+				//	Ti.API.info('mtd =' + mtd);
+				//	Ti.API.info('ytd =' + ytd);
+
+				new Highcharts.Chart({
+					chart : {
+						marginTop : 0,
+						marginLeft : margin_left, //70,
+						spacingLeft : 0,
+						marginRight : 15,
+						renderTo : 'container',
+						backgroundColor : "transparent",
+						plotBackgroundColor : 'transparent',
+						plotBorderWidth : null,
+						plotShadow : false,
+						height : ytd
+					},
+					title : {
+						text : ''
+					},
+					legend : {
+						rtl : isArabic,
+						itemStyle : {
+							"fontSize" : (axisFontSize)
+						},
+					},
+					tooltip : {
+						useHTML : true,
+						shared : false,
+						//	backgroundColor : '#D3D3D3',
+						//	borderColor : 'black',
+						//headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px;color:{series.color}">{point.key}</td></tr>',//'<center><span style="font-size: 14px; color:{series.color}">{point.key}</span></center><br/>',
+						headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px">{point.key}</td></tr>', //'<center><span style="font-size: 14px; color:{series.color}">{point.key}</span></center><br/>',
+						pointFormat : '<tr><td style="text-align: center; font-size:' + (axisFontSize - 2) + 'px">' + budget + ': <b>{point.y}</b></td></tr></table>'//budget + " : <b>{point.y}</b><br/>",
+						//	formatter : function() {
+						//		return '<b>' + this.key + '</b><br>Budget : ' + this.y + '</br>';
+						//	}
+					},
+					plotOptions : {
+						series : {
+
+							events : {
+								legendItemClick : function() {
+									return false;
+									// <== returning false will cancel the default action
+								}
+							}
+
+						},
+						pie : {
+							allowPointSelect : true,
+							cursor : 'pointer',
+							dataLabels : {
+								enabled : false
+							},
+							showInLegend : true
+						}
+					},
+					xAxis : {
+						title : {
+							margin : 20,
+							text : xLabel,
+							style : {
+								color : "#976e33",
+								fontWeight : "bold",
+								fontSize : axisFontSize + "px"
+							}
+						},
+						labels : {
+							style : {
+								fontSize : (axisFontSize - 2) + "px"
+							},
+						},
+						categories : xAxis,
+						lineColor : 'black',
+						lineWidth : 2,
+						tickLength : 0,
+					},
+					yAxis : {
+						title : {
+							margin : 20,
+							text : yLabel,
+							style : {
+								color : "#976e33",
+								fontWeight : "bold",
+								fontSize : axisFontSize + "px"
+							}
+						},
+						lineWidth : 2,
+						lineColor : 'black',
+						labels : {
+							style : {
+								fontSize : (axisFontSize - 2) + "px"
+							},
+							enabled : true,
+							rotation : 90,
+							y : 20,
+						},
+						gridLineDashStyle : 'longdash',
+						minorTickLength : 0.5,
+						tickLength : 0,
+						gridLineWidth : 0.5,
+						minorGridLineWidth : 0.5,
+					},
+					series : [{
+						type : 'bar',
+						//    name: 'Browser share',
+						data : arr,
+					}]
+				});
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

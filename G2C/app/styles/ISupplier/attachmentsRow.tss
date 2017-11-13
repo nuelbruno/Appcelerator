@@ -1,0 +1,82 @@
+"#tblRow":{
+	height: 46,
+	left: 0,
+	right: 0,
+	layout: "vertical"
+}
+
+"#topBackView":{
+	touchEnabled :false,
+	top: 0,
+	height: 45,
+	left: 0,
+	right: 0,
+	//backgroundColor : Alloy.Globals.path.rowDropDownBgColor
+}
+
+"#lblOrderNumber":{
+	touchEnabled :false,
+	//width: 130,
+	height: 20,
+	font: Alloy.Globals.path.font14Bold,
+	//color: Alloy.Globals.path.whiteColor
+	color: Alloy.Globals.path.blackColor
+}
+
+"#imgUpDown":{
+	touchEnabled :false,
+	height: 12,
+	width: 21,
+	image:	Alloy.Globals.path.iconArrow2Down,
+	isClick: false
+}
+"#mainBackView":{
+	touchEnabled :false,
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 0,
+	visible: false,
+	layout: "vertical"
+}
+"#lblDescription":{
+	touchEnabled :false,
+	top: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor,
+	//color: Alloy.Globals.path.grayColor,
+	left: 10,
+	right: 10
+}
+
+".titlePropety":{
+	touchEnabled :false,
+	top : 2,
+	height: 20,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.blackColor,
+	//color: Alloy.Globals.path.grayColor,
+	width: 100
+}
+".valueProperty":{
+	touchEnabled :false,
+	top :2,
+	bottom: 2,
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor
+}
+".backViewProperty":{
+	touchEnabled :false,
+	top: 0,
+	height: Titanium.UI.SIZE,
+	left: 0,
+	right: 0
+}
+"#entityView":{
+	top: 10
+}
+"#separator":{
+	touchEnabled :false
+}

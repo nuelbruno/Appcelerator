@@ -1,0 +1,40 @@
+<Alloy>
+	<Window id="winHome" class="win">
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty" visible="false" height="0">
+					<View id="menuBackView" class="menuBackViewProperty">
+						<ImageView id="imgMenu"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="mainView">
+				<View id="imgBannerView">
+					<ImageView id="imgBanBackView"></ImageView>
+					<ScrollableView id="scrollableBannerView"></ScrollableView>
+					<View id="pagecontrollerView"></View>
+				</View>
+				<ScrollableView id="scrollableMenuView"></ScrollableView>
+			</View>
+			<View id="pagingView">
+				<ImageView id="img1"></ImageView>
+				<ImageView id="img2"></ImageView>
+			</View>
+			<!-- <Label id="lblVersion" text="1.3.1" right="10" zIndex="20" bottom="5"></Label> -->
+		</View>
+		<View id="closeView" class="closeViewProperty"></View>
+		<View id="instructionView" class="instructionViewProperty" onClick="openLanguageScreen">
+			<View id="instructionPopup" class="instructionPopupProperty">
+				<View id="topBackView" class="popTopViewProperty">
+					<Label id="lblInstructionTitle"></Label>
+				</View>
+				<Label id="lblInstruction"></Label>
+				<View id="optionsDetailView"></View>
+				<Button id="btnProceed" onClick="VATTAXProceed"></Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

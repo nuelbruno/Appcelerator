@@ -1,0 +1,189 @@
+"#row" :{
+	width : "100%",
+	height : 165,
+	//height : 220,
+	selectionStyle : 0,
+	backgroundColor : "transparent",
+	selectedColor : "transparent",
+	className : "budgetList"
+}
+"#row[formFactor=tablet]" :{
+	height : 225,
+}
+".viewBudgetMainProperty":{
+	width : "100%",
+	height : "100%",
+}
+
+".bgTitleProperty":{
+	top:0,
+	width:"100%",
+	height:36,
+	backgroundImage:Alloy.Globals.path.bgHeaderTitle,
+}
+".bgTitleProperty[formFactor=tablet]":{
+	height:52,
+}
+".bgContentProperty":{
+	top:36,
+	width:"100%",
+	bottom : 0,
+	backgroundImage:Alloy.Globals.path.bgBudgetContentArea,
+}
+".bgContentProperty[formFactor=tablet]":{
+	top:52,
+}
+
+"#leftContentCol1":{
+	top:10,
+	width:'50%',
+	layout:'vertical',
+	height : Titanium.UI.SIZE
+}
+"#leftContentCol1[formFactor=tablet]":{
+	top:20,
+}
+"#leftContentCol2":{
+	top:10,
+	width:'50%',
+	layout:'vertical',
+	height : Titanium.UI.SIZE
+}
+"#leftContentCol2[formFactor=tablet]":{
+	top:20,
+}
+"#lblAvailableAmount_caption":{
+	color:'#3c2d1a',
+	font:Alloy.Globals.path.font14,
+	text:Alloy.Globals.selectedLanguage.availableBalanceTitle,
+}
+"#lblAvailableAmount_caption[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#lblAvailableAmount":{
+	color:'#3c2d1a',
+	font:{
+		fontSize:"26sp",
+		fontWeight:'bold'
+	}
+}
+"#lblAvailableAmount[formFactor=tablet]":{
+	font:{
+		fontSize:"32sp",
+		fontWeight:'bold'
+	}
+}
+"#lblBudgetAmount_caption":{
+	color:'#3c2d1a',
+	font:Alloy.Globals.path.font14,
+	text:Alloy.Globals.selectedLanguage.budgetLimitTitle,
+}
+"#lblBudgetAmount_caption[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#lblBudgetAmount":{
+	color:'#3c2d1a',
+	font:{
+		fontSize:"26sp",
+		fontWeight:'bold'
+	}
+}
+"#lblBudgetAmount[formFactor=tablet]":{
+	font:{
+		fontSize:"32sp",
+		fontWeight:'bold'
+	}
+	
+}
+"#viewProgressBar":{
+	layout :"vertical",
+	bottom: 10,
+	left : 20,
+	right : 20,
+	height:45,
+}
+"#viewProgressBar[formFactor=tablet]":{
+	height : 60
+}
+"#lblTitle" :{
+	top : 5,
+	bottom : 5,
+	backgroundColor : "transparent",
+	font : Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.blackColor,
+	touchEnabled : false
+}
+"#lblTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+"#viewReport":{
+	width:36,
+	height:"100%",
+	isReportClicked : true,
+}
+"#viewReport[formFactor=tablet]":{
+	width:50,
+}
+"#viewEdit":{
+	width:36,
+	height:"100%",
+	isViewEditClicked : true,
+}
+"#viewEdit[formFactor=tablet]":{
+	width:50,
+}
+"#imgReport":{
+	width:18,
+	height:18,
+	image:Alloy.Globals.path.icnReport,
+	touchEnabled:false
+}
+"#imgReport[formFactor=tablet]":{
+	width:30,
+	height:30,
+}
+"#imgCompose_Black":{
+	width:18,
+	height:18,
+	image:Alloy.Globals.path.icnCompose_black,
+	touchEnabled:false
+}
+"#imgCompose_Black[formFactor=tablet]":{
+	width:30,
+	height:30,
+}
+//chart
+// "#chartView":{
+	// //top : 77,
+	// top:0,
+	// left: 0,
+	// right : 0,
+	// height:Titanium.UI.FILL //200,
+	// //height:'100%',
+	// //backgroundColor:'blue'
+// }
+
+".lblProperty":{
+	color:"#3c2d1a",
+	font:Alloy.Globals.path.font13Bold,
+	textAlign : "center"
+}
+".lblProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font17Bold,	
+}
+"#chartBackView":{
+	top :3,
+	left :0,
+	right : 0,
+	height : 20,
+	layout : "horizontal"
+}
+"#chartBackView[formFactor=tablet]":{
+	height : 35
+}
+"#spentView":{
+	backgroundColor : Alloy.Globals.path.spentAmount_GraphColor
+}
+"#remainsView":{
+	backgroundColor : Alloy.Globals.path.availableAmount_GraphColor
+}

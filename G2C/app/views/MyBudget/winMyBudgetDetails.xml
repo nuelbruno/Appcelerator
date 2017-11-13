@@ -1,0 +1,58 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View class="viewBudgetMainProperty">
+				<View class="bgTitleProperty">
+					<Label id="lblTitle"></Label>
+					<View id="viewReport" onClick="showReport">
+						<ImageView id="imgReport"></ImageView>
+					</View>
+					<View id="viewEdit" onClick="editBudget">
+						<ImageView id="imgCompose_Black"></ImageView>
+					</View>
+				</View>
+				<View class="bgContentProperty">
+					<View id="chartView">
+						<Widget src="com.alco.highcharts" id="pieChart"/>
+					</View>
+					<View id="leftContentCol2">
+						<Label id="lblAvailableAmount_caption"></Label>
+						<Label id="lblAvailableAmount"></Label>
+						<Label id="lblBudgetAmount_caption"></Label>
+						<Label id="lblBudgetAmount"></Label>
+					</View>
+				</View>
+			</View>
+			<View class="viewManageExpensesProperty">
+				<View id="viewManageExpenseBudget" onClick="openManageExpensesBudget">
+					<ImageView id="imgPlusBlack"></ImageView>
+					<Label id="lblManageExpenseBudget"></Label>
+				</View>
+				<View id="viewManageExpense" onClick="openManageExpenses">
+					<ImageView id="imgPlusBlackEX"></ImageView>
+					<Label id="lblManageExpenses"></Label>
+				</View>
+			</View>
+			<View id="viewExpenseHeader">
+				<Label id="lblBudget"></Label>
+			</View>
+			<View id= "bgTableView" class="bgTableViewProperty">
+				<TableView id="tableView"></TableView>
+				<Label id="lblNoItems"/>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

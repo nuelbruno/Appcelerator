@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="Findus">مراكزنا</string>
+	<string name="eServices">الخدمات الإلكترونية</string>
+	<string name="contactus">إتصل بنا</string>
+	<string name="More">المزيد</string>
+	<string name="Media">وسائل الإعلام</string>
+	
+	<string name="Video"> الفيديو</string>
+	<string name="newsupdates">الاخبار</string>
+	<string name="Services">الخدمات</string>
+	<string name="servicesweprovide">خدماتنا</string>
+	<string name="SocialMedia">التواصل الإجتماعي</string>
+	<string name="Followus">تابعنا</string>
+	<string name="Myland">أرضي</string>
+	<string name="Findyourland">البحث عن أرض</string>
+	<string name="News">أخبار</string>
+	
+	<string name="Back">عودة</string>
+	<string name="Area">منطقة</string>
+	<string name="Zone">الحوض</string>
+	<string name="Plot">الارض</string>
+	<string name="Map">خريطة</string>
+	<string name="Details">تفاصيل</string>
+    <string name="AreaName">اسم المنطقة</string>	
+    <string name="ZoneName">اسم الحوض</string>
+    <string name="PlotName">اسم الارض</string>
+    <string name="LandAreaSQM">مساحة الأرض متر مربع</string>
+    <string name="LandAreaSQF">مساحة الأرض قدم مربع</string>
+    <string name="Usage">استعمال الأرض</string>
+    
+    <string name="Facebook">الفيسبوك</string>
+	<string name="Youtube">يوتيوب</string>
+	<string name="Twitter">تويتر</string>
+	
+	<string name="ComplainOrSuggestion">شكاوي واقتراحات</string>
+	<string name="FirstName">الاسم الأول</string>
+	<string name="LastName">اسم العائلة </string>
+	<string name="EmailID">البريد الإلكتروني</string>
+	<string name="MobileNumber">رقم الهاتف المتحرك</string>
+	<string name="Subject">الموضوع</string>
+	<string name="Comments">تعليقات</string>
+	<string name="Mandatoryfileds">الحقول الإلزامية</string>
+	<string name="Submit">ارسال </string>
+	
+	<string name="aboutus">حول  البلدية </string>
+	<string name="faq">أسئلة شائعة</string>
+	<string name="settings">إعدادات</string>
+	<string name="termsandconditions">الأحكام والشروط</string>
+	
+	<string name="ourvision">رؤيتنا</string>
+	<string name="ourvisionDescription">لا بد من الاعتراف باعتبارها النظام البلدي كفاءة مستوى عالمي ضمان التنمية المستدامة وتحسين نوعية الحياة لإمارة أبوظبي</string>
+	<string name="ourmission">مهمتنا</string>
+	<string name="ourmissionDescribtion">لتقديم الأفضل في فئة كفاءة والعملاء تتمحور الخدمات البلدية من خلال الانخراط مع شركائنا المجتمع و</string>
+	<string name="ourValues">قيمنا</string>
+	<string name="ourValueDescription1">- خدمة العملاء</string>
+	<string name="ourValueDescription2">- وضع شعبنا</string> 
+	<string name="ourValueDescription4">- التميز</string> 
+	<string name="ourValueDescription5">- تقاسم المعرفة</string> 
+	<string name="ourValueDescription6">- التعاون</string> 
+	<string name="ourValueDescription7">- الابتكار</string> 
+	
+	<string name="bg_NewsTab">common/news_ar.png</string>
+	<string name="bg_NewsTab_hover">common/news_active_ar.png</string>
+	<string name="bg_PhotosTab">common/pictures_ar.png</string>
+	<string name="bg_PhotosTab_hover">common/pictures_active_ar.png</string>
+    <string name="bg_VideosTab">common/video_ar.png</string>
+    <string name="bg_VideosTab_hover">common/video_active_ar.png</string>
+    
+    <string name="ServiceDescription">وصف الخدمة</string>
+	<string name="FirstStopforClient">نقطة التوقف الأولى للعميل</string>
+	<string name="DocumentsRequired">المستندات المطلوبة</string>
+	<string name="Fees">الرسوم</string>
+	
+	<string name="novideosavailable">لا أشرطة الفيديو المتوفرة</string>
+	
+</resources>

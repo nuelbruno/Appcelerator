@@ -1,0 +1,27 @@
+".row":{
+	height: 50,
+	//backgroundColor: "#FFFFFF",
+	color:  "#000",
+	selectionStyle: 0
+},
+"#labelIcon":{
+	width: 25,
+	left: 5,
+	color: "#000",
+	//font: Alloy.Globals.path.font13,
+	image : Alloy.Globals.path.dropboxFolderImg,
+	//textAlign: 'center'
+},
+"#label":{ 
+	height:Ti.UI.SIZE,
+	left: 55,
+	right: 25,
+	color:  "#000",
+	textAlign: 'left'
+}
+"#imgSeparator":{
+	width: "100%",
+	height: 1,
+	bottom: 0,
+	backgroundColor: Alloy.Globals.path.grayColor,
+}

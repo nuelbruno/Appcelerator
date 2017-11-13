@@ -1,0 +1,78 @@
+<Alloy>
+	<Window id="winCustomerInqReq" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+		<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty">
+			</View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn">
+					</ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty">
+				</Label>
+			</View>
+		</View>
+		<ScrollView layout="vertical">
+			<View id="namePasswordView" class="nameViewProperty">
+				<View id="nameView" class="viewProperty">
+					<Label id="lblNameAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblName" class="labelProperty">
+					</Label>
+					<TextField id="txtName" class="textFieldProperty">
+					</TextField>
+					<ImageView class="hSeperatorProperty">
+					</ImageView>
+				</View>
+				<View id="EmailView" class="viewProperty">
+					<Label id="lblEmailAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblEmail" class="labelProperty">
+					</Label>
+					<TextField id="txtEmail" class="textFieldProperty">
+					</TextField>
+					<ImageView class="hSeperatorProperty">
+					</ImageView>
+				</View>
+				<View id="MobileView" class="viewProperty">
+					<Label id="lblMobileAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblMobile" class="labelProperty">
+					</Label>
+					<TextField id="txtMobile" class="textFieldProperty" maxLength="10">
+					</TextField>
+					<ImageView class="hSeperatorProperty">
+					</ImageView>
+				</View>
+				<View id="subjectView" class="viewProperty">
+					<Label id="lblSubjectAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblSubject" class="labelProperty">
+					</Label>
+					<TextField id="txtSubject" class="textFieldProperty">
+					</TextField>
+					<ImageView class="hSeperatorProperty">
+					</ImageView>
+				</View>
+				<View id="commentsView" class="viewProperty">
+					<Label id="lblcommentsAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblcomments" class="labelProperty">
+					</Label>
+					<TextArea id="txtComments" onFocus="clearText" onBlur="putHintText">
+					</TextArea>
+					<ImageView class="hSeperatorProperty">
+					</ImageView>
+				</View>
+			</View>
+			<Button id="btnSend" onClick="sendFeedback">
+			</Button>
+			<Label id="lblContactGov">
+			</Label>
+			<View id="imgBackView" onClick="openGovUrl">
+				<ImageView id="imgGovLog">
+				</ImageView>
+			</View>
+		</ScrollView>
+		</View>
+		<Require src="common/viewInstructions" id="viewInstructions"/>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+		
+	</Window>
+</Alloy>

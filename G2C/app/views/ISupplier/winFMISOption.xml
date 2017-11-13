@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="winFMISOption" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+				<View id="createFMIS" class="backViewProperty" onClick="gotoNextWindow" index="1">
+					<Label id="lblcreateFMIS" class="lblTitle"></Label>
+					<ImageView id="imgDetailsOne" class="imgDetails"></ImageView>
+				</View>
+				<View class="separator"></View>
+				<View id="viewFMIS" class="backViewProperty" onClick="gotoNextWindow" index="2">
+					<Label id="lblViewFMIS" class="lblTitle"></Label>
+					<ImageView id="imgDetailsTwo" class="imgDetails"></ImageView>
+				</View>
+				<View class="separator"></View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,66 @@
+<Alloy>
+	<Window id="winAddress" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<Label id="lblAdressDetails" class="lblHeaderProperty"></Label>
+				<Label class="lblEngNoProperty"></Label>
+				<View id="addressView" class="viewBackProperty">
+					<View class="viewMandatoryProperty">
+						<Label id="lblAddressNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblAddressName" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtAddressName" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblAddressLine1Astrik" class="astricPropertyVT"></Label>
+						<Label id="lblAddressLine1" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtAddressLine1" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblAddressLine2" class="lblTitleProperty"></Label>
+					<TextField id="txtAddressLine2" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblCountryAstrik" class="astricPropertyVT" visible="false"></Label>
+						<Label id="lblCountry" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtCountry" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblEmirateAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblEmirate" class="lblTitleProperty"></Label>
+					</View>
+					<Label id="lblEmirateValue" class="txtFldProperty" onClick="selectEmirate"></Label>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblCityAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblCity" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtCity" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblPOBoxAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblPOBox" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtPOBOX" class="txtFldProperty"></TextField>
+
+				</View>
+				<View id="submitView">
+					<Label id="lblSubmit" onClick="submitForm"></Label>
+				</View>
+
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

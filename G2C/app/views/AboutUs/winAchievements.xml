@@ -1,0 +1,34 @@
+<Alloy>
+	<Window id="winAchievements"class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<WebView id="webView"></WebView>
+
+			<!-- <View id="mainView">
+			<ImageView id="imgView">
+			</ImageView>
+			<Label id="lblAchievements" class="lblTitleProperty">
+			</Label>
+			<View class="separator">
+			</View>
+			<View id= "bgTableView" class="tableView"  >
+			<TableView id="tableViewItems">
+			</TableView>
+			<Label id="lblNoItems"/>
+			</View>
+			</View> -->
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

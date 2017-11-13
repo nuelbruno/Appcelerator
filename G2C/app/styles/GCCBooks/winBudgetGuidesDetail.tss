@@ -1,0 +1,152 @@
+"#mainView":{
+	top: 0,
+	bottom: 30
+}
+"#mainView[formFactor=tablet]":{
+	top: 0,
+	bottom: 35
+}
+"#navBarBackView":{
+	top : 0,
+	width: "100%",//Ti.UI.SIZE,
+	height: 45,
+	backgroundColor: "transparent",
+	// layout:"vertical"
+}
+"#navBarBackView[if=Alloy.Globals.isIOS7Plus]":{
+	height : 65
+}
+
+// "#statusBar":{
+	// top : 0,
+	// width: "100%",//Ti.UI.SIZE,
+	// height: 0,//Ti.UI.SIZE,
+	// backgroundColor: Alloy.Globals.path.navBarColor
+// }
+// "#statusBar[if=Alloy.Globals.isIOS7Plus]":{
+	// height : 20,
+// }
+
+"#navBarView":{
+	top : 0,
+	width: "100%",//Ti.UI.SIZE,
+	height: 45,//Ti.UI.SIZE,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+"#navBarView[if=Alloy.Globals.isIOS7Plus]":{
+	top : 20
+}
+
+"#searchBar":{
+	top : 45,
+	height: 50,
+	backgroundColor:Alloy.Globals.path.navBarColor
+}
+"#searchBar[if=Alloy.Globals.isIOS7Plus]":{
+	top : 65,
+}
+
+"#webBackView":{
+	top : 0,
+}
+
+"#webView[formFactor=handheld]":{
+	top : 0,
+	bottom : 50,
+	width : "100%",
+	backgroundColor : "white",
+	
+}
+"#webView[platform=android]":{
+	cacheMode : Titanium.UI.Android.WEBVIEW_LOAD_NO_CACHE	
+}
+
+"#webView[formFactor=tablet]":{
+	top : 0,
+	bottom : 65,
+	width : "100%",
+	backgroundColor : "white",
+}
+"#webView[platfrom=ios]":{
+	willHandleTouches : false
+}
+"#buttonView[formFactor=handheld]":{
+	width : "100%",
+	height : 40,
+	backgroundColor : "transparent",
+	bottom : 5,
+}
+"#buttonView[formFactor=tablet]":{
+	width : "100%",
+	height : 55,
+	backgroundColor : "transparent",
+	bottom : 5,
+}
+"#lblCurrentPage[formFactor=handheld]":{
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.navBarColor
+}
+"#lblCurrentPage[formFactor=tablet]":{
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font18,
+	color : Alloy.Globals.path.navBarColor
+}
+"#btnPrevious[formFactor=handheld]":{
+	left : 10,
+	width : 35,
+	height : 35,
+	image : Alloy.Globals.path.icnBack,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	color : "white",
+	style : "plain",
+	font :  Alloy.Globals.path.font12,
+	visible:false
+}
+"#btnPrevious[formFactor=tablet]":{
+	left : 10,
+	width : 50,
+	height : 50,
+	image : Alloy.Globals.path.icnBack,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	color : "white",
+	style : "plain",
+	font :  Alloy.Globals.path.font12,
+	visible:false
+}
+"#btnNext[formFactor=handheld]":{
+	right : 10,
+	width : 35,
+	height : 35,
+	image : Alloy.Globals.path.icnNext,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	color : "white",
+	style : "plain",
+	font :  Alloy.Globals.path.font12,
+	visible :false
+}
+"#btnNext[formFactor=tablet]":{
+	right : 10,
+	width : 50,
+	height : 50,
+	image : Alloy.Globals.path.icnNext,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	color : "white",
+	style : "plain",
+	font :  Alloy.Globals.path.font12,
+	visible :false
+}
+// "#imgPrevious":{
+	// height:17,
+	// width:9,
+	// backgroundImage : Alloy.Globals.path.icnBack,
+	// touchEnabled:false
+// }
+// "#imgNext":{
+	// height:17,
+	// width:9,
+	// backgroundImage : Alloy.Globals.path.icnNext,
+	// touchEnabled:false
+// }

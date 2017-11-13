@@ -1,0 +1,25 @@
+"#lblNavTitle":{
+	// right : 15
+}
+
+"#webView" : {
+	right: 0,
+	left: 0,
+	top: 0,
+	bottom: 0,
+	borderRadius : 1
+   // url: 'http://www.mof.gov.ae/en/Pages/default.aspx',
+}
+"#lblNoItemFound":{
+	height : 25,
+	font : Alloy.Globals.path.font16,
+	color : Alloy.Globals.path.blackColor
+}
+
+"#viewWebViewProperty":{
+	right:0,
+	left:0,
+	top:0,
+	bottom:0,
+}
+

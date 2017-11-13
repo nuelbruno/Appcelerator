@@ -1,0 +1,20 @@
+"#statusBar":{
+	height: 0
+}
+"#lblNavTitle":{
+	text: Alloy.Globals.selectedLanguage.useDropbox
+},
+"#logoutButton":{
+	width: 80,
+	height:Ti.UI.FILL,
+	right: 5,
+	backgroundColor: 'transparent',
+	color: "#FFFFFF",
+	visible: false,
+	title: Alloy.Globals.selectedLanguage.logout
+}
+"#scrollableview":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	showPagingControl: false
+}

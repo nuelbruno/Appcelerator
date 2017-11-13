@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=7" />
+		<title>Create Map with Custom ArcGISDynamicMapServiceLayer Layer Definitions</title>
+		<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+		<script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+		<script type="text/javascript">
+			dojo.require("dijit.layout.BorderContainer");
+			dojo.require("dijit.layout.ContentPane");
+			dojo.require("esri.map");
+			dojo.require("esri.tasks.query");
+
+			var queryTask, query;
+			
+			var plotnumber, sectorname;
+			
+			  
+			
+		    dojo.addOnLoad(init);
+			//var obj;
+			function passMap_data(data) {
+				// alert(data);
+				var obj = JSON.parse(data);
+				
+				plotnumber = obj.plotnumber;
+				sectorname = obj.sectorname;
+				
+				//plotnumber = '1' ;  sectorname = 'Lulu Island';
+                //plotnumber = 'AUH2496' ;  sectorname = 'Abu Al Abyad Island';
+			
+				alert(obj.plotnumber + ' - ' + obj.sectorname);
+			}
+
+			function init() {
+				//alert(plotnumber + ' - ' + sectorname);
+				//build query
+				
+				queryTask = new esri.tasks.QueryTask("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer/0");
+				//dojo.connect(queryTask, "onComplete", showResults);
+
+				//build query filter
+				query = new esri.tasks.Query();
+				query.returnGeometry = true;
+				query.outFields = ["SQMI"];
+				query.where = "PLOTNUMBER='"+plotnumber+"' and SECTORTPSSNUMBER ='"+sectorname+"'";
+				//execute query
+				queryTask.execute(query, showResults);
+			}
+			
+			function showResults(results) {
+
+		        var extent = results.features[0].geometry.getExtent();
+		        
+		        map = new esri.Map("map",{extent: extent });
+		       
+		      // alert(JSON.stringify(extent));
+		
+		         var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/Images/ortho_2012_adm_t/MapServer");
+		        map.addLayer(tiledMapServiceLayer);
+		        
+		        var resizeTimer;
+			        dojo.connect(map, 'onLoad', function(theMap) {
+			          dojo.connect(dijit.byId('map'), 'resize', function() {  //resize the map if the div is resized
+			            clearTimeout(resizeTimer);
+			            resizeTimer = setTimeout( function() {
+			              map.resize();
+			              map.reposition();
+			            }, 500);
+			          });
+			        });
+		        //Use the ImageParameters to set map service layer definitions and map service visible layers before adding to the client map.
+		        var imageParameters = new esri.layers.ImageParameters();
+		
+		        //sec: Abu Al Abyad Island | plot: AUH2496  || sec: EB1  | plot:P8 || P23 P24 P24b P25
+		        //layerDefs[0] = "PLOTNUMBER='"+obj.plotnumber+"' and  SECTORTPSSNUMBER ='"+obj.sectorname+"' ";
+		        // layerDefs[0] = "PLOTNUMBER='P25' or SECTORTPSSNUMBER ='Lulu Island'  ";
+		       
+		        var layerDefs = [];
+		        layerDefs[0] = "PLOTNUMBER='"+plotnumber+"' and SECTORTPSSNUMBER ='"+sectorname+"'  ";
+		        imageParameters.layerDefinitions = layerDefs;
+		
+		        //I want layers 5,4, and 3 to be visible
+		        imageParameters.layerIds = [2,1,0];
+		        imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
+		        imageParameters.transparent = true;
+		
+		        //construct ArcGISDynamicMapServiceLayer with imageParameters from above
+		        var dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer", {"imageParameters":imageParameters});
+		    
+		        dynamicMapServiceLayer.setLayerDefinitions(layerDefs);
+		        map.addLayer(dynamicMapServiceLayer);
+		    }
+
+		
+		</script>
+	</head>
+	<body class="tundra" >
+		<div id="map" style=" border:1px solid #999999;"></div>
+	</body>
+</html>

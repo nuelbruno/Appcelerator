@@ -1,0 +1,126 @@
+"#icnDelete":{
+	width: 20,
+	height: 20,
+	right: 10,
+	backgroundColor: "white"
+}
+
+"#homeView": {
+	width: "100%",
+	height: "100%",
+	zIndex: 10,
+	backgroundColor: Alloy.Globals.path.bgColor,
+	layout: "vertical"
+}
+
+"#scrollView":{
+	width: "100%",
+	top: 0,
+	bottom: 0,
+	layout: "vertical"
+}
+".hSeperatorProperty":{
+	left: 0,
+	right: 0,
+	height: 1,
+	bottom: 0,
+	backgroundColor: Alloy.Globals.path.grayColor
+}
+
+"#detailView":{
+	top: 15,
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	borderRadius: 5,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderWidth: 0.5,
+	layout: "vertical",
+	backgroundColor: "transprent"
+}
+
+"#lblTitle":{
+	top: 8,
+	bottom: 8,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font14,
+	color: Alloy.Globals.path.borderColor
+}
+
+"#dateView":{
+	height: Titanium.UI.SIZE,
+	left: 0,
+	right: 0
+}
+
+"#imgCalendar":{
+	width: 13,
+	height: 13,
+	backgroundColor: "red"
+}
+"#lblDate":{
+	top : 10,
+	bottom : 10,
+	height: Titanium.UI.SIZE,
+	width: 105,
+	font: Alloy.Globals.path.font11,
+	color: Alloy.Globals.path.borderColor
+}
+"#lblDate[formFactor=tablet]":{
+	width: 150,
+}
+
+"#imgTime":{
+	width: 13,
+	height: 13,
+	backgroundColor: "red"
+}
+"#lblTime":{
+	top : 10,
+	bottom : 10,
+	height: Titanium.UI.SIZE,
+	width: 95,
+	font: Alloy.Globals.path.font11,
+	color: Alloy.Globals.path.borderColor
+}
+"#lblTime[formFactor=tablet]":{
+	width: 115,
+}
+
+"#txtContent":{
+	height: 110,
+	top: 8,
+	left: 7,
+	right: 7,
+	bottom: 8,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor,
+	value: "In iOS 7 and later, cell separators do not extend all the way to the edge of the table view. This property sets the default inset for all cells in the table. Set this to a dictionary with two keys, left specifying inset from left edge and right specifying the inset from the right edge."
+}
+
+"#buttonBackView":{
+	top: 25,
+	height: Titanium.UI.SIZE,
+	width: 260,
+	backgroundColor: "transparent"
+}
+
+"#btnSave":{
+	height: 35,
+	width: 125,
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	font: Alloy.Globals.path.font15,
+	borderRadius: 3,
+	color: "White"
+}
+
+"#btnCancel":{
+	height: 35,
+	width: 125,
+	backgroundColor: Alloy.Globals.path.goldColor,
+	font: Alloy.Globals.path.font15,
+	borderRadius: 3,
+	color: "White"
+}

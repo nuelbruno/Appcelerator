@@ -1,0 +1,15 @@
+<Alloy>
+	<View id="viewMyRequestList">
+		<ListView id="listviewServices" class="listContainerRequest" onItemclick="onItemClick"  defaultItemTemplate="itemTemplateMyrequestDropdown" >
+			<Templates>
+				<Require src="listTemplate/itemTemplate"/>
+				<ItemTemplate name="itemButton" id="itemButton"  >
+				  <View id="viewItemBtn" >
+				   <Button id="btnActionMyRequest" bindId="btnActionMyRequest"  onClick="onActionRequest"></Button>	
+				  </View>
+				</ItemTemplate>
+			</Templates>
+			<!-- <ListSection id="listsection"/> -->
+		</ListView>
+	</View>
+</Alloy>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="Findus">Find Us</string>
+	<string name="eServices">eServices</string>
+	<string name="contactus">Contact Us</string>
+	<string name="More">More</string>
+	<string name="Media">Media</string>
+	
+	<string name="Video">Video</string>
+	<string name="newsupdates">anewsupdate</string>
+	<string name="Services">Services</string>
+	<string name="ServicesweProvide">Services We Provide</string>
+	
+	<string name="SocialMedia">Socail Media</string>
+	<string name="Followus">Follow Us</string>
+	<string name="Myland">My Land</string>
+	<string name="Findyourland">Find your Land</string>
+	<string name="News">News</string>
+	
+	<string name="Back">Back</string>
+	<string name="Area">AREA</string>
+	<string name="Zone">ZONE</string>
+	<string name="Plot">PLOT</string>
+	<string name="Map">Map</string>
+	<string name="Details">Details</string>
+	<string name="AreaName">Area Name</string>
+	<string name="ZoneName">Zone Name</string>
+	<string name="PlotName">Plot Name</string>
+	<string name="LandAreaSQM">Land Area in Square Meter</string>
+	<string name="LandAreaSQF">Land Area in Square Feet</string>
+	<string name="Usage">Usage</string>
+	
+	<string name="Facebook">Facebook</string>
+	<string name="Youtube">Youtube</string>
+	<string name="Twitter">Twitter</string>
+	
+	<string name="ComplainOrSuggestion">Complain and Suggestion</string>
+	<string name="FirstName">First Name</string>
+	<string name="LastName">Last Name</string>
+	<string name="EmailID">Email</string>
+	<string name="MobileNumber">Mobile Number</string>
+	<string name="Subject">Subject</string>
+	<string name="Comments">Comments</string>
+	<string name="Mandatoryfileds">mandatory fileds</string>
+	<string name="Submit">Submit</string>
+	
+	<string name="aboutus">About Us</string>
+	<string name="faq">F.A.Q</string>
+	<string name="settings">Settings</string>
+	<string name="termsandconditions">Terms and Conditions</string>
+	
+	<string name="ourvision">Our Vision</string>
+	<string name="ourvisionDescription">To be recognized as an efficient world class Municipal System ensuring sustainable development and enhancing the quality of life for the Emirate of Abu Dhabi</string>
+	<string name="ourmission">Our Mission</string>
+	<string name="ourmissionDescribtion">To Deliver Best in-Class Efficient and Customer Centric Municipal Services by engaging with our Community &amp; Partners</string>
+	<string name="ourValues">Our Values</string>
+	<string name="ourValueDescription1">- Customer service</string>
+	<string name="ourValueDescription2">- Develop our people </string> 
+	<string name="ourValueDescription4">- Excellence </string> 
+	<string name="ourValueDescription5">- Knowledge sharing</string> 
+	<string name="ourValueDescription6">- Collaboration</string> 
+	<string name="ourValueDescription7">- Innovation</string> 
+	
+	<string name="bg_NewsTab">common/News.png</string>
+	<string name="bg_NewsTab_hover">common/news_hover.png</string>
+	<string name="bg_PhotosTab">common/Photos.png</string>
+	<string name="bg_PhotosTab_hover">common/Photos_hover.png</string>
+    <string name="bg_VideosTab">common/Videos.png</string>
+    <string name="bg_VideosTab_hover">common/Videos_hover.png</string>
+    
+    <string name="ServiceDescription">Service Description</string>
+	<string name="FirstStopforClient">First Stop for Client</string>
+	<string name="DocumentsRequired">Documents Required</string>
+	<string name="Fees">Fees</string>
+	
+	<string name="novideosavailable">No Videos Available</string>
+	
+	
+</resources>

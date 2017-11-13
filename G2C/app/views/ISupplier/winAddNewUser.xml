@@ -1,0 +1,40 @@
+<Alloy>
+	<Window id="winAddNewUser" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		<View id="backView">
+
+			<View class="viewProperty">
+				<Label id="lblUserName" class="lblTitleProperty"></Label>
+				<Label id="colonUserName" class="colonProperty"></Label>
+				<TextField id="txtUserName" class="txtFldProperty"></TextField>
+			</View>
+			<View class="separator"></View>
+			<View class="viewProperty">
+				<Label id="lblEmail" class="lblTitleProperty"></Label>
+				<Label id="colonEmail" class="colonProperty"></Label>
+				<TextField id="txtEmail" class="txtFldProperty"></TextField>
+			</View>
+			<View class="separator"></View>
+			<View class="viewProperty">
+				<Label id="lblMobile" class="lblTitleProperty"></Label>
+				<Label id="colonMobile" class="colonProperty"></Label>
+				<TextField id="txtMobile" class="txtFldProperty"></TextField>
+			</View>
+
+		</View>
+		<View id="submitView" onClick="addNewUser">
+			<Label id="lblSubmit"></Label>
+		</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

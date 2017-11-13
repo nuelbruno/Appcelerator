@@ -1,0 +1,33 @@
+"#imgTop":{
+	//width:Titanium.UI.SIZE,
+	left : 0,
+	right : 0,
+	height: 0,//Titanium.UI.SIZE,
+//	image : Alloy.Globals.path.bgAboutusBanner
+	defaultImage: Alloy.Globals.path.defaultImageBanner
+}
+
+
+"#mainView":{
+	layout: "vertical",
+	left: 0,
+	right: 0
+}
+
+
+"#tableViewItems" :{
+	top : 0,
+	bottom : 5,
+	left:0,
+	right:0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent"
+}
+
+
+
+
+
+
+
+

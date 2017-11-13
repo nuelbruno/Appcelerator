@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_StackedBar.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, mtd, ytd,abc,abc,abc,axisFontSize,abc,abc,isArabic) {
+				//	Ti.API.info('Webview: plotChart()');
+				//	Ti.API.info('arrStacked Bar =' +JSON.stringify(arr));
+				//	Ti.API.info('mtd =' + mtd);
+				//	Ti.API.info('ytd =' + ytd);
+
+				new Highcharts.Chart({
+					chart : {
+						type : 'bar',
+						renderTo : 'container',
+						plotBackgroundColor : null,
+						plotBorderWidth : null,
+						backgroundColor : "transparent",
+						plotShadow : false,
+						height : 200
+					},
+					title : {
+						text : ''
+					},
+					legend :{
+						rtl : isArabic
+					},
+					tooltip : {
+						pointFormat : '{series.name}: ',//<b>{point.percentage:.1f}%</b>',
+						//	pointFormat : '{point.percentage:.1f}%',//
+					},
+					plotOptions : {
+						/* bar: {
+						 allowPointSelect: true,
+						 cursor: 'pointer',
+						 dataLabels: {
+						 enabled: false
+						 },
+						 showInLegend: true
+						 }*/
+						series : {
+							stacking : 'normal'
+						}
+					},
+					xAxis : {
+						categories : ['1', '2', '3', '4', '5'],
+						labels : {
+							style : { fontSize : (axisFontSize-4)+"px"},
+						}
+					},
+					yAxis : {
+						lineWidth : 0,
+						minorGridLineWidth : 0,
+						lineColor : 'transparent',
+						labels : {
+							style : { fontSize : (axisFontSize-4)+"px"},
+							enabled : false
+						},
+						minorTickLength : 0,
+						tickLength : 0,
+						gridLineWidth : 0,
+						minorGridLineWidth : 0,
+						title : {
+							text : "",
+						},
+					},
+					series : arr
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<Alloy>
+	<Window id="winISupplierHome" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn" />
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty" /> 
+					<View id="helpBackView" class="helpBackViewProperty" onClick="openHelpScreen">
+						<ImageView id="imgHelp" class="imgHelpProperty" />
+					</View>
+					<Button id="btnNavLogin" class="navBarRightTextButton" onClick="PopUPLoginForm" />
+				</View>
+			</View>
+			<TableView id="tblISupplierList"></TableView>
+		</View>
+		<View id="backView" />
+		<View id="loginView" class="loginView">
+			<View id="topView" class="titleBG"  isToExclude_contrast="true">
+				<Button id="btnLogin" class="btnLogin" touchEnabled="false"></Button>
+				<Button id="btnCancel" class="btnLogin" onClick="closeLoginView"></Button>
+			</View>
+			<Label id="lblLoginDesc" class="lblLoginDesc"></Label>
+			<View id="credentialView" class="credentialView">
+				<View id="usernameView" class="credentialBackView">
+					<ImageView id="imgUserName" class="imgLoginUser"></ImageView>
+					<TextField id="txtUsername" class="txtLoginFldProperty"></TextField>
+				</View>
+				<View id="hSeparator" class="hSeparator"></View>
+				<View id="passwordView" class="credentialBackView">
+					<ImageView id="imgPassword" class="imgLoginPassword"></ImageView>
+					<TextField id="txtPassword" class="txtLoginFldProperty"></TextField>
+				</View>
+			</View>
+			<Button id="btnLoginBig" class="btnLoginBig" onClick="doLogin"></Button>
+			<Label id="lblForgotPassword" class="lblProperty" onClick="showForgotPasswordView"></Label>
+		</View>
+		<View id="ordInvPopupView" class="loginView">
+			<View id="topOrdInvView" class="titleBG" isToExclude_contrast="true">
+				<Button id="btnOk" class="btnLogin" touchEnabled="false"></Button>
+				<Button id="btnOrdInvCancel" class="btnLogin" onClick="closeOrdInvView"></Button>
+			</View>
+			<View id="optionView" height="0">
+				<View id="byPurchaseOrderView" class="optionViewProperty" onClick="optionSelected">
+					<ImageView id="imgByPurchaseOrderTick" class="checkMarkProperty"></ImageView>
+					<Label id="lblByPurchaseOrder" class="lblOptionProperty"></Label>
+				</View>
+				<View id="byInvoiceNumberView" class="optionViewProperty" onClick="optionSelected">
+					<ImageView id="imgByInvoiceNumberTick" class="checkMarkProperty"></ImageView>
+					<Label id="lblByInvoiceNumber" class="lblOptionProperty"></Label>
+				</View>
+
+			</View>
+			<Label id="lblordInvDesc" class="lblLoginDesc"></Label>
+			<View id="txtORdInvbackView">
+				<TextField id="txtOrdInvNo"></TextField>
+			</View>
+			<Button id="btnOkBig" class="btnLoginBig" onClick="callOrdInvService"></Button>
+		</View>
+		<View id="emailPopupView" class="loginView">
+			<View id="topEmailView" class="titleBG"   isToExclude_contrast="true">
+				<Button id="btnEmail" class="btnLogin" touchEnabled="false"></Button>
+				<Button id="btnEmailCancel" class="btnLogin" onClick="closeEmailView"></Button>
+			</View>
+			<Label id="lblEmailDesc" class="lblLoginDesc"></Label>
+			<View id="txtEmailbackView">
+				<TextField id="txtEmail"></TextField>
+			</View>
+			<Button id="btnSubmit" class="btnLoginBig" onClick="checkEmailRegistration"></Button>
+		</View>
+
+		<!-- <View id="forgotPasswordView">
+		<Label id="lblForgortPassword">
+		</Label>
+		<Label id="lblContactAdmin">
+		</Label>
+		<View id="txtAdminView" class="txtBackViewProperty">
+		<TextField id="txtAdmin" class="txtProperty">
+		</TextField>
+		</View>
+		<View id="txtCallView" class="txtBackViewProperty">
+		<TextField id="txtCall" class="txtProperty">
+		</TextField>
+		</View>
+		<ImageView id="separator">
+		</ImageView>
+		<View id="cancelForgotView" onClick="closeForgotPasswordView">
+		<Label id="lblCancel">
+		</Label>
+		</View>
+		</View> -->
+		
+		<View id="instructionView" class="instructionViewProperty" onClick="openHelpScreen">
+            <View id="instructionPopup" class="instructionPopupProperty">
+                <View id="tabBarView" class="instructionTabViewProperty">
+                    <Label id="lblDescription" class="tabLabelProperty" onClick="showDescription"></Label>
+                    <Label id="lblSteps" class="tabLabelProperty" onClick="showSteps"></Label>
+                    <View id="tabSeparator" class="tabSeparatorProperty"></View>
+                </View>
+                <View id="scrInstruction">
+                    <Label id="lblInstTitle" class="instLblTitleProperty" height="0"></Label>
+                    <Label id="lblInstContent" class="instLblContentProperty" height="0"></Label>
+                    <WebView id="wb" ></WebView>
+                </View>
+                <View id="instructionSeparator" class="instructionSeparatorProperty"></View>
+                <View id="instructionToolBar" class="instructionToolBarProperty">
+                    <View id="buttonView" class="buttonViewProperty">
+                        <ImageView id="imgTheme" class="imgToolProperty" onClick="changeTheme"></ImageView>
+                        <ImageView id="imgFontSize" class="imgToolProperty" onClick="showSlider"></ImageView>
+                    </View>
+                    <View id="sliderView" class="sliderViewProperty">
+                        <Label id="lblAMinus" class="lblAMinusProperty"></Label>
+                        <Slider id="fontSlider" class="fontSliderProperty"></Slider>
+                        <Label id="lblAPlus" class="lblAPlusProperty"></Label>
+                        <ImageView id="imgSliderClose" class="imgSliderCloseProperty" onClick="showSlider"></ImageView>
+                    </View>
+                </View>
+                <View id="instructionButtonView">
+                    <Button id="btnApply" class="instructionButtonProperty"></Button>
+                    <Button id="btnNo" class="instructionButtonProperty"></Button>
+                </View>
+            </View>
+        </View>
+		
+		
+		<!-- <Require src="common/viewInstructions" id="viewInstructions"/> -->
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

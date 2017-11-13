@@ -1,0 +1,89 @@
+
+"#imgCategory":{
+	image:Alloy.Globals.path.icnCategory
+}
+"#imgPlusGreen":{
+	width:22,
+	height:22,
+	image:Alloy.Globals.path.icnPlusGreen,
+	touchEnabled : false
+}
+"#imgPlusGreen[formFactor=tablet]":{
+	width:40,
+	height:40,
+}
+"#lblCategory":{
+	text:Alloy.Globals.selectedLanguage.categoryTitle
+}
+
+"#imgAmount":{
+	image:Alloy.Globals.path.icnAmount
+}
+"#lblBudgetAmount":{
+	text:Alloy.Globals.selectedLanguage.budgetTitle,
+}
+"#lblAmount":{
+	text:Alloy.Globals.selectedLanguage.amountTitle
+}
+"#txtAmount":{
+	hintText:Alloy.Globals.selectedLanguage.amountHintText
+}
+
+"#imgDate":{
+	image:Alloy.Globals.path.icnDate
+}
+"#lblDate":{
+	text:Alloy.Globals.selectedLanguage.dateTitle
+}
+
+"#btnSave":{
+	title:Alloy.Globals.selectedLanguage.save,
+	color :Alloy.Globals.path.whiteColor,
+	font :  Alloy.Globals.path.font17
+}
+"#btnSave[formFactor=tablet]":{
+	font :  Alloy.Globals.path.font24
+}
+//table
+"#lblRecentExpenses":{
+	text:Alloy.Globals.selectedLanguage.recentExpenseTitle,
+	color:Alloy.Globals.path.darkGrayColor,
+	font:Alloy.Globals.path.font12,
+	visible : false
+}
+"#lblRecentExpenses[formFactor=tablet]":{
+	font:Alloy.Globals.path.font15,
+}
+"#bgTableView":{
+	top:20,
+	bottom : 0,
+	left:5,
+	right:5,
+	layout:'vertical'
+}
+"#tableView" :{
+	top : 0,
+	width  :"100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent",
+	borderWidth:1,
+	borderColor:Alloy.Globals.path.grayColor,
+	borderRadius:2,
+	bottom : 0
+}
+"#srclView":{
+	layout : "vertical"
+}
+"#viewButtons":{
+	top : 20,
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE		
+}
+
+"#backimgPlusView":{
+	height : "100%",
+	width : 42
+}
+"#backimgPlusView[formFactor=tablet]":{
+	width : 60
+}

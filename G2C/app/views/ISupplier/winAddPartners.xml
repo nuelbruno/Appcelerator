@@ -1,0 +1,54 @@
+<Alloy>
+	<Window id="winAddPartners"  class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+
+			</View>
+		</View>
+		<ScrollView id="scrollView">
+
+			<Label id="lblPartnersDetails" class="lblHeaderProperty"></Label>
+			<Label class="lblEngNoProperty"></Label>
+			<View id="partnersView" class="viewBackProperty">
+				<View class="viewMandatoryProperty">
+					<Label id="lblOwnerNameAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblOwnerName" class="lblTitleProperty"></Label>
+				</View>
+				<TextField id="txtOwnerName" class="txtFldProperty"></TextField>
+				<ImageView class="separator"></ImageView>
+				<View class="viewMandatoryProperty">
+					<Label id="lblNationalityAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblNationality" class="lblTitleProperty"></Label>
+				</View>
+				<Label id="lblNationalityValue" class="txtFldProperty" onClick="selectNationality"></Label>
+				<ImageView class="separator"></ImageView>
+					
+				<View class="viewMandatoryProperty">
+					<Label id="lblPartnershipAstrik" class="astricPropertyVT"></Label>	
+					<Label id="lblPartnership" class="lblTitleProperty"></Label>
+				</View>
+				<TextField id="txtPartnership" class="txtFldProperty"></TextField>
+				<ImageView class="separator"></ImageView>
+				
+				<View class="viewMandatoryProperty">
+					<Label id="lblCitizenPartnerAstrik" class="astricPropertyVT"></Label>	
+					<Label id="lblCitizenPartner" class="lblTitleProperty"></Label>
+				</View>
+				<TextField id="txtCitizenPartner" class="txtFldProperty"></TextField>
+
+			</View>
+			<View id="submitView">
+				<Label id="lblSubmit" onClick="submitForm"></Label>
+			</View>
+
+		</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,16 @@
+"#btnSubmit":{
+	top : 40,
+	height: 35,
+	width: 125,
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	font: Alloy.Globals.path.font15,
+	borderRadius: 3,
+	color: "White"
+}
+"#btnSubmit[formFactor=tablet]":{
+	top : 60,
+	height : 45,
+	width : 170,
+	font: Alloy.Globals.path.font18,
+}
+

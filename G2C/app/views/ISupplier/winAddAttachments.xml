@@ -1,0 +1,61 @@
+<Alloy>
+	<Window id="winAddAttachments" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+
+			</View>
+		</View>
+		<ScrollView id="scrollView">
+
+			<Label id="lblAttachmentsDetails" class="lblHeaderProperty"></Label>
+			<Label class="lblEngNoProperty"></Label>
+			<View id="attachmentView" class="viewBackProperty">
+				<Label id="lblTitle" class="lblTitleProperty"></Label>
+				<TextField id="txtTitle" class="txtFldProperty"></TextField>
+				<ImageView class="separator"></ImageView>
+				
+				<Label id="lblDescription" class="lblTitleProperty"></Label>
+				<TextArea id="txtDescription" class="txtAreaProperty"></TextArea>
+				<ImageView class="separator"></ImageView>
+				
+				
+				<Label id="lblCategory" class="lblTitleProperty"></Label>
+				<Label id="lblCategoryValue" class="txtFldProperty" onClick="selectCategory"></Label>
+				<ImageView class="separator"></ImageView>
+				
+				
+				<View id="AttachmentsView" class="innerViewProperty" onClick="selectAttachment">
+					<Label id="lblAttachment"></Label>
+					<ImageView id="imgCameraAttachment"></ImageView>
+				</View>
+				
+				<View id="imagesView">
+					<View id="backImageView">
+						<View id="borderView" onClick="removeAttachmentImage">
+							<ImageView id="imgAttachment"></ImageView>
+						</View>		
+						<ImageView id="imgRemove" onClick="removeAttachmentImage"></ImageView>
+					</View>	
+				</View>
+				
+				<ImageView class="separator"></ImageView>
+				
+				<Label id="lblComments" class="lblTitleProperty"></Label>
+				<TextArea id="txtComments" class="txtAreaProperty"></TextArea>
+
+			</View>
+			<View id="submitView">
+				<Label id="lblSubmit" onClick="submitForm"></Label>
+			</View>
+
+		</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,23 @@
+"#winDropboxLogin":{
+	modal: true,
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN,
+	theme: "Theme.NoActionBar"
+},
+"#labelNavBarTitle":{
+	text: Alloy.Globals.selectedLanguage.dropbox
+}
+"#statusBar":{
+	height: 0
+}
+"#lblNavTitle":{
+	text: Alloy.Globals.selectedLanguage.useDropbox
+},
+
+"#viewWebviewContainer":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL
+}
+"#webviewDropbox":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL
+}

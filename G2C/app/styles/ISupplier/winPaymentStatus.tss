@@ -1,0 +1,144 @@
+"#scrollBackView" :{
+	top : 0,
+	bottom : 30,
+	left : 0,
+	right: 0,
+	layout : "vertical"
+}
+
+"#icnDone" :{
+	top : 20,
+	width : 135,
+	height : 135,
+	image : Alloy.Globals.path.imgDoneUserSatisfaction,
+}
+
+"#lblThankYou" :{
+	top : 10,
+	left : 75,
+	right : 75,
+	font : Alloy.Globals.path.font13,
+	color:Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.thankYouUserSatisfaction,
+	textAlign : "center"
+}
+
+"#lblThankYou[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+
+
+"#doneView" :{
+	top : 15,
+	//bottom : 10,
+	height : 35,
+	width : 200,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#doneView[formFactor=tablet]" :{
+	height : 40,	
+}
+
+"#lblDone" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.doneTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblDone[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#retryView" :{
+	top : 15,
+	//bottom : 10,
+	height : 35,
+	width : 200,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#retryView[formFactor=tablet]" :{
+	height : 40,	
+}
+
+"#lblRetry" :{
+	width : Titanium.UI.SIZE,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.doneTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblRetry[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#resumePayView" :{
+	top : 15,
+	bottom : 10,
+	bottom : 30,
+	height : 35,
+	width : 200,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#resumePayView[formFactor=tablet]" :{
+	height : 40,	
+}
+
+"#lblUpdateRegistration" :{
+	width : Titanium.UI.SIZE,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.doneTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblUpdateRegistration[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+".viewBackProperty":{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	bottom : 5,
+	borderColor : Alloy.Globals.path.grayColor,
+	layout : "vertical"
+}
+".viewBackProperty[platform=ios]":{
+	borderRadius : 3,
+}
+
+
+".lblTitleProperty":{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : 25,
+	bottom : 1,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font14,
+	text : "Address Name",
+	textAlign : "left"
+//	backgroundColor : "red",
+}
+
+".txtFldProperty" :{
+	top : 1,
+	left : 10,
+	right : 10,
+	height : 25,
+	bottom : 10,
+	color : Alloy.Globals.path.navBarColor,//lblBlackColor,
+	font : Alloy.Globals.path.font14,
+	textAlign : "left",
+	value : "asdadasd",
+//	backgroundColor : "blue",
+}

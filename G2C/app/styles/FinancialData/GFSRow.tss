@@ -1,0 +1,62 @@
+"#row[formFactor=handheld]":{
+	height:Ti.UI.SIZE,//60
+	selectedBackgroundColor : Alloy.Globals.path.navBarColor,
+}
+"#row[formFactor=tablet]":{
+	height:Ti.UI.SIZE,//70,
+	selectedBackgroundColor : Alloy.Globals.path.navBarColor,
+}
+
+"#imgRowArrow[formFactor=handheld]":{
+	width:8,
+	height:15,
+	//backgroundColor:Alloy.Globals.path.goldColor,
+	touchEnabled:false
+	
+}
+"#imgRowArrow[formFactor=tablet]":{
+	width:12,
+	height:23,
+	touchEnabled : false,
+}
+ "#rowsep":{
+	 bottom:0,
+	 height:1,
+	 width:'100%',
+	 backgroundColor:Alloy.Globals.path.grayColor,
+	 touchEnabled:false
+ }
+
+"#lblTitle[formFactor=handheld]":{
+	top : 15,
+	height : Ti.UI.SIZE,
+	bottom : 15,
+	font : Alloy.Globals.path.font16,
+	color:Alloy.Globals.path.blackColor,
+	touchEnabled:false,
+	backgroundColor : "transparent"
+}
+"#lblTitle[formFactor=tablet]":{
+	top : 20,
+	height : Ti.UI.SIZE,
+	bottom : 20,
+	font : Alloy.Globals.path.font19,
+	color:Alloy.Globals.path.blackColor,
+	touchEnabled:false,
+	backgroundColor : "transparent"
+}
+
+"#lblTitle[formFactor=tablet if=!Alloy.Globals.isEnglish]":{
+	font : Alloy.Globals.path.font19,
+}
+
+"#lblTitle[formFactor=handheld if=!Alloy.Globals.isEnglish]":{
+	font : Alloy.Globals.path.font16,
+}
+
+
+
+
+
+
+

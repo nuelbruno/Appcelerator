@@ -1,0 +1,46 @@
+"#scrlView":{
+	top : 0,
+	bottom : 0,
+	width : "100%",
+	layout :"vertical"
+}
+".lblTitleProperty":{
+	height : 30,
+	font : Alloy.Globals.path.font16,
+	color : "white",
+	textAlign : "center"
+}
+".lblTitleProperty[formFactor=tablet]":{
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font19,
+}
+".lblTitle":{
+	top : 15,
+	height : Titanium.UI.SIZE,
+	left : 10,
+	right : 10,
+	font : Alloy.Globals.path.font13Bold,
+	color : Alloy.Globals.path.blackColor
+}
+".lblTitle[formFactor=tablet]":{
+	font : Alloy.Globals.path.font16Bold,
+}
+".lblValue":{
+	top : 10,
+	height : Titanium.UI.SIZE,
+	left : 20,
+	right : 20,
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor
+}
+".lblValue[formFactor=tablet]":{
+	font : Alloy.Globals.path.font16,
+}
+"#lblNumberVal":{
+	bottom : 10
+}
+"#lblNavTitle":{
+	left:50,
+	right:50,
+	
+}

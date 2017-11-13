@@ -1,0 +1,112 @@
+
+"#viewContiner":{
+	top: 44,
+	bottom: 0,
+	width: "100%",
+}
+
+"#viewContiner[if=Alloy.Globals.isIOS7Plus]":{
+	top : 64,
+}
+
+".mainViewProperty":{
+	top : 70,
+	left : 8,
+	right : 8,
+	layout : "vertical"	
+}
+
+
+"#viewDepartmentParent":{
+	visible : true,
+}
+
+"#viewImageBackView":{
+	top: 0,
+	height:Titanium.UI.SIZE,
+	left: 8,
+	right: 8,
+	zIndex : 10
+}
+
+"#viewMenuBar":{
+	top: 0,
+	height: 65,
+	width: "100%",
+	backgroundColor: "transparent",
+	horizontalWrap: false
+}
+
+"#imageviewSeparator":{
+	image: Alloy.Globals.path.imgTabSeperator,
+	height: 1,
+	width: "100%",
+	top: 56
+}
+
+"#imageviewSeparator[platform=android]":{
+	top : 55,
+}
+
+".selectedArrowImage":{
+	height: 9,
+	width: 21,
+	bottom: 0,
+	visible: false,
+	touchEnabled : false,
+	image : Alloy.Globals.path.imgBottomArrow
+}
+
+".selectedArrowImage[platform=android]":{
+	bottom : 1,
+}
+
+"#viewDepartment":{
+	left: 0,
+	height: "100%",
+	width: "33.33%",
+	viewId: 1
+}
+
+"#viewCitizen":{
+	left: "33.33%",
+	height: "100%",
+	width: "33.33%",
+	viewId: 2
+}
+
+"#viewBusiness":{
+	left: "66.00%",
+	height: "100%",
+	width: "33.33%",
+	viewId: 3
+}
+
+".menuLabelProperty":{
+	top: 0,
+	height: 55,
+	left: 0,
+	right: 0,
+	touchEnabled: false,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.darkestGray,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#labelDepartment":{
+	color: Alloy.Globals.path.whiteColor,
+	backgroundColor: Alloy.Globals.path.titleRedColor,
+}
+
+"#labelCitizen":{
+	backgroundColor: Alloy.Globals.path.silverColor,
+}
+
+"#labelBusiness":{
+	backgroundColor: Alloy.Globals.path.silverColor,
+}
+
+
+
+
+

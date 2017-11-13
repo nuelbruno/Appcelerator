@@ -1,0 +1,17 @@
+"#tblTenders":{
+	top: 0,
+	bottom: 40,
+	width: "100%",
+	separatorColor: "none",
+	separatorStyle: 0
+}
+"#lblNavTitle":{
+	left: 50,
+	right: 50
+}
+".lblTitleProperty":{
+	height: 30,
+	font: Alloy.Globals.path.font16,
+	color: "white",
+	textAlign: "center"
+}

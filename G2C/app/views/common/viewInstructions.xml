@@ -1,0 +1,29 @@
+<Alloy>
+	<View id="instructionView" class="instructionViewProperty" onClick="exports.openHelpScreen">
+		<View id="instructionPopup" class="instructionPopupProperty">
+			<View id="tabBarView" class="instructionTabViewProperty">
+				<Label id="lblDescription" class="tabLabelProperty" onClick="showDescription"/>
+				<Label id="lblSteps" class="tabLabelProperty" onClick="showSteps"/>
+				<View id="tabSeparator" class="tabSeparatorProperty" />
+			</View>
+			<View id="scrInstruction">
+				<Label id="lblInstTitle" class="instLblTitleProperty" height="0"/>
+				<Label id="lblInstContent" class="instLblContentProperty" height="0" />
+				<WebView id="wb" willHandleTouches="false" showScrollbars="false"></WebView>
+			</View>
+			<View id="instructionSeparator" class="instructionSeparatorProperty" />
+			<View id="instructionToolBar" class="instructionToolBarProperty">
+				<View id="buttonView" class="buttonViewProperty">
+					<ImageView id="imgTheme" class="imgToolProperty" onClick="changeTheme" />
+					<ImageView id="imgFontSize" class="imgToolProperty" onClick="showSlider" />
+				</View>
+				<View id="sliderView" class="sliderViewProperty">
+					<Label id="lblAMinus" class="lblAMinusProperty" />
+					<Slider id="fontSlider" class="fontSliderProperty" onChange="fontResize" />
+					<Label id="lblAPlus" class="lblAPlusProperty"/>
+					<ImageView id="imgSliderClose" class="imgSliderCloseProperty" onClick="showSlider"/>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

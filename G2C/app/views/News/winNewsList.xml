@@ -1,0 +1,45 @@
+<Alloy>
+	<Window id="winNewsList" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View class="searchBgViewProperty">
+				<View id="backView"/>
+				<View id="searchView" class="searchViewProperty" >
+					<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+					<TextField id="txtSearch" onChange="searchList" class="txtSearchProperty"></TextField>
+				</View>
+			</View>
+			<View id= "bgTableView" class="bgTableViewProperty">
+				<ListView id="listView" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="row">
+							<View id="leftBackView">
+								<ImageView id="imgRow" bindId="imgRow"></ImageView>
+								<Label id="lblTitle" bindId="lblTitle"></Label>
+							</View>
+							<View id="rightBackView"></View>
+							<View id="dateView">
+								<Label id="lblDate" bindId="lblDate"></Label>
+							</View>
+							<View id="separatorView"></View>
+						</ItemTemplate>
+						<ItemTemplate name="templateMore" id="templateMore">
+							<Label id="lblMore" bindId="lblMore"/>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoRecord" class="lblNoRecordFound"></Label>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

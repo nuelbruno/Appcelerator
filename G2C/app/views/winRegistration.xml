@@ -1,0 +1,62 @@
+<Alloy>
+	<Window id="winRegistration" class="win">
+		<View id="mainView">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<!-- <Label id="lblName" class="lblProperty"></Label>
+				<View class="backViewProperty">
+				<TextField id="txtFldName" class="txtFldProperty"></TextField>
+				</View> -->
+				<Label id="lblFederal" class="lblProperty"></Label>
+				<View class="backViewProperty">
+					<TextField id="txtFederal" class="txtProperty"></TextField>
+					<ImageView id="imgArrowFederal" class="arrowProperty"></ImageView>
+				</View>
+				<!-- <Label id="lblDepartment" class="lblProperty"></Label>
+				<View class="backViewProperty">
+				<TextField id="txtDepartment" class="txtProperty"></TextField>
+				<ImageView id="imgArrowDepartment" class="arrowProperty"></ImageView>
+				</View> -->
+				<Label id="lblEmail" class="lblProperty"></Label>
+				<View class="backViewProperty">
+					<TextField id="txtEmail" class="txtFldProperty"></TextField>
+				</View>
+				<Label id="lblEmployeeId" class="lblProperty"></Label>
+				<View class="backViewProperty">
+					<TextField id="txtEmployeeId" class="txtFldProperty"></TextField>
+				</View>
+				<!-- <Label id="lblNationalId" class="lblProperty"></Label>
+				<View class="backViewProperty">
+				<TextField id="txtNationalId" class="txtFldProperty"></TextField>
+				</View> -->
+				<ImageView id="separator"></ImageView>
+				<View id="registerBtnView" onClick="doRegister">
+					<Label id="lblRegister"></Label>
+				</View>
+
+			</ScrollView>
+		</View>
+		<View id="backView"></View>
+		<View id="OTPView">
+			<Label id="lblThankYou"></Label>
+			<Label id="lblTitle"></Label>
+			<View id="txtOTPBackView" class="backViewProperty">
+				<TextField id="txtOTP" class="txtFldProperty"></TextField>
+			</View>
+			
+			<View id="submitBtnView" onClick="doSubmitOTPCode">
+					<Label id="lblSubmit"></Label>
+				</View>
+			
+		</View>
+
+	</Window>
+</Alloy>

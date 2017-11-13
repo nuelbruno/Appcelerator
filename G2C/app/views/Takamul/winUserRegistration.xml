@@ -1,0 +1,54 @@
+<Alloy>
+	<Window id="winUserRegistration" class="winLayout">
+		<View class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				<!-- <Button id="btnRegister" class="navBarRightTextButton" onClick="SaveVatTaxUser"></Button> -->
+			</View>
+		</View>
+		<ScrollView id="scrollView">
+			<Label id="lblNewUserReg"></Label>
+			<Label id="lblInfo"></Label>
+			<View id="namePasswordView" class="nameViewProperty">
+				<View id="userNameView" class="viewProperty">
+					<Label id="lblUserName" class="labelProperty"></Label>
+					<TextField id="txtUserName" class="textFieldProperty"></TextField>
+					<ImageView class="hSeperatorProperty"></ImageView>
+				</View>
+				<View id="nameView" class="viewProperty">
+					<Label id="lblName" class="labelProperty"></Label>
+					<TextField id="txtName" class="textFieldProperty"></TextField>
+					<ImageView class="hSeperatorProperty"></ImageView>
+				</View>
+				<View id="EmailView" class="viewProperty">
+					<Label id="lblEmail" class="labelProperty"></Label>
+					<TextField id="txtEmail" class="textFieldProperty"></TextField>
+					<ImageView class="hSeperatorProperty"></ImageView>
+				</View>
+				<View id="MobileView" class="viewProperty">
+					<Label id="lblMobile" class="labelProperty"></Label>
+					<TextField id="txtMobile" class="textFieldProperty"></TextField>
+					<ImageView class="hSeperatorProperty"></ImageView>
+				</View>
+				<View id="passwordView" class="viewProperty">
+					<Label id="lblPassword" class="labelProperty"></Label>
+					<TextField id="txtPassword" class="textFieldProperty"></TextField>
+					<ImageView class="hSeperatorProperty"></ImageView>
+				</View>
+			</View>
+			<View id="userTypeView" class="fieldViewProperty" onClick="showUserTypes">
+				<Label id="lblUserType" class="lblUserProperty"></Label>
+				<ImageView id="imgdownArrow" class="icnDropdownProperty"></ImageView>
+			</View>
+			<View id="countryView" class="fieldViewProperty" onClick="showCoutry">
+				<Label id="lblCountry" class="lblUserProperty"></Label>
+				<ImageView id="imgdownArrow2" class="icnDropdownProperty"></ImageView>
+			</View>
+			<Button id="btnRegister" onClick="doUserRegistation"></Button>
+		</ScrollView>
+	</Window>
+</Alloy>

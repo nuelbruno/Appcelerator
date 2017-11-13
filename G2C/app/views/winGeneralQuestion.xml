@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="winGeneralQuestion" class="win">
+		<View id="mainView">
+			<View id="navBarBackView"  class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="bgTableView">
+				<ScrollView id="scrQuestionList">
+					<View id="qusAnswerView"></View>
+					<View id="btnBackView">
+						<Button id="btnSubmit" onClick="submitSecurityQuestion"></Button>
+						<Button id="btnCancel" onClick="closeWindow"></Button>
+					</View>
+				</ScrollView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

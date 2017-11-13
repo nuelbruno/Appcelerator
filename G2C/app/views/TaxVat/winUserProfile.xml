@@ -1,0 +1,123 @@
+<Alloy>
+	<Window id="winUserProfile" class="win" onOpen="windowOpened" onClose="windowClosed">
+		
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View  id="navBarBackView"  class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<Button id="btnRegister" class="navBarRightTextButton" onClick="SaveVatTaxUser"></Button>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<View id="namePasswordView" class="namePasswordViewProperty">
+					<View id="emailView" class="viewProperty">
+						<Label id="lblEmailAstrik" class="astricProperty"></Label>
+						<Label id="lblEmail" class="labelProperty"></Label>
+						<Label id="emailColon" class="colonProperty"></Label>
+						<TextField id="txtEmail" class="textFieldProperty" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="passwordView" class="viewProperty">
+						<Label id="lblPasswordAstrik" class="astricProperty"></Label>
+						<Label id="lblPassword" class="labelProperty"></Label>
+						<Label id="passwordColon" class="colonProperty"></Label>
+						<TextField id="txtPassword" class="textFieldProperty" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="confPasswordView" class="viewProperty">
+						<Label id="lblConfPasswordAstrik" class="astricProperty"></Label>
+						<Label id="lblConfPassword" class="labelProperty"></Label>
+						<Label id="confirmPasswordColon" class="colonProperty"></Label>
+						<TextField id="txtConfPassword" class="textFieldProperty" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="nameView" class="viewProperty" height="0">
+						<Label id="lblNameAstrik" class="astricProperty"></Label>
+						<Label id="lblName" class="labelProperty"></Label>
+						<Label id="nameColon" class="colonProperty"></Label>
+						<TextField id="txtName" class="textFieldProperty" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="userTypeView" class="viewProperty">
+						<Label id="lblUserTypeAstrik" class="astricProperty"></Label>
+						<Label id="lblUserType" class="labelProperty"></Label>
+						<Label id="userTypeColon" class="colonProperty"></Label>
+						<TextField id="txtUserType" class="textFieldProperty" onClick="selectUserType"></TextField>
+						<ImageView id="imgUserType" onClick="selectUserType"></ImageView>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+				</View>
+				<View id="namePasswordView" class="namePasswordViewProperty">
+					<View id="addressView">
+						<Label id="lblAddressAstrik" class="astricProperty"></Label>
+						<Label id="lblAdress" class="labelProperty"></Label>
+						<Label id="addressColon" class="colonProperty"></Label>
+						<TextArea id="txtAddress" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur"></TextArea>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="mobileNoView" class="viewProperty">
+						<Label id="lblMobileAstrik" class="astricProperty"></Label>
+						<Label id="lblMobileNo" class="labelProperty"></Label>
+						<Label id="lblMCountryCode" class="lblCountryCodeProperty"></Label>
+						<Label id="mobileNoColon" class="colonProperty"></Label>
+						<TextField id="txtMobileNo" class="detailTextFieldProperty" maxLength="10" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="telNoView" class="viewProperty">
+						<Label id="lblTelNo" class="labelProperty"></Label>
+						<Label id="lblTCountryCode" class="lblCountryCodeProperty"></Label>
+						<Label id="telNoColon" class="colonProperty"></Label>
+						<TextField id="txtTelNo" class="detailTextFieldProperty" maxLength="10" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="faxNoView" class="viewProperty">
+						<Label id="lblFaxNo" class="labelProperty"></Label>
+						<Label id="lblFCountryCode" class="lblCountryCodeProperty"></Label>
+						<Label id="faxNoColon" class="colonProperty"></Label>
+						<TextField id="txtFaxNo" class="detailTextFieldProperty" maxLength="10" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="POBoxView" class="viewProperty">
+						<Label id="lblPOBoxAstrik" class="astricProperty"></Label>
+						<Label id="lblPOBox" class="labelProperty"></Label>
+						<Label id="POBoxColon" class="colonProperty"></Label>
+						<TextField id="txtPOBox" class="detailTextFieldProperty" maxLength="10" onFocus="closeKeyboard"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="SecQuestionView" class="viewProperty">
+						<Label id="lblSecQuestionAstrik" class="astricProperty"></Label>
+						<Label id="lblSecQuestion" class="labelProperty"></Label>
+						<Label id="SecQuestionColon" class="colonProperty"></Label>
+						<TextField id="txtSecQuestion" class="detailTextFieldProperty" editable="false"></TextField>
+						<ImageView id="imgSecQuestion" onClick="selectSecQuestion"></ImageView>
+					</View>
+				</View>
+				<!-- <Button id="btnSave"></Button>  -->
+			</ScrollView>
+		</View>
+		<View id="backView" class="UserSatisbackView"></View>
+		<View id="popView" class="UserSatispopView">
+			<View id="topBackView" class="popTopViewProperty">
+				<Label id="lblUserSatisfaction" class="lblUserSatisfaction"></Label>
+			</View>
+			<Label id="lblSuggestion" class="lblUserSuggestion"></Label>
+			<View  class="separator" height="1" top="30"></View>
+			<View id="viewFeedback" class="viewUserSatisFeedback">
+				<Label id="lblFeedback" class="lblUserSatisFeedback" onClick="openUserSatisfaction"></Label>
+				<Label id="lblSkip" class="lblUserSatisSkip" onClick="closePopUP"></Label>
+			</View>
+		</View>
+		<View id="closeView" class="closeViewProperty" onClick="showLeftPanel"></View>
+		
+		<Require src="common/viewInstructions" id="viewInstructions"/>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

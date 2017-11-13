@@ -1,0 +1,16 @@
+".backViewProperty":{
+	height: 45,
+	width: "100%",
+	backgroundColor: Alloy.Globals.path.whiteColor
+},
+".lblTitle":{
+	touchEnabled :false,
+	height: 35,
+	color : Alloy.Globals.path.vatButtonTitleColor,
+	font : Alloy.Globals.path.font15
+},
+".imgDetails":{
+	touchEnabled :false,
+	height: 17,
+	width: 9
+}

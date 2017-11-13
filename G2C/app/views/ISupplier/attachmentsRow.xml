@@ -1,0 +1,43 @@
+<Alloy>
+	<View id="tblRow" onClick="showHideView">
+		<View id="topBackView">
+			<Label id="lblOrderNumber">
+			</Label>
+			<ImageView id="imgUpDown">
+			</ImageView>
+		</View>
+		<!-- <View id="separatorView" class="hSeparator"></View> -->
+		<View id="mainBackView">
+			<Label id="lblDescription">
+			</Label>
+			<View id="entityView" class="backViewProperty">
+				<Label id="lblEntityTitle" class="titlePropety">
+				</Label>
+				<Label id="lblEntityValue" class="valueProperty">
+				</Label>
+			</View>
+			<View class="hSeparator" touchEnabled="false"></View>
+			<View id="orderDateView" class="backViewProperty">
+				<Label id="lblOrdDateTitle" class="titlePropety">
+				</Label>
+				<Label id="lblOrdDateValue" class="valueProperty">
+				</Label>
+			</View>
+			<View class="hSeparator" touchEnabled="false"></View>
+			<View id="amountView" class="backViewProperty">
+				<Label id="lblAmoutTitle" class="titlePropety">
+				</Label>
+				<Label id="lblAmoutValue" class="valueProperty">
+				</Label>
+			</View>
+			<View class="hSeparator" touchEnabled="false"></View>
+			<View id="updateOnView" class="backViewProperty">
+				<Label id="lblupdateOnTitle" class="titlePropety">
+				</Label>
+				<Label id="lblupdateOnValue" class="valueProperty">
+				</Label>
+			</View>
+		</View>
+		<View class="separator" id="separator"></View>
+	</View>
+</Alloy>

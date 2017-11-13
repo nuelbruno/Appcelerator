@@ -1,0 +1,44 @@
+<Alloy>
+	<Window id="winUploadNewDocs" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrView">
+
+				<View id="sectionView4" class="sectionViewProperty">
+					<Label id="lblAttachementsInfo" class="lblSectionTitle"></Label>
+				</View>
+				<View id="AttachmentsView" class="innerViewProperty" onClick="openAttachmentsWindow">
+					<Label id="lblAttachment"></Label>
+					<Label id="lblAttachmentPlus"></Label>
+				</View>
+				<View id="attachmentsSectionView" class="tableSectionProperty">
+					<Label id="lblSecAttachmentTitle" class="lblSectionProperty"></Label>
+					<Label id="lblSecAttachmentCategory" class="lblSectionProperty"></Label>
+				</View>
+				<View id="bgAttachmentTableView">
+					<ListView id="attachmentsTableViewItems" defaultItemTemplate="attachmentTemplate">
+						<Templates>
+							<ItemTemplate name="attachmentTemplate" id="attachmentRow">
+								<Label id="lblRowAttachmentsTitle" bindId="lblRowAttachmentsTitle"></Label>
+								<Label id="lblRowAttachmentCategory" bindId="lblRowAttachmentCategory"></Label>
+							</ItemTemplate>
+						</Templates>
+						<ListSection name="contactElements" id="attachmentListSection"></ListSection>
+					</ListView>
+					<Label id="lblNoItemsAttachment" class="lblNoItemsProperty"></Label>
+				</View>
+
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>
+

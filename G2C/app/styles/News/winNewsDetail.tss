@@ -1,0 +1,90 @@
+"#mainView":{
+	top : 0,
+	bottom : 30
+}
+"#mainView[formFactor=tablet]":{
+	bottom : 35
+}
+"#scrollView":{
+	top: 0,
+	backgroundColor: "transparent",
+	width: "100%"
+}
+
+"#mainView":{
+	top: 0,
+	backgroundColor: "transparent",
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	left: 0,
+	right: 0
+}
+
+"#lblTitle":{
+	top: 15,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	color: Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font14,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+}
+"#lblTitle[formFactor=tablet]":{
+	font: Alloy.Globals.path.font18,
+}
+"#lblTitle[if=!Alloy.Globals.isEnglish]":{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+"#lblDate":{
+	top: 15,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,//15,
+	color: Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font12,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+}
+"#lblDate[formFactor=tablet]":{
+	font: Alloy.Globals.path.font16,
+}
+"#lblDate[if=!Alloy.Globals.isEnglish]":{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+"#bgImageView":{
+	top: 10,
+	left : 10,
+	right : 10
+}
+
+"#imgView":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	defaultImage : Alloy.Globals.path.defaultImageBanner,
+}
+
+"#lblDesc":{
+	top: 10,
+	bottom : 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	color: Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font12,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	visible: false
+}
+"#lblDesc[formFactor=tablet]":{
+	font: Alloy.Globals.path.font16,
+}
+
+"#lblDesc[if=!Alloy.Globals.isEnglish]":{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+
+
+"#viewContent":{
+	height: Titanium.UI.SIZE,
+	top: 0,
+	left: 0,
+	right: 0
+}

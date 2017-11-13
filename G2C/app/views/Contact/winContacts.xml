@@ -1,0 +1,85 @@
+<Alloy>
+	<Window id="winContacts" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="tabView">
+				<Label id="lblDetail" class="tablLabelProperty" onClick="showDetail"></Label>
+				<!-- <View id="vSeparator"></View> -->
+				<Label id="lblMap" class="tablLabelProperty" onClick="showMap"></Label>
+				<View id="tabSeparator"></View>
+				<View id="hSeparator"></View>
+			</View>
+			<View id="mainView">
+				<ScrollView id="scrollView">
+
+					<Label id="lblBranchOneTitle" class="lblTitleProperty"></Label>
+					<View id="phoneViewB1" class="detailViewProperty">
+						<ImageView id="imgPhoneB1" class="icnProperty"></ImageView>
+						<Label id="lblPhoneTitleB1" class="lblDetailTitleProperty"></Label>
+						<Label id="lblPhoneColonB1" class="lblDetailColonProperty"></Label>
+						<Label id="lblPhoneValueB1" class="lblDetailValueProperty" onClick="makeCall"></Label>
+					</View>
+					<View id="FaxViewB1" class="detailViewProperty">
+						<ImageView id="imgFaxB1" class="icnProperty"></ImageView>
+						<Label id="lblFaxTitleB1" class="lblDetailTitleProperty"></Label>
+						<Label id="lblFaxColonB1" class="lblDetailColonProperty"></Label>
+						<Label id="lblFaxValueB1" class="lblDetailValueProperty"></Label>
+					</View>
+					<View id="POBoxViewB1" class="detailViewProperty">
+						<ImageView id="imgPOBoxB1" class="icnProperty"></ImageView>
+						<Label id="lblPOBoxTitleB1" class="lblDetailTitleProperty"></Label>
+						<Label id="lblPOBoxColonB1" class="lblDetailColonProperty"></Label>
+						<Label id="lblPOBoxValueB1" class="lblDetailValueProperty"></Label>
+					</View>
+					<Label id="lblBranchTwoTitle" class="lblTitleProperty"></Label>
+					<View id="phoneViewB2" class="detailViewProperty">
+						<ImageView id="imgPhoneB2" class="icnProperty"></ImageView>
+						<Label id="lblPhoneTitleB2" class="lblDetailTitleProperty"></Label>
+						<Label id="lblPhoneColonB2" class="lblDetailColonProperty"></Label>
+						<Label id="lblPhoneValueB2" class="lblDetailValueProperty" onClick="makeCall"></Label>
+					</View>
+					<View id="FaxViewB2" class="detailViewProperty">
+						<ImageView id="imgFaxB2" class="icnProperty"></ImageView>
+						<Label id="lblFaxTitleB2" class="lblDetailTitleProperty"></Label>
+						<Label id="lblFaxColonB2" class="lblDetailColonProperty"></Label>
+						<Label id="lblFaxValueB2" class="lblDetailValueProperty"></Label>
+					</View>
+					<View id="POBoxViewB2" class="detailViewProperty">
+						<ImageView id="imgPOBoxB2" class="icnProperty"></ImageView>
+						<Label id="lblPOBoxTitleB2" class="lblDetailTitleProperty"></Label>
+						<Label id="lblPOBoxColonB2" class="lblDetailColonProperty"></Label>
+						<Label id="lblPOBoxValueB2" class="lblDetailValueProperty"></Label>
+					</View>
+					<View id="sharingButtonView">
+						<ImageView id="imgFacebook" class="sharIconProperty" onClick="openSocialSite"></ImageView>
+						<ImageView id="imgTwitter" class="sharIconProperty" onClick="openSocialSite"></ImageView>
+						<ImageView id="imgYoutube" class="sharIconProperty" onClick="openSocialSite"></ImageView>
+						<ImageView id="imgInstagram" class="sharIconProperty" onClick="openSocialSite"></ImageView>
+					</View>
+					<View id="buttonBackView">
+						<View id="emailView" class="btnViewProperty" onClick="sendMail">
+							<ImageView id="imgEmail" class="btnIconProperty"></ImageView>
+							<Label id="lblEmail" class="btnLabelProperty"></Label>
+						</View>
+						<View id="webView" class="btnViewProperty" onClick="openWebsite">
+							<ImageView id="imgWeb" class="btnIconProperty"></ImageView>
+							<Label id="lblWeb" class="btnLabelProperty"></Label>
+						</View>
+					</View>
+				</ScrollView>
+				<View id="mapBackView">
+					<View id="mapView" ns="Alloy.Globals.Map"></View>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

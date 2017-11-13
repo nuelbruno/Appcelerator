@@ -1,0 +1,80 @@
+".viewMain1":{
+	left:0,
+	right:0,
+}
+"#topOptionView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 40,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+}
+"#topOptionView[formFactor=tablet]":{
+	height: 55,
+}
+".btnOptionView":{
+	height: "100%",
+	width : "50%",
+	backgroundColor : "transparent"
+}
+".lblOption":{
+	font: Alloy.Globals.path.font13Bold,
+	color: Alloy.Globals.path.darkGrayColor
+}
+".lblOption[formFactor=tablet]":{
+	font: Alloy.Globals.path.font18bold,
+}
+"#imgselection":{
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	width : "50%",
+	height: 2,
+	bottom: 1,
+}
+
+".viewButtonBar":{
+	top:10,
+	height:40,
+	backgroundColor:'#a89459'
+}
+
+"#lblRevenueSources":{
+	
+	text:"Revenue Sources",
+	
+}
+"#lblExpenseCategories":{
+	text:"Expense Categories",
+	
+}
+/* Chart styles */
+"#chartView" :{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0,
+	// backgroundColor:'#FFF',
+	// borderWidth:1,
+	// borderColor:'#c3c3c3',
+	// borderRadius:5,
+	//backgroundColor:'yellow'
+}
+
+"#barChartView" :{
+	top : 0,
+	left :0,
+	right : 0,
+	bottom : 0,
+	// backgroundColor:'#FFF',
+	// borderWidth:1,
+	// borderColor:'#c3c3c3',
+	// borderRadius:5,
+	//backgroundColor:'blue'
+}
+"#lblNoExpense":{
+	top : 45,
+	font: Alloy.Globals.path.font14,
+	color: Alloy.Globals.path.darkGrayColor
+}
+"#lblNoExpense[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17,
+}

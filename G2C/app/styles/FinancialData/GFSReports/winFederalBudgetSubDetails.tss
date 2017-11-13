@@ -1,0 +1,626 @@
+"#navSectorBackView" :{
+	right : 55,
+	width : 28,
+	height : 37,
+	bottom : 0,
+	backgroundColor : "transparent",
+	zIndex : 2
+}
+
+"#navSectorBackView[formFactor=tablet]" :{
+	width : 40,
+	height : 43
+}
+
+"#imgSector" :{
+	top : 0,
+	width : 30,
+	height : 37,
+//	backgroundColor : "transparent",
+	backgroundImage : Alloy.Globals.path.icnSectorUnselected,
+	touchEnabled : false
+}
+
+"#imgSector[formFactor=tablet]" :{
+	top : 0,
+	width : 40,
+	height : 43,
+//	backgroundColor : "transparent",
+}
+
+"#navCarouselBackView" :{
+	right : 15,//35,
+	width : 28,
+	height : 37,
+	bottom : 0,
+	backgroundColor : "transparent",
+	zIndex : 2
+}
+
+"#imgCarousel" : {
+	top : 0,
+	width : 28,
+	height : 37,
+//	backgroundColor : "transparent",
+	backgroundImage : Alloy.Globals.path.icnCarouselUnselected,
+	touchEnabled : false
+}
+
+"#navChartBackView" :{
+	right : 5,
+	width : 28,
+	height : 37,
+	bottom : 0,
+	backgroundColor : "transparent",
+	zIndex : 2
+}
+
+"#navChartBackView[formFactor=tablet]" :{
+	width : 40,
+	height : 43
+}
+
+"#imgChartStyle" :{
+	top : 0,
+	width : 30,
+	height : 37,
+//	backgroundColor : "transparent",
+	backgroundImage : Alloy.Globals.path.icnChartStyleUnselected,
+	touchEnabled : false
+}
+
+"#imgChartStyle[formFactor=tablet]" :{
+	top : 0,
+	width : 40,
+	height : 43,
+//	backgroundColor : "transparent",
+}
+
+
+"#mainView" :{
+	width : "100%",
+	height : "100%",
+	layout : "vertical",
+	backgroundColor : "transparent"
+}
+
+
+"#budgetActivityView" :{
+	top :10,
+	left : 10,
+	right : 10,
+	height : 30,
+	borderRadius : 3,
+	borderColor : Alloy.Globals.path.navBarColor
+}
+
+"#lblBudgetActivity[formFactor=handheld]" :{
+	left : 10,
+	right : 10,
+	top : 2,
+	bottom : 2,	
+//	height : "100%",
+	backgroundColor : "transparent",
+	text : "Budget By Activity",
+	touchEnabled : false,
+	textAlign : "left",
+	color : Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font14
+}
+"#lblBudgetActivity[formFactor=tablet]" :{
+	left : 10,
+	right : 10,
+	top : 2,
+	bottom : 2,
+//	height : "100%",
+	backgroundColor : "transparent",
+	text : "Budget By Activity",
+	touchEnabled : false,
+	textAlign : "left",
+	color : Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font17
+}
+
+"#lblBudgetActivity[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblBudgetActivity[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font21,
+}
+
+"#lblBudgetActivity[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblBudgetActivity[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font21,
+}
+
+
+
+"#arrowView" :{
+	right : 10,
+	width : 9,
+	height : 16,
+	backgroundColor : "transparent",//Alloy.Globals.path.navBarColor,
+	touchEnabled : false
+}
+
+"#lblBudgetTitle" :{
+	top : 20,
+	left : 20,
+	right : 20,
+	height : 20,
+	backgroundColor : "transparent",
+	text : "Budget By Activity 2014",
+	touchEnabled : false,
+	textAlign : "left",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font13
+}
+
+"#chartView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	bottom : 0,
+//	height: 260
+}
+".chartViewProperty":{
+//	width : "100%",
+//	height : "100%"
+}
+
+"#pieChartView" :{
+//	zIndex : 80,
+//	opacity : 1
+}
+
+"#normalChartView" :{
+//	zIndex : 75,
+//	opacity : 0
+	visible : true
+}
+
+"#stackedChartView" :{
+//	zIndex : 75,
+//	opacity : 0
+	visible : false
+}
+
+"#sectionView" :{
+	top : 0,
+	left :0,
+	right : 0,
+	horizontalWrap : false,
+	backgroundColor : Alloy.Globals.path.borderColor,
+	height : 30,
+	isToExclude_contrast: true
+}
+
+".lblSectionProperty[formFactor=handheld]":{
+	height : "100%",
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font12,
+	backgroundColor : "transparent",
+	textAlign : "center"
+}
+".lblSectionProperty[formFactor=tablet]":{
+	height : "100%",
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font16,
+	backgroundColor : "transparent",
+	textAlign : "center"
+}		
+
+
+"#lblCode" :{
+	left : 5,
+	width : 70,
+//	backgroundColor : "red"
+}
+"#lblDesc" :{
+	left : 80,
+	width : 65,
+//	backgroundColor : "blue"
+}
+
+"#lblTotal" :{
+	left : 220,
+	width : 75,
+//	backgroundColor : "yellow"
+}
+
+"#tableView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 5,
+	backgroundColor : "transparent",
+	separatorColor : "transparent"
+}
+
+
+// Transparent View
+
+
+"#fullTransparentView" :{
+	width : "100%",
+	height : "100%",
+	backgroundColor : "black",
+	opacity : 0.5,
+	zIndex : 10,
+	visible : false
+}
+
+"#budgetView" :{
+	top : 55,
+	left : 10,
+	right : 10,
+	height : 150,
+	borderRadius : 3,
+	borderColor : Alloy.Globals.path.navBarColor,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	zIndex : 15,
+	visible : false
+}
+
+"#budgetTableView" :{
+	width : "100%",
+	height : "100%",
+	backgroundColor : "transparent",
+	separatorColor : "transparent",
+}
+
+"#imgClose" :{
+	top : 5,
+	right : 5,
+	width : 16,
+	height : 16,
+	backgroundImage : Alloy.Globals.path.icnCross
+}
+
+"#transparentView" :{
+	top : 45,
+	bottom : 0,
+	width : "100%",
+	backgroundColor : "black",
+	opacity : 0.5,
+	zIndex : 15,
+	visible : false
+}
+
+"#sectorView" :{
+	top : 45,
+	left : 5,
+	right : 5,
+	height : 200,
+	borderRadius : 3,
+//	borderColor : Alloy.Globals.path.navBarColor,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	zIndex : 15,
+	visible : false,
+	layout : "vertical"
+}
+
+"#lblSector" :{
+	top : 0,
+	left : 10,
+	right : 10,
+	height : 30,
+	color: Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font11,
+}
+
+"#sectorTableView" :{
+	top : 0,
+	height : 90,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent",
+//	borderColor : Alloy.Globals.path.grayColor
+}
+
+".bottomView[formFactor=handheld]" :{
+	top : 0,
+	height : 60,
+	backgroundColor : "transparent"
+}
+".bottomView[formFactor=tablet]" :{
+	top : 0,
+	height : 85,
+	backgroundColor : "transparent"
+}
+".doneBtnView[formFactor=handheld]" :{
+	height : 30,
+	left : 80,
+	right : 80,
+	//width : 200,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.goldColor
+}
+".doneBtnView[formFactor=tablet]" :{
+	height : 45,
+	left : 120,
+	right : 120,
+	//width : 200,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.goldColor
+}
+".lblDone[formFactor=handheld]" :{
+	left : 5,
+	right :5,
+	height : "100%",
+	font : Alloy.Globals.path.font15,
+	color : Alloy.Globals.path.whiteColor,
+	text : Alloy.Globals.selectedLanguage.done,
+	textAlign : "center"
+}
+".lblDone[formFactor=tablet]" :{
+	left : 20,
+	right :20,
+	height : "100%",
+	font : Alloy.Globals.path.font18,
+	color : Alloy.Globals.path.whiteColor,
+	text : Alloy.Globals.selectedLanguage.done,
+	textAlign : "center"
+}
+
+".lblDone[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font17TitleEn,
+}
+
+".lblDone[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font19TitleEn,
+}
+
+".lblDone[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font17TitleAr,
+}
+
+".lblDone[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font19TitleAr,
+}
+
+
+"#chartStyleView" :{
+	top : 45,
+	left : 5,
+	right : 5,
+	height : 170,
+	borderRadius : 3,
+//	borderColor : Alloy.Globals.path.navBarColor,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	zIndex : 15,
+	visible : false,
+	layout : "vertical"
+}
+
+"#lblChart[formFactor=handheld]" :{
+	top : 0,
+	left : 10,
+	right : 10,
+	height : 30,
+	color: Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font11,
+	
+}
+"#lblChart[formFactor=tablet]" :{
+	top : 0,
+	left : 10,
+	right : 10,
+	height : 30,
+	color: Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font14,
+}
+
+
+"#lblChart[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleEn,
+}
+
+"#lblChart[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16TitleEn,
+}
+
+"#lblChart[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleAr,
+}
+
+"#lblChart[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16TitleAr,
+}
+
+
+
+"#chartStyleTableView" :{
+	top : 0,
+	height : 60,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent",
+//	borderColor : Alloy.Globals.path.grayColor
+}
+
+"#carouselBackView" :{
+	top : Alloy.Globals.platformHeight,
+	bottom : 0,
+	width : "100%",
+	backgroundImage : Alloy.Globals.path.bgCarousel,
+//	opacity : 0.8
+}
+
+".lblBudgetProperty" :{
+	top : 15,
+	left : 5,
+	right : 5,
+	height : 20,
+	color : Alloy.Globals.path.blackColor,
+//	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+
+"#lblBudgetView1" :{
+	font : Alloy.Globals.path.font13,
+}
+
+"#lblBudgetView2" :{
+	font : Alloy.Globals.path.font14,
+}
+
+"#lblBudgetView3" :{
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblBudgetView4" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#lblBudgetView5" :{
+	font : Alloy.Globals.path.font17,
+}
+
+"#budgetView1" :{
+	top : Alloy.Globals.platformHeight,
+	width : "57%",
+	height : "90%",
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "black",
+//	opacity : 0.4
+}
+
+"#budgetView2" :{
+	top : Alloy.Globals.platformHeight,
+	width : "64%",
+	height : "75%",
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "black",
+//	opacity : 0.5
+}
+"#budgetView3" :{
+	top : Alloy.Globals.platformHeight,
+	width : "71%",
+	height : "60%",
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "black",
+//	opacity : 0.6
+}
+"#budgetView4" :{
+	top : Alloy.Globals.platformHeight,
+	width : "78%",
+	height : "45%",
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "black",
+//	opacity : 0.7
+}
+"#budgetView5" :{
+	top : Alloy.Globals.platformHeight,
+	width : "85%",
+	height : "30%",
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "black",
+//	opacity : 0.8
+}
+
+"#TableBackView":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: "black",
+	opacity: 0.5,
+	zIndex: 10,
+	visible: false
+}
+
+"#slidingView":{
+//	top: Alloy.Globals.platformHeight,
+//	bottom: 0,
+	width: "100%",
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 15,
+	backgroundColor: Alloy.Globals.path.bgColor,
+}
+
+// Chart Style View
+
+".chartViewProperty[formFactor=handheld]":{
+	top : 0,
+	height : 30,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+}
+".chartViewProperty[formFactor=tablet]":{
+	top : 0,
+	height : 50,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+}
+
+".icnChartProperty":{
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	touchEnabled : false
+}
+
+".lblChartProperty[formFactor=handheld]":{
+	height : "100%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font13,
+	touchEnabled : false
+}
+".lblChartProperty[formFactor=tablet]":{
+	height : "100%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font16,
+	touchEnabled : false
+}
+
+
+".lblChartProperty[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font15TitleEn,
+}
+
+".lblChartProperty[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font19TitleEn,
+}
+
+".lblChartProperty[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font15TitleAr,
+}
+
+".lblChartProperty[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font19TitleAr,
+}
+
+
+
+"#icnPieChart" :{
+	image : Alloy.Globals.path.icnPieChart
+}
+
+"#lblPieChart" :{
+	text : Alloy.Globals.selectedLanguage.pieChart
+}
+
+".separatorProperty":{
+	width : "100%",
+	height : 1,
+	top : 0,
+	backgroundColor : Alloy.Globals.path.grayColor
+}
+
+"#icnBarChart" :{
+	image : Alloy.Globals.path.icnBarChart
+}
+
+"#lblBarChart" :{
+	text : Alloy.Globals.selectedLanguage.barGraph
+}
+
+

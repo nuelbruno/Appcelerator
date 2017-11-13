@@ -1,0 +1,57 @@
+<Alloy>
+	<Window id="winPaymentStatus" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<!-- <View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View> -->
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrollBackView">
+				<View id="addressView" class="viewBackProperty">
+					<Label id="lblTransactionId" class="lblTitleProperty"></Label>
+					<Label id="lblTransactionIdValue" class="txtFldProperty"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblTransactionAmount" class="lblTitleProperty"></Label>
+					<Label id="lblTransactionAmountValue" class="txtFldProperty"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblConfirmationId" class="lblTitleProperty"></Label>
+					<Label id="lblConfirmationIdValue" class="txtFldProperty"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblConfirmationDate" class="lblTitleProperty"></Label>
+					<Label id="lblConfirmationDateValue" class="txtFldProperty"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblDescription" class="lblTitleProperty"></Label>
+					<Label id="lblDescriptionValue" class="txtFldProperty"></Label>
+				</View>
+				<ImageView id="icnDone"></ImageView>
+				<Label id="lblThankYou"></Label>
+				<View id="doneView" onClick="submitPayment">
+					<Label id="lblDone"></Label>
+				</View>
+				<View id="retryView" onClick="retryPayment" visible="false">
+					<Label id="lblRetry"></Label>
+				</View>
+				<View id="resumePayView" onClick="resumePayment" visible="false">
+					<Label id="lblUpdateRegistration"></Label>
+				</View>
+			</ScrollView>
+		</View>
+		<View id="backView" class="UserSatisbackView"></View>
+		<View id="popView" class="UserSatispopView">
+				<View id="topBackView" class="popTopViewProperty">
+					<Label id="lblUserSatisfaction" class="lblUserSatisfaction"></Label>
+				</View>
+				<Label id="lblSuggestion" class="lblUserSuggestion"></Label>
+				<View  class="separator" height="1" top="30"></View>
+				<View id="viewFeedback" class="viewUserSatisFeedback">
+					<Label id="lblFeedback" class="lblUserSatisFeedback" onClick="openUserSatisfaction"></Label>
+					<Label id="lblSkip" class="lblUserSatisSkip" onClick="closePopUP"></Label>
+				</View>
+			</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

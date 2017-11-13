@@ -1,0 +1,31 @@
+<Alloy>
+	<Window id="winNewsDetail" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<View id= "mainView">
+					<Label id="lblTitle"></Label>
+					<Label id="lblDate"></Label>
+					<View id="bgImageView">
+						<ImageView id="imgView"></ImageView>
+					</View>
+					<View id = "viewContent">
+						<Label id="lblDesc" ></Label>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

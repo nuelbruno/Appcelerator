@@ -1,0 +1,73 @@
+<Alloy>
+	<Window id="winContact" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+
+				<Label id="lblContactDetails" class="lblHeaderProperty"></Label>
+				<Label class="lblEngNoProperty"></Label>
+				<View id="contactView" class="viewBackProperty">
+					<Label id="lblContactTitle" class="lblTitleProperty"></Label>
+					<Label id="lblContactTitleValue" class="txtFldProperty" onClick="selectContactTitle"></Label>
+					<ImageView class="separator"></ImageView>
+					<!-- <View class="viewMandatoryProperty">
+						<Label id="lblFirstNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblFirstName" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtFirstName" class="txtFldProperty"></TextField> -->
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblContactNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblContactName" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtContactName" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<!-- <View class="viewMandatoryProperty">
+						<Label id="lblMiddleNameAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblMiddleName" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtMiddleName" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView> -->
+					<Label id="lblJobTitle" class="lblTitleProperty"></Label>
+					<TextField id="txtJobTitle" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblEmailAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblEmail" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtEmail" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblMobileAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblMobile" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtMobile" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<View class="viewMandatoryProperty">
+						<Label id="lblPhoneNoAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblPhoneNo" class="lblTitleProperty"></Label>
+					</View>
+					<TextField id="txtPhoneNo" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblDepartment" class="lblTitleProperty"></Label>
+					<TextField id="txtDepartment" class="txtFldProperty"></TextField>
+
+				</View>
+				<View id="submitView">
+					<Label id="lblSubmit" onClick="submitForm"></Label>
+				</View>
+
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,330 @@
+"#lblNavTitle[formFactor=tablet]":{
+	backgroundColor : "transparent",
+	left : 88,
+}
+"#topView":{
+	top:5,
+	height:Ti.UI.SIZE,
+	//width:"100%"
+	left:5,
+	right:5,
+	viewShadowRadius : 5,
+	viewShadowOffset : 0.6,
+	viewShadowColor : "gray",
+	backgroundColor: Alloy.Globals.path.whiteColor,
+}
+"#topView[platform=android]":{
+	top:5,
+}
+
+"#innerView":{
+	
+	bottom:80,
+	width:"100%",
+	layout:"vertical",
+	backgroundColor:"transparent"
+}
+
+"#mapDetails":{
+	top:0,
+	bottom:0,
+	width:"100%"
+}
+
+
+
+
+
+
+
+
+// "#mainView" :{
+	// width : "100%",
+	// bottom:0,
+	// layout : "vertical"
+// }
+// 
+// "#mapDetailsProperty" : {
+	// top:0,
+	// layout:"vertical",
+// //	height : Titanium.UI.SIZE,
+	// width : "100%",
+	// bottom:100
+// }
+// 
+// "#detailView" : {
+	// top:5,
+	// left:5,
+	// right:5,
+	// viewShadowRadius : 5,
+	// viewShadowOffset : 0.6,
+	// viewShadowColor : "gray",
+	// backgroundColor: Alloy.Globals.path.whiteColor,
+	// //height:110
+// }
+// 
+"#mapView" : {
+	top:5,
+	width : "100%",
+//	height : 300,
+	bottom:0
+
+}
+// 
+"#viewTurnByNav" :{
+	visible:false,
+	left : 10,
+	top : 10,
+	width : 110,
+	height : 25,
+	viewShadowRadius : 5,
+	viewShadowOffset : 0.6,
+	viewShadowColor : "gray",
+	backgroundColor: Alloy.Globals.path.goldColor,
+}
+
+"#lblturnByNav[formFactor=handheld]" :{
+	height : "100%",
+	width : "100%",
+	text : Alloy.Globals.selectedLanguage.voiceNavigation,
+	touchEnabled : false,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font12,
+	textAlign : "center"
+}
+"#lblturnByNav[formFactor=tablet]" :{
+	height : "100%",
+	width : "100%",
+	text : Alloy.Globals.selectedLanguage.voiceNavigation,
+	touchEnabled : false,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font17,
+	textAlign : "center"
+}
+// 
+"#directionView[formFactor=handheld]" : {
+	bottom : 0,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	zIndex : 20,
+	height:80,
+	viewShadowRadius : 5,
+	viewShadowOffset : 0.6,
+	viewShadowColor : "gray",
+}
+"#directionView[formFactor=tablet]" : {
+	bottom : 0,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	zIndex : 20,
+	height:100,
+	viewShadowRadius : 5,
+	viewShadowOffset : 0.6,
+	viewShadowColor : "gray",
+}
+// 
+".viewContentsProperty" : {
+	layout:'vertical',
+	height:Ti.UI.SIZE
+}
+// 
+// 
+// 
+".imgButtonsProperty[formFactor=handheld]" : {
+	width:28,
+	height:28,
+	bubbleParent:false
+}
+".imgButtonsProperty[formFactor=tablet]" : {
+	width:45,
+	height:45,
+	bubbleParent:false
+}
+// 
+".imgThumbProperty[formFactor=handheld]" : {
+	width:70,//Ti.UI.SIZE,
+	height:70,//Ti.UI.SIZE,
+	//backgroundColor:Alloy.Globals.path.bgColor,
+	
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+}
+".imgThumbProperty[formFactor=tablet]" : {
+	width:100,
+	height:100,
+	//backgroundColor:Alloy.Globals.path.bgColor,
+	
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+}
+// 
+// 
+"#imgStart[formFactor=handheld]" : {
+	top:5,
+	width:25,
+	height:25,
+	image:Alloy.Globals.path.icnNav
+}
+"#imgStart[formFactor=tablet]" : {
+	top:10,
+	width:30,
+	height:35,
+	image:Alloy.Globals.path.icnNav
+}
+".viewButtonsProperty" : {
+	left:0,
+	right:0,
+	height:Ti.UI.SIZE,
+}
+// 
+"#imgTravelmode[formFactor=handheld]" :{
+	width : 20,
+	height : 20,
+	//backgroundColor : "black"
+	image:Alloy.Globals.path.icnCar
+}
+"#imgTravelmode[formFactor=tablet]" :{
+	width : 30,
+	height : 30,
+	//backgroundColor : "black"
+	image:Alloy.Globals.path.icnCar
+}
+// 
+"#lblTitle[formFactor=handheld]":{
+	top:10,
+	left:10,
+	right:10,
+	font : Alloy.Globals.path.font16,
+	color:Alloy.Globals.path.blackColor,
+	height:Titanium.UI.SIZE,
+}
+"#lblTitle[formFactor=tablet]":{
+	top:10,
+	left:10,
+	right:10,
+	font : Alloy.Globals.path.font20,
+	color:Alloy.Globals.path.blackColor,
+	height:Titanium.UI.SIZE,
+}
+
+
+"#lblTitle[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#lblTitle[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+
+"#lblTitle[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#lblTitle[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+
+
+"#lblAddress[formFactor=handheld]":{
+	top:5,
+	bottom:5,
+	height:Titanium.UI.SIZE,
+	left:10,
+	right:10,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.darkGrayColor,
+	
+}
+"#lblAddress[formFactor=tablet]":{
+	top:5,
+	bottom:5,
+	height:Titanium.UI.SIZE,
+	left:10,
+	right:10,
+	font : Alloy.Globals.path.font16,
+	color:Alloy.Globals.path.darkGrayColor,
+	
+}
+// 
+"#lblTime[formFactor=handheld]" : {
+	color:'#5be31b',
+	font : Alloy.Globals.path.font11,
+	text:'',
+	width:80,
+	height:20
+}
+"#lblTime[formFactor=tablet]" : {
+	color:'#5be31b',
+	font : Alloy.Globals.path.font18,
+	text:'',
+	width:130,
+	height:22
+}
+"#lblDistance[formFactor=handheld]" : {
+	color:Alloy.Globals.path.darkGrayColor,
+	font : Alloy.Globals.path.font11,
+	text:'',
+	width:80,
+	height:20
+
+}
+"#lblDistance[formFactor=tablet]" : {
+	color:Alloy.Globals.path.darkGrayColor,
+	font : Alloy.Globals.path.font18,
+	text:'',
+	width:120,
+	height:22
+
+}
+"#lblRoute[formFactor=handheld]" : {
+	backgroundColor:"transparent",
+	top:8,
+	color:Alloy.Globals.path.darkGrayColor,
+	font : Alloy.Globals.path.font12,
+	height:30,
+	width : "100%"
+}
+"#lblRoute[formFactor=tablet]" : {
+	backgroundColor:"transparent",
+	top:8,
+	color:Alloy.Globals.path.darkGrayColor,
+	font : Alloy.Globals.path.font20,
+	height:48,
+	width : "100%"
+}
+"#lblStart[formFactor=handheld]" : {
+	top:5,
+	color:'#4F84F9',
+	font : Alloy.Globals.path.font14,
+}
+"#lblStart[formFactor=tablet]" : {
+	top:5,
+	color:'#4F84F9',
+	font : Alloy.Globals.path.font20,
+}
+"#viewStart":{
+	layout:"vertical",
+	width:50,
+	height:Titanium.UI.SIZE
+}
+// 
+// 
+"#phoneCall":{
+	backgroundImage:Alloy.Globals.path.icnPhoneCall,
+}
+"#browse":{
+	backgroundImage:Alloy.Globals.path.icnBrowser,
+}
+
+"#viewImages[formFactor=handheld]":{
+	height:70,
+	width:70,
+	borderColor : Alloy.Globals.path.viewBgColor,
+}
+"#viewImages[formFactor=tablet]":{
+	height:100,
+	width:100,
+	borderColor : Alloy.Globals.path.viewBgColor,
+}
+"#viewButtons":{
+	left:0,
+	right:0,
+	height:Ti.UI.SIZE,
+	bottom:10
+}

@@ -1,0 +1,50 @@
+
+"#mainView":{
+	height : "100%",
+	width : "100%",
+	layout : "vertical",
+	backgroundColor : "transparent"
+}
+"#lblQuestion":{
+	top : 15,
+	font : Alloy.Globals.path.font16,
+	color : "black",
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+}
+
+"#answerView":{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : 36,
+	borderRadius : 3,
+	borderWidth : 1,
+	borderColor: Alloy.Globals.path.grayColor	
+}
+
+"#txtAnswer":{
+	left : 5,
+	right : 5,
+	height : "100%",
+	font : Alloy.Globals.path.font16,
+	color: Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+}
+
+"#buttonView":{
+	top : 20,
+	height : Titanium.UI.SIZE,
+	width : 220,
+}
+
+".btnProperty":{
+	top : 20,
+	height : 36,
+	width : 100,
+	style : "plain",
+	color : "white",
+	backgroundColor : Alloy.Globals.path.navBarColor,
+}
+

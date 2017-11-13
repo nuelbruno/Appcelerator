@@ -1,0 +1,423 @@
+"#lblNavTitle[if=!Alloy.Globals.VATTAXisEnglish]":{
+	left : 30,
+	right : 50
+}
+"#homeView": {
+	width : "100%",
+	height : "100%",
+	zIndex:10,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	layout : "vertical"	
+}
+"#scrollView":{
+	width : "100%",
+	top : 0,
+	bottom : 0,
+	layout : "vertical"
+}
+
+"#vApplicationView":{
+	top : 20,
+	left : 15,
+	right : 15,
+	backgroundColor : "#C8B482"
+}
+
+".viewProperty" :{
+	//top : 15,
+	left : 0,
+	right : 0,
+	height : 55,
+	//backgroundImage : Alloy.Globals.path.ISupplierRowBG
+}
+".viewProperty[formFactor=tablet]" :{
+	height : 65
+}
+
+".imgProperty" :{
+	height : 28,
+	width : 28,
+	touchEnabled : false,
+	image : "",
+}
+
+".labelProperty" :{
+	height : Titanium.UI.SIZE,
+	touchEnabled : false,
+	font : Alloy.Globals.path.font15,
+	color : Alloy.Globals.path.vatButtonTitleColor,
+}
+".labelProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+"#imgvApplication":{
+	image : Alloy.Globals.path.icnNewVatCertificate
+}
+"#imgtApplication":{
+	image : Alloy.Globals.path.icnNewTaxCertificate
+}
+"#imgTaskList":{
+	image : Alloy.Globals.path.icnMyTask
+}
+"#imgApplication":{
+	image : Alloy.Globals.path.icnMyApplications
+}
+"#imgUserProfile":{
+	image : Alloy.Globals.path.icnProfile
+}
+"#imgChangePassword":{
+	image : Alloy.Globals.path.icnChangePwd
+}
+
+"#vApplicationView":{
+	path : "TaxVat/winCorTaxApplication",
+	viewTitle : "vat_application",
+	pageTitle : Alloy.Globals.VTaxSelectedLanguage.vatApplication 
+}
+"#tApplicationView":{
+	path : "TaxVat/winIndTaxApplication",
+	viewTitle : "tax_application",
+	pageTitle : Alloy.Globals.VTaxSelectedLanguage.taxApplication
+}
+"#taskView":{
+	path : "TaxVat/winApplicationList",
+	viewTitle : "task_list",
+	pageTitle : Alloy.Globals.VTaxSelectedLanguage.tasks
+}
+"#applicationView":{
+	path : "TaxVat/winApplicationList",
+	viewTitle : "application_list",
+	pageTitle : Alloy.Globals.VTaxSelectedLanguage.application
+}
+"#userProfileView":{
+	path : "TaxVat/winUserProfile",
+	viewTitle : "user_profile",
+	pageTitle : "user_profile",
+}
+"#changePasswordView":{
+	path : "",
+}
+
+/* Login section */
+"#backView":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: "black",
+	opacity: 0.6,
+	zIndex: 15,
+	visible: false
+}
+
+".lblProperty":{
+	height: 15,
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font12
+}
+".lblProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font14
+}
+
+"#lblForgotPassword":{
+	top: 10,
+	height  : Titanium.UI.SIZE,
+	bottom: 10
+}
+
+/*"#forgotPasswordView":{
+	left: 30,
+	right: 30,
+	height: 450,
+	borderRadius: 5,
+	backgroundColor: Alloy.Globals.path.bgColor,
+	visible: false,
+	layout: "vertical",
+	zIndex: 30
+}*/
+"#lblForgortPassword":{
+	top: 175,
+	left: 15,
+	right: 15,
+	color: Alloy.Globals.path.blackColor,
+	text: "Forgot Password?",
+	textAlign: "center",
+	font: Alloy.Globals.path.font17
+}
+"#lblContactAdmin":{
+	top: 20,
+	left: 15,
+	right: 15,
+	color: Alloy.Globals.path.blackColor,
+	text: "Contact Administrator",
+	textAlign: "center",
+	font: Alloy.Globals.path.font15
+}
+".txtBackViewProperty":{
+	left: 0,
+	right: 0,
+	height: 30,
+	backgroundColor: "transparent"
+}
+
+"#txtAdminView":{
+	top: 25
+}
+
+"#txtCallView":{
+	top: 15
+}
+".txtProperty":{
+	left: 5,
+	right: 5,
+	textAlign: "center",
+	height: "100%",
+	color: Alloy.Globals.path.navBarColor,
+	font: Alloy.Globals.path.font15,
+	backgroundColor: "transparent"
+}
+"#separator":{
+	top: 25,
+	width: "100%",
+	height: 1,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+"#cancelForgotView":{
+	top: 15,
+	left: 20,
+	right: 20,
+	height: 30,
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+
+"#txtNewPwd":{
+	left: 10,
+	right: 10,
+	height: "100%",
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font14,
+	passwordMask : true,
+	backgroundColor: "transparent"
+}
+"#txtNewPwd[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15,
+}
+
+"#txtOldPwd":{
+	left: 10,
+	right: 10,
+	height: "100%",
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font14,
+	passwordMask : true,
+	backgroundColor: "transparent"
+}
+"#txtOldPwd[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15,
+}
+
+"#txtNewConfirmPwd":{
+	left: 10,
+	right: 10,
+	height: "100%",
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font14,
+	passwordMask : true,
+	backgroundColor: "transparent"
+}
+"#txtNewConfirmPwd[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15,
+}
+
+"#btnOkBig":{
+	bottom: 10
+}
+"#txtChangePwdbackView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 32,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderRadius: 4,
+	borderWidth: 1
+}
+"#txtChangePwdbackView[formFactor=tablet]":{
+	height : 41,
+}
+
+
+"#txtChangeConfirmPwdbackView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 32,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderRadius: 4,
+	borderWidth: 1
+}
+"#txtChangeConfirmPwdbackView[formFactor=tablet]":{
+	height : 41,
+}
+
+"#txtOldPwdbackView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 32,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderRadius: 4,
+	borderWidth: 1
+}
+"#txtOldPwdbackView[formFactor=tablet]":{
+	height : 41,
+}
+
+"#txtPassword":{
+	passwordMask : true
+}
+
+"#lblChangePwd":{
+	text:Alloy.Globals.VTaxSelectedLanguage.newPassword
+}
+
+"#lblChangeConfirmPwd":{
+	text:Alloy.Globals.VTaxSelectedLanguage.confirmPassword
+}
+
+"#lblOldPwd":{
+	text:Alloy.Globals.VTaxSelectedLanguage.oldPassword
+}
+
+"#txtForgotPwdbackView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 32,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderRadius: 4,
+	borderWidth: 1
+}
+"#lblForgotUserName":{
+	text:Alloy.Globals.VTaxSelectedLanguage.emailAddress,
+	height : Titanium.UI.SIZE
+}
+
+"#btnForgotPwd":{
+	selectedColor : Alloy.Globals.path.vatButtonTitleColor,
+}
+
+"#txtForgotUserName":{
+	left : 5,
+	right : 5	
+}
+
+"#btnChangePwd":{
+	touchEnabled : false
+}
+
+"#btnRegistrationBig":{
+	top : 10,
+	left : 10,
+	right : 10,
+	backgroundColor : Alloy.Globals.path.goldColor,
+	height : 33,
+	font :  Alloy.Globals.path.font14Bold,
+	borderRadius : 3,
+	color :Alloy.Globals.path.whiteColor
+}
+"#btnRegistrationBig[formFactor=tablet]":{
+	height : 37,
+	top : 13,
+	font :  Alloy.Globals.path.font16Bold,	
+}
+"#btnLogin":{
+	touchEnabled : false
+}
+
+/*
+ * Instruction
+ */
+"#wb":{
+	willHandleTouches : false, 
+	showScrollbars : false,
+	enableZoomControls : false
+}
+"#instructionButtonView":{
+	bottom : 10,
+	width : 160,
+	height : 35,
+	backgroundColor : "transparent"
+}
+".instructionButtonProperty":{
+	width : 60,
+	height : "100%",
+	style : "plain",
+	font : Alloy.Globals.path.font16,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.navBarColor
+}
+".instructionButtonProperty[formFactor=tablet]":{
+	width : 75,
+	font : Alloy.Globals.path.font19,
+}
+"#btnApply":{
+	title : Alloy.Globals.VTaxSelectedLanguage.apply
+}
+"#btnNo":{
+	title : Alloy.Globals.VTaxSelectedLanguage.no
+}
+
+"#lblDescription":{
+	left : 0,
+	text : Alloy.Globals.VTaxSelectedLanguage.serviceDescription,
+	color : Alloy.Globals.path.navBarColor,
+	isSelected : true,
+}
+"#lblSteps":{
+	left : "50%",
+	text : Alloy.Globals.VTaxSelectedLanguage.serviceProcessing,
+	color : Alloy.Globals.path.darkGrayColor,
+	isSelected : false,
+}
+"#scrInstruction":{
+	top : 10,
+	height : 265,
+	width : "100%",
+	backgroundColor : "transparent",
+	//layout : "vertical"
+}
+"#scrInstruction[formFactor=tablet]":{
+	height : 450,
+}
+"#imgTheme":{
+	image : Alloy.Globals.path.icnThemeDark
+}
+"#imgFontSize":{
+	image : Alloy.Globals.path.icnFontChangeDark
+}
+/*
+ * END
+ * 
+ */
+
+
+
+/*
+ * 
+ * 
+ */
+"#btnSystemInstruction" : {
+	height : 35,
+	width : 34,
+	image : Alloy.Globals.path.icnToolBarInstruction	
+}
+"#btnSystemFeedback" : {
+	height : 35,
+	width : 33,
+	image : Alloy.Globals.path.icnToolBarFeedback	
+}
+"#btnFontChange" : {
+	height : 35,
+	width : 35,
+	image : Alloy.Globals.path.icnToolBarFont	
+}

@@ -1,0 +1,40 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty">
+				</View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"/>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"/>
+				</View>
+			</View>
+			<View id="viewIntroduction">
+				<Label id="lblIntroduction"/>
+				<Button id="btnInstructions" onClick="openInstructions"/>
+			</View>
+			<View id="viewButtonsLanding">
+				<View id="viewNewBudget" onClick="createBudget">
+					<ImageView id="imgNewBudget"/>
+					<Label id="lblNewBudget"/>
+				</View>
+				<View id="viewExistingBudget" onClick="openExistingBudgetList">
+					<ImageView id="imgExistingBudget"/>
+					<Label id="lblExistingBudget"/>
+				</View>
+			</View>
+		</View>
+		<View id="backView">
+		</View>
+		<View id="instructionsView">
+			<!-- <Label id="lblInstructions" text="sdf dfs dsfsd fdsf sdfsd fdsf sdf"></Label> -->
+			<TableView id="tableInstructions"/>
+			<View id="closeInstructionsView" onClick="closeInstructionsView">
+				<Label id="lblClose"/>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,205 @@
+".searchBgViewProperty":{
+	backgrounColor:Alloy.Globals.path.redColor
+}
+"#listView":{
+	top: 0,
+	bottom: 30,
+	width: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	separatorColor: "transparent"
+}
+"#listView[formFactor=tablet]":{
+	bottom: 35,
+}
+"#row[formFactor=handheld]":{
+	width: "100%",
+	height: 100,
+	backgroundColor: "transparent",
+	// selectedBackgroundColor : "transparent",
+	selectionStyle: 0
+}
+"#row[formFactor=tablet]":{
+	width: "100%",
+	height: 130,
+	backgroundColor: "transparent",
+	selectionStyle: 0
+}
+
+"#leftBackView[if=Alloy.Globals.isEnglish]":{
+	left: 0,
+	right: 5,
+	height: "100%",
+	backgroundColor: "transparent",
+	touchEnabled: false
+}
+"#leftBackView[if=!Alloy.Globals.isEnglish]":{
+	left: 5,
+	right: 0,
+	height: "100%",
+	backgroundColor: "transparent",
+	touchEnabled: false
+}
+
+"#imgRow[if=Alloy.Globals.isEnglish formFactor=handheld]":{
+	left: 10,
+	width: 80,
+	height: 70,
+	//	backgroundColor : Alloy.Globals.path.bgColor,
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+	touchEnabled: false,
+	borderColor: Alloy.Globals.path.viewBgColor
+}
+"#imgRow[if=!Alloy.Globals.isEnglish formFactor=handheld]":{
+	right: 10,
+	width: 80,
+	height: 70,
+	//	backgroundColor : Alloy.Globals.path.bgColor,
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+	touchEnabled: false,
+	borderColor: Alloy.Globals.path.viewBgColor
+}
+"#imgRow[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 10,
+	width: 110,
+	height: 100,
+	//	backgroundColor : Alloy.Globals.path.bgColor,
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+	touchEnabled: false,
+	borderColor: Alloy.Globals.path.viewBgColor
+}
+"#imgRow[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	right: 10,
+	width: 110,
+	height: 100,
+	//	backgroundColor : Alloy.Globals.path.bgColor,
+	defaultImage:Alloy.Globals.path.defaultImageThumb,
+	touchEnabled: false,
+	borderColor: Alloy.Globals.path.viewBgColor
+}
+
+"#lblTitle[if=Alloy.Globals.isEnglish formFactor=handheld]":{
+	left: 100,
+	right: 40,
+	top: 10,
+	height: 55,
+	backgroundColor: "transparent",
+	//	text : "MOF Organizes the annual Ramdan forum for its employees and participants.",
+	font: Alloy.Globals.path.font14,
+	color: Alloy.Globals.path.blackColor,
+	touchEnabled: false,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#lblTitle[if=!Alloy.Globals.isEnglish formFactor=handheld]":{
+	left: 40,
+	right: 100,
+	top: 10,
+	backgroundColor: "transparent",
+	height: 55,
+	//	text : "MOF Organizes the annual Ramdan forum for its employees and participants.",
+	font: Alloy.Globals.path.font14,
+	color: Alloy.Globals.path.blackColor,
+	touchEnabled: false,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+
+"#lblTitle[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 130,
+	right: 40,
+	top: 10,
+	height: 65,
+	backgroundColor: "transparent",
+	//	text : "MOF Organizes the annual Ramdan forum for its employees and participants.",
+	font: Alloy.Globals.path.font18,
+	color: Alloy.Globals.path.blackColor,
+	touchEnabled: false,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#lblTitle[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 40,
+	right: 130,
+	top: 10,
+	backgroundColor: "transparent",
+	height: 65,
+	//	text : "MOF Organizes the annual Ramdan forum for its employees and participants.",
+	font: Alloy.Globals.path.font18,
+	color: Alloy.Globals.path.blackColor,
+	touchEnabled: false,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+
+"#rightBackView[if=Alloy.Globals.isEnglish]":{
+	right: 0,
+	width: 10,
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.newsRowColor,
+	touchEnabled: false
+}
+"#rightBackView[if=!Alloy.Globals.isEnglish]":{
+	left: 0,
+	width: 10,
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.newsRowColor,
+	touchEnabled: false
+}
+"#dateView":{
+	width: 30,
+	height: 41,
+	zIndex: 10,
+	//	backgroundColor : "gray",
+	backgroundImage: Alloy.Globals.path.bgNewsDateRight,
+	touchEnabled: false
+}
+"#dateView[formFactor=tablet]":{
+	width : 37,
+	height : 51
+}
+"#dateView[if=Alloy.Globals.isEnglish]":{
+	right: 0,
+	backgroundImage: Alloy.Globals.path.bgNewsDateRight,
+}
+"#dateView[if=!Alloy.Globals.isEnglish]":{
+	left: 0,
+	backgroundImage: Alloy.Globals.path.bgNewsDateLeft,
+}
+
+
+
+"#lblDate":{
+	left: 5,
+	right: 5,
+	height: "100%",
+	//	text : "12 July",
+	font: Alloy.Globals.path.font9,
+	color: "white",
+	textAlign: "center",
+	touchEnabled: false
+}
+"#lblDate[formFactor=tablet]":{
+	font: Alloy.Globals.path.font12,
+}
+"#separatorView":{
+	width: "100%",
+	height: 1,
+	bottom: 0,
+	backgroundColor: Alloy.Globals.path.grayColor
+}
+"#templateMore":{
+	height: 40,
+	backgroundColor: Alloy.Globals.path.navBarColor,
+	selectionStyle: 0,
+	selectedBackgroundColor: "transparent"
+}
+"#lblMore":{
+	font: Alloy.Globals.path.font17,
+	color: "white",
+	textAlign: "center",
+	touchEnabled: false,
+	text:  Alloy.Globals.selectedLanguage.viewMore
+}
+"#backView":{
+	backgroundColor:Alloy.Globals.path.searchBoxColor
+}

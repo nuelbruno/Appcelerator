@@ -1,0 +1,151 @@
+".fieldViewProperty": {
+	top: 0,
+	left: 0,
+	right: 0,
+	height : 35,
+	//height: Titanium.UI.SIZE,
+	backgroundColor:"transparent"
+}
+".fieldViewProperty[formFactor=tablet]": {
+	height : 45,
+}
+".lblTitleProperty": {
+	// top: 10,
+	// bottom: 10,
+	// left: 10,
+	width: 120,
+	height : Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black",
+}
+".lblTitleProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font17,
+}
+".colonProperty":{
+	//top : 10,
+	// left: 140,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black",
+	text: ":",
+}
+".colonProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17,
+}
+
+".txtFieldProperty": {
+	//top : 10,
+	// left: 155,
+	// right: 10,
+	height : Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent"
+}
+".txtFieldProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font17,
+}
+"#lblComments":{
+	top : 10,
+}
+"#commentsColon":{
+	top : 10
+}
+"#txtCommentsValue[platform=ios]":{
+	top : 0,
+	backgroundColor:"transparent",
+	color : Alloy.Globals.path.lblGrayColor
+}
+"#txtCommentsValue[platform=android]":{
+	top : 5,
+	color : "#888888"
+}
+
+
+
+"#mainView":{
+	top:0,
+	// left:0,
+	// right:0,
+	width : "100%",
+	layout:"vertical",
+	height:"100%"
+}
+"#imgTop" : {
+	height:130,
+	width : "100%",
+	top:0,
+	image : Alloy.Globals.path.bgContactBanner
+}
+
+"#lblTitle":{
+	top:20,
+	left:10,
+	right:10,
+	height:34,
+	color:Alloy.Globals.path.lblGrayColor
+	
+}
+"#viewContactsForm":{
+	top:20,
+	left:10,
+	right:10,
+	height:Titanium.UI.SIZE,
+	layout:"vertical",
+	borderWidth:0.5,
+	borderColor:Alloy.Globals.path.borderColor,
+	borderRadius:2,
+}
+".viewFormProperty":{
+	top:0,
+	left:0,
+	right:0,
+	height:50,
+	backgroundColor:"transparent"
+}
+
+
+".lineseparator":{
+	height:0.5,
+	backgroundColor:Alloy.Globals.path.borderColor,
+	left:0,
+	right:0
+}
+
+"#viewSave":{
+	top:30,
+	height:30,
+	width:120,
+	backgroundColor:Alloy.Globals.path.navBarColor,
+	borderWidth:0.5,
+	borderColor:Alloy.Globals.path.navBarColor,
+	borderRadius:4,
+}
+"#viewSave[formFactor=tablet]":{
+	height : 40,
+	width : 150,
+}
+"#lblSave":{
+	color:Alloy.Globals.path.whiteColor,
+	font:Alloy.Globals.path.font14,
+	touchEnabled:false
+}
+"#lblSave[formFactor=tablet]":{
+	font:Alloy.Globals.path.font17,
+}
+
+"#CommentsView":{
+	height:80
+}
+"#CommentsView[formFactor=tablet]":{
+	height:110
+}
+"#txtPhoneValue":{
+	keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD
+}
+
+
+
+
+

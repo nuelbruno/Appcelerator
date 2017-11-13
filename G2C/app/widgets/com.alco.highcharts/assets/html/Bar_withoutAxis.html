@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_NormalBar.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, xAxis, ytd) {
+			//	Ti.API.info('Webview: plotChart()');
+			//	Ti.API.info('arrNormal Bar =' +JSON.stringify(arr));
+			//	Ti.API.info('mtd =' + mtd);
+			//	Ti.API.info('ytd =' + ytd);
+
+				new Highcharts.Chart({
+					chart : {
+						type: 'bar',
+						marginLeft : 0,
+						spacingLeft : 0,
+						marginRight : 0,
+						backgroundColor : "transparent",
+						renderTo : 'container',
+						plotBackgroundColor : null,
+						plotBorderWidth : null,
+						plotShadow : false,
+						height : 60
+					},
+					title : {
+						text : ''
+					},
+					tooltip : {
+						enabled : false
+					//	pointFormat : '{series.name}: ',//<b>{point.percentage:.1f}%</b>'
+						// pointFormat : '{point.percentage:.1f}%',//
+					},
+					plotOptions : {
+						series: {
+			                stacking: 'normal',
+			                 dataLabels: {
+		                        enabled: true,
+		                        color: 'white'
+		                      }
+			            }
+					},
+					xAxis : {
+						categories : xAxis,
+						
+						 lineWidth: 0,
+			               minorGridLineWidth: 0,
+			               lineColor: 'transparent',
+			               labels: {
+			                   enabled: false
+			               },
+			               minorTickLength: 0,
+			               tickLength: 0
+					},
+					yAxis : {
+						gridLineWidth: 0,
+			            minorGridLineWidth: 0,
+			            
+			              lineWidth: 0,
+			               minorGridLineWidth: 0,
+			               lineColor: 'transparent',
+			               labels: {
+			                   enabled: false
+			               },
+			               minorTickLength: 0,
+			               tickLength: 0,
+						title : {
+							text : "",
+						},
+					},
+					series :arr
+				});
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

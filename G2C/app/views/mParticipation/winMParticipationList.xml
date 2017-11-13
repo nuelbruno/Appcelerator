@@ -1,0 +1,45 @@
+<Alloy>
+	<Window id="winMParticipationList" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		<View id="bgTableView">
+			<ListView id="tableViewItems" defaultItemTemplate="template">
+				<Templates>
+					<ItemTemplate name="template" id="row">
+						<View id="viewContents">
+							<Label id="lblTitle" bindId="lblTitle"></Label>
+							<View id="viewDate">
+								<Label id="lblEndDate" bindId="lblEndDate"></Label>
+								<Label id="lblEndDateValue" bindId="lblEndDateValue"></Label>
+							</View>	
+							<View class="viewProperty">
+								<!-- <View id="viewTime" class="innerViewProperty">
+									<Label id="lblTime" class="lblProperty" bindId="lblTime"></Label>
+								</View> -->
+								<View id="viewComments" class="innerViewProperty">
+									<Label id="lblComments" class="lblProperty" bindId="lblComments"></Label>
+								</View>
+								
+							</View>
+
+						</View>
+						<ImageView id="imgTop" bindId="imgTop"></ImageView>
+						<!-- <View  id="rowsep"></View> -->
+					</ItemTemplate>
+				</Templates>
+				<ListSection name="elements" id="listSection"></ListSection>
+			</ListView>
+				<Label id="lblNoItems"/>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

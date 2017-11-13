@@ -1,0 +1,165 @@
+"#bgTableView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+}
+
+"#tableViewItems" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	separatorColor:'transparent',
+}
+
+
+"#row":{
+	height:Titanium.UI.SIZE,
+	width:'100%',
+	selectedColor:'transparent',
+	selectedBackgroundColor:'transparent',
+	selectionStyle:'none'
+
+}
+
+"#imgBackView" :{
+	top : 10,
+	width : 50,
+	height : 50,
+	borderColor : Alloy.Globals.path.tblBorderColor,
+	borderRadius : 3,
+}
+
+"#imgBackView[if=Alloy.Globals.isEnglish]" :{
+	left : 10,
+	right : undefined,
+}
+
+"#imgBackView[if!=Alloy.Globals.isEnglish]" :{
+	right : 10,
+	left : undefined,
+}
+
+
+"#imgThumbNail" :{
+	width : 25,
+	height : 25,
+	backgroundImage : Alloy.Globals.path.icnDraft
+}
+
+"#viewContents" : {
+	top : 10,
+	layout : "vertical",
+	height:Ti.UI.SIZE,
+	bottom : 10,
+//	borderColor : Alloy.Globals.path.tblBorderColor,
+//	borderRadius : 5
+}
+
+"#viewContents[if=Alloy.Globals.isEnglish]" :{
+	left : 65,
+	right : 10,
+}
+
+"#viewContents[if!=Alloy.Globals.isEnglish]" :{
+	right : 65,
+	left : 10,
+}
+
+"#lblTitle" :{
+	left : 5,
+	right : 5,
+	bottom : 5,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font14,
+	color:Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false
+}
+"#lblTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+"#lblTitle[if=Alloy.Globals.isEnglish]" :{
+	textAlign : "left",
+}
+
+"#lblTitle[if!=Alloy.Globals.isEnglish]" :{
+	textAlign : "right",
+}
+
+".innerViewProperty":{
+	top : 2,
+	left : 5,
+	right : 5,
+	bottom : 2,
+	height:Ti.UI.SIZE,
+//	backgroundColor:"yellow"
+}
+
+".lblProperty":{
+	top : 1,
+	bottom : 1,
+	height : Titanium.UI.SIZE,
+	width : "40%",
+	textAlign : "center",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font10,
+//	backgroundColor:"green"
+}
+".lblProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font14,
+}
+".lblProperty[if=Alloy.Globals.isEnglish]":{
+	left : 0,
+	right : undefined,
+	textAlign : "left",
+}
+
+".lblProperty[if!=Alloy.Globals.isEnglish]":{
+	right : 0,
+	left : undefined,
+	textAlign : "right",
+}
+
+"#lblCreatedByTitle" :{
+	text : Alloy.Globals.selectedLanguage.createdBy
+}
+
+"#lblDateTitle" :{
+	text : Alloy.Globals.selectedLanguage.lastModified
+}
+
+".lblValueProperty":{
+	top : 1,
+	bottom : 1,
+	height : Titanium.UI.SIZE,
+	width : "55%",
+	textAlign : "center",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font10,
+//	backgroundColor:"red"
+}
+".lblValueProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font14,
+}
+
+".lblValueProperty[if=Alloy.Globals.isEnglish]":{
+	left : "42%",
+	right : undefined,
+	textAlign : "left",
+}
+
+".lblValueProperty[if!=Alloy.Globals.isEnglish]":{
+	right : "42%",
+	left : undefined,
+	textAlign : "right",
+}
+
+"#rowsep" :{
+	bottom : 0,
+	width : "100%",
+	height : 1,
+	backgroundColor : Alloy.Globals.path.valueSeparatorColor
+}
+

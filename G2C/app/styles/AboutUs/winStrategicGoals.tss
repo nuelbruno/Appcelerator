@@ -1,0 +1,106 @@
+".imgShareBtn":{
+	right:15,
+	width:9,
+	height:17,
+	//backgroundImage : Alloy.Globals.path.icnBack
+	backgroundColor:"transparent"
+}
+
+"#imgView" :{
+	left : 0,
+	right : 0,
+	height :Titanium.UI.SIZE,
+	//image : Alloy.Globals.path.bgStategic
+	defaultImage: Alloy.Globals.path.defaultImageBanner
+}
+".lblTitleProperty[formFactor=handheld]" :{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font16,
+	color : Alloy.Globals.path.goldColor
+}
+".lblTitleProperty[formFactor=tablet]" :{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font23,
+	color : Alloy.Globals.path.goldColor
+}
+
+".lblTitleProperty[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font18TitleEn,
+}
+
+".lblTitleProperty[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font28TitleEn,
+}
+
+".lblTitleProperty[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font18TitleAr,
+}
+
+".lblTitleProperty[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font28TitleAr,
+}
+
+
+
+".lblTitleValueProperty[formFactor=handheld]" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.darkGrayColor,
+	bottom:10
+}
+
+".lblTitleValueProperty[formFactor=tablet]" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font22,
+	color : Alloy.Globals.path.darkGrayColor,
+	bottom:10
+}
+
+"#mainView":{
+	left:0,
+	right:0,
+	top:0,
+	height : Titanium.UI.SIZE,
+	layout : "vertical"
+}
+
+
+"#webView[if!=Alloy.Globals.isEnglish]" :{
+	top : 0,
+	bottom : 30,
+	backgroundColor : "transparent",
+	loading : false,
+	hideLoadIndicator : true
+//	url : "file:///Volumes/Projects/MOF/Code/About/TM_ar.html",
+//	url : "http://194.170.30.187/Guides/AboutUs/HTML/StrategicGoals_ar.html",
+}
+
+
+"#webView[if=Alloy.Globals.isEnglish]" :{
+	top : 0,
+	bottom : 30,
+	backgroundColor : "transparent",
+	loading : false,
+	hideLoadIndicator : true
+//	url : "file:///Volumes/Projects/MOF/Code/About/TM_ar.html",
+//	url : "http://194.170.30.187/Guides/AboutUs/HTML/StrategicGoals_en.html",
+}
+
+
+"#scrollView" :{
+	top : 0,
+	bottom : 0,
+	backgroundColor : "transparent"
+}

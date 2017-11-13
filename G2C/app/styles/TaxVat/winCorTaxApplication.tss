@@ -1,0 +1,366 @@
+"#homeView": {
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	layout: "vertical"
+}
+"#scrollView":{
+	width: "100%",
+	top: 0,
+	bottom: 0,
+	layout: "vertical"
+}
+"#scrollView[formFactor=tablet]":{
+	width: '99%'
+}
+
+".lblCategoryProperty":{
+	top: 10,
+	left: 8,
+	right: 8,
+	height : Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor
+}
+".lblCategoryProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15
+}
+
+"#certificateTypeView":{
+	top: 8,
+	left: 5,
+	right: 5,
+	height: 36,
+	borderWidth: 1,
+	borderRadius: 5,
+	borderColor: Alloy.Globals.path.grayColor
+}
+
+".fieldViewProperty": {
+	top: 12,
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	borderWidth: 1,
+	borderRadius: 3,
+	borderColor: Alloy.Globals.path.grayColor
+}
+
+".lblTitleProperty": {
+	top: 10,
+	bottom: 10,
+	// left: 10,
+	width: 120,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black"
+}
+".lblTitleProperty[formFactor=tablet]": {
+	width: 200,
+	font: Alloy.Globals.path.font16
+}
+".colonProperty":{
+	top: 10,
+	// left: 140,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black",
+	text: ""
+}
+".colonProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font16
+}
+".txtFieldProperty": {
+	top: 10,
+	// bottom : 0,
+	// left: 155,
+	// right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	backgroundColor: "transparent",
+	color: Alloy.Globals.path.borderColor
+}
+".txtFieldProperty[platform=android]": {
+	top: 4
+}
+".txtFieldProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font16
+}
+
+".txtDropdownProperty": {
+	top: 10,
+	// left: 155,
+	// right: 25,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	editable: false,
+	backgroundColor: "transparent",
+	color: Alloy.Globals.path.borderColor
+}
+".txtDropdownProperty[platform=android]": {
+	top: 4
+}
+".txtDropdownProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font16
+}
+".icnDropdownProperty": {
+	top: 14,
+	// right: 10,
+	width: 13,
+	height: 8,
+	image: Alloy.Globals.path.arrowDown
+}
+".icnDropdownProperty[formFactor=tablet]": {
+	width: 20,
+	height: 13
+}
+
+"#txtAddress":{
+	top: 4,
+	// left: 155,
+	bottom: 4,
+	// right: 10,
+	height: 60,
+	font: Alloy.Globals.path.font13,
+	color: Alloy.Globals.path.borderColor,
+	backgroundColor: "transparent"
+}
+"#txtAddress[formFactor=tablet]":{
+	height: 70,
+	font: Alloy.Globals.path.font15
+}
+
+"#attachmentNoteView":{
+	top : 5,
+	left : 5,
+	right : 5,
+	height : Titanium.UI.SIZE,
+	backgroundColor: "transprent",
+	
+}
+
+".lblNoteProperty":{
+	top : 8,
+	bottom : 8,
+	height : Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor
+}
+".lblNoteProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15
+}
+
+"#attachmentView":{
+	top: 15,
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderWidth: 1,
+	layout: "vertical",
+	backgroundColor: "transprent"
+}
+"#attachmentView[platform=ios]":{
+	borderRadius: 5
+}
+".attachmentViewProperty":{
+	top: 0,
+	left: 0,
+	right: 0,
+	height: Titanium.UI.SIZE,
+	horizontalWrap : false,
+	backgroundColor: "transparent",
+	layout: "vertical"
+}
+
+".imgAttachmentProperty":{
+	top: 5,
+	bottom: 5,
+	// right: 10,
+	width: 30,
+	height: 30,
+	image: Alloy.Globals.path.icnAttachBlack,
+	selectedImage: undefined
+}
+
+".imgAttachmentProperty[formFactor=tablet]":{
+	width: 35,
+	height: 35
+}
+
+"#txtComments":{
+	top: 4,
+	bottom: 4,
+	left: 5,
+	right: 5,
+	height: 85,
+	font: Alloy.Globals.path.font13,
+	color: Alloy.Globals.path.borderColor,
+	backgroundColor: "transparent"
+}
+"#txtComments[formFactor=tablet]":{
+	height: 95,
+	font: Alloy.Globals.path.font15
+}
+".hSeperatorProperty":{
+	left: 0,
+	right: 0,
+	height: 1,
+	bottom: 0,
+	isToExclude_contrast: true,
+	backgroundColor: Alloy.Globals.path.grayColor
+}
+
+
+"#buttonBackView":{
+	top: 25,
+	bottom: 35,
+	height: Titanium.UI.SIZE,
+	width: 260,
+	backgroundColor: "transparent"
+}
+
+"#buttonBackView[formFactor=tablet]":{
+	width: 320
+}
+
+"#btnSave":{
+	height: 35,
+	width: 125,
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	font: Alloy.Globals.path.font15,
+	borderRadius: 3,
+	color: "White"
+}
+"#btnSave[formFactor=tablet]":{
+	height: 40,
+	width: 150,
+	font: Alloy.Globals.path.font18
+}
+
+"#btnCancel":{
+	height: 35,
+	width: 125,
+	backgroundColor: Alloy.Globals.path.goldColor,
+	isToExclude_contrast: true,
+	font: Alloy.Globals.path.font15,
+	borderRadius: 3,
+	color: "White"
+}
+"#btnCancel[formFactor=tablet]":{
+	height: 40,
+	width: 150,
+	font: Alloy.Globals.path.font18
+}
+
+/*
+*
+*
+*/
+"#btnSystemInstruction": {
+	height: 35,
+	width: 34,
+	image: Alloy.Globals.path.icnToolBarInstruction
+}
+"#btnSystemFeedback": {
+	height: 35,
+	width: 33,
+	image: Alloy.Globals.path.icnToolBarFeedback
+}
+"#btnFontChange": {
+	height: 35,
+	width: 35,
+	image: Alloy.Globals.path.icnToolBarFont
+}
+"#btnSystemChangeContrast":{
+	height: 25,
+	width: 25,
+	contentTheme: 'light',
+	image:Alloy.Globals.path.icnThemeLight
+}
+
+"#adminCommentView":{
+	left : 5,
+	right : 5,
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent",
+	layout : "vertical"
+}
+
+/*
+*
+* ATTACHMENT
+*
+*/
+
+".attachmentDetailProperty":{
+	height: Titanium.UI.SIZE,
+	left: 0,
+	right: 0,
+	horizontalWrap : false,
+	backgroundColor: "transparent"
+}
+
+".attachmentListViewProperty":{
+	// right : 0,
+	bottom: 0,
+	// left : 155,
+	backgroundColor: "transparent",
+	layout: "vertical",
+	height: Titanium.UI.SIZE
+}
+
+
+
+/*
+* Instruction
+*/
+"#lblDescription":{
+	left: 0,
+	text: Alloy.Globals.VTaxSelectedLanguage.descriptionTitle,
+	color: Alloy.Globals.path.navBarColor,
+	isSelected: true
+}
+"#lblSteps":{
+	left: "50%",
+	text: Alloy.Globals.VTaxSelectedLanguage.steps,
+	color: Alloy.Globals.path.darkGrayColor,
+	isSelected: false
+}
+"#scrInstruction":{
+	top: 10,
+	height: 300,
+	width: "100%",
+	backgroundColor: "transparent"
+}
+"#scrInstruction[formFactor=tablet]":{
+	height: 450
+}
+"#imgTheme":{
+	image: Alloy.Globals.path.icnThemeDark
+}
+"#imgFontSize":{
+	image: Alloy.Globals.path.icnFontChangeDark
+}
+/*
+* END
+*
+*/
+
+
+"#lblFiniacialNote":{
+	left : 8,
+	right : 8,
+	top : 2,
+	bottom : 12,
+	height : Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.navBarColor,
+	text : Alloy.Globals.VTaxSelectedLanguage.financialYearNote,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	isToExclude_contrast: true, 
+}
+"#lblFiniacialNote[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15
+}

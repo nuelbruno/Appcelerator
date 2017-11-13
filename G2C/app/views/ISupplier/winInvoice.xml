@@ -1,0 +1,74 @@
+<Alloy>
+	<Window id="winInvoice" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="invNumView" class="titleBG">
+				<Label id="lblInvoiceNo" class="lblTitle"></Label>
+			</View>
+			<View class="searchBgViewProperty">
+				<View id="searchView" class="searchViewProperty" >
+					<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+					<TextField id="txtSearch" onChange="searchList" class="txtSearchProperty"></TextField>
+				</View>
+			</View>
+			<View id="mainBackViewAll">
+				<ListView id="tblInvoiceList" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="tblRow">
+							<View id="topBackView">
+								<Label id="lblOrderNumber" bindId="lblOrderNumber"></Label>
+								<Button id="btnStatus" bindId="btnStatus"></Button>
+								<ImageView id="imgUpDown" bindId="imgUpDown"></ImageView>
+							</View>
+							<!-- <View id="separatorView" class="hSeparator"></View> -->
+							<View id="mainBackView">
+								<View id="entityView" class="backViewProperty">
+									<Label id="lblEntityTitle" class="titlePropety"  bindId="lblEntityTitle"></Label>
+									<Label id="lblEntityValue" class="valueProperty" bindId="lblEntityValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="amountView" class="backViewProperty">
+									<Label id="lblAmoutTitle" class="titlePropety" bindId="lblAmoutTitle"></Label>
+									<Label id="lblAmoutValue" class="valueProperty" bindId="lblAmoutValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="invoiceDateView" class="backViewProperty">
+									<Label id="lblinvoiceDateTitle" class="titlePropety" bindId="lblinvoiceDateTitle"></Label>
+									<Label id="lblinvoiceDateValue" class="valueProperty" bindId="lblinvoiceDateValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="DueView" class="backViewProperty">
+									<Label id="lblDueTitle" class="titlePropety" bindId="lblDueTitle"></Label>
+									<Label id="lblDueValue" class="valueProperty" bindId="lblDueValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="DueDateView" class="backViewProperty">
+									<Label id="lblDueDateTitle" class="titlePropety"  bindId="lblDueDateTitle"></Label>
+									<Label id="lblDueDateValue" class="valueProperty" bindId="lblDueDateValue"></Label>
+								</View>
+								<View class="hSeparator"></View>
+								<View id="PayStatusView" class="backViewProperty">
+									<Label id="lblPayStatusTitle" class="titlePropety" bindId="lblPayStatusTitle"></Label>
+									<Label id="lblPayStatusValue" class="valueProperty" bindId="lblPayStatusValue"></Label>
+								</View>
+								<Button id="btnViewPay" onClick="openPayments" bindId="btnViewPay"></Button>
+							</View>
+							<View class="separator" bottom="0"></View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="elements" id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoRecord" class="lblNoRecordFound"></Label>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

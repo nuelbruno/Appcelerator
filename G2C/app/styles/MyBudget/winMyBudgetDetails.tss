@@ -1,0 +1,251 @@
+"#mainView":{
+	top : 0,
+	bottom :30
+}
+"#mainView[formFactor=tablet]":{
+	top : 0,
+	bottom :35
+}
+".viewBudgetMainProperty":{
+	width : "100%",
+	//height : 140,
+	height:220,
+	isToExclude_contrast : true
+}
+".viewBudgetMainProperty[formFactor=tablet]":{
+	height:300
+}
+".bgTitleProperty":{
+	top:0,
+	width:"100%",
+	height:36,
+	backgroundImage:Alloy.Globals.path.bgHeaderTitle,
+}
+".bgTitleProperty[formFactor=tablet]":{
+	height:52,
+}
+".bgContentProperty":{
+	top:36,
+	width:"100%",
+	backgroundImage:Alloy.Globals.path.bgBudgetContentArea,
+	bottom : 0,
+}
+".bgContentProperty[formFactor=tablet]":{
+	top:52,
+}
+// "#leftContentCol1":{
+	// top:0,
+	// width:'60%',
+	// height : Titanium.UI.SIZE,
+// }
+"#leftContentCol2":{
+	top:10,
+	width:'40%',
+	layout:'vertical'
+}
+
+"#lblAvailableAmount_caption":{
+	color:'#3c2d1a',
+	font:Alloy.Globals.path.font14,
+	text:Alloy.Globals.selectedLanguage.availableBalanceTitle,
+}
+"#lblAvailableAmount_caption[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#lblAvailableAmount":{
+	color:'#3c2d1a',
+	font:{
+		fontSize:"26sp",
+		fontWeight:'bold'
+	}
+	
+}
+"#lblAvailableAmount[formFactor=tablet]":{
+	font:{
+		fontSize:"32sp",
+		fontWeight:'bold'
+	}
+}
+"#lblBudgetAmount_caption":{
+	color:'#3c2d1a',
+	font:Alloy.Globals.path.font14,
+	text:Alloy.Globals.selectedLanguage.budgetLimitTitle,
+}
+"#lblBudgetAmount_caption[formFactor=tablet]":{
+	top : 10,
+	font:Alloy.Globals.path.font18,
+}
+"#lblBudgetAmount":{
+	color:'#3c2d1a',
+	font:{
+		fontSize:"26sp",
+		fontWeight:'bold'
+	}
+}
+"#lblBudgetAmount[formFactor=tablet]":{
+	font:{
+		fontSize:"32sp",
+		fontWeight:'bold'
+	}
+}
+
+"#lblTitle" :{
+	top : 5,
+	bottom : 5,
+	backgroundColor : "transparent",
+	font : Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.blackColor,
+	touchEnabled : false
+}
+"#lblTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+"#viewReport":{
+	width:36,
+	height:"100%",
+	bubbleParent:false
+}
+"#viewReport[formFactor=tablet]":{
+	width:50
+}
+"#viewEdit":{
+	width:36,
+	height:"100%",
+	bubbleParent:false
+}
+"#viewEdit[formFactor=tablet]":{
+	width:50,
+}
+"#imgReport":{
+	width:18,
+	height:18,
+	image:Alloy.Globals.path.icnReport,
+	touchEnabled:false
+}
+"#imgReport[formFactor=tablet]":{
+	width : 30,
+	height:30,
+}
+"#imgCompose_Black":{
+	width:18,
+	height:18,
+	image:Alloy.Globals.path.icnCompose_black,
+	touchEnabled:false
+}
+"#imgCompose_Black[formFactor=tablet]":{
+	width:30,
+	height:30,
+}
+/*Add Expenses */
+".viewManageExpensesProperty":{
+	left:10,
+	right:10,
+	height:50,
+}
+".viewManageExpensesProperty[formFactor=tablet]":{
+	height:80,
+}
+"#viewManageExpenseBudget":{
+	top:0,
+	width:115,
+	height:"100%",
+	//backgroundColor:'#c0c0c0'
+}
+"#viewManageExpenseBudget[formFactor=tablet]":{
+	width:180,
+}
+"#viewManageExpense":{
+	top:0,
+	width:105,
+	height:"100%",
+	visible:false
+}
+"#viewManageExpense[formFactor=tablet]":{
+	width:180,
+}
+"#imgPlusBlack":{
+	width:14,
+	height:14,
+	image:Alloy.Globals.path.icnPlusBlack,
+}
+"#imgPlusBlack[formFactor=tablet]":{
+	width:24,
+	height:24,
+}
+"#imgPlusBlackEX":{
+	width:14,
+	height:14,
+	image:Alloy.Globals.path.icnPlusBlack,
+}
+"#imgPlusBlackEX[formFactor=tablet]":{
+	width:24,
+	height:24,
+}
+"#lblManageExpenseBudget":{
+	color:Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font11Bold,
+	text : Alloy.Globals.selectedLanguage.manageExpenseBudgetTitle,
+}
+"#lblManageExpenseBudget[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17Bold,
+}
+"#lblManageExpenses":{
+	color:Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font11Bold,
+	text : Alloy.Globals.selectedLanguage.manageExpensesTitle,
+}
+"#lblManageExpenses[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17Bold,
+}
+/*Already Added expenses */
+"#bgTableView":{
+	left:5,
+	right:5,
+}
+"#tableView" :{
+	top : 0,
+	width  :"100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent",
+	borderWidth:1,
+	borderColor:Alloy.Globals.path.grayColor,
+	borderRadius:2,
+	height:Ti.UI.SIZE
+}
+"#viewExpenseHeader":{
+	top:0,
+	width:'100%',
+	height:40,
+	//backgroundColor:'yellow'
+}
+
+"#lblBudget":{
+	text:Alloy.Globals.selectedLanguage.budgetTitle,
+	font:Alloy.Globals.path.font14,
+	color :Alloy.Globals.path.blackColor,
+}
+"#lblBudget[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#lblActual":{
+	text:Alloy.Globals.selectedLanguage.actualTitle,
+	font:Alloy.Globals.path.font14,
+	color :Alloy.Globals.path.darkGrayColor,
+}
+"#lblActual[formFactor=tablet]":{
+	font:Alloy.Globals.path.font20,
+}
+/* Chart styles */
+"#chartView" :{
+	top :20,
+	//left: 0,
+	//right : 0,
+	width : 180,
+	height:150,//180,
+	
+}
+"#chartView[formFactor=tablet]" :{
+	width : 280,
+	height:230,//180,
+	
+}

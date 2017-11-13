@@ -1,0 +1,8 @@
+<Alloy>
+<View id="viewTop" >
+	<Label id="lblTitle"  ></Label>
+	<Label id="lblContent"  ></Label>
+	<ImageView id ="imgArrow"></ImageView>
+	<View id="separator" ></View>
+</View>
+</Alloy>

@@ -1,0 +1,54 @@
+"#row" :{
+	width : "100%",
+//	top : 2,
+	height : Ti.UI.SIZE,
+//	bottom : 2,
+	backgroundColor : "transparent",
+	horizontalWrap : false,
+	selectedBackgroundColor : Alloy.Globals.path.navBarColor
+}
+
+".lblProperty[formFactor=handheld]":{
+//	height : "100%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font11,
+	backgroundColor : "transparent",
+	textAlign : "left"
+}		
+".lblProperty[formFactor=tablet]":{
+//	height : "100%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font16,
+	backgroundColor : "transparent",
+	textAlign : "left"
+}
+
+"#lblCode" :{
+	top : 10,
+	left : 5,
+	width : 70,
+	bottom : 10,
+	touchEnabled : false,
+	height : Titanium.UI.SIZE,
+//	backgroundColor : "red",
+}
+"#lblDesc" :{
+	top : 10,
+	left : 80,
+	width : 65,
+	bottom : 10,
+	touchEnabled : false,
+	height : Titanium.UI.SIZE,
+	verticalAlign : Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
+}
+
+"#lblTotal" :{
+	top : 10,
+	left : 220,
+	width : 75,
+	bottom : 10,
+	touchEnabled : false,
+	textAlign : "right",
+	height : Titanium.UI.SIZE,
+//	backgroundColor : "blue",
+}

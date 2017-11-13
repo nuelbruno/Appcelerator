@@ -1,0 +1,65 @@
+<Alloy>
+	<Window id="winCreateTicket"  class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View>
+				<ScrollView id="mainView">
+					<Label id="lblTitle"></Label>
+					<!-- <Label id="lblFederal" class="lblTitleProperty"></Label>
+					<!-- <View id="federalView" class="backViewProperty" onClick="showFederalList"> -->
+					<!-- <View id="federalView" class="backViewProperty">
+					<Label id="lblFederalValue" class="lblValueProperty">Federal value</Label>
+					<ImageView id="imgFederalArrow" class="arrowProperty" visible="false"></ImageView>
+					</View> -->
+					<!-- <View id="departmentView" class="backViewProperty" onClick="showDepartmentList"> -->
+					<!-- <Label id="lblDepartment" class="lblTitleProperty"></Label>
+					<View id="departmentView" class="backViewProperty">
+					<Label id="lblDepartmentValue" class="lblValueProperty">Department Value</Label>
+					<ImageView id="imgDepartmentArrow" class="arrowProperty" visible="false"></ImageView>
+					</View> -->
+					<Label id="lblCategory" class="lblTitleProperty"></Label>
+					<View id="categoryView" class="backViewProperty" onClick="showCategoryList">
+						<Label id="lblCategoryValue" class="lblValueProperty">Category Value</Label>
+						<ImageView id="imgCategoryArrow" class="arrowProperty"></ImageView>
+					</View>
+					<Label id="lblSubCategory" class="lblTitleProperty"></Label>
+					<View id="subCategoryView" class="backViewProperty" onClick="showSubCategoryList">
+						<Label id="lblSubCategoryValue" class="lblValueProperty">Sub-Category Value</Label>
+						<ImageView id="imgSubCategoryArrow" class="arrowProperty"></ImageView>
+					</View>
+					<View id="descriptionView">
+						<Label id="lblDescription" class="lblProperty"></Label>
+						<TextArea id="txtDescription" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur"></TextArea>
+					</View>
+					<View id="attachmentView" class="backViewProperty" onClick="selectImage">
+						<Label id="lblAttachements" class="lblProperty"></Label>
+						<ImageView id="imgAttachment"></ImageView>
+					</View>
+					<ScrollView id="imagesView"></ScrollView>
+					<Button id="btnSubmit" onClick="submitTicket"></Button>
+				</ScrollView>
+				<View id="backView" class="UserSatisbackView"></View>
+				<View id="popView" class="UserSatispopView">
+					<View id="topBackView" class="popTopViewProperty">
+						<Label id="lblUserSatisfaction" class="lblUserSatisfaction"></Label>
+					</View>
+					<Label id="lblSuggestion" class="lblUserSuggestion"></Label>
+					<View  class="separator" height="1" top="30"></View>
+					<View id="viewFeedback" class="viewUserSatisFeedback">
+						<Label id="lblFeedback" class="lblUserSatisFeedback" onClick="openUserSatisfaction"></Label>
+						<Label id="lblSkip" class="lblUserSatisSkip" onClick="closePopUP"></Label>
+					</View>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

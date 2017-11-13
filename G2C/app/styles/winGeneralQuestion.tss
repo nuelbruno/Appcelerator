@@ -1,0 +1,68 @@
+"#mainView" :{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0,
+	layout : "vertical"
+}
+
+
+"#bgTableView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+}
+
+
+"#scrQuestionList":{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	layout : "vertical"
+}
+
+"#qusAnswerView":{
+	height : Titanium.UI.SIZE,
+	width : "100%",
+	layout : "vertical"
+}
+"#btnBackView":{
+	top : 35,
+	height : Titanium.UI.SIZE,
+	width : 250
+}
+"#btnBackView[formFactor=tablet]":{
+	width : 350
+}
+
+"#btnSubmit" :{
+	height : 35,
+	width : 115,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	title : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	borderRadius : 2,
+}
+"#btnSubmit[formFactor=tablet]" :{
+	height : 45,
+	font : Alloy.Globals.path.font20,
+	width : 160
+}
+
+"#btnCancel" :{
+	height : 35,
+	width : 115,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	title : Alloy.Globals.selectedLanguage.cancel,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	borderRadius : 2,
+}
+"#btnCancel[formFactor=tablet]" :{
+	height : 45,
+	width : 160,
+	font : Alloy.Globals.path.font20,
+}

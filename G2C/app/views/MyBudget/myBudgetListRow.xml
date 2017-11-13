@@ -1,0 +1,34 @@
+<Alloy>
+	<TableViewRow id="row">
+		<View class="viewBudgetMainProperty">
+
+			<View class="bgTitleProperty">
+				<Label id="lblTitle"></Label>
+				<View id="viewReport">
+					<ImageView id="imgReport"></ImageView>
+				</View>
+				<View id="viewEdit">
+					<ImageView id="imgCompose_Black"></ImageView>
+				</View>
+			</View>
+			<View class="bgContentProperty">
+				<View id="leftContentCol1">
+					<Label id="lblAvailableAmount_caption"></Label>
+					<Label id="lblAvailableAmount"></Label>
+				</View>
+				<View id="leftContentCol2">
+					<Label id="lblBudgetAmount_caption"></Label>
+					<Label id="lblBudgetAmount"></Label>
+
+				</View>
+				<View id="viewProgressBar">
+					<Label id="lblRemains" class="lblProperty"></Label>
+					<View id="chartBackView">
+						<View id="spentView"></View>
+						<View id="remainsView"></View>
+					</View>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,67 @@
+<Alloy>
+	<Window id="winProfile" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="topOptionView">
+				<View id="btnGeneralView" class="btnOptionView" onClick="showGeneralView">
+					<Label id="lblGeneral" class="lblOption"></Label>
+				</View>
+				<View id="btnAttachView" class="btnOptionView" onClick="showAttachmentView">
+					<Label id="lblAttachment" class="lblOption"></Label>
+				</View>
+				<View id="btnComProView" class="btnOptionView" onClick="showCompanyView">
+					<Label id="lblComProfile" class="lblOption"></Label>
+				</View>
+				<ImageView id="imgselection"></ImageView>
+			</View>
+			<View id="mainBackView">
+				<View id="generalView" class="backViewProperty">
+					<TableView id="tblGeneral"></TableView>
+				</View>
+				<ScrollView id="attachmentView" class="backViewProperty">
+					<Label id="lblclassification" class="lblHeaderTitle"></Label>
+					<!-- <TableView id="tblClassification"></TableView> -->
+					<View id="tblClassification"></View>
+					<View id="attchSeparator"></View>
+					<!-- <TableView id="tblAttachments"></TableView> -->
+					<!-- <View id="attachmentListView"></View> -->
+				</ScrollView>
+				<ScrollView id="companyProView" class="backViewProperty">
+					<Label id="lblLegal" class="lblHeaderTitle"></Label>
+					<View id="legalBackView" class="legActPartnerBackView">
+						<Label id="lblEntityTitle" class="lblLegalTitle"></Label>
+						<Label id="lblEntityValue" class="lblLegalValue"></Label>
+						<View class="hSeparator"></View>
+						<Label id="lblDirectorTitle"class="lblLegalTitle"></Label>
+						<Label id="lblDirectorValue" class="lblLegalValue"></Label>
+						<View class="hSeparator"></View>
+						<View id="nationalityView">
+							<Label id="lblNationalityTitle" class="lblLegalTitle"></Label>
+							<Label id="lblNationalityValue" class="lblLegalValue"></Label>
+						</View>
+					</View>
+					<Label id="lblActivity" class="lblHeaderTitle"></Label>
+					<View id="activityBackView" class="legActPartnerBackView">
+						<Label id="lblActivityValue" class="lblLegalValue"></Label>
+					</View>
+					<Label id="lblPartners" class="lblHeaderTitle"></Label>
+					<View id="partnerBackView" class="legActPartnerBackView"></View>
+					<Label id="lblContacts" class="lblHeaderTitle"></Label>
+					<View id="contactBackView" class="legActPartnerBackView"></View>
+					<Label id="lblBankDetails" class="lblHeaderTitle"></Label>
+					<View id="bankDetailsBackView" class="legActPartnerBackView"></View>
+				</ScrollView>
+
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

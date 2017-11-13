@@ -1,0 +1,90 @@
+"#viewExpenseCategory":{
+	width:'100%',
+	height:40,
+	left:0
+}
+"#viewExpenseCategory[formFactor=tablet]":{
+	height:70,
+}
+
+".leftImageView":{
+	width:40,
+	height:40,
+}
+".leftImageView[formFactor=tablet]":{
+	width:70,
+	height:70,
+}
+"#imgExpenseCategory_bg":{
+	width:40,
+	height:40
+}
+"#imgExpenseCategory_bg[formFactor=tablet]":{
+	width:70,
+	height:70
+}
+"#imgExpenseCategory":{
+	width:25,
+	height:25
+}
+"#imgExpenseCategory[formFactor=tablet]":{
+	width:55,
+	height:55
+}
+
+".revenueTextBoxProperty":{
+	zIndex:99,
+	width:100,
+	height:30,
+	borderWidth:1,
+	borderColor:Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font14,
+	paddingLeft:10,
+	paddingRight:10,
+	color:Alloy.Globals.path.formFieldsColor,
+	hintText:0,
+	keyboardType : Titanium.UI.KEYBOARD_NUMBER_PAD,
+	bubbleParent:false,
+	backgroundColor :"transparent"
+}
+".revenueTextBoxProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+	width : 130,
+	height : 45,
+}
+"#lblBudget":{
+	color:Alloy.Globals.path.blackColor,
+	font:Alloy.Globals.path.font13,
+}
+"#lblBudget[formFactor=tablet]":{
+	font:Alloy.Globals.path.font17,
+}
+"#lblActual":{
+	color:'#C0C0C0',
+	font:Alloy.Globals.path.font11,
+}
+"#lblActual[formFactor=tablet]":{
+	font:Alloy.Globals.path.font15,
+}
+"#lblDate":{
+	color:'#C0C0C0',
+	font:Alloy.Globals.path.font11,
+}
+"#lblDate[formFactor=tablet]":{
+	font:Alloy.Globals.path.font15,
+}
+"#lblTitle":{
+	font:Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.blackColor,
+}
+"#lblTitle[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#viewAmount":{
+	width : 100,
+	height : Ti.UI.SIZE	
+}
+"#viewAmount[formFactor=tablet]":{
+	width : 130,
+	height : Ti.UI.SIZE	
+}

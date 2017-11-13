@@ -1,0 +1,39 @@
+"#sectionView" :{
+	top : 0,
+	left :0,
+	right : 0,
+	backgroundColor : Alloy.Globals.path.borderColor,
+	height : 30
+}
+
+".lblSectionProperty":{
+	height : "100%",
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font13,
+	backgroundColor : "transparent",
+	textAlign : "center"
+}		
+
+"#lblCode" :{
+	left : 5,
+	width : 70,
+//	backgroundColor : "red"
+}
+"#lblDesc" :{
+	left : 80,
+	width : 65,
+//	backgroundColor : "blue"
+}
+
+"#lblTotal" :{
+	left : 220,
+	width : 75,
+//	backgroundColor : "yellow"
+}
+
+"#tableView":{
+	top : 0,
+	width : "100%",
+	height : "100%",
+	separatorColor:'transparent'
+}

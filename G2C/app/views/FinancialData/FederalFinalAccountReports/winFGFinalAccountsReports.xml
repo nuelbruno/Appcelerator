@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="winFGFinalAccountsReports" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<!-- <View class="searchBgViewProperty">
+			<View id="searchView" class="searchViewProperty" >
+			<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+			<TextField id="txtSearch" onChange="searchList"  class="txtSearchProperty"></TextField>
+			</View>
+			</View> -->
+			<View id= "bgTableView" class="bgTableViewProperty" >
+				<TableView id="tableViewItems"></TableView>
+				<Label id="lblNoItems" class = "lblNoItemsProperty"/>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

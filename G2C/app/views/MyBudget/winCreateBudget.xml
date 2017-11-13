@@ -1,0 +1,90 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View id="btnDoneView" class="rightView" onClick="createBudget" width="Ti.UI.SIZE" bubbleParent="false">
+						<Button id="btnDone" class="navBarButton"></Button>
+					</View>
+					<Button id="btnHide" class="btnHide" onClick="hideKeyboard"></Button>
+				</View>
+			</View>
+			<ScrollView id="scrlView" layout="vertical">
+				<View class="viewFormProperty" layout="vertical" bottom="10">
+					<View id="viewName" class="viewFormFieldProperty">
+						<ImageView id="imgName" class="formIconSizeProperty"></ImageView>
+						<Label id="lblName" class="lblProperty"></Label>
+						<TextField id="txtName" class="txtFieldProperty" bubbleParent="false" textAlign="right"></TextField>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewRevenueSources" class="viewFormFieldProperty">
+						<ImageView id="imgAmount" class="formIconSizeProperty"></ImageView>
+						<Label id="lblRevenueResources" class="lblProperty"></Label>
+						<View>
+							<Label id="lblRevenueResourcesValue" class="formFieldValue"></Label>
+							<View id="backPlusView" onClick="addRevenueResource">
+								<ImageView id="imgPlusGreen"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewRevenueResourcesGrid" height="0"  visible="false"></View>
+					<View id="viewRevenueResourcesAdd" height="0"  visible="false" layout="vertical">
+						<View class="viewFormFieldProperty">
+							<TextField id="txtNewSourceTitle"  class="revenueTextBoxProperty1" hintText="" bubbleParent="false" onBlur="calculateTotalAmount"></TextField>
+							<TextField id="txtNewSourceValue"  class="revenueTextBoxProperty" maxLength="5" onBlur="calculateTotalAmount" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD" preValue=""></TextField>
+						</View>
+						<View  id="viewAddSource" onClick="addNewRevenueSource">
+							<ImageView id="imgPlusBlack"></ImageView>
+							<Label id="lblAddSource"></Label>
+						</View>
+						<View class="viewSeperator"></View>
+					</View>
+					<View id="viewTotal">
+						<ImageView id="imgTotal" class="formIconSizeProperty"></ImageView>
+						<Label id="lblTotal" class="lblProperty"></Label>
+						<View class="revenueTextBoxProperty">
+							<Label id="lblTotalAmount" class="lblRevenueTotal"></Label>
+						</View>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewStartDate" class="viewFormFieldProperty">
+						<ImageView id="imgDate" class="formIconSizeProperty"></ImageView>
+						<Label id="lblStartDate" class="lblProperty"></Label>
+						<View onClick="SelectYourStartDate">
+							<Label id="lblSelectYourStartDate" class="formFieldValue"></Label>
+							<ImageView id="imgSelectYourStartDate" class="bgCalendarPicker"></ImageView>
+							<Label id="lblSelectYourStartDate_value" class="formFieldValue" text="0" visible="false"></Label>
+						</View>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewEndDate" class="viewFormFieldProperty">
+						<ImageView id="imgDate" class="formIconSizeProperty"></ImageView>
+						<Label id="lblEndDate" class="lblProperty"></Label>
+						<View onClick="SelectYourEndDate">
+							<Label id="lblSelectYourEndDate" class="formFieldValue"></Label>
+							<ImageView id="imgSelectYourEndDate" class="bgCalendarPicker"></ImageView>
+							<Label id="lblSelectYourEndDate_value" class="formFieldValue" text="0" visible="false"></Label>
+						</View>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewNote" class="viewFormFieldMultiLineProperty">
+						<ImageView  id="imgNote" class="formIconSizeProperty"></ImageView>
+						<Label id="lblNote" class="lblProperty"></Label>
+						<TextArea id="txtNote" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur" bubbleParent="false"></TextArea>
+					</View>
+				</View>
+				<Button id="btnDelete" top="5" bottom="10" class="button" onClick="deleteBudget" width="45%" visible="false"></Button>
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,140 @@
+"#topOptionView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 40,
+	backgroundColor: "#DDDDDD",
+	borderWidth: 1,
+	borderColor: Alloy.Globals.path.grayColor
+}
+".btnOptionView":{
+	height: "100%"
+}
+".lblOption":{
+	font: Alloy.Globals.path.font14,
+	color: Alloy.Globals.path.grayColor
+}
+"#imgselection":{
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	height: 2,
+	bottom: 1,
+	zIndex: 50
+}
+"#mainBackView":{
+	top: 0,
+	bottom: 0,
+	width: "100%"
+}
+".backViewProperty":{
+	//width: "100%",
+	left : 0,
+	right : 0,
+	height: "100%",
+	visible: false,
+	layout: "vertical"
+}
+"#tblGeneral":{
+	top: 15,
+	left: 5,
+	right: 5,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderWidth: 1,
+	borderRadius: 3,
+	scrollable: false,
+	height : Titanium.UI.SIZE,
+	separatorColor: "none",
+	separatorStyle: 0
+}
+".hSeparator":{
+	backgroundColor: Alloy.Globals.path.grayColor,
+	height: 1,
+	top: 10,
+	width: "100%",
+	isToExclude_contrast: true
+}
+".lblHeaderTitle":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.vatButtonTitleColor
+}
+".legActPartnerBackView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	borderColor: Alloy.Globals.path.grayColor,
+	borderWidth: 1,
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	layout : "vertical"
+}
+".lblLegalTitle":{
+	top: 10,
+	width:Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: 	Alloy.Globals.path.font13,
+	color: Alloy.Globals.path.blackColor
+}
+".lblLegalValue":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: 	Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.vatButtonTitleColor
+}
+"#nationalityView":{
+	left: 0,
+	right: 0,
+	height: Titanium.UI.SIZE,
+	bottom: 10
+}
+"#lblActivityValue":{
+	bottom : 15,
+	top : 15
+}
+"#lblclassification":{
+	font : Alloy.Globals.path.font15Bold,
+	color : Alloy.Globals.path.blackColor,
+}
+"#tblClassification":{
+	top : 10,
+	left : 5,
+	right : 5,
+	height : Titanium.UI.SIZE,
+	borderColor : Alloy.Globals.path.grayColor,
+	//scrollable : false,
+	borderRadius : 3,
+	borderWidth : 1,
+	layout : "vertical"
+	//separatorColor: "none",
+	//separatorStyle: "none"
+}
+"#attchSeparator":{
+	top : 20,
+	height : 0.5,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.borderColor,
+	isToExclude_contrast: true
+}
+// "#tblAttachments":{
+	// top : 0,
+	// // left : 5,
+	// // right : 5,
+	// left :0,
+	// right : 0,
+	// height : Titanium.UI.SIZE,
+	// // borderRadius : 4,
+	// // borderWidth : 1,
+	// // borderColor : Alloy.Globals.path.tblBorderColor,
+	// separatorColor: "none",
+	// separatorStyle: "none",
+	// scrollable : false,
+	// backgroundColor : Alloy.Globals.path.whiteColor
+// }
+"#bankDetailsBackView":{
+	bottom : 10,
+}

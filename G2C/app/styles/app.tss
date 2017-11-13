@@ -1,0 +1,987 @@
+
+".win[platform=android formFactor=handheld]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	navBarHidden: true,
+	orientationModes: [Titanium.UI.PORTRAIT]
+}
+".win[platform=android formFactor=tablet]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	navBarHidden: true,
+	orientationModes: []
+}
+
+".win[platform=ios]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	barColor: Alloy.Globals.path.bgColor,
+	navBarHidden: true,
+	tabBarHidden: true,
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
+}
+".winLayout[platform=android formFactor=handheld]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	layout: "vertical",
+	navBarHidden: true,
+	orientationModes: [Titanium.UI.PORTRAIT]
+}
+".winLayout[platform=android formFactor=tablet]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	layout: "vertical",
+	navBarHidden: true,
+	orientationModes: []
+}
+
+".winLayout[platform=ios]":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: Alloy.Globals.path.bgColor,
+	layout: "vertical",
+	barColor: Alloy.Globals.path.bgColor,
+	navBarHidden: true,
+	tabBarHidden: true,
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
+}
+
+".leftPanelProperty":{
+	left: -120,
+	zIndex: 20,
+	width: 120,
+	height: "100%"
+}
+
+".navBarBackViewProperty": {
+	top: 0,
+	width: "100%",
+	height: Ti.UI.SIZE,
+	originalBackgrounColor: Alloy.Globals.path.navBarColor,
+	backgroundColor: Alloy.Globals.path.navBarColor,
+	layout: "vertical",
+	isToExclude_contrast: false
+}
+
+".menuBackViewProperty":{
+	left: 0,
+	width: 45,
+	backgroundColor: "transparent",
+	height: "100%"
+}
+
+".statusBarProperty":{
+	top: 0,
+	width: "100%",
+	height: 0,
+	isToExclude_contrast:true
+}
+
+".navBarProperty": {
+	width: "100%",
+	height: 45,
+	isToExclude_contrast:true
+}
+
+".navBarButton":{
+	color: '#FFF',
+	font:Alloy.Globals.path.font16,
+	backgroundColor: "transparent"
+}
+
+".backView":{
+	left: 0,
+	width: 35,
+	height: "100%",
+	isToExclude_contrast:true
+}
+// ".backView[platform=android]":{
+// width:0,
+// height:0,
+// visible:false
+// }
+".imgBackBtn":{
+	left: 10,
+	width: 9,
+	height: 17,
+	image: Alloy.Globals.path.icnBack
+}
+".imgBackBtn[formFactor=tablet]":{
+	left: 14,
+	width: 26,
+	height: 26
+}
+".lblNavTitleProperty":{
+	left: 40,
+	right: 40,//60,
+	height: 30,
+	font: Alloy.Globals.path.font16,
+	color: "white",
+	textAlign: "center",
+	horizontalWrap: false,
+	isToExclude_contrast:true
+}
+".lblNavTitleProperty[platform=android]":{
+	height: 24
+}
+".lblNavTitleProperty[formFactor=tablet]":{
+	left: 50,
+	font: Alloy.Globals.path.font19
+}
+
+".navBarRightTextButton":{
+	right: 10,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: "White",
+	font: Alloy.Globals.path.font15,
+	backgroundColor: "transparent",
+	isToExclude_contrast:true
+}
+".navBarRightTextButton[platform=android]":{
+	right: 0
+}
+".navBarRightTextButton[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".rightView":{
+	right: 0,
+	width: 60,
+	height: "100%",
+	backgroundColor: "transparent"
+}
+
+/*
+* Instruction
+*
+*/
+".helpBackViewProperty":{
+	right: 55,//65,
+	// width : 30,
+	// height : "100%",
+	height: 0,
+	width: 0,
+	backgroundColor: "transparent",
+	isToExclude_contrast:true
+}
+".helpBackViewProperty[formFactor=tablet]":{
+	right: 65
+}
+
+".imgHelpProperty":{
+	width: 20,
+	height: 20,
+	touchEnabled: false,
+	image: Alloy.Globals.path.icnHelp
+}
+
+".instructionViewProperty[platform=ios]":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: "#80000000",
+	opacity: 0,
+	zIndex: 21,
+	isOpen: false
+}
+".instructionViewProperty[platform=android]":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: "#80000000",
+	visible: false,
+	opacity: 0,
+	zIndex: 21,
+	isOpen: false
+}
+
+".instructionPopupProperty[formFactor=handheld]":{
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+	borderRadius: 3,
+	bubbleParent: false,
+	borderWidth : 0.5,
+	borderColor : "#FFF",
+	layout: "vertical"
+}
+".instructionPopupProperty[formFactor=tablet]":{
+	width: 600,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+	borderRadius: 3,
+	bubbleParent: false,
+	layout: "vertical"
+}
+
+".instructionTabViewProperty":{
+	left: 0,
+	right: 0,
+	backgroundColor: "transparent",
+	height: 40,
+	horizontalWrap: false
+}
+".instructionTabViewProperty[formFactor=tablet]":{
+	height : 45,
+}
+".tabLabelProperty":{
+	width: "50%",
+	height: "100%",
+	font: Alloy.Globals.path.font14,
+	color: "black",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".tabLabelProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17,
+}
+
+".tabSeparatorProperty":{
+	backgroundColor: Alloy.Globals.path.navBarColor,
+	height: 3,
+	width: "50%",
+	bottom: 0,
+	left: 0
+}
+
+".instructionToolBarProperty":{
+	top: 8,
+	height: 50,
+	width: "100%"
+}
+
+".instLblContentProperty":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font14,
+	color: "black"
+}
+".instLblTitleProperty":{
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font15Bold,
+	color: "black"
+}
+
+".buttonViewProperty":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent"
+}
+".imgToolProperty":{
+	left: 10,
+	right: 10,
+	height: 25,
+	width: 25,
+	backgroundColor: "transparent"
+}
+".sliderViewProperty":{
+	height: 60,
+	width: "100%",
+	bottom: -60,
+	isOpen: false,
+	backgroundColor: "white"
+}
+".fontSliderProperty":{
+	left: 30,
+	right: 70,
+	height: 25,
+	max: 30,
+	min: 8,
+	value: 14
+}
+".fontSliderProperty[platform=android]":{
+	height: 30
+}
+
+".imgSliderCloseProperty":{
+	right: 10,
+	height: 20,
+	width: 20,
+	image: Alloy.Globals.path.icnInfoDone
+}
+
+".instructionSeparatorProperty":{
+	top: 18,
+	left: 15,
+	right: 15,
+	height: 1.5,
+	backgroundColor: Alloy.Globals.path.grayColor
+}
+
+".lblAMinusProperty":{
+	left: 10,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	text: "A-",
+	font: Alloy.Globals.path.font13
+}
+".lblAPlusProperty":{
+	right: 45,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	text: "A+",
+	font: Alloy.Globals.path.font18
+}
+
+/*
+*
+*
+*
+*/
+
+".viewMain":{
+	left: 10,
+	right: 10,
+	layout: 'vertical'
+}
+
+".closeViewProperty": {
+	height: "100%",
+	width: "100%",
+	top: 0,
+	backgroundColor: "black",
+	opacity: 0.6,
+	zIndex: 15,
+	visible: false
+}
+"#btnDone":{
+	top: 6,
+	width: 30,
+	height: 16,
+	title: "Done",
+	color: "#FFF",
+	backgroundColor: 'yellow',
+	touchEnabled: false
+}
+".profileDetails": {
+	width: "100%",
+	layout: "vertical"
+}
+
+
+".imageProperty": {
+	width: "100%",
+	height: "100%"
+}
+
+
+".imageDetailsProfile": {
+	width: "100%",
+	layout: "vertical",
+	height:Ti.UI.SIZE
+}
+
+
+
+
+".lineSeparator": {
+	backgroundColor:Alloy.Globals.path.grayColor,
+	height: 1
+}
+
+
+//Search box parameters
+".searchViewProperty": {
+	borderWidth: 1,
+	borderColor:Alloy.Globals.path.whiteColor,
+	backgroundColor:Alloy.Globals.path.whiteColor,
+	borderRadius: 3,
+	top: 8,
+	bottom: 8,
+	left: 10,
+	right: 10
+}
+".searchBgViewProperty": {
+	height: 50,
+	backgroundColor:Alloy.Globals.path.searchBoxColor
+}
+
+".txtSearchProperty": {
+	hintText:Alloy.Globals.selectedLanguage.searchHint,
+	color:Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font14,
+	height: "100%",
+	backgroundColor: "transparent"
+}
+".txtSearchProperty[platform=android]":{
+	height: "120%"
+}
+".txtSearchProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font19
+}
+
+".imgSearchProperty": {
+	width: 15,
+	height: 15,
+	backgroundImage:Alloy.Globals.path.icnSearch
+}
+".imgSearchProperty[formFactor=tablet]": {
+	width: 25,
+	height: 25
+}
+// tableview background Color
+".bgTableViewProperty": {
+	backgroundColor:Alloy.Globals.path.whiteColor
+}
+//Form fields
+"TextField":{
+	color:Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font13
+}
+"Label":{
+	color:Alloy.Globals.path.blackColor,
+	font:Alloy.Globals.path.font13
+}
+// "#viewButtons":{
+// width:'100%',
+// left:20,
+// right:20,
+// height:70,
+// }
+".viewButtons":{
+	height: 30
+}
+".button":{
+	width: 100,
+	height: 30,
+	padding: 10,
+	color:Alloy.Globals.path.buttonTextColor,
+	backgroundColor:Alloy.Globals.path.navBarColor
+}
+".button[formFactor=tablet]":{
+	width: 200,
+	height: 45,
+	padding: 20
+}
+"ScrollView":
+{
+	top: '0dp',
+	contentWidth: '100%',
+	contentHeight: Ti.UI.SIZE,
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false,
+	backgroundColor: Alloy.Globals.path.bgColor
+}
+"#btnDone":{
+	title: Alloy.Globals.selectedLanguage.doneTitle
+}
+"#btnDelete":{
+	title: Alloy.Globals.selectedLanguage.deleteTitle
+}
+".commonTextBoxBlackProperty":{
+
+	height: 30,
+	borderWidth: 1,
+	borderColor: '#C0C0C0',
+	font:Alloy.Globals.path.font13
+}
+".commonTextBoxGreenProperty":{
+	height: 30,
+	borderWidth: 1,
+	borderColor:Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font13
+}
+/* common form css */
+".viewFormProperty":{
+	left: 5,
+	right: 5,
+	top: 15,
+	layout: 'vertical',
+	borderColor: '#C0C0C0',
+	borderWidth: 1,
+	height:Ti.UI.SIZE
+}
+
+".viewFormFieldProperty":{
+	height: 45
+}
+".viewFormFieldMultiLineProperty":{
+	height: 140
+}
+
+".formIconProperty":{
+	width: '10%'
+}
+".formIconSizeProperty":{
+	width: 25,
+	height: 25
+}
+".formCaptionProperty":{
+	width: '35%'
+}
+".formFieldProperty":{
+	width: '55%',
+	backgroundColor: "transparent"
+}
+".viewSeperator":{
+	height: 1,
+	backgroundColor: '#C0C0C0'
+}
+".bgCalendarPicker":{
+	width: 22,
+	height: 22,
+	image:Alloy.Globals.path.icnCalendar
+}
+".formFieldValue":{
+	color:Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font13
+}
+".formFieldValue[formFactor=tablet]":{
+	font:Alloy.Globals.path.font16
+}
+".separator":{
+	left: 0,
+	right: 0,
+	height: 0.5,
+	isToExclude_contrast: true,
+	backgroundColor:Alloy.Globals.path.borderColor
+}
+".separator[formFactor=tablet]":{
+	height: 1
+}
+
+".titleBG":{
+	backgroundImage: Alloy.Globals.path.bgHeaderTitle,
+	left: 0,
+	right: 0,
+	height: 35
+}
+".titleBG[formFactor=tablet]":{
+	height: 45
+}
+".lblTitle":{
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.vatButtonTitleColor
+}
+".hSeparator":{
+	backgroundColor: Alloy.Globals.path.valueSeparatorColor,
+	//backgroundColor : Alloy.Globals.path.borderColor,
+	height: 1,
+	//bottom: 0,
+	top: 0,
+	left: 0,
+	right: 0,
+	isToExclude_contrast: true
+}
+".btnLogin":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font14Bold,
+	color: Alloy.Globals.path.vatButtonTitleColor,
+	style: "plain",
+	backgroundColor: "transparent"
+}
+".btnLogin[formFactor=tablet]":{
+	font: Alloy.Globals.path.font16Bold
+}
+
+".lblLoginDesc":{
+	top: 15,
+	left: 10,
+	right: 10,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.vatButtonTitleColor
+}
+".lblLoginDesc[formFactor=tablet]":{
+	font: Alloy.Globals.path.font15
+}
+".credentialView":{
+	top: 15,
+	layout: "vertical",
+	height: Titanium.UI.SIZE,
+	left: 10,
+	right: 10,
+	borderColor: Alloy.Globals.path.grayColor,
+	backgroundColor: Alloy.Globals.path.whiteColor
+}
+".btnLoginBig":{
+	top: 10,
+	left: 10,
+	right: 10,
+	backgroundColor: Alloy.Globals.path.buttonBackgroundColor,
+	height: 33,
+	font:  Alloy.Globals.path.font14Bold,
+	borderRadius: 3,
+	color:Alloy.Globals.path.whiteColor
+}
+".btnLoginBig[formFactor=tablet]":{
+	height: 37,
+	top: 13,
+	font:  Alloy.Globals.path.font16Bold
+}
+".loginView[formFactor=handheld]":{
+	left: 30,
+	right: 30,
+	// height : 450,
+	height: Titanium.UI.SIZE,//220
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.path.bgColor,
+	zIndex: 20,
+	visible: false,
+	layout: "vertical",
+	borderColor : "#FFF",
+	borderWidth : 0.5
+}
+".loginView[formFactor=tablet]":{
+	width: 350,
+	// height : 450,
+	height: Titanium.UI.SIZE,//220
+	borderRadius: 3,
+	backgroundColor: Alloy.Globals.path.bgColor,
+	zIndex: 20,
+	visible: false,
+	layout: "vertical"
+}
+".credentialBackView":{
+	left: 0,
+	right: 0,
+	height: 31,
+	backgroundColor: Alloy.Globals.path.whiteColor
+}
+".credentialBackView[formFactor=tablet]":{
+	height: 41
+}
+".imgLoginPassword":{
+	width: 13,
+	height: 16,
+	image: Alloy.Globals.path.icnPassword
+}
+".imgLoginUser":{
+	width: 16,
+	height: 16,
+	image: Alloy.Globals.path.icnUsername
+}
+".txtLoginFldProperty":{
+	height: "100%",
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font12,
+	backgroundColor: "transparent"
+}
+".txtLoginFldProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font14
+}
+".lblNoRecordFound":{
+	top: 25,
+	font: Alloy.Globals.path.font15,
+	color: Alloy.Globals.path.borderColor,
+	visible: false
+}
+".lblNoRecordFound[formFactor=tablet]":{
+	top: 40,
+	font: Alloy.Globals.path.font20
+}
+".btnDoneProperty":{
+	right: '-47dp',
+	height: '28dp',
+	width: '47dp',
+	backgroundColor: "transparent",
+	title: Alloy.Globals.selectedLanguage.doneTitle,
+	font: Alloy.Globals.path.font15,
+	color: Alloy.Globals.path.whiteColor
+}
+".backHomeBtnView":{
+	left: 35,
+	width: 0,//40,
+	height: "100%",
+	backgroundColor:Alloy.Globals.path.navBarColor
+}
+".backHomeBtnView[formFactor=tablet]":{
+	left: 50,
+	width: 0,//50,
+	height: "100%",
+	backgroundColor:Alloy.Globals.path.navBarColor
+}
+
+".imgHomeBtn":{
+	width: 18,
+	height: 16,
+	backgroundImage: Alloy.Globals.path.icnHome
+}
+
+".imgHomeBtn[formFactor=tablet]":{
+	width: 26,
+	height: 26,
+	backgroundImage: Alloy.Globals.path.icnHome
+}
+
+
+
+// UserSatisfaction popUp BackView..
+
+".hiddenViewProperty":{
+	top: 0,
+	bottom: 0,
+	left: 0,
+	right: 0,
+	visible: false
+}
+
+".UserSatisbackView":{
+	top: 0,
+	bottom: 0,
+	left: 0,
+	right: 0,
+	backgroundColor: "black",
+	opacity: 0.6,
+	visible: false
+}
+
+".UserSatispopView[formFactor=handheld]":{
+	left: 25,
+	right: 25,
+	height: Titanium.UI.SIZE,//180,
+	borderColor: Alloy.Globals.path.borderColor,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	borderRadius: 3,
+	layout: "vertical",
+	visible: false
+}
+".UserSatispopView[formFactor=tablet]":{
+	// left : 25,
+	// right : 25,
+	height: 210,
+	width: 520,
+	borderColor: Alloy.Globals.path.borderColor,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	borderRadius: 3,
+	layout: "vertical",
+	visible: false
+}
+
+".popTopViewProperty":{
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 40,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+
+".lblUserSatisfaction":{
+	top: 10,
+	width: "100%",
+	height: Titanium.UI.SIZE,
+	color: Alloy.Globals.path.whiteColor,
+	font: Alloy.Globals.path.font17,
+	text: Alloy.Globals.selectedLanguage.userSatisfaction,
+	textAlign: "center"
+}
+".lblUserSatisfaction[formFactor=tablet]":{
+	font: Alloy.Globals.path.font21
+}
+".lblUserSuggestion":{
+	top: 25,
+	//	width : "100%",
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	color: Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font14,
+	text: Alloy.Globals.selectedLanguage.userSatisfactionSuggestion,
+	textAlign: "center"
+}
+".lblUserSuggestion[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".viewUserSatisFeedback":{
+	top: 10,
+	bottom : 10,
+	//	left : 10,
+	//	right : 10,
+	width: 145,//Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	//	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius: 2,
+	// layout: "horizontal"
+}
+".viewUserSatisFeedback[formFactor=tablet]":{}
+".lblUserSatisFeedback":{
+	width: 60,
+	height: 30,
+	text: Alloy.Globals.selectedLanguage.yes,
+	color: Alloy.Globals.path.navBarColor,
+	font: Alloy.Globals.path.font17,
+	textAlign: "center"
+}
+".lblUserSatisFeedback[formFactor=tablet]":{
+	height: 45,
+	font: Alloy.Globals.path.font21
+}
+
+".lblUserSatisSkip":{
+	//	top : 10,
+	// left: 25,
+	width: 60,//"100%",
+	height: Titanium.UI.SIZE,
+	color: Alloy.Globals.path.navBarColor,
+	font: Alloy.Globals.path.font17,
+	text: Alloy.Globals.selectedLanguage.skip,
+	textAlign: "center"
+}
+".lblUserSatisSkip[formFactor=tablet]":{
+	font: Alloy.Globals.path.font21
+}
+".lblEmptyRecordProperty":{
+	opacity: 0.0,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black"
+}
+".lblEmptyRecordProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font16
+}
+".btnHide":{
+	right: -60,
+	height: 40,
+	width: 60,
+	font:Alloy.Globals.path.font16,
+	color: Alloy.Globals.path.whiteColor,
+	backgroundColor: "transparent"
+}
+".btnHide[formFactor=tablet]":{
+	font: Alloy.Globals.path.font20
+}
+
+".astricProperty":{
+	height : Titanium.UI.SIZE,
+	width : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font15Bold,
+	color : Alloy.Globals.path.navBarColor,
+	isToExclude_contrast: true,
+	text : "*"	
+}
+
+".astricPropertyVT":{
+	top: 10,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font15Bold,
+	color: Alloy.Globals.path.navBarColor,
+	isToExclude_contrast: true,
+	text: "*"
+}
+
+
+/*
+* TOOL BAR
+*
+*/
+".bottomToolBarViewProperty":{
+	zIndex: 20,
+	height: 100,
+	width: "100%",
+	layout: "vertical",
+	backgroundColor: "transparent"
+}
+
+".btnTopArrowProperty":{
+	height: 25,
+	width: 60,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+
+".imgBottomBarArrowProperty":{
+	width: 22,
+	height: 12,
+	image: Alloy.Globals.path.icnArrowUPWhite
+}
+
+".barBackViewProperty":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+".barButtonViewProperty":{
+	top: 20,
+	width: Titanium.UI.SIZE,
+	layout: "horizontal"
+}
+".barButtonProperty":{
+	height: 50,
+	width: 50,
+	left: 10,
+	right: 10,
+	backgroundColor: "transparent"
+}
+
+
+".lblEngNoProperty":{
+	top: 0,
+	left: 15,
+	right: 15,
+	height: 30,
+	color: Alloy.Globals.path.navBarColor,//lblBlackColor,
+	font: Alloy.Globals.path.font14,
+	text : Alloy.Globals.selectedLanguage.englishNumberMandatory,
+}
+".lblEngNoProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".lblEngNoProperty[if=Alloy.Globals.isEnglish]":{
+	textAlign : "left"
+}
+".lblEngNoProperty[if!=Alloy.Globals.isEnglish]":{
+	textAlign : "right"
+}
+
+
+
+/*
+ * mSupplier
+ */
+
+".stepsMandatoryProperty" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	borderColor : Alloy.Globals.path.redColor,
+	layout : "vertical"
+}
+
+".lblStepsMandatoryProperty1" :{
+	top : 4,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	bottom : 1,
+	color : Alloy.Globals.path.navBarColor,
+	text : Alloy.Globals.selectedLanguage.stepsMandatory1,
+	font : Alloy.Globals.path.font15Bold,
+	textAlign : "center"
+}
+
+".lblStepsMandatoryProperty1[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18Bold
+}
+
+".lblStepsMandatoryProperty2" :{
+	top : 1,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	bottom : 4,
+	color : Alloy.Globals.path.navBarColor,
+	text : Alloy.Globals.selectedLanguage.stepsMandatory2,
+	font : Alloy.Globals.path.font15Bold,
+	textAlign : "center"
+}
+
+".lblStepsMandatoryProperty2[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18Bold
+}
+

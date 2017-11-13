@@ -1,0 +1,20 @@
+{
+	"global": {
+		"dropbox": {
+			"urlscheme": "db-is0f0giq2i1wlv3",
+			"key": "is0f0giq2i1wlv3",
+			"secret": "0oazpgma1b0dqr0",
+			"root": "dropbox"
+		}
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"dependencies": {
+		"com.alco.highcharts": "1.0"
+	}
+}

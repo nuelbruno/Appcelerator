@@ -1,0 +1,175 @@
+"#mainView":{
+	layout : "vertical",
+	top : 0,
+	bottom : 30
+}
+".lblProperty":{
+	top: 10,
+	bottom: 10,
+	height: Titanium.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.Globals.path.borderColor,
+	font: Alloy.Globals.path.font13
+}
+".lblProperty[if=!Alloy.Globals.isEnglish]":{
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".lblProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".lblProperty[formFactor=tablet if=!Alloy.Globals.isEnglish]":{
+	font: Alloy.Globals.path.font17,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+"#lblViewReq":{
+	top: 10,
+	left: 5,
+	right: 5,
+	color: Alloy.Globals.path.blackColor,
+	font: Alloy.Globals.path.font17
+}
+"#lblViewReq[formFactor=tablet]":{
+	left: 10,
+	right: 10,
+	font: Alloy.Globals.path.font20
+}
+"#listView":{
+	top: 15,
+	separatorColor: "none",
+	separatorStyle: 0,
+	backgroundColor: "transparent"
+}
+"#tblRow":{
+	height: Titanium.UI.SIZE,
+	width: "100%",
+	selectedColor: "none",
+	selectionStyle: 0,
+	backgroundColor: "transparent"
+}
+"#rowBackView":{
+	top: 5,
+	bottom: 5,
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	backgroundColor: Alloy.Globals.path.whiteColor,
+	layout: "vertical",
+	borderColor: Alloy.Globals.path.grayColor,
+	borderWidth: 1,
+	borderRadius: 3
+}
+"#rowBackView[formFactor=tablet]":{
+	left: 10,
+	right: 10
+}
+"#lblSubjTit[if=Alloy.Globals.isEnglish]":{
+	left: 10
+}
+"#lblSubjTit[if!=Alloy.Globals.isEnglish]":{
+	right: 10
+}
+"#lblSubject[if=Alloy.Globals.isEnglish]":{
+	left: 80,
+	right: 10
+}
+"#lblSubject[if!=Alloy.Globals.isEnglish]":{
+	right: 80,
+	left: 10
+}
+"#imgDate":{
+	top: 10,
+	bottom: 10,
+	height: 18,
+	width: 18,
+	image: Alloy.Globals.path.icnCalendar
+}
+"#imgDate[formFactor=tablet]":{
+	height: 25,
+	width: 25
+}
+"#imgDate[if=Alloy.Globals.isEnglish]":{
+	left: 10
+}
+"#imgDate[if=!Alloy.Globals.isEnglish]":{
+	right: 10
+}
+"#lblDate[if=Alloy.Globals.isEnglish]":{
+	left: 40
+}
+"#lblDate[if=!Alloy.Globals.isEnglish]":{
+	right: 40
+}
+"#lblDate[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 50
+}
+"#lblDate[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	right: 50
+}
+"#imgTime[if=Alloy.Globals.isEnglish]":{
+	top: 10,
+	bottom: 10,
+	left: 140,
+	height: 18,
+	width: 18,
+	image: Alloy.Globals.path.icnDate
+}
+"#imgTime[if=!Alloy.Globals.isEnglish]":{
+	top: 10,
+	bottom: 10,
+	right: 140,
+	height: 18,
+	width: 18,
+	image: Alloy.Globals.path.icnDate
+}
+"#imgTime[formFactor=tablet if=Alloy.Globals.isEnglish]":{
+	left: 190,
+	height: 25,
+	width: 25
+}
+"#imgTime[formFactor=tablet if=!Alloy.Globals.isEnglish]":{
+	right: 190,
+	height: 25,
+	width: 25
+}
+"#lblTime[if=Alloy.Globals.isEnglish]":{
+	left: 170
+}
+"#lblTime[if=!Alloy.Globals.isEnglish]":{
+	right: 170
+}
+"#lblTime[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 230
+}
+"#lblTime[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	right: 230
+}
+"#lblComments":{
+	left: 10,
+	right: 10,
+	top: 10,
+	bottom: 10,
+	height: Ti.UI.SIZE
+}
+"#btnReply":{
+	top: 10,
+	bottom: 20,
+	width: 100,
+	height: 30,
+	backgroundColor:Alloy.Globals.path.navBarColor,
+	color: Alloy.Globals.path.whiteColor,
+	font: Alloy.Globals.path.font16,
+	title: Alloy.Globals.selectedLanguage.reply
+}
+"#btnReply[formFactor=tablet]":{
+	bottom: 25,
+	width: 180,
+	height: 45,
+	font: Alloy.Globals.path.font20
+}
+"#btnReply[if=Alloy.Globals.isEnglish]":{
+	left: 10
+}
+"#btnReply[if!=Alloy.Globals.isEnglish]":{
+	right: 10
+}

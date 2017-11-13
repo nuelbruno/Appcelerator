@@ -1,0 +1,258 @@
+"#bgTableView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+}
+
+"#tableViewItems" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	separatorColor:'transparent',
+}
+
+"#lblNoItems[formFactor=handheld]":{
+	top: 80,
+	height: 18,
+	left: 20,
+	right: 20,
+	textAlign: "center",
+	text:Alloy.Globals.selectedLanguage.noItemsFound,
+	font: Alloy.Globals.path.font15,
+	color:Alloy.Globals.path.blackColor,
+	visible: false
+}
+"#lblNoItems[formFactor=tablet]":{
+	top: 120,
+	left: 20,
+	right: 20,
+	textAlign: "center",
+	text:Alloy.Globals.selectedLanguage.noItemsFound,
+	color:Alloy.Globals.path.blackColor,
+	visible: false,
+	font: Alloy.Globals.path.font21
+}
+
+"#row":{
+	height:Titanium.UI.SIZE,
+	width:'100%',
+	selectedColor:'transparent',
+	selectedBackgroundColor:'transparent',
+	selectionStyle:'none'
+
+}
+
+
+"#viewContents" : {
+	top : 10,
+	layout : "vertical",
+	height:Ti.UI.SIZE,
+	bottom : 10,
+	left : 10,
+	right : 10,
+	borderColor : Alloy.Globals.path.tblBorderColor,
+	borderRadius : 5
+}
+
+"#lblTitle" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font14,
+	color:Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false
+}
+
+"#lblTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18
+}
+
+
+"#lblTitle[if=Alloy.Globals.isEnglish]" :{
+	textAlign : "left",
+}
+
+"#lblTitle[if!=Alloy.Globals.isEnglish]" :{
+	textAlign : "right",
+}
+
+"#viewDate" :{
+	top : 5,
+	height:Ti.UI.SIZE,
+	bottom : 2,
+	left : 0,
+	right : 0,
+}
+
+"#lblEndDate" :{
+	top : 2,
+	width : 155,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.lblGrayColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.endDate,
+//	backgroundColor : "red"
+}
+
+"#lblEndDate[formFactor=tablet]" :{
+	width : 210,
+	font : Alloy.Globals.path.font16
+}
+
+
+"#lblEndDate[if=Alloy.Globals.isEnglish]" :{
+	left : 10,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDate[if!=Alloy.Globals.isEnglish]" :{
+	right : 10,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+
+"#lblEndDateValue" :{
+	top : 2,
+	width : 100,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.navBarColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.endDate,
+	backgroundColor : "yellow"
+}
+
+"#lblEndDateValue[formFactor=tablet]" :{
+	width : 150,
+	font : Alloy.Globals.path.font16
+}
+
+
+"#lblEndDateValue[formFactor=handheld if=Alloy.Globals.isEnglish]" :{
+	left : 170,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDateValue[formFactor=handheld if!=Alloy.Globals.isEnglish]" :{
+	right : 135,
+	left : undefined,
+	textAlign : "right",
+}
+
+"#lblEndDateValue[formFactor=tablet if=Alloy.Globals.isEnglish]" :{
+	left : 220,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDateValue[formFactor=tablet if!=Alloy.Globals.isEnglish]" :{
+	right : 185,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+".viewProperty":{
+	top : 5,
+	width : "100%",
+	height:Ti.UI.SIZE,
+	bottom : 10,
+//	backgroundColor:"green"
+}
+
+
+".innerViewProperty":{
+	top : 5,
+	bottom : 5,
+	width : 100,
+	height:Ti.UI.SIZE,
+	borderColor : Alloy.Globals.path.goldColor,
+	borderRadius : 2, 
+//	backgroundColor:"yellow"
+}
+".innerViewProperty[formFactor=tablet]":{
+	top : 8,
+	bottom : 8,
+	width : 120
+}
+
+
+"#viewTime[if=Alloy.Globals.isEnglish]" :{
+	left : 10,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#viewTime[if!=Alloy.Globals.isEnglish]" :{
+	right : 10,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+"#viewComments[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 10,//120,
+	right : undefined,
+	textAlign : "left",
+}
+"#viewComments[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 10,//140,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#viewComments[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 10,//120,
+	left : undefined,
+	textAlign : "right",
+}
+"#viewComments[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 10,//140,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+".lblProperty":{
+	top : 3,
+	bottom : 3,
+	height : Titanium.UI.SIZE,
+	width : "100%",
+	textAlign : "center",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font10
+//	backgroundColor:"gray"
+}
+
+".lblProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font14
+}
+
+"#imgTop" :{
+	top : 7,
+	right : 15,
+	width : 18,
+	height : 17,
+//	backgroundColor : "red",
+//	backgroundImage : "",//Alloy.Globals.path.icnTag
+}
+
+"#imgTop[if=Alloy.Globals.isEnglish]" :{
+	right : 20,
+	left : undefined,
+	textAlign : "left",
+}
+
+"#imgTop[if!=Alloy.Globals.isEnglish]" :{
+	left : 20,
+	right : undefined,
+	textAlign : "right",
+}

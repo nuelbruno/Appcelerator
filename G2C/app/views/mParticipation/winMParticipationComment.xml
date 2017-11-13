@@ -1,0 +1,84 @@
+<Alloy>
+	<Window id="winMParticipationComment" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="mainView">
+
+				<View id="composeView">
+					<Label id="lblComposeAstrik"></Label>
+					<Label id="lblCompose"></Label>
+				</View>
+				<View id="viewDesc">
+					<TextArea id="txtDesc"></TextArea>
+				</View>
+				<Label id="lblPersonalDetails" class="lblProperty"></Label>
+				<View id="viewPersonalDetails">
+
+					<View class="viewProperty">
+						<Label id="lblFirstName" class="lblTextProperty"></Label>
+						<TextField id="txtFirstName" class="txtProperty"></TextField>
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblLastName" class="lblTextProperty"></Label>
+						<TextField id="txtLastName"  class="txtProperty"></TextField>
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblEmail" class="lblTextProperty"></Label>
+						<TextField id="txtEmail"  class="txtProperty"></TextField>
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblMobileNo" class="lblTextProperty"></Label>
+						<TextField id="txtMobileNo"  class="txtProperty" maxLength="10"></TextField>
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblNationality" class="lblTextProperty"></Label>
+						<TextField id="txtNationality" class="txtDropdownProperty" onClick="selectNationality"></TextField>
+						<ImageView id="imgNationality" class="dropdownProperty" onClick="selectNationality"></ImageView>
+						<!-- <Label id="lblNationalityValue"  class="lblTextValueProperty" onClick="selectNationality"></Label> -->
+
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblGender" class="lblTextProperty"></Label>
+						<TextField id="txtGender" class="txtDropdownProperty" onClick="selectGender"></TextField>
+						<ImageView id="imgGender" class="dropdownProperty" onClick="selectGender"></ImageView>
+						<!-- <Label id="lblGenderValue"  class="lblTextValueProperty" onClick="selectGender"></Label> -->
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblAgeGroup" class="lblTextProperty"></Label>
+						<TextField id="txtAgeGroup" class="txtDropdownProperty" onClick="selectAgeGroup"></TextField>
+						<ImageView id="imgAgeGroup" class="dropdownProperty" onClick="selectAgeGroup"></ImageView>
+						<!-- <Label id="lblAgeGroupValue"  class="lblTextValueProperty" onClick="selectAgeGroup"></Label> -->
+					</View>
+					<ImageView class="separator"></ImageView>
+					<View class="viewProperty">
+						<Label id="lblComment" class="lblTextProperty"></Label>
+						<TextField id="txtComment"  class="txtProperty"></TextField>
+					</View>
+
+				</View>
+
+				<!-- <Label id="lblAddMoreDetail"></Label> -->
+				<Button id="btnSubmit" onClick="submitComment"></Button>
+
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,33 @@
+<Alloy>
+	<View id="leftPanelView">
+		
+		<View id="homeView" class="backView">
+			<View class="innerView">
+				<ImageView id="imgHome" class="imgProperty"></ImageView>
+				<Label id="lblHome" class="lblProperty">Home</Label>
+			</View>	
+		</View>
+		
+		<View id="NewsView" class="backView">
+			<View class="innerView">
+				<ImageView id="imgNews" class="imgProperty"></ImageView>
+				<Label id="lblNews" class="lblProperty">News</Label>
+			</View>	
+		</View>
+		
+		<View id="ProfileView" class="backView">
+			<View class="innerView">
+				<ImageView id="imgProfile" class="imgProperty"></ImageView>
+				<Label id="lblProfile" class="lblProperty">Profile</Label>
+			</View>	
+		</View>
+		
+		<View id="AboutView" class="backView">
+			<View class="innerView">
+				<ImageView id="imgAbout" class="imgProperty"></ImageView>
+				<Label id="lblAbout" class="lblProperty">About</Label>
+			</View>	
+		</View>
+		
+	</View>
+</Alloy>

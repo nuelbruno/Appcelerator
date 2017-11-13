@@ -1,0 +1,148 @@
+"#mainView" :{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0,
+	layout : "vertical"
+}
+
+
+"#bgTableView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+}
+
+
+"#tableViewItems" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 55,
+	separatorColor:'transparent',
+}
+
+"#row":{
+	height:Titanium.UI.SIZE,
+	width:'100%',
+	selectedColor:'transparent',
+	selectedBackgroundColor:'transparent',
+	selectionStyle:'none',
+	backgroundColor : "transparent",
+}
+
+
+"#viewContents" : {
+	top : 15,
+	layout : "vertical",
+	height:Ti.UI.SIZE,
+	backgroundColor : "transparent",
+//	bottom : 10,
+	left : 10,
+	right : 10,
+}
+
+"#lblQuestion" :{
+	top : 5,
+	width : "100%",
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font15,
+	color:"black",//Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false
+}
+
+"#lblQuestion[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+
+
+".viewProperty":{
+	top : 10,
+	width : "100%",
+	height:35,
+	bottom : 10,
+	borderColor : Alloy.Globals.path.grayColor
+//	backgroundColor:"green"
+}
+".viewProperty[formFactor=tablet]":{
+	height : 45,
+}
+
+"#lblAnswer" :{
+	height :"100%",
+	font : Alloy.Globals.path.font13,
+	color:"black",//Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false
+}
+"#lblAnswer[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+"#icnDropDown" :{
+	width : 12,
+	height : 8,
+	backgroundImage : Alloy.Globals.path.arrowDown,
+	touchEnabled : false,
+	backgroundColor : "transparent"
+}
+"#icnDropDown[formFactor=tablet]" :{
+	width : 18,
+	height : 12,
+}
+
+"#btnBackView":{
+	bottom : 10,
+	height : Titanium.UI.SIZE,
+	width : 250
+}
+"#btnBackView[formFactor=tablet]":{
+	bottom : 15,
+	height : Titanium.UI.SIZE,
+	width : 350
+}
+
+"#submitView" :{
+	height : 35,
+	width : 115,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#submitView[formFactor=tablet]" :{
+	height : 45,
+	width : 160
+}
+
+"#lblSubmit" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblSubmit[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+"#cancelView" :{
+	height : 35,
+	width : 115,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#cancelView[formFactor=tablet]" :{
+	height : 45,
+	width : 160
+}
+
+"#lblCancel" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblCancel[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}

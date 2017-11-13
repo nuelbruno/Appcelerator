@@ -1,0 +1,56 @@
+"#backView" :{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right: 0,
+	layout : "vertical"
+}
+
+"#icnDone" :{
+	top : 30,
+	width : 135,
+	height : 135,
+	backgroundImage : Alloy.Globals.path.imgDoneUserSatisfaction,
+}
+
+"#lblThankYou" :{
+	top : 15,
+	left : 75,
+	right : 75,
+	font : Alloy.Globals.path.font13,
+	color:Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.thankYouUserSatisfaction,
+	textAlign : "center"
+}
+
+"#lblThankYou[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+
+
+"#doneView" :{
+	top : 20,
+	bottom : 10,
+	height : 35,
+	width : 200,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#doneView[formFactor=tablet]" :{
+	height : 40,	
+}
+
+"#lblDone" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.doneTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblDone[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+

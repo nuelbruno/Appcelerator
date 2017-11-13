@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="dmcaserviceinfo">Services Information</string>
+	<string name="mymarina">My Marina</string>
+	<string name="dmcamedia">DMCA Media</string>
+	<string name="dmcaawareness">DMCA Safety</string>
+	<string name="interactivemaps">Maps</string> 
+	<string name="dubaicoasttoday">Dubai Coast Today</string>
+	<string name="aboutdmca">About DMCA</string>
+	<string name="contactus">Contact  Information</string>
+	<string name="marine_craft_crew_licensing">Marine Craft Crew Licensing</string>
+	<string name="marine_craft_licensing">Marine Craft Licensing</string>
+	<string name="marinetime_commercial_licensing">Maritime Commercial Licensing</string>
+	<string name="categories">Categories</string>
+	<string name="service_procedure">Service Procedure</string>
+	<string name="requirements">Requirements</string>
+	<string name="indentify_my_location">Identify My Location</string>
+	<string name="show_directions">Show Directions</string>
+	<string name="my_favourites">My Favourites</string>
+	<string name="news">News</string>
+	<string name="loaction_map">Location Map</string>
+	<string name="feedback_and_inquiry">Feedback &amp; Inquiry</string>
+	<string name="Name">Name</string>
+	<string name="Address">Address</string>
+	<string name="Email">Email</string>
+	<string name="subject">Subject</string>
+	<string name="comments">Message</string>
+	<string name="attachments">Attachments</string>
+	<string name="confirmation">Confirmation</string>
+	<string name="thank_you">Thank you</string>
+	<string name="safety_first">Safety First</string>
+	<string name="boating_quiz">Boating Quiz</string>
+	<string name="maritime_safety_introduction">Maritime Safety Introduction</string>
+	<string name="dos">Do\'s</string>
+	<string name="donts">Dont\'s</string>
+	<string name="gallery">Gallery</string>
+	<string name="addtofavourites">Add to favourites</string>
+	<string name="dmcamarinemap">DMCA Marine Map</string>
+	<string name="jet_ski">Jet Ski Usages &amp; Resting Area</string>
+	<string name="restricted_area">Restricted Areas in Dubai Water</string>
+	<string name="dubai_maritime_city_authority">Dubai Maritime City Authority</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="youtube">Youtube</string>
+	<string name="social_media">Social Media</string>
+	<string name="police">Police</string>
+	<string name="coast_guard">Coast Guards</string>
+	<string name="ports_police_station">Ports Police Station</string>	<string name="call_dmca">استدعاء</string>
+	<string name="call_dmca">Call DMCA</string>	<string name="call_dmca">استدعاء</string>
+	<string name="email_dmca">Email DMCA</string>
+	<string name="emergency_contact">DMCA Emmergency Contact</string>
+	<string name="fax">Fax</string>
+	<string name="dubai_uae">Dubai UAE</string>
+	<string name="follow_us_on">Follow Us On</string>
+</resources>

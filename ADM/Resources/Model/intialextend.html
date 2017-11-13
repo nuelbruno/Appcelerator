@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Query State Info without Map</title>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+    <script type="text/javascript" language="Javascript">
+      dojo.require("esri.tasks.query");
+
+      var queryTask, query;
+
+      function init() {
+        //build query
+        queryTask = new esri.tasks.QueryTask("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer/0");
+        //dojo.connect(queryTask, "onComplete", showResults);
+
+        //build query filter
+        query = new esri.tasks.Query();
+        query.returnGeometry = true;
+        query.outFields = ["SECTORTPSSNAMEENG"];
+      }
+
+      function execute(stateName) {
+        query.where = "PLOTNUMBER= '"+stateName+"' ";
+        //execute query
+        queryTask.execute(query,showResults);
+      }
+
+      function showResults(results) {
+        var s = "";
+        for (var i=0, il=results.features.length; i<il; i++) {
+          var featureAttributes = results.features[i].attributes;
+          for (att in featureAttributes) {
+            s = s + "<b>" + att + ":</b>  " + featureAttributes[att] + "<br />";
+          }
+        }
+        dojo.byId("info").innerHTML = s;
+        
+      }
+
+      dojo.addOnLoad(init);
+    </script>
+  </head>
+  <body>
+    US state name : <input type="text" id="stateName" value="California" />
+    <input type="button" value="Get Details" onclick="execute(dojo.byId('stateName').value);" />
+    <br />
+    <br />
+    <div id="info" style="padding:5px; margin:5px; background-color:#eee;">
+    </div>
+  </body>
+</html>

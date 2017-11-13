@@ -1,0 +1,69 @@
+"#mainView":{
+	top : 0,
+	bottom : 30
+}
+"#mainView[formFactor=tablet]":{
+	bottom : 35
+}
+"#tableViewBudget" :{
+	top : 0,
+	bottom : 50,
+	width  :"100%",
+	backgroundColor : "#f6f6f6",
+	separatorColor : "transparent",
+}
+"#tableViewBudget[formFactor=tablet]" :{
+	bottom : 60,
+}
+"#viewAddBudget":{
+	top:75,
+	layout:'vertical'
+}
+"#lblNoBudgetMsg":{
+	text:Alloy.Globals.selectedLanguage.noBudgetMsg,
+	textAlign:'center',
+	font : Alloy.Globals.path.font14,
+	color :Alloy.Globals.path.darkGrayColor,
+}
+"#lblNoBudgetMsg[formFactor=tablet]":{
+	font : Alloy.Globals.path.font20,
+}
+"#imgAddBudget[formFactor=handheld]":{
+	top:20,
+	width:62,
+	height:66,
+	image:Alloy.Globals.path.icnAddBudget,
+}
+"#imgAddBudget[formFactor=tablet]":{
+	top:20,
+	width:75,
+	height:79,
+	image:Alloy.Globals.path.icnAddBudget,
+}
+"#viewAddBudget1":{
+	width:Ti.UI.SIZE,
+	bottom:0,
+	height:50,
+	//backgroundColor:'yellow'
+}
+"#viewAddBudget1[formFactor=tablet]":{
+	height:60,
+}
+"#imgPlusBlack[formFactor=handheld]":{
+	width:14,
+	height:14,
+	image:Alloy.Globals.path.icnPlusBlack,
+}
+"#imgPlusBlack[formFactor=tablet]":{
+	width:22,
+	height:22,
+	image:Alloy.Globals.path.icnPlusBlack,
+}
+"#lblAddBudget":{
+	text : Alloy.Globals.selectedLanguage.addBudgetTitle,
+	font : Alloy.Globals.path.font16,
+	color :Alloy.Globals.path.darkGrayColor,
+}
+"#lblAddBudget[formFactor=tablet]":{
+	font : Alloy.Globals.path.font20,
+}

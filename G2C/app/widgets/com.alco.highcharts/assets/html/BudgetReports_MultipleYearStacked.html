@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<meta name = "format-detection" content = "telephone=no">
+		<script src="highcharts_BudgetReports_MultipleYearStacked.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, xAxis, ytd, xLabel, yLabel, total, axisFontSize, margin_left,abc,isArabic) {
+				//	Ti.API.info('Webview: plotChart()');
+				//	Ti.API.info('arrStacked Bar =' +JSON.stringify(arr));
+				//	Ti.API.info('mtd =' + mtd);
+				//	Ti.API.info('ytd =' + ytd);
+
+				new Highcharts.Chart({
+					chart : {
+						marginLeft : margin_left, //70
+						spacingLeft : 0,
+						marginRight : 15,
+						type : 'bar',
+						backgroundColor : "transparent",
+						renderTo : 'container',
+						plotBackgroundColor : null,
+						plotBorderWidth : null,
+						plotShadow : false,
+						height : ytd
+					},
+					legend : {
+						rtl : isArabic,
+						itemStyle : {
+							"fontSize" : (axisFontSize)
+						},
+					},
+					title : {
+						text : ''
+					},
+					tooltip : {
+						useHTML : true,
+						shared : false,
+						//	backgroundColor : '#D3D3D3',
+						//	borderColor : 'black',
+						//headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px;color:{series.color}">{point.key}</td></tr>', //'<center><span style="font-size: 14px; color:{series.color}">{point.key}</span></center><br/>',
+						headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px">{point.key}</td></tr>', //'<center><span style="font-size: 14px; color:{series.color}">{point.key}</span></center><br/>',
+						pointFormat : '<tr><td style="text-align: center; font-size:' + (axisFontSize - 2) + 'px">' + total + ' : <b>{point.y}</b></td></tr></table>',//total + " : <b>{point.y}</b><br/>",
+						//formatter : function() {
+						//	return '<b>' + this.key + '</b><br>Total : ' + this.y + '</br>';
+						//}
+					},
+					plotOptions : {
+
+						bar : {
+							//allowPointSelect : true,
+							//cursor : 'pointer',
+							// dataLabels : {
+							// enabled : true
+							// },
+							//showInLegend : true
+						},
+						series : {
+							stacking : 'normal',
+							events : {
+
+								legendItemClick : function(event) {
+									if (!this.visible)
+										return true;
+
+									var seriesIndex = this.index;
+									var series = this.chart.series;
+
+									for (var i = 0; i < series.length; i++) {
+										if (series[i].index != seriesIndex) {
+
+											series[i].visible ? series[i].hide() : series[i].show();
+										}
+									}
+
+									return false;
+								}
+							},
+							/*allowPointSelect: true,
+							states : {
+								select : {
+									color : null,
+									borderWidth : 1,
+									borderColor : 'Black'
+								}
+							}*/
+						}
+					},
+					xAxis : {
+						title : {
+							margin : 20,
+							text : xLabel,
+							style : {
+								color : "#976e33",
+								fontWeight : "bold",
+								fontSize : axisFontSize + "px"
+							}
+						},
+						labels : {
+							useHTML : true,
+							style : {
+								fontSize : (axisFontSize - 2) + "px"
+							},
+						},
+						categories : xAxis,
+						lineColor : 'black',
+						lineWidth : 2,
+						tickLength : 0,
+					},
+					yAxis : {
+						title : {
+							margin : 20,
+							text : yLabel,
+							style : {
+								color : "#976e33",
+								fontWeight : "bold",
+								fontSize : axisFontSize + "px"
+							}
+						},
+						lineWidth : 2,
+						lineColor : 'black',
+						labels : {
+							style : {
+								fontSize : (axisFontSize - 2) + "px"
+							},
+							enabled : true,
+							rotation : 90,
+							y : 20,
+						},
+						gridLineDashStyle : 'longdash',
+						minorTickLength : 0.5,
+						tickLength : 0,
+						gridLineWidth : 0.5,
+						minorGridLineWidth : 0.5,
+						/*lineWidth : 0,
+						 minorGridLineWidth : 0,
+						 lineColor : 'transparent',
+						 labels : {
+						 enabled : false
+						 },
+						 minorTickLength : 0,
+						 tickLength : 0,
+						 gridLineWidth : 0,
+						 minorGridLineWidth : 0,
+						 title : {
+						 text : "",
+						 },*/
+					},
+					series : arr
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

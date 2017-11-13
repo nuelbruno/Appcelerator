@@ -1,0 +1,130 @@
+"#scrollView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	backgroundColor : "transparent",
+	layout : "vertical"
+}
+
+".lblHeaderProperty":{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : 30,
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font14
+}
+".lblHeaderProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17
+}
+
+".viewBackProperty":{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	bottom : 5,
+	borderColor : Alloy.Globals.path.grayColor,
+//	borderRadius : 3,
+	layout : "vertical",
+	backgroundColor : "transparent"
+}
+
+".viewMandatoryProperty":{
+	left : 0,
+	right : 0,
+	height : 35,
+}
+
+".lblTitleProperty":{
+	top : 10,
+	left : 15,
+	right : 15,
+	height : 25,
+	bottom : 1,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font14,
+	text : "Address Name"
+//	backgroundColor : "red",
+}
+".lblTitleProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17,
+}
+
+".txtFldProperty" :{
+	top : 1,
+	left : 15,
+	right : 15,
+	height : Titanium.UI.SIZE,//25,
+	bottom : 10,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.navBarColor,//lblBlackColor,
+	font : Alloy.Globals.path.font14,
+//	backgroundColor : "blue",
+}
+".txtFldProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font17,
+	height : Titanium.UI.SIZE,
+}
+
+"#submitView" :{
+	top : 30,
+	height : 35,
+	width : 115,
+	bottom : 30,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#submitView[formFactor=tablet]" :{
+	height : 41,
+	width : 135,
+}
+
+"#lblSubmit" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblSubmit[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+
+/*
+ * hint text
+ */
+
+
+"#txtFirstName" :{
+	hintText : Alloy.Globals.selectedLanguage.mSuppFirstName,
+}
+
+"#txtContactName" :{
+	hintText : Alloy.Globals.selectedLanguage.enterContactName,
+}
+
+"#txtMiddleName" :{
+	hintText : Alloy.Globals.selectedLanguage.enterMiddleName,
+}
+
+
+"#txtJobTitle" :{
+	hintText : Alloy.Globals.selectedLanguage.enterJobTitle,
+}
+
+"#txtEmail" :{
+	hintText : Alloy.Globals.selectedLanguage.enterEmailHint,
+}
+
+"#txtMobile" :{
+	hintText : "05XXXXXXXX",
+	maxLength : 10,
+}
+
+"#txtPhoneNo" :{
+	maxLength : 10,
+}

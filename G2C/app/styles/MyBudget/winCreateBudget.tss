@@ -1,0 +1,215 @@
+"#mainView":{
+	top: 0,
+	bottom: 30
+}
+"#mainView[formFactor=tablet]":{
+	top: 0,
+	bottom: 35
+}
+".lblProperty":{
+	width: '35%',
+	font:Alloy.Globals.path.font14
+}
+".lblProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font17
+}
+
+"#imgName":{
+	image:Alloy.Globals.path.icnName
+}
+"#lblName":{
+	text:Alloy.Globals.selectedLanguage.nameTitle
+}
+
+".txtFieldProperty":{
+	width: '55%',
+	font:Alloy.Globals.path.font14,
+	backgroundColor: "transparent"
+}
+".txtFieldProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font17
+}
+
+"#txtName":{
+	hintText:Alloy.Globals.selectedLanguage.budgetNameHintText,
+	backgroundColor: "transparent"
+}
+
+"#imgAmount":{
+	image:Alloy.Globals.path.icnAmount
+}
+"#imgTotal":{
+	image:Alloy.Globals.path.icnAmount
+}
+"#lblRevenueResources":{
+	text:Alloy.Globals.selectedLanguage.revenueResourceTitle
+}
+"#imgPlusGreen":{
+	width: 22,
+	height: 22,
+	image:Alloy.Globals.path.icnPlusGreen,
+	touchEnabled: false
+}
+"#imgPlusGreen[formFactor=tablet]":{
+	width: 25,
+	height: 25
+}
+"#imgDate":{
+	image:Alloy.Globals.path.icnDate
+}
+"#lblStartDate":{
+	text:Alloy.Globals.selectedLanguage.startDateTitle
+}
+
+
+"#lblEndDate":{
+	text:Alloy.Globals.selectedLanguage.endDateTitle
+}
+
+"#imgNote[formFactor=handheld]":{
+	top: 8,
+	height: 19,
+	width: 19,
+	image:Alloy.Globals.path.icnNote
+}
+"#imgNote[formFactor=tablet]":{
+	top: 5,
+	image:Alloy.Globals.path.icnNote
+}
+
+"#lblNote":{
+	text:Alloy.Globals.selectedLanguage.noteTitle,
+	top: 10
+}
+"#txtNote":{
+	top: 0,
+	height: 130,
+	font:Alloy.Globals.path.font14,
+	color:Alloy.Globals.path.formFieldsColor,
+	value:Alloy.Globals.selectedLanguage.noteHintText,
+	_hintText:Alloy.Globals.selectedLanguage.noteHintText,
+	//backgroundColor: Alloy.Globals.path.bgColor,
+	backgroundColor: "transparent",
+	suppressReturn: false
+}
+"#txtNote[formFactor=tablet]":{
+	height: 180,
+	font:Alloy.Globals.path.font18
+}
+//Revenue multiple
+"#viewRevenueResourcesGrid":{
+	layout: 'vertical'
+}
+"#imgPlusBlack":{
+	width: 14,
+	height: 14,
+	image:Alloy.Globals.path.icnPlusBlack
+}
+"#imgPlusBlack[formFactor=tablet]":{
+	width: 22,
+	height: 22
+}
+"#lblAddSource":{
+	text:Alloy.Globals.selectedLanguage.addSourceTitle,
+	color: Alloy.Globals.path.darkGrayColor,
+	font: Alloy.Globals.path.font14
+}
+"#lblAddSource[formFactor=tablet]":{
+	font: Alloy.Globals.path.font18
+}
+"#lblRevenueResourcesValue":{
+	font:Alloy.Globals.path.font14Bold,
+	color:Alloy.Globals.path.formFieldsColor
+}
+"#lblRevenueResourcesValue[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18Bold
+}
+"#lblTotal":{
+	text: Alloy.Globals.selectedLanguage.totalText,
+	font:Alloy.Globals.path.font14Bold,
+	color:Alloy.Globals.path.blackColor
+}
+"#lblTotal[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18Bold
+}
+".revenueTextBoxProperty1":{
+	width: 130,
+	height: 30,
+	borderWidth: 1,
+	borderColor: '#C0C0C0',
+	font:Alloy.Globals.path.font14,
+	paddingLeft: 10,
+	paddingRight: 10,
+	color:Alloy.Globals.path.darkGrayColor,
+	backgroundColor: "transparent"
+}
+".revenueTextBoxProperty1[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+	width: 180,
+	height: 45
+}
+".revenueTextBoxProperty":{
+	width: 100,
+	height: 30,
+	borderWidth: 1,
+	borderColor:Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font14,
+	paddingLeft: 10,
+	paddingRight: 10,
+	hintText: 0,
+	color:Alloy.Globals.path.formFieldsColor,
+	keyboardType: Titanium.UI.KEYBOARD_NUMBER_PAD,
+	bubbleParent: false,
+	backgroundColor: "transparent"
+}
+".revenueTextBoxProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+	height: 45,
+	width: 130
+}
+".lblRevenueTotal":{
+	paddingLeft: 10,
+	paddingRight: 10,
+	font:Alloy.Globals.path.font14Bold,
+	color:Alloy.Globals.path.formFieldsColor
+}
+".lblRevenueTotal[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18Bold
+}
+"#viewAddSource":{
+	width: 150,
+	height: 40,
+	bubbleParent: false
+}
+"#viewAddSource[formFactor=tablet]":{
+	top: 5,
+	height: 55,
+	width: 185
+}
+"#viewTotal":{
+	height: 40
+}
+"#viewTotal[formFactor=tablet]":{
+	height: 60
+}
+"#scrlView":{}
+"#btnDelete":{
+	width: 100,
+	height: 30,
+	padding: 10,
+	backgroundColor:Alloy.Globals.path.buttonBackgroundColor,
+	color: Alloy.Globals.path.whiteColor,
+	font: Alloy.Globals.path.font15
+}
+
+"#btnDelete[formFactor=tablet]":{
+	height: 40,
+	font: Alloy.Globals.path.font18
+}
+"#backPlusView":{
+	height: "100%",
+	width: 42
+}
+"#backPlusView[formFactor=tablet]":{
+	width: 60
+}

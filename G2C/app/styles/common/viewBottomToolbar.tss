@@ -1,0 +1,73 @@
+/*
+* TOOL BAR
+*
+*/
+".bottomToolBarViewProperty":{
+	zIndex: 20,
+	height: 100,
+	width: "100%",
+	layout: "vertical",
+	backgroundColor: "transparent"
+}
+
+".btnTopArrowProperty":{
+	height: 25,
+	width: 60,
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+
+".imgBottomBarArrowProperty":{
+	width: 22,
+	height: 12,
+	image: Alloy.Globals.path.icnArrowUPWhite
+}
+
+".barBackViewProperty":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: Alloy.Globals.path.navBarColor
+}
+".barButtonViewProperty":{
+	top: 5,
+	width: Titanium.UI.SIZE,
+	height:Ti.UI.FILL,
+	layout: "horizontal"
+}
+".barButtonPropertyView":{
+	width: Ti.UI.SIZE,
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent'
+}
+".barButtonProperty":{
+	width: 50,
+	left: 13,
+	right: 13,
+	backgroundColor: "transparent"
+},
+"#bottomToolBarView":{
+	isToExclude_contrast: true,
+	zIndex: 999
+},
+"#btnSystemChangeThemeImageview":{
+	height: 25,
+	width: 25,
+	contentTheme: "light",
+	image:Alloy.Globals.path.icnThemeLight
+},
+"#btnSystemInstructionImageview": {
+	height: 35,
+	width: 34,
+	image: Alloy.Globals.path.icnToolBarInstruction
+}
+"#btnSystemFeedbackImageview": {
+	height: 35,
+	width: 33,
+	image: Alloy.Globals.path.icnToolBarFeedback
+}
+"#btnFontChangeImageview": {
+	height: 35,
+	width: 35,
+	contentFontSize: 'N',
+	image: Alloy.Globals.path.icnToolBarFont
+}

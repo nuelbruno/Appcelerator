@@ -1,0 +1,69 @@
+<Alloy>
+	<Window id="winCreateRequest" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView layout="vertical">
+				<Label id="lblCreateRequest"></Label>
+				<View id="requestTypeView" class="fieldViewProperty" onClick="showRequestTypes">
+					<Label id="lblrequestTypeAstrik" class="astricProperty"></Label>
+					<Label id="lblrequestType" class="lblrequestProperty"></Label>
+					<ImageView id="imgdownArrow" class="icnDropdownProperty"></ImageView>
+				</View>
+				<View id="categoryView" class="fieldViewProperty" onClick="showCateogry">
+					<Label id="lblCategoryAstrik" class="astricProperty"></Label>
+					<Label id="lblCategory" class="lblrequestProperty"></Label>
+					<ImageView id="imgdownArrowCat" class="icnDropdownProperty"></ImageView>
+				</View>
+				<View id="countryView" class="fieldViewProperty" onClick="showCountry">
+					<Label id="lblCountryAstrik" class="astricProperty"></Label>
+					<Label id="lblCountry" class="lblrequestProperty"></Label>
+					<ImageView id="imgdownArrowCou" class="icnDropdownProperty"></ImageView>
+				</View>
+				<View id="subjectView" class="fieldViewProperty">
+					<Label id="lblsubjectAstrik" class="astricProperty"></Label>
+					<Label id="lblsubject" class="lblTitleProperty"></Label>
+					<TextField id="txtSubject" class="txtFieldProperty"></TextField>
+				</View>
+				<View id="detailView" class="fieldViewProperty">
+					<Label id="lblDetailAstrik" class="astricProperty" top="10"></Label>
+					<Label id="lblDetail" class="lblTitleProperty"></Label>
+					<TextArea id="txtDetail" class="txtFieldProperty" onFocus="clearText" onBlur="putHintText"></TextArea>
+				</View>
+				<View id="AttachmentTypeView" class="fieldViewProperty" onClick="showAttachmentType">
+					<Label id="lblAttachment" class="lblrequestProperty"></Label>
+					<ImageView id="imgdownArrowAtt" class="icnDropdownProperty"></ImageView>
+				</View>
+				<View id="attachmentView" class="backViewProperty" onClick="selectImage">
+					<Label id="lblAttachements" class="lblTitleProperty"></Label>
+					<ImageView id="imgAttachment"></ImageView>
+				</View>
+				<ScrollView id="imagesView"></ScrollView>
+				<Button id="btnDone" onClick="createRequest"></Button>
+			</ScrollView>
+		</View>
+		<View id="backView" class="UserSatisbackView"></View>
+		<View id="popView" class="UserSatispopView">
+			<View id="topBackView" class="popTopViewProperty">
+				<Label id="lblUserSatisfaction" class="lblUserSatisfaction"></Label>
+			</View>
+			<Label id="lblSuggestion" class="lblUserSuggestion"></Label>
+			<View  class="separator" height="1" top="30"></View>
+			<View id="viewFeedback" class="viewUserSatisFeedback">
+				<Label id="lblFeedback" class="lblUserSatisFeedback" onClick="openUserSatisfaction"></Label>
+				<Label id="lblSkip" class="lblUserSatisSkip" onClick="closePopUP"></Label>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="viewServices">
+		<ListView id="listviewServices" class="listContainer" onItemclick="onItemClick"  defaultItemTemplate="itemTemplateServices">
+			<Templates>
+				<Require src="listTemplate/itemTemplate"/>
+			</Templates>
+			<!-- <ListSection id="listsection"/> -->
+		</ListView>
+	</View>
+</Alloy>

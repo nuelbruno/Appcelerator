@@ -1,0 +1,36 @@
+<Alloy>
+	<TableViewRow id="tblRow">
+		<View id="topBackView">
+			<Label id="lblOrderNumber"></Label>
+			<Button id="btnStatus"></Button>
+			<ImageView id="imgUpDown"></ImageView>
+		</View>
+		<!-- <View id="separatorView" class="hSeparator"></View> -->
+		<View id="mainBackView">
+			<View id="entityView" class="backViewProperty">
+				<Label id="lblEntityTitle" class="titlePropety"></Label>
+				<Label id="lblEntityValue" class="valueProperty"></Label>
+			</View>
+			<View class="hSeparator"></View>
+			<!-- <View id="amountView" class="backViewProperty">
+				<Label id="lblAmoutTitle" class="titlePropety"></Label>
+				<Label id="lblAmoutValue" class="valueProperty"></Label>
+			</View> -->
+			<View id="paymentDateView" class="backViewProperty">
+				<Label id="lblPayDateTitle" class="titlePropety"></Label>
+				<Label id="lblPayDateValue" class="valueProperty"></Label>
+			</View>
+			<View class="hSeparator"></View>
+			<View id="methodView" class="backViewProperty">
+				<Label id="lblMethodTitle" class="titlePropety"></Label>
+				<Label id="lblMethodValue" class="valueProperty"></Label>
+			</View>
+			<View class="hSeparator"></View>
+			<View id="bankAccView" class="backViewProperty">
+				<Label id="lblBankAccTitle" class="titlePropety"></Label>
+				<Label id="lblBankAccValue" class="valueProperty"></Label>
+			</View>
+		</View>
+		<View class="separator"></View>
+	</TableViewRow>
+</Alloy>

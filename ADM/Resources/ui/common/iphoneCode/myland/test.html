@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Create Map with Custom ArcGISDynamicMapServiceLayer Layer Definitions</title>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+    <script type="text/javascript">
+      dojo.require("esri.map");
+      
+      var plotnumber, sectorname;
+      
+      function init() {
+				//alert(plotnumber + ' - ' + sectorname);
+				queryTask = new esri.tasks.QueryTask("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer/0");
+				//dojo.connect(queryTask, "onComplete", showResults);
+                plotnumber = '1' ;  sectorname = 'Lulu Island';
+				//build query filter
+				query = new esri.tasks.Query();
+				query.returnGeometry = true;
+				query.outFields = ["SQMI"];
+				//query.where = "PLOTNUMBER='1' AND SECTORTPSSNUMBER ='Lulu Island' ";
+				query.where = "PLOTNUMBER='"+plotnumber+"' and SECTORTPSSNUMBER ='"+sectorname+"'";
+				//execute query
+				queryTask.execute(query, showResults);
+				//showResults() ;
+			}
+
+      function showResults(results) {
+      	
+      	 var extent = results.features[0].geometry.getExtent();  alert(JSON.stringify(extent));
+		        
+		      //  map = new esri.Map("map",{extent: extent });
+      	
+       // var startExtent = new esri.geometry.Extent(148297.8, 2581597.8, 317702.2, 2766402.2, new esri.SpatialReference({wkid:32640}) );
+
+        var map = new esri.Map("map", {extent:extent});
+        var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/Images/ortho_2012_adm_t/MapServer");
+        map.addLayer(tiledMapServiceLayer);
+
+        //Use the ImageParameters to set map service layer definitions and map service visible layers before adding to the client map.
+        var imageParameters = new esri.layers.ImageParameters();
+
+        //layer.setLayerDefinitions takes an array.  The index of the array corresponds to the layer id.
+        //In the sample below I add an element in the array at 3,4, and 5.
+        //Those array elements correspond to the layer id within the remote ArcGISDynamicMapServiceLayer
+        var layerDefs = [];
+         layerDefs[0] =  "PLOTNUMBER='1'";
+        imageParameters.layerDefinitions = layerDefs;
+
+        //I want layers 5,4, and 3 to be visible
+         imageParameters.layerIds = [2,1,0];
+		        imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
+		        imageParameters.transparent = true;
+
+        //construct ArcGISDynamicMapServiceLayer with imageParameters from above
+        var dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer", {"imageParameters":imageParameters});
+
+        map.addLayer(dynamicMapServiceLayer);
+      }
+
+      dojo.addOnLoad(init);
+    </script>
+  </head>
+  <body class="tundra">
+    <div id="map" style="width:900px; height:600px; border:1px solid #000;"></div>
+  </body>
+</html>

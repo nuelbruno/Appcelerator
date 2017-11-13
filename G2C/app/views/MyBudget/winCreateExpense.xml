@@ -1,0 +1,66 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View id="viewDone" class="rightView" onClick="upDateExpenses">
+						<Button id="btnDone" class="navBarButton"></Button>
+					</View>
+				</View>
+			</View>
+			<View id="srclView">
+				<View class="viewFormProperty">
+					<View id="viewCategory" class="viewFormFieldProperty">
+						<ImageView id="imgCategory" class="formIconSizeProperty"></ImageView>
+						<Label id="lblCategory" class="formCaptionProperty"></Label>
+						<View>
+							<Label id="lblCategoryValue" text="" class="formFieldValue"></Label>
+							<View id="backimgPlusView" onClick="addCategorySelection">
+								<ImageView id="imgPlusGreen" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewBudgetAmount" class="viewFormFieldProperty">
+						<ImageView id="imgAmount" class="formIconSizeProperty"></ImageView>
+						<Label id="lblBudgetAmount" class="formCaptionProperty"></Label>
+						<Label id="lblBudgetAmountValue" class="formFieldValue"></Label>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewAmount" class="viewFormFieldProperty">
+						<ImageView id="imgAmount" class="formIconSizeProperty"></ImageView>
+						<Label id="lblAmount" class="formCaptionProperty"></Label>
+						<TextField id="txtAmount" class="formFieldProperty" bubbleParent="false" zIndex="99" keyboardType="Titanium.UI.KEYBOARD_NUMBER_PAD" maxLength="5" preValue=""></TextField>
+					</View>
+					<View class="viewSeperator"></View>
+					<View id="viewDate" class="viewFormFieldProperty">
+						<ImageView id="imgDate" class="formIconSizeProperty"></ImageView>
+						<Label id="lblDate" class="formCaptionProperty"></Label>
+						<View onClick="SelectDate">
+							<Label id="lblSelectDate" class="formFieldValue"></Label>
+							<ImageView id="imgSelectDate" class="bgCalendarPicker"></ImageView>
+							<Label id="lblSelectDate_value" text="0" visible="false" class="formFieldValue"></Label>
+						</View>
+					</View>
+				</View>
+				<View id="viewButtons" backgroundColor="green">
+					<Button id="btnSave"  class="button" onClick="saveExpense"></Button>
+				</View>
+				<View id= "bgTableView" class="bgTableViewProperty" visible="false">
+					<Label id="lblRecentExpenses"></Label>
+					<TableView id="tableView"></TableView>
+					<Label id="lblNoItems"/>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

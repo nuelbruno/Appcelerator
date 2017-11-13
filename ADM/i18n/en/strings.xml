@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- Images -->
+	<string name="top_bar">common/top_bar.png</string>
+	<string name="btn_back">common/btn_back.png</string>
+	<!--<string name="tab1icon">bottom_tabs/find_us.png</string>
+	<string name="tab2icon">bottom_tabs/eservices.png</string>
+	<string name="tab3icon">bottom_tabs/contact_us.png</string>
+	<string name="tab4icon">bottom_tabs/more.png</string>-->
+	<string name="tab1icon">bottom_tabs/home-icon.png</string>
+	<string name="tab2icon">bottom_tabs/eservices-icon.png</string>
+	<string name="tab3icon">bottom_tabs/contact_us-icon.png</string>
+	<string name="tab4icon">bottom_tabs/more-icon.png</string>
+	<string name="MoreArrow">common/listing_arrow.png</string>
+	
+	<string name="bg_NewsTab">common/News.png</string>
+	<string name="bg_NewsTab_hover">common/News_hover.png</string>
+	<string name="bg_PhotosTab">common/Photos.png</string>
+	<string name="bg_PhotosTab_hover">common/Photos_hover.png</string>
+    <string name="bg_VideosTab">common/Videos.png</string>
+    <string name="bg_VideosTab_hover">common/Videos_hover.png</string>
+    
+    <string name="text_box">common/text_box.png</string>
+     <string name="text_field">common/text_field.png</string>
+ <string name="gray_button">common/gray_button.png</string>
+ <string name="red_button">common/red_button.png</string>
+	
+	<!-- Captions -->
+	<string name="ServiceDescription">Service Description</string>
+	<string name="FirstStopforClient">First Stop for Client</string>
+	<string name="DocumentsRequired">Documents Required</string>
+	<string name="Fees">Fees</string>
+	
+	<string name="Ok">Ok</string>
+	<string name="OurCallcenter">Our Call Center No.</string>
+	
+	<string name="EmailUs">Email Us</string>
+	<string name="ComplainOrSuggestion">Complain or Suggestion</string>
+	
+	<string name="FirstName">First Name</string>
+	<string name="LastName">Last Name</string>
+	<string name="EmailID">Email</string>
+	<string name="MobileNumber">Mobile Number</string>
+	
+	<string name="Subject">Subject</string>
+	<string name="Comments">Comments</string>
+	 <string name="Mandatoryfileds">mandatory fields</string>
+	 <string name="Submit">Submit</string>
+	 
+	 <string name="EnterLastName">Enter last name.</string>
+    <string name="EnterFirstName">Enter first name.</string>
+     <string name="EnterEmailID">Enter email id.</string>
+    <string name="EnterphoneNumber">Enter mobile Number.</string>
+     <string name="EnterSubject">Enter subject.</string>
+    <string name="EnterComments">Enter comments.</string>
+    
+     <string name="SendCommentSuccessMsg">Your comments has been subitted successfully.</string>
+    
+	 
+	<!-- Controls and views start -->
+	
+	<string name="HomeView">/HomeView</string>
+    <string name="HomeWindow">ui/common/iphoneCode/HomeWindow</string>
+    <string name="FindUsView">/FindUsView</string>
+    <string name="FindUsWindow">ui/common/iphoneCode/FindUsWindow</string>
+    <string name="EserviceView">/EserviceView</string>
+    <string name="EserviceWindow">ui/common/iphoneCode/EserviceWindow</string>
+    <string name="ContactUsView">/ContactUsView</string>
+    <string name="ContactUsWindow">ui/common/iphoneCode/ContactUsWindow</string>
+     <string name="ComplainOrSuggestionView">/ContactUs/ComplainOrSuggestionView</string>
+    <string name="ComplainOrSuggestionWindow">ui/common/iphoneCode/ContactUs/ComplainOrSuggestionWindow</string>
+    
+    <string name="MoreView">/MoreView</string>
+    <string name="MoreWindow">ui/common/iphoneCode/MoreWindow</string>
+    <string name="AboutUsView">/more/AboutUsView</string>
+    <string name="AboutUsWindow">ui/common/iphoneCode/more/AboutUsWindow</string>
+     <string name="FaqView">/more/FaqView</string>
+    <string name="FaqWindow">ui/common/iphoneCode/more/FaqWindow</string>
+    <string name="TermsAndConditionsView">/more/TermsAndConditionsView</string>
+    <string name="TermsAndConditionsWindow">ui/common/iphoneCode/more/TermsAndConditionsWindow</string>
+    <string name="FindUsView">/more/FindUsView</string>
+    <string name="FindUsWindow">ui/common/iphoneCode/more/FindUsWindow</string>
+    <string name="FindUsDetailsView">/more/FindUsDetailsView</string>
+    <string name="FindUsDetailsWindow">ui/common/iphoneCode/more/FindUsDetailsWindow</string>
+     <string name="SettingView">/more/SettingView</string>
+    <string name="SettingWindow">ui/common/iphoneCode/more/SettingsWindow</string>
+    
+    <string name="MyLandView">/myland/MyLandView</string>
+    <string name="Mymapview">/myland/myMapView</string>
+    <string name="MyLandWindow">ui/common/iphoneCode/myland/MyLandWindow</string>
+    <string name="mapplotwindow">ui/common/iphoneCode/myland/Maplandwindow</string>
+    <string name="toptab_myland">/myland/topTablike</string>
+    <string name="webserviceLand">/myland/webservice_land</string>
+   
+   
+    <string name="MediaView">/MediaView</string>
+    <string name="MediaWindow">ui/common/iphoneCode/MediaWindow</string>
+    <string name="NewsView">/media/NewsView</string>
+    <string name="PhotosView">/media/PhotosView</string>
+    <string name="VideosView">/media/VideosView</string>
+    
+    <string name="ServicesView">/ServicesView</string>
+    <string name="ServicesWindow">ui/common/iphoneCode/ServicesWindow</string>
+    
+    <string name="ServicesSubCategoriesView">/Services/ServicesSubCategoriesView</string>
+    <string name="ServicesSubCategoriesWindow">ui/common/iphoneCode/Services/ServicesSubCategoriesWindow</string>
+    
+     <string name="ServicesItemsView">/Services/ServicesItemsView</string>
+    <string name="ServicesItemsWindow">ui/common/iphoneCode/Services/ServicesItemsWindow</string>
+    
+    <string name="ServiceDetailsView">/Services/ServiceDetailsView</string>
+    <string name="ServiceDetailsWindow">ui/common/iphoneCode/Services/ServiceDetailsWindow</string>
+    
+    <!--<string name="ServicesChildCategoryView">/Services/ServicechildcategoryView</string>
+    <string name="ServicesChildCategoryWindow">ui/common/iphoneCode/Services/ServicechildcategoryWindow</string>-->
+   
+    
+    <string name="MyLandView">/myland/MyLandView</string>
+    <string name="MyLandWindow">ui/common/iphoneCode/myland/MyLandWindow</string>
+    
+    <string name="NewsDetailsView">/media/NewsDetailsView</string>
+    <string name="NewsDetailsWindow">ui/common/iphoneCode/media/NewsDetailsWindow</string>
+    
+    <string name="VideoGalleryDetailsView">/media/VideoGalleryDetailsView</string>
+    <string name="VideoGalleryDetailsWindow">ui/common/iphoneCode/media/VideoGalleryDetailsWindow</string>
+    
+    <string name="SocialMediaView">/SocialMediaView</string>
+    <string name="SocialMediaWindow">ui/common/iphoneCode/SocialMediaWindow</string>
+    
+    
+    <!-- Controls and views end -->
+    
+	<!-- DataObjects -->
+    <string name="AppConfig">ui/common/DataObjects/AppConfig.js</string>
+    <string name="DataObjects">ui/common/DataObjects/DataObjects</string>
+    <string name="DBManager">ui/common/DataObjects/DBManager</string>
+    <string name="HttpManager">ui/common/DataObjects/HttpManager</string>
+    <string name="PictureGallery">ui/common/DataObjects/picturegallery.js</string>
+    
+</resources>

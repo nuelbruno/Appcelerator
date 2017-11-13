@@ -1,0 +1,212 @@
+"#scrollView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	backgroundColor : "transparent",
+	layout : "vertical"
+}
+
+".lblHeaderProperty":{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : 30,
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font14
+}
+".lblHeaderProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17
+}
+
+".viewBackProperty":{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	bottom : 5,
+	borderColor : Alloy.Globals.path.grayColor,
+//	borderRadius : 3,
+	layout : "vertical",
+	backgroundColor : "transparent"
+}
+
+
+".lblTitleProperty":{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : 25,
+	bottom : 1,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font14,
+	text : "Address Name"
+//	backgroundColor : "red",
+}
+".lblTitleProperty[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17,
+}
+
+".txtFldProperty" :{
+	top : 1,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,//25,
+	bottom : 10,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.navBarColor,//lblBlackColor,
+	font : Alloy.Globals.path.font14,
+//	backgroundColor : "blue",
+}
+".txtFldProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font17,
+	height : Titanium.UI.SIZE,
+}
+
+".txtAreaProperty" :{
+	top : 1,
+	left : 10,
+	right : 10,
+	height : 60,
+	bottom : 10,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.navBarColor,//lblBlackColor,
+	font : Alloy.Globals.path.font14,
+}
+".txtAreaProperty[formFactor=tablet]" :{
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font17,
+}
+
+"#txtDescription" :{
+	maxLength : 15,
+}
+
+"#txtComments" :{
+	maxLength : 20,
+}
+
+"#AttachmentsView":{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : 25,
+	bottom : 10,
+}
+"#AttachmentsView[platform=android]":{
+	height : 32,
+}
+"#AttachmentsView[formFactor=tablet]":{
+	height : 35,
+}
+
+"#lblAttachment":{
+	left : 0,
+	right : 30,
+	height : Titanium.UI.SIZE,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font14,
+	touchEnabled : false,
+}
+
+"#imgCameraAttachment":{
+	right : 10,
+	height : 19,
+	width : 25,
+	touchEnabled : false,
+	image : Alloy.Globals.path.icnPhoto	
+}
+
+"#imagesView" :{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : 50,
+	bottom : 5,
+//	backgroundColor : "yellow"
+}
+
+"#imagesView[formFactor=tablet]" :{
+	height : 110,
+}
+
+"#backImageView" :{
+	height : '100%',
+	width : 55,
+	visible : false
+}
+
+"#backImageView[formFactor=tablet]" :{
+	width : 110,
+}
+
+"#borderView" :{
+	height : 45,
+	width : 45,
+	borderRadius : 5,
+	borderColor : Alloy.Globals.path.goldColor,
+	borderWidth : 1
+}
+
+"#borderView[formFactor=tablet]" :{
+	height : 90,
+	width : 100,
+}
+
+"#imgAttachment" :{
+	left : 0,
+	right : 0,
+	top : 0,
+	bottom : 0,
+}
+
+"#imgRemove" :{
+	top : 0,
+	right : 0,
+	height : 14, //Ti.UI.SIZE,
+	width : 14, //Ti.UI.SIZE,
+	image : Alloy.Globals.path.imgDeleteNew,
+//	backgroundColor : Alloy.Globals.path.navBarColor,
+}
+
+"#imgRemove[formFactor=tablet]" :{
+	height : 22, //Ti.UI.SIZE,
+	width : 22, //Ti.UI.SIZE,
+}
+
+
+"#submitView" :{
+	top : 30,
+	height : 35,
+	width : 115,
+	bottom : 30,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+"#submitView[formFactor=tablet]" :{
+	height : 41,
+	width : 135,
+}
+
+"#lblSubmit" :{
+	width : 70,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.submitTitle,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+"#lblSubmit[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+
+/*
+ * hint text
+ */
+
+
+"#txtTitle" :{
+	hintText : Alloy.Globals.selectedLanguage.enterTitle,
+}
+

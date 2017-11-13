@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_Pie_small.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, mtd, ytd) {
+		    //    Ti.API.info('Webview: plotChart()');
+		    //    Ti.API.info('arr Pie =' +JSON.stringify(arr));
+		    //    Ti.API.info('mtd ='+mtd);
+		    //    Ti.API.info('ytd ='+ytd);
+		        
+		        new Highcharts.Chart({
+		            chart: {
+		            	marginLeft : 5,
+		            	spacingLeft : 0,
+						marginRight : 10,
+		            	renderTo: 'container',
+		            	backgroundColor : "transparent",
+		            //	plotHeight:110,
+		            //	plotWidth:110,
+		                plotBackgroundColor: 'red',
+		                plotBorderWidth: null,
+		                plotShadow: false,
+		                width:110,
+		                height : 110
+		            },
+		            title: {
+		                text: ''
+		            },
+		            tooltip: {
+		        	    pointFormat: '{point.percentage:.1f}%',//'{series.name}: <b>{point.percentage:.1f}%</b>'
+		            },
+		            plotOptions: {
+		                pie: {
+		                    allowPointSelect: true,
+		                    cursor: 'pointer',
+		                    dataLabels: {
+		                        enabled: false
+		                    },
+		                    showInLegend: false
+		                }
+		            },
+		            series: [{
+		                type: 'pie',
+		                name: 'Browser share',
+		                data : arr,
+		                /*data: [
+		                    ['Firefox',   45.0],
+		                    ['IE',       26.8],
+		                    {
+		                        name: 'Chrome',
+		                        y: 12.8,
+		                        sliced: false,
+		                        selected: false
+		                    },
+		                    ['Safari',    8.5],
+		                    ['Opera',     6.2],
+		                    ['Others',   0.7]
+		                ]*/
+		            }]
+		        });
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html> 

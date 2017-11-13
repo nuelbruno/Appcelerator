@@ -1,0 +1,36 @@
+"#tblRowIsupplier":{
+	height : 51,
+	width : "100%",
+	selectionStyle : 0,
+	selectedColor : "none",
+	//className : "IsupplierRow"
+}
+"#tblRowIsupplier[formFactor=tablet]":{
+	height : 60,
+}
+"#backRowView":{
+	height : 50,
+	left : 0,
+	right : 0,
+}
+"#iconView":{
+	height : 28,
+	width : 28,
+}
+
+"#lblTitle":{
+	color : Alloy.Globals.path.vatButtonTitleColor,
+	font : Alloy.Globals.path.font15
+}
+"#lblTitle[formFactor=tablet]":{
+	font : Alloy.Globals.path.font18
+}
+"#rowSeparator":{
+	height: 1,
+	bottom: 0,
+	left: 0,
+	right: 0,
+	isToExclude_contrast: true,
+	backgroundColor:Alloy.Globals.path.borderColor
+}
+

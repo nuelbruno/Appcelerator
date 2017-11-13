@@ -1,0 +1,11 @@
+"#winAddActivity":{
+	backgroundImage: Alloy.Globals.path.bgView,
+	navBarHidden: true,
+}
+
+"#tblSelection":{
+//	height : "100%",
+	width : "100%",
+	bottom : 0,
+	separatorStyle : 0
+}

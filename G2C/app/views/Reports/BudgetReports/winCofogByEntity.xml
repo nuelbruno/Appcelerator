@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="winCofogByEntity" class="winLayout">
+		<View class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		<View id="sectionView">
+			<Label id="lblCode" class="lblSectionProperty"></Label>
+			<Label id="lblDesc" class="lblSectionProperty"></Label>
+			<Label id="lblTotal" class="lblSectionProperty"></Label>
+		</View>
+		<!-- <View id= "viewTableView" class="tableView">-->
+		<TableView id="tableView"></TableView>
+		<!--<Label id="lblNoItems"/>
+		</View> -->
+	</Window>
+</Alloy>

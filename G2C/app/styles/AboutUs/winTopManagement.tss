@@ -1,0 +1,244 @@
+".imgShareBtn":{
+	right:15,
+	width:9,
+	height:17,
+	//backgroundImage : Alloy.Globals.path.icnBack
+	backgroundColor:"transparent"
+}
+
+"#imgView" :{
+	top:0,
+	left : 0,
+	right : 0,
+	height : Titanium.UI.SIZE,
+	//image : Alloy.Globals.path.bgTopManagement
+	defaultImage: Alloy.Globals.path.defaultImageBanner
+}
+".lblTitleProperty" :{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : 25,
+	font : Alloy.Globals.path.font16,
+	color : Alloy.Globals.path.goldColor
+}
+"#separator[formFactor=handheld]":{
+	top: 10,
+	height: 1,
+	left: 0,
+	right: 0,
+	backgroundColor:Alloy.Globals.path.grayColor,
+				isToExclude_contrast: true
+}
+"#separator[formFactor=tablet]":{
+	top: 20,
+	height: 1,
+	left: 0,
+	right: 0,
+	backgroundColor:Alloy.Globals.path.grayColor,
+				isToExclude_contrast: true
+}
+
+
+"#mainView" :{
+	top:0,
+	width : "100%",
+	height :  Titanium.UI.SIZE,
+	layout : "vertical",
+	
+}
+
+"#webView[if=Alloy.Globals.isEnglish]" :{
+	top : 0,
+	bottom : 30,
+	backgroundColor : "transparent",
+	loading : false,
+	hideLoadIndicator : true
+//	url : "file:///Volumes/Projects/MOF/Code/About/TM_ar.html",
+//	url : "http://194.170.30.187/Guides/AboutUs/HTML/TopManagement_en.html",
+}
+
+"#webView[if!=Alloy.Globals.isEnglish]" :{
+	top : 0,
+	bottom : 30,
+	backgroundColor : "transparent",
+	loading : false,
+	hideLoadIndicator : true
+//	url : "file:///Volumes/Projects/MOF/Code/About/TM_ar.html",
+//	url : "http://194.170.30.187/Guides/AboutUs/HTML/TopManagement_ar.html",
+}
+
+
+"#scrollView" :{
+	top : 0,
+	bottom : 0,
+	backgroundColor : "transparent"
+}
+"#viewDetails":{
+	width:"100%",
+	height: Titanium.UI.SIZE,
+	//layout:"vertical"
+	
+	
+}
+
+"#customView":{
+	height:Titanium.UI.SIZE,
+	width:"100%",
+	layout:"vertical",
+	
+}
+"#viewAddress[formFactor=handheld]":{
+	layout:"vertical" ,
+	top :80,
+	 height : Titanium.UI.SIZE
+}
+"#viewAddress[formFactor=tablet]":{
+	layout:"vertical" ,
+	top :120,
+	 height : Titanium.UI.SIZE
+}
+"#imgMinister[formFactor=handheld]":{
+	top:5,
+	height:70,
+	width:70,
+	//backgroundImage:Alloy.Globals.path.icnMinister
+}
+"#imgMinister[formFactor=tablet]":{
+	top:10,
+	height:100,
+	width:100,
+	//backgroundImage:Alloy.Globals.path.icnMinister
+}
+"#lblMinisterName[formFactor=handheld]":{
+	top :10,
+	font : Alloy.Globals.path.font14,
+	color:Alloy.Globals.path.goldColor,
+	height:24,
+}
+"#lblMinisterName[formFactor=tablet]":{
+	top :10,
+	font : Alloy.Globals.path.font19,
+	color:Alloy.Globals.path.goldColor,
+	height:36,
+}
+
+"#lblMinisterName[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font18TitleEn,
+}
+
+"#lblMinisterName[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font26TitleEn,
+}
+
+"#lblMinisterName[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font18TitleAr,
+}
+
+"#lblMinisterName[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font26TitleAr,
+}
+
+
+
+
+"#lblMinistry[formFactor=handheld]":{
+	top :35,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.blackColor,
+	height:20,
+	//backgroundColor:"green"
+}
+"#lblMinistry[formFactor=tablet]":{
+	top :40,
+	font : Alloy.Globals.path.font17,
+	color : Alloy.Globals.path.blackColor,
+	height:32,
+	//backgroundColor:"green"
+}
+
+
+
+"#lblMinistry[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleEn,
+}
+
+"#lblMinistry[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font22TitleEn,
+}
+
+"#lblMinistry[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleAr,
+}
+
+"#lblMinistry[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font22TitleAr,
+}
+
+
+// 
+"#lblAddress":{
+	top :5,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.lblGrayColor,
+	height:Titanium.UI.SIZE
+}
+
+"#lblDescription[formFactor=handheld]":{
+	left:10,
+	right:10,
+	top: 5,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.darkGrayColor,
+	height:Titanium.UI.SIZE
+}
+"#lblDescription[formFactor=tablet]":{
+	left:10,
+	right:10,
+	top: 10,
+	font : Alloy.Globals.path.font17,
+	color : Alloy.Globals.path.darkGrayColor,
+	height:Titanium.UI.SIZE
+}
+
+"#lblDescription[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleEn,
+}
+
+"#lblDescription[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font22TitleEn,
+}
+
+"#lblDescription[if=!Alloy.Globals.isEnglish formFactor=handheld]" :{
+	font : Alloy.Globals.path.font13TitleAr,
+}
+
+"#lblDescription[if=!Alloy.Globals.isEnglish formFactor=tablet]" :{
+	font : Alloy.Globals.path.font22TitleAr,
+}
+
+
+// "#viewDetails":{
+	// width:"100%",
+	// height: Titanium.UI.SIZE,
+// 	
+// }
+// "#viewAddress":{
+	// width:"100%",
+	// height: Titanium.UI.SIZE,
+// 	
+// }
+// 
+// "#bgTableView":{
+	// top: 0,
+	// height: Titanium.UI.SIZE,
+	// left: 10,
+	// right: 10
+// }
+// 
+// "#tableViewItems":{
+	// top:0,
+	// width: '100%',
+	// bottom:0,
+	// separatorColor:"transparent"
+// }

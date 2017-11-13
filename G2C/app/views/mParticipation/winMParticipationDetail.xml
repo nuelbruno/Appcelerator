@@ -1,0 +1,89 @@
+<Alloy>
+	<Window id="winMParticipationDetail" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+		<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<View class="backHomeBtnView" onClick="gotoHome">
+					<ImageView class="imgHomeBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		<View>
+			<View id="commentHiddenView" onClick="hideCommentView">
+				<ImageView id="imgClose"></ImageView>
+				<Label id="lblCommentSuccess"></Label>
+			</View>
+			<View id="mainBackView">
+				<ImageView id="imgTop"></ImageView>
+				<View id="mainView">
+					<ScrollView id="scrBackView">
+						<Label id="lblTitle"></Label>
+						<View id="viewDate">
+							<Label id="lblEndDate"></Label>
+							<Label id="lblEndDateValue"></Label>
+						</View>	
+						<!-- <View id="viewDuration">
+							<Label id="lblDuration"></Label>
+						</View> -->
+						<Label id="lblDesc"></Label>
+					</ScrollView>
+					<View id="commentView">
+						<Label id="lblComment"></Label>
+						<View id="viewAddComment" onClick="openmParticipationComment">
+							<ImageView id="icnAddComment"></ImageView>
+							<Label id="lblAddComment"></Label>
+						</View>
+					</View>
+					<ImageView id="separator"></ImageView>
+					<View id="bgTableView">
+						<ListView id="tableViewItems" defaultItemTemplate="template">
+							<Templates>
+								<ItemTemplate name="template" id="row">
+									<View id="viewRow">
+										<Label id="lblRowTitle" bindId="lblRowTitle"></Label>
+									</View>
+									<View id="viewContents">
+										<Label id="lblRowBy" bindId="lblRowBy"></Label>
+										<Label id="lblRowName" bindId="lblRowName"></Label>
+										<!-- <Label id="lblDot" bindId="lblDot">
+										</Label> -->
+										<!-- <Label id="lblRowDuration" bindId="lblRowDuration"></Label>
+										<Label id="lblRowAgo" bindId="lblRowAgo"></Label> -->
+									</View>
+									<!-- <ImageView id="imgTop"></ImageView> -->
+								</ItemTemplate>
+							</Templates>
+							<ListSection name="elements" id="listSection"></ListSection>
+						</ListView>
+						<Label id="lblNoItems" class = "lblNoItemsProperty" />
+					</View>
+				</View>
+			</View>
+			
+			<View id="commentPopUp" visible="false">
+				<ImageView id="imgCross" onClick="hideCommentPopUp"></ImageView>
+				
+				<Label id="lblCommentBy"></Label>
+				<Label id="lblCommentName"></Label>
+				<!-- <Label id="lblCommentDuration"></Label> -->
+				<!-- <Label id="lblCommentAgo"></Label> -->
+				
+				
+				<!-- <Label id="lblCompose"></Label> --> 
+				<View id="backTxtDesc">
+					<TextArea id="txtDesc"></TextArea>
+				</View>
+			</View>
+			
+			
+		</View>
+		
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,69 @@
+
+"#headerView":{
+	width: "100%",
+	height: 60,
+	backgroundImage : Alloy.Globals.path.imgNormalRow,
+	//borderColor:'red',
+	top : 20
+}
+
+"#headerImage":{
+	backgroundImage : Alloy.Globals.path.icnServiceHeader,
+	top : -80,
+	width : 40,
+	height : 40
+}
+
+"#headerLabel":{
+	color:"white",
+	font : Alloy.Globals.path.font15,
+}
+".labelCommonHeader":{
+	left : 10,
+	right : 10,
+	top : 3,
+	bottom : 0,
+	font : Alloy.Globals.path.font16,
+	color : Alloy.Globals.path.whiteColor,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".labelCommonHeader[if=Alloy.Globals.isEnglish]":{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+
+".labelCommonsub":{
+	top : 0,
+	bottom : 0,
+	left : 10,
+	right : 10,
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.blackColor,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT	
+}
+".labelCommonsub[if=Alloy.Globals.isEnglish]":{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+ 
+".scrollviewMyrequest":{ 
+	layout : "vertical",
+	height : "100%",
+	width : "100%",
+	top:70,
+	//borderColor:'blue',
+//	zIndex : 100,
+//	backgroundColor : "blue"
+}
+".viewMyrequestDetailsHeader": {
+	top : 0,
+	left:0, 
+	right:0, 
+	//bottom:10,
+	height :  Titanium.UI.SIZE,
+	width : "90%"
+}
+".viewLblCommon": {
+	top: 10,
+	left: 15,
+	right: 15,
+	height: 35
+}

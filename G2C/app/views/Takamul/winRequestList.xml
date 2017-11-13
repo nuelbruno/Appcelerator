@@ -1,0 +1,58 @@
+<Alloy>
+	<Window id="winRequestList" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View class="searchBgViewProperty">
+				<View id="backView"/>
+				<View id="searchView" class="searchViewProperty">
+					<ImageView id="imgSearch" class="imgSearchProperty"></ImageView>
+					<TextField id="txtSearch" onChange="searchList" class="txtSearchProperty"></TextField>
+				</View>
+			</View>
+			<Label id="lblRequestList"></Label>
+			<View id="listHeaderView">
+				<Label id="lblNameTit" class="lblListHeader"></Label>
+				<View id="seperatorHea1" class="vseperator"></View>
+				<Label id="lblDateTit" class="lblListHeader"></Label>
+				<View id="seperatorHea2" class="vseperator"></View>
+				<Label id="lblStatusTit" class="lblListHeader"></Label>
+			</View>
+			<View id="listBackView">
+				<ListView id="listView" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="tblRow">
+							<Label id="lblName" class="lblProperty" bindId="lblName"></Label>
+							<View id="seperator1" class="vseperator"></View>
+							<Label id="lblDate" class="lblProperty" bindId="lblDate"></Label>
+							<View id="seperator2" class="vseperator"></View>
+							<Label id="lblStatus" class="lblProperty" bindId="lblStatus"></Label>
+							<View id="lineBotView" class="lineSeparator"></View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoRecord" class="lblNoRecordFound"></Label>
+				<View id="CreateReqView" onClick="openCreateRequest">
+					<View id="btnView">
+						<View width="Ti.UI.SIZE">
+							<Label id="lblCreateReq"></Label>
+							<!-- <ImageView id="imgPlus"></ImageView> -->
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

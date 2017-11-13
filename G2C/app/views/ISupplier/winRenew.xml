@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="winRenew" class="win" onOpen="windowOpened">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<TableView id="tblRenew"></TableView>
+		</View>
+		<Require src="common/viewInstructions" id="viewInstructions"/>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,51 @@
+"#backView":{
+	height : 40,
+}
+"#backView[formFactor=tablet]":{
+	height : 60,
+}
+".revenueTextBoxProperty":{
+	height:30,
+	width: 100,
+	borderWidth:1,
+	borderColor : Alloy.Globals.path.formFieldsColor,
+	font:Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.formFieldsColor,
+	paddingLeft:10,
+	paddingRight:10,
+	hintText:0,
+	backgroundColor : "transparent"
+}
+
+".revenueTextBoxProperty[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+	width: 130,
+	height:45,
+}
+// "#lblTitle":{
+	// color:Alloy.Globals.path.darkGrayColor,
+	// font:Alloy.Globals.path.font14,
+	// height : 20
+// }
+// 
+// "#lblTitle[formFactor=tablet]":{
+	// font:Alloy.Globals.path.font18,
+	// height : 25
+// }
+".revenueTextBoxProperty1":{
+	height:30,
+	width: 130,
+	borderWidth:1,
+	borderColor : "#C0C0C0",
+	font:Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.darkGrayColor,
+	paddingLeft:10,
+	paddingRight:10,
+	backgroundColor : "transparent"
+}
+
+".revenueTextBoxProperty1[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+	width: 180,
+	height:45,
+}

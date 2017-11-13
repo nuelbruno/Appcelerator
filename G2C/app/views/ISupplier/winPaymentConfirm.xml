@@ -1,0 +1,23 @@
+<Alloy>
+	<Window id="winPaymentConfirm" class="win" onClose="windowClosed" onOpen="windowOpened">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="backView">
+				<ImageView id="icnDone"></ImageView>
+				<Label id="lblThankYou"></Label>
+				<View id="doneView" onClick="submitPayment">
+					<Label id="lblDone"></Label>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

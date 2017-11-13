@@ -1,0 +1,175 @@
+<Alloy>
+	<Window class="win" id="winActivateAccount"  layout="vertical" onOpen="winOpen">
+		<View id="mainView" class="verticalMainContainer">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty" onClick="closeWindow"></Label>
+				</View>
+			</View>
+		<ScrollView id="activationFormView" >
+			<View class="splitterRegView" top="0">
+				<Label class="splitterLabelReg" id="splitAccountDetails"></Label>
+			</View>
+			<View id="accountDetailsIndividualView">
+			<!--   -->
+			<View id="labelContainerView">
+				<Label id="fullnametLabel"  class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivation">
+					    <TextField id="fullnameTxtFld" class="txtfldPropertyACT" editable="false" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="countryOfCitizenshipLBL" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivation">
+					    <TextField id="cntryCitizenShipField" class="txtfldPropertyACT"  editable="false" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="cntryResidency" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivation">
+					    <TextField id="cntryResidenceField" class="txtfldPropertyACT"  editable="false" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="mobileNum1Lbl" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivationBg">
+					    <TextField id="mobilenum1Field" class="txtfldPropertyACT" editable="true"  keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="mobileNum2Lbl" class="actFromLabelTxtField"></Label>			
+			</View>
+			<View class="textBackViewActivation">
+					    <TextField id="mobilenum2Field" class="txtfldPropertyACT" editable="false" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="landLineNum" class="actFromLabelTxtField"></Label>
+			</View>
+			<View class="textBackViewActivation">
+					    <TextField id="landLineNumField" class="txtfldPropertyACT" editable="false" />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="emailaddressLabel" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivationBg">
+					    <TextField id="emailAddressField" class="txtfldPropertyACT" editable="true" />
+		    </View>
+		    <!--   -->
+		    </View>
+		    <View id="establishAccountDetailsView">
+		    	<View id="labelContainerView">
+				<Label id="establishName" class="actFromLabelTxtField"></Label>
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="establishNameField" class="txtfldPropertyACT"  editable="false" />
+		        </View>
+		        <View id="labelContainerView">
+				<Label id="tradeLicenceLabel" class="actFromLabelTxtField"></Label>
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="tradeLicenceField" class="txtfldPropertyACT" editable="false" />
+		        </View>
+		        <View id="labelContainerView">
+				<Label id="tradeLicenseExpiryDate" class="actFromLabelTxtField"></Label>
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="tradeLicenceExpField" class="txtfldPropertyACT" editable="false" />
+		        </View>
+		        <View id="labelContainerView">
+				    <Label id="mobileNumLabel" class="actFromLabelTxtField"></Label>
+				    <Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			    </View>
+			    <View class="textBackViewActivationBg">
+					    <TextField id="mobileNumFieldEst" class="txtfldPropertyACT" editable="true" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD"  />
+		        </View>
+		        <View id="labelContainerView">	        	
+				    <Label id="officePhoneLabel" class="actFromLabelTxtField"></Label>
+				    <Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="officePhoneField" class="txtfldPropertyACT" editable="false" />
+		        </View>
+		        <View id="labelContainerView">	        	
+				    <Label id="emailAddressLabelEst" class="actFromLabelTxtField"></Label>
+				    <Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			    </View>
+			    <View class="textBackViewActivationBg">
+					    <TextField id="emailAddressFieldEst" class="txtfldPropertyACT" editable="true" />
+		        </View>
+		        <View id="labelContainerView">	        	
+				    <Label id="addressLabel" class="actFromLabelTxtField"></Label>
+				    <Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="addressField" class="txtfldPropertyACT" editable="false" />
+		        </View>
+		        <View id="labelContainerView">	        	
+				    <Label id="websiteLabel" class="actFromLabelTxtField"></Label>			   
+			    </View>
+			    <View class="textBackViewActivation">
+					    <TextField id="websiteField" class="txtfldPropertyACT" editable="false" />
+		        </View>
+		        <View id="labelContainerView">	        	
+				    <Label id="emiratesChooseLBL" class="actFromLabelTxtField"></Label>
+			    </View>
+			    
+				 <View class="textBackViewActivation">
+					    <TextField id="textfieldEmirates" class="txtfldPropertyACT" editable="false" />
+		        </View>
+				 <View id="labelContainerView">
+					<Label id="postBoxLabel" class="actFromLabelTxtField"></Label>
+					<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+				</View>
+				<View class="textBackViewActivation">
+						    <TextField id="postBoxField" class="txtfldPropertyACT" editable="false" />
+			    </View>
+		    </View>
+		    <!--   -->
+		    <View class="splitterRegView">
+				<Label class="splitterLabelReg" id="splitCredentails"></Label>
+			</View>
+			<View id="labelContainerView">
+				<Label id="usernameLabel" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivationBg">
+					    <TextField id="userNameField" class="txtfldPropertyACT"  />
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="passwordLabel" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textSpaceView">
+				<View class="textBackViewActivationBgPass">
+				    <TextField id="passwordField" class="txtfldPropertyACT"  />
+			    </View>
+			    <View  class="showPasswordHint" onClick="showPasswordHint" >
+					<ImageView class="icnShowDetails"></ImageView>
+				</View>
+		    </View>
+		    <View class ="hintTextViewClass">
+					<Label id="passwordStrength" class="hintTextLabel" ></Label>
+		    </View>
+		    <View id="labelContainerView">
+				<Label id="confirPasswordLabel" class="actFromLabelTxtField"></Label>
+				<Label id="validlabelfld" text="*" class="validFeildclass"></Label>
+			</View>
+			<View class="textBackViewActivationBg">
+					    <TextField id="confirmPasswordField" class="txtfldPropertyACT"  />
+		    </View>
+		    <View id="viewButtonBack">
+					    <Button id="btnSubmit" onClick="onSubmitActivationForm"></Button>
+			</View>
+		</ScrollView>
+	</View>
+</Window>
+</Alloy>

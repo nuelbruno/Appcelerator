@@ -1,0 +1,48 @@
+<Alloy>
+	<Window id="winContacts" class="winLayout">
+		<View class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				<Button id="btnDone" class="btnDoneProperty" onClick="closeKeyboard"/>
+			</View>
+		</View>
+		<ScrollView id="mainView">
+			<ImageView  id="imgTop"></ImageView>
+			<!-- <Label id ="lblTitle"></Label> -->
+			<View id= "viewContactsForm">
+				<View id="NameView" class="fieldViewProperty">
+					<Label id="lblName" class="lblTitleProperty"></Label>
+					<Label id="NameColon" class="colonProperty"></Label>
+					<TextField id="txtNameValue" class="txtFieldProperty"></TextField>
+				</View>
+				<View class= "lineseparator"></View>
+				<View id="EmailView" class="fieldViewProperty">
+					<Label id="lblEmail" class="lblTitleProperty"></Label>
+					<Label id="EmailColon" class="colonProperty"></Label>
+					<TextField id="txtEmailValue" class="txtFieldProperty"></TextField>
+				</View>
+				<View class= "lineseparator"></View>
+				<View id="PhoneView" class="fieldViewProperty">
+					<Label id="lblPhone" class="lblTitleProperty"></Label>
+					<Label id="PhoneColon" class="colonProperty"></Label>
+					<TextField id="txtPhoneValue" class="txtFieldProperty" onFocus="showKeyboard" onBlur="closeKeyboard" maxLength="12"></TextField>
+				</View>
+				<View class= "lineseparator"></View>
+				<View id="CommentsView" class="fieldViewProperty">
+					<Label id="lblComments" class="lblTitleProperty"></Label>
+					<Label id="commentsColon" class="colonProperty"></Label>
+					<TextArea id="txtCommentsValue" class="txtFieldProperty" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur"></TextArea>
+				</View>
+				<View class= "lineseparator"></View>
+			</View>
+			<View id= "viewSave" onClick= "onSend">
+				<Label id ="lblSave"></Label>
+			</View>
+
+		</ScrollView>
+	</Window>
+</Alloy>

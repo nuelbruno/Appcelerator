@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="winUserSatisfactionConfirm" class="winLayout">
+		<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<!-- <View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View> -->
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		
+		
+		<View id="mainView">
+			<ImageView id="icnDone"></ImageView>
+			<Label id="lblThankYou"></Label>
+			<View id="doneView" onClick="closeWindow">
+				<Label id="lblDone"></Label>				
+			</View>	
+		</View>	
+		
+
+	</Window>
+</Alloy>

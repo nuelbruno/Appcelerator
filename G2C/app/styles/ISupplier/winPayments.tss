@@ -1,0 +1,205 @@
+"#searchMainView":{
+	top: 0,
+	height: 45,
+	width: "100%",
+	backgroundImage: Alloy.Globals.path.searchMainBg
+}
+"#searchMainView[formFactor=tablet]":{
+	height: 55
+}
+"#tblPaymentList":{
+	top: 0,
+	backgroundColor: 	Alloy.Globals.path.whiteColor,
+	separatorColor: "none",
+	separatorStyle: 0,
+	left: 0,
+	right: 0,
+	bottom: 25
+}
+"#lblPaymentNo":{
+	font: Alloy.Globals.path.font15
+}
+"#lblPaymentNo[formFactor=tablet]":{
+	font: Alloy.Globals.path.font20
+}
+"#mainBackViewAll":{
+	top: 0,
+	bottom: 0,
+	width: "100%"
+}
+
+"#tblRow":{
+	height: 46,
+	selectedColor: "none",
+	selectionStyle: 0
+}
+"#tblRow[formFactor=tablet]":{
+	height: 55
+}
+"#topBackView":{
+	top: 0,
+	height: 45,
+	left: 0,
+	right: 0
+}
+"#topBackView[formFactor=tablet]":{
+	height: 55
+}
+"#lblOrderNumber[if=Alloy.Globals.isEnglish]":{
+	left: 10,
+	width: 100,
+	height: 20,
+	font: Alloy.Globals.path.font14Bold,
+	color: Alloy.Globals.path.blackColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+"#lblOrderNumber[if=!Alloy.Globals.isEnglish]":{
+	right: 10,
+	width: 100,
+	height: 20,
+	font: Alloy.Globals.path.font14Bold,
+	color: Alloy.Globals.path.blackColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+"#lblOrderNumber[formFactor=tablet]":{
+	width: 160,
+	font: Alloy.Globals.path.font18Bold
+}
+"#btnStatus[if=Alloy.Globals.isEnglish]":{
+	touchEnabled: false,
+	left: 130,
+	style: "plain",
+	height: 16,
+	width: 100,//width: 70,
+	borderRadius: 4,
+	borderColor: Alloy.Globals.path.greenColor,
+	borderWidth: 1,
+	font: Alloy.Globals.path.font11Bold,
+	backgroundColor: "transparent",
+	color: Alloy.Globals.path.greenColor
+}
+"#btnStatus[if=!Alloy.Globals.isEnglish]":{
+	touchEnabled: false,
+	right: 130,
+	style: "plain",
+	height: 16,
+	width: 100,//width: 70,
+	borderRadius: 4,
+	borderColor: Alloy.Globals.path.greenColor,
+	borderWidth: 1,
+	font: Alloy.Globals.path.font11Bold,
+	backgroundColor: "transparent",
+	color: Alloy.Globals.path.greenColor
+}
+"#btnStatus[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	right: 200,
+	height: 23,
+	width: 170,
+	font: Alloy.Globals.path.font13Bold
+}
+"#btnStatus[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 200,
+	height: 23,
+	width: 170,
+	font: Alloy.Globals.path.font13Bold
+}
+"#imgUpDown[if=Alloy.Globals.isEnglish]":{
+	right: 10,
+	height: 12,
+	width: 21,
+	image:	Alloy.Globals.path.iconArrow2Down,
+	isClick: false
+}
+"#imgUpDown[if=!Alloy.Globals.isEnglish]":{
+	left: 10,
+	height: 12,
+	width: 21,
+	image:	Alloy.Globals.path.iconArrow2Down,
+	isClick: false
+}
+"#mainBackView":{
+	top: 45,
+	left: 0,
+	right: 0,
+	height: Titanium.UI.SIZE,
+	layout: "vertical"
+}
+"#mainBackView[formFactor=tablet]":{
+	top: 55
+}
+".titlePropety[if=Alloy.Globals.isEnglish]":{
+	left: 10,
+	top: 0,
+	height: 20,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.blackColor,
+	width: 100,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".titlePropety[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	height: 25,
+	font: Alloy.Globals.path.font17,
+	width: 150
+}
+".titlePropety[if=!Alloy.Globals.isEnglish]":{
+	right: 10,
+	top: 0,
+	height: 20,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.blackColor,
+	width: 100,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".titlePropety[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	height: 25,
+	font: Alloy.Globals.path.font17,
+	width: 150
+}
+".valueProperty[if=Alloy.Globals.isEnglish]":{
+	left: 130,
+	right: 10,
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".valueProperty[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	left: 180,
+	font: Alloy.Globals.path.font17
+}
+".valueProperty[if=!Alloy.Globals.isEnglish]":{
+	right: 130,
+	left: 10,
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".valueProperty[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	right: 180,
+	font: Alloy.Globals.path.font17
+}
+".backViewProperty":{
+	top: 0,
+	height: Titanium.UI.SIZE,
+	left: 0,
+	right: 0
+}
+"#entityView":{
+	top: 10
+}
+"#bankAccView":{
+	bottom: 15
+}
+"#lblEntityTitle":{
+	text:Alloy.Globals.selectedLanguage.entity
+}
+"#lblPayDateTitle":{
+	text:Alloy.Globals.selectedLanguage.paymentDate
+}
+"#lblMethodTitle":{
+	text: Alloy.Globals.selectedLanguage.method
+}
+"#lblBankAccTitle":{
+	text:Alloy.Globals.selectedLanguage.bankAccount
+}

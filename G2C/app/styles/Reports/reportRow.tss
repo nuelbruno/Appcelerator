@@ -1,0 +1,35 @@
+"#row":{
+	height:60,
+}
+
+"#imgRowArrow":{
+	width:8,
+	height:15,
+	//backgroundColor:Alloy.Globals.path.goldColor,
+	touchEnabled:false
+	
+}
+
+ "#rowsep":{
+	 bottom:0,
+	 height:1,
+	 width:'100%',
+	 backgroundColor:Alloy.Globals.path.grayColor,
+	 touchEnabled:false
+ }
+
+"#lblTitle":{
+	font : Alloy.Globals.path.font16,
+	color:Alloy.Globals.path.blackColor, //Alloy.Globals.path.goldColor,
+	touchEnabled:false,
+	height:Titanium.UI.SIZE,
+	backgroundColor : "transparent"
+}
+
+
+
+
+
+
+
+

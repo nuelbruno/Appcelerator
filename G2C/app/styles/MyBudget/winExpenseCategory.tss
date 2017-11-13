@@ -1,0 +1,40 @@
+"#win[platform=android]":{
+	windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_ADJUST_PAN
+}
+"#viewExpenseHeader":{
+	top:0,
+	width:'100%',
+	height:40,
+	//backgroundColor:'yellow'
+}
+"#btnDone":{
+	title:Alloy.Globals.selectedLanguage.doneTitle,
+	color:Alloy.Globals.path.whiteColor,
+}
+
+"#lblBudget":{
+	text:Alloy.Globals.selectedLanguage.budgetTitle,
+	font:Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.darkGrayColor,
+	textAlign : "center"
+}
+"#lblBudget[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,
+}
+"#lblActual":{
+	color : Alloy.Globals.path.darkGrayColor,
+	text:Alloy.Globals.selectedLanguage.actualTitle,
+	font:Alloy.Globals.path.font13,
+}
+"#lblActual[formFactor=tablet]":{
+	font:Alloy.Globals.path.font18,	
+}
+"#tableView" :{
+	top : 0,
+	width  :"100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor : "transparent"
+}
+"#tableView[formFactor=tablet]" :{
+	top : 10
+}

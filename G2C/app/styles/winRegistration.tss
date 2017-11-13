@@ -1,0 +1,156 @@
+"#mainView" :{
+	width : "100%",
+	height : "100%",
+	layout : "vertical"
+}
+
+"#scrollView" :{
+	top:0,
+	bottom:0,
+	layout : "vertical",
+	zIndex : 10
+}
+
+".lblProperty":{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : 20,
+	color : Alloy.Globals.path.lblGrayColor,
+	font : Alloy.Globals.path.font15,
+	text : "Name",
+}
+
+".backViewProperty":{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : 30,
+	backgroundColor : "transparent",
+	borderColor : Alloy.Globals.path.grayColor,
+	borderRadius : 3
+}
+
+".txtFldProperty":{
+	left : 10,
+	right : 10,
+	height : "100%",
+	color:Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font15,
+	backgroundColor : "transparent",
+	value : ""
+}
+
+".txtProperty":{
+	left : 10,
+	right : 30,
+	height : "100%",
+	color:Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font15,
+	backgroundColor : "transparent",
+	value : "Udfgfdgdg",
+	editable : false,
+	touchEnabled : false
+}
+
+".arrowProperty":{
+	right : 5,
+	width : 9,
+	height :16,
+//	backgroundColor : Alloy.Globals.path.navBarColor,
+	touchEnabled : false
+}
+
+"#separator" :{
+	top:20,
+	width : "100%",
+	height : 1,
+	backgroundColor : Alloy.Globals.path.grayColor
+}
+
+"#registerBtnView" :{
+	top:20,
+	left : 50,
+	right : 50,
+	height : 35,
+	borderColor : Alloy.Globals.path.navBarColor,
+	backgroundColor : "transparent",
+	borderRadius : 3
+}
+
+"#lblRegister" :{
+	height : 25,
+	left: 5,
+	right : 5,
+	text : "Register",
+	textAlign : "center",
+	font : Alloy.Globals.path.font15,
+	touchEnabled : false,
+	color : Alloy.Globals.path.navBarColor
+}
+
+"#backView" :{
+	width : "100%",
+	height : "100%",
+	visible : false,
+	backgroundColor : "black",
+	opacity : 0.4
+}
+
+"#OTPView" :{
+	left : 30,
+	right : 30,
+	height : 240,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderRadius  : 5,
+	visible : false,
+	layout : "vertical"
+}
+
+"#lblThankYou" :{
+	top : 25,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	text : "ThankYou for Registration.",
+	color : Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font17,
+	textAlign : "center"
+}
+
+"#lblTitle" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	text : "An OTP Code has been send to your email id.",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font15,
+	textAlign : "center"
+}
+
+"#txtOTPBackView" :{
+	top : 20
+}
+
+
+"#submitBtnView" :{
+	top:25,
+	left : 30,
+	right : 30,
+	height : 35,
+	borderColor : Alloy.Globals.path.navBarColor,
+	backgroundColor : "transparent",
+	borderRadius : 3
+}
+
+"#lblSubmit" :{
+	height : 25,
+	left: 5,
+	right : 5,
+	text : "Submit",
+	textAlign : "center",
+	font : Alloy.Globals.path.font15,
+	touchEnabled : false,
+	color : Alloy.Globals.path.navBarColor
+}

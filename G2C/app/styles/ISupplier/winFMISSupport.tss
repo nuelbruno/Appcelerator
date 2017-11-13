@@ -1,0 +1,171 @@
+"#imgCreateTicket" :{
+	right : 15,
+	width  :20,
+	height : 20,
+	image:Alloy.Globals.path.icnComposeWhite,
+	touchEnabled : false
+}
+"#imgCreateTicket[formFactor=tablet]" :{
+	width  :30,
+	height : 30,
+}
+// "#topBackView":{
+	// top : 0,
+	// height : Titanium.UI.SIZE,
+	// width : "100%",
+// }	
+// "#DropDownBackView":{
+	// height : 33,
+	// left : 5,
+	// right : 5,
+	// backgroundColor : Alloy.Globals.path.whiteColor,
+	// borderColor : Alloy.Globals.path.grayColor,
+	// borderRadius : 3,
+	// borderWidth : 1,
+// }
+
+// "#lblDropDown":{
+	// height : 20,
+	// font : Alloy.Globals.path.font13,
+	// color : Alloy.Globals.path.vatButtonTitleColor
+// }
+// 
+// "#imgDropDown":{
+	// height : 8,
+	// width : 13,
+	// image : Alloy.Globals.path.icnArrowDown
+// }
+"#tblHeaderView":{
+	top : 10,
+	height : 40,
+	left : 0,
+	right : 0,
+	backgroundImage : Alloy.Globals.path.bgHeaderTitle,
+	borderRadius : 4,
+}
+"#tblHeaderView[formFactor=tablet]":{
+	height : 50,
+}
+".lblHeaderTitle":{
+	font : Alloy.Globals.path.font12,
+	color :Alloy.Globals.path.vatButtonTitleColor,
+}
+".lblHeaderTitle[formFactor=tablet]":{
+	font : Alloy.Globals.path.font17
+}
+".vSeparator":{
+	width  : 1,
+	height : "100%",
+	backgroundColor : Alloy.Globals.path.borderColor,
+}
+"#tblFmisSupport":{
+	top : -1,
+	bottom : 0,
+	left : 0,
+	right : 0,
+	separatorColor : "none",
+	separatorStyle : 0,
+}
+ "#mainView" :{
+	top : 0,
+	width : "100%",
+	bottom : 0,
+ }
+"#lblStatusTitle":{
+	left : 5,
+	right : 5,
+	top : 10,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font13,
+}
+"#lblStatusTitle[formFactor=tablet]":{
+	top : 15,
+	right : 10,
+	left : 10,
+	font : Alloy.Globals.path.font18,
+}
+"#searchView":{
+	borderWidth: 1,
+	borderColor:Alloy.Globals.path.grayColor,
+	backgroundColor:Alloy.Globals.path.whiteColor,
+	borderRadius: 5,
+	top: 10,
+	height : 30,
+	left: 5,
+	right: 5
+}
+"#searchView[formFactor=tablet]":{
+	height : 45,
+	left: 10,
+	right: 10
+}
+"#optionView" :{
+	top : 5,
+	left : 5,
+	right : 5,
+	height : 30,
+	backgroundColor :"transparent"
+}
+"#optionView[formFactor=tablet]" :{
+	left : 10,
+	right : 10,
+	height : 45,
+}
+".optionViewProperty":{
+	width : "32%",
+	height : "100%"
+}
+
+"#inProgressView" :{
+	obj:1
+}
+
+"#closedView" :{
+	obj:2
+}
+
+"#reOpenView" :{
+	obj:3
+}
+".checkMarkProperty" :{
+	left : 2,
+	width : 15,
+	height : 15,
+	backgroundImage : Alloy.Globals.path.icnUnChecked,
+	touchEnabled : false
+}
+".checkMarkProperty[formFactor=tablet]" :{
+	width : 25,
+	height : 25,
+}
+".lblOptionProperty" :{
+	left : 20,
+	right : 2,
+	height : "100%",
+	backgroundColor : "transparent",
+	font : Alloy.Globals.path.font12,
+	touchEnabled : false
+}
+".lblOptionProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font17,
+}
+"#lblInProgress":{
+	color : Alloy.Globals.path.orangeColor,
+}
+"#lblClosed":{
+	color : Alloy.Globals.path.greenColor,
+}
+
+"#lblReopen":{
+	color : Alloy.Globals.path.blueColor,
+}
+"#backViewAll":{
+	layout : "vertical",
+	top : 10,
+	bottom : 10,
+	left : 10,
+	right  :10,
+	borderColor : Alloy.Globals.path.grayColor,
+	borderRadius : 3,
+	borderWidth : 1,
+}

@@ -1,0 +1,58 @@
+<Alloy>
+	<Window id="winApplicationList" class="win">
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View id="helpBackView" onClick="showToolTip">
+						<ImageView id="imgHelp"></ImageView>
+					</View>
+					<Button id="btnNew" class="navBarRightTextButton"></Button>
+				</View>
+			</View>
+			<View id="listBackView">
+				<View id="titleBackView">
+					<Label id="lblTitle"></Label>
+					<Label id="lblDate"></Label>
+					<View id="vSeperator"></View>
+				</View>
+				<!-- <TableView id="tableView"></TableView> -->
+				<ListView id="tblApplicationList" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="tblRow">
+							<View id="titleView" bindId="titleView">
+								<Label id="lblListTitle" bindId="lblListTitle"></Label>
+								<ImageView id="imgDown" bindId="imgDown"></ImageView>
+							</View>
+							<View id="viewDetail" bindId="viewDetail">
+								<Label id="lblRequestStatus" bindId="lblRequestStatus"></Label>
+								<Label id="lblApplicationStatus" bindId="lblApplicationStatus"></Label>
+								<View id="btnPayView" bindId="btnPayView">
+									<Label id="lblPay" bindId="lblPay"></Label>
+								</View>
+							</View>
+							<ImageView id="hSeparator" bindId="hSeparator"></ImageView>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="elements" id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoRecordFound" class="lblEmptyRecordProperty"></Label>
+			</View>
+			<!-- <View height="45" top="0" backgroundColor="red" platform="android"></View> -->
+		</View>
+		<View id="transparentView" onClick="hideToolTip"></View>
+		<View id="toolTipPopUp">
+			<Label id="lblToolTip"></Label>
+		</View>
+		<View id="closeView" class="closeViewProperty" onClick="showLeftPanel"></View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

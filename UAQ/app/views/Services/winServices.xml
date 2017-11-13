@@ -1,0 +1,109 @@
+
+<Alloy>
+	<Window id="winServices" class="win" onOpen="winOpen" onFocus="winFocus">
+		<View id="leftView" class="leftPanelProperty">
+			<Require src="common/viewLeftPanel" id="viewLeftPanel"></Require>
+		</View>
+		<View id="mainView" class="mainContainer" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty" onClick="closeWindow" ></Label>
+					<Require src="common/viewNavigationTools" id="viewNavigationTools"></Require>
+				</View>
+			</View>
+			
+			<View id = "headerView">
+				<Label id = "headerLabel"></Label>
+			</View>
+			<ImageView id = "headerImage"></ImageView>
+			
+			<ScrollView id = "scrollView" layout="vertical" opacity="0">
+				
+				<View id = "descriptionView" class = "viewProperty" layout="vertical">
+					<View id = "desTitleView" class = "titleViewProperty">
+						<Label id = "desTitleLabel" class = "titleLabelProperty"></Label>
+					</View>
+					<TextArea id = "descriptionData" class ="textAreaProperty" ></TextArea>
+				</View>
+				
+			 <View id = "timeView" class = "viewProperty" layout="vertical">
+					<View id = "timetitleView" class = "titleViewProperty">
+						<Label id = "timeTitleLabel" class = "titleLabelProperty"></Label>
+					</View>
+				<Label id = "timeLable"></Label>
+				</View>
+				
+				<View id = "beneficiaryView" class = "viewProperty" layout="vertical">
+					<View id = "benTitleView" class = "titleViewProperty">
+						<Label id = "benTitleLabel" class = "titleLabelProperty"></Label>
+					</View>
+					<TextArea id = "beneficiaryData" class ="textAreaProperty"></TextArea>
+				</View>
+				
+				<View id = "documentsView" class = "viewProperty" layout="vertical">
+					<View id = "docTitleView" class = "titleViewProperty">
+						<Label id = "docTitleLabel" class = "titleLabelProperty"></Label>
+					</View>
+					<TextArea id = "documentsData" class ="textAreaProperty"></TextArea>
+				</View>
+				
+				<View id = "proceduresView" class = "viewProperty" layout="vertical">
+					<View id = "proTitleView" class = "titleViewProperty">
+						<Label id = "proTitleLabel" class = "titleLabelProperty"></Label>
+					</View>
+					<TextArea id = "proceduresData" class ="textAreaProperty"></TextArea>
+				</View>
+				
+				<View id = "serviceFeesView"  layout="vertical">
+						<View id = "serviceTitleView" class = "titleViewProperty" >
+							<Label id = "serviceTitleLabel" class = "titleLabelProperty"></Label>
+						</View>
+					
+						<View id = "listHeaderView">
+							<Label id = "desTitle"></Label>
+							<Label id = "paymentTitle"></Label>
+							<Label id = "amountTitle"></Label>
+						</View>
+						
+						<ListView id="listviewFees" class="listContainer"  defaultItemTemplate="itemTemplateServices">
+							<Templates>
+								<Require src="listTemplate/itemTemplate"/>
+							</Templates>
+							<!-- <ListSection id="listsection"/> -->
+						</ListView>
+				</View>
+				
+				<View id = "contactsView" class = "viewProperty" layout="vertical">
+					<Label id = "serviceRequestLabel"></Label>
+					<Label id = "contactsCustomerLabel"></Label>
+					<View id = "emailView" class = "contactViewProperty">
+						<ImageView id = "emailImage" class = "contactImageProperty"></ImageView>
+						<Label id = "emailLabel" class = "contactLabelProperty"></Label>
+					</View>
+					<View id = "faxView" class = "contactViewProperty">
+						<ImageView id = "faxImage" class = "contactImageProperty"></ImageView>
+						<Label id = "faxLabel" class = "contactLabelProperty"></Label>
+					</View>
+					<View id = "calView" class = "contactViewProperty">
+						<ImageView id = "calImage" class = "contactImageProperty"></ImageView>
+						<Label id = "calLabel" class = "contactLabelProperty"></Label>
+					</View>
+				</View>			
+				<Button id = "startServicesButton" onClick="openWebView"></Button>
+
+			</ScrollView>
+			
+		</View>
+		<Require src="common/viewHappinessIndicator" id="viewHappinessIndicator"></Require>
+		<Require src="common/viewNotification" id="viewNotification"></Require>
+		<View id="backView" class="backViewProperty"></View>
+		<Require src="common/viewBottomMenu" id="viewBottomMenu"></Require>
+		<View id="viewTransparent" class="transparentViewProperty" onClick="closeLeftPanel"></View>
+	</Window>
+</Alloy>
+
+

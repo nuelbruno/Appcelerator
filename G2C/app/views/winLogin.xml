@@ -1,0 +1,47 @@
+<Alloy>
+	<Window id="winLogin" class="win">
+		<View id="loginView">
+			<View id="usernameView" class="backViewProperty">
+				<ImageView id="imgUserName" class="iconProperty"></ImageView>
+				<TextField id="txtUsername" class="txtFldProperty"></TextField>	
+			</View>
+			
+			<View id="passwordView" class="backViewProperty">
+				<ImageView id="imgPassword" class="iconProperty"></ImageView>
+				<TextField id="txtPassword" class="txtFldProperty"></TextField>	
+			</View>	
+			
+			<View id="loginBtnView" onClick="doLogin">
+				<Label id="lblLogin"></Label>
+			</View>
+			
+			<View id="bottomView">
+				<Label id="lblForgotPassword" class="lblProperty" onClick="showForgotPasswordView"></Label>
+				<Label id="lblNewRegister" class="lblProperty" onClick="openRegistration"></Label>
+			</View>	
+			
+		</View>	
+		
+		<View id="backView"></View>	
+		<View id="forgotPasswordView">
+			<Label id="lblForgortPassword"></Label>
+			<Label id="lblContactAdmin"></Label>
+			
+			<View id="txtAdminView" class="txtBackViewProperty">
+				<TextField id="txtAdmin" class="txtProperty"></TextField>
+			</View>			
+			
+			<View id="txtCallView" class="txtBackViewProperty">
+				<TextField id="txtCall" class="txtProperty"></TextField>
+			</View>			
+			
+			<ImageView id="separator"></ImageView>
+			
+			<View id="cancelBtnView" onClick="closeForgotPasswordView">
+				<Label id="lblCancel"></Label>
+			</View>	
+			
+		</View>	
+		
+	</Window>
+</Alloy>

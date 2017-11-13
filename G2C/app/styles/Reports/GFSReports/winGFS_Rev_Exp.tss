@@ -1,0 +1,121 @@
+"#lblReprotTitle":{
+	left: 10,
+	right: 10,
+	font: Alloy.Globals.path.font15,
+	color:Alloy.Globals.path.blackColor
+}
+
+"#mainView":{
+	width: "100%",
+	height: "100%",
+	layout: "vertical",
+	backgroundColor: "transparent"
+}
+
+
+"#budgetActivityView":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 30,
+	borderRadius: 3,
+	borderColor: Alloy.Globals.path.navBarColor
+}
+
+"#lblBudgetActivity":{
+	left: 10,
+	right: 40,
+	height: "100%",
+	backgroundColor: "transparent",
+	text: "Budget By Activity",
+	touchEnabled: false,
+	textAlign: "left",
+	color: Alloy.Globals.path.navBarColor,
+	font: Alloy.Globals.path.font14
+}
+
+"#arrowView":{
+	right: 10,
+	width: 9,
+	height: 16,
+	backgroundColor: "transparent",//Alloy.Globals.path.navBarColor,
+	touchEnabled: false
+}
+
+"#chartView":{
+	top: 10,
+	left: 0,
+	right: 0,
+	bottom: 0,
+	layout: "vertical"
+}
+".chartViewProperty":{}
+
+
+"#normalChartView":{
+	//	zIndex : 75,
+	//	opacity : 0
+	top: 5,
+	visible: true
+}
+
+"#sectionView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	backgroundColor: Alloy.Globals.path.borderColor,
+	height: 30
+}
+
+".lblSectionProperty":{
+	height: "100%",
+	color: Alloy.Globals.path.whiteColor,
+	font: Alloy.Globals.path.font11,
+	backgroundColor: "transparent",
+	textAlign: "center"
+}
+
+"#lblCode":{
+	left: 5,
+	width: 70
+}
+"#lblDesc":{
+	left: 80,
+	width: 65
+}
+
+"#lblTotal":{
+	left: 220,
+	width: 75
+}
+
+"#tableView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	bottom: 5,
+	backgroundColor: "transparent",
+	separatorColor: "transparent"
+}
+
+
+// Transparent View
+
+"#TableBackView":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: "black",
+	opacity: 0.5,
+	zIndex: 10,
+	visible: false
+}
+
+"#slidingView":{
+	//	top: Alloy.Globals.platformHeight,
+	//	bottom: 0,
+	width: "100%",
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 15,
+	backgroundColor: Alloy.Globals.path.bgColor
+}

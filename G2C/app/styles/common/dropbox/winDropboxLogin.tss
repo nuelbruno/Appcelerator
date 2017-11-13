@@ -1,0 +1,15 @@
+"#winDropboxLogin[platform=android]":{
+	modal: true,
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN,
+	theme: "Theme.NoActionBar"
+},
+"#winDropboxLogin[platform=ios]":{
+	modal: true
+},
+"#statusBar":{
+	height: 0
+}
+"#lblNavTitle":{
+	text: Alloy.Globals.selectedLanguage.useDropbox
+},
+

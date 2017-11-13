@@ -1,0 +1,141 @@
+<Alloy>
+	<Window id="winTaxVatHome" class="win" onOpen="windowOpened" onClose="windowClosed">
+		
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View  id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View id="helpBackView" class="helpBackViewProperty">
+						<ImageView id="imgHelp" class="imgHelpProperty"></ImageView>
+					</View>
+					<Button id="btnNavLogin" class="navBarRightTextButton" onClick="PopUPLoginForm"></Button>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<View id="tApplicationView" class="viewProperty" onClick="openDetailWindow">
+					<ImageView id="imgtApplication" class="imgProperty"></ImageView>
+					<Label id="lbltApplication" class="labelProperty"></Label>
+				</View>
+				<View  class="separator"></View>
+				<View id="vApplicationView" class="viewProperty" onClick="openDetailWindow">
+					<ImageView id="imgvApplication" class="imgProperty"></ImageView>
+					<Label id="lblvApplication" class="labelProperty"></Label>
+				</View>
+				<View id="vatSeparator" class="separator"></View>
+				<View id="taskView" class="viewProperty" onClick="openDetailWindow">
+					<ImageView id="imgTaskList" class="imgProperty"></ImageView>
+					<Label id="lblTaskList" class="labelProperty"></Label>
+				</View>
+				<View  class="separator"></View>
+				<View id="applicationView" class="viewProperty" onClick="openDetailWindow">
+					<ImageView id="imgApplication" class="imgProperty"></ImageView>
+					<Label id="lblApplication" class="labelProperty"></Label>
+				</View>
+				<View  class="separator"></View>
+				<View id="userProfileView" class="viewProperty" onClick="openDetailWindow">
+					<ImageView id="imgUserProfile" class="imgProperty"></ImageView>
+					<Label id="lblUserProfile" class="labelProperty"></Label>
+				</View>
+				<View  class="separator"></View>
+				<View id="changePasswordView" class="viewProperty" onClick="openChangePassword">
+					<ImageView id="imgChangePassword" class="imgProperty"></ImageView>
+					<Label id="lblChangePassword" class="labelProperty"></Label>
+				</View>
+				<View id="lastSeparator" class="separator"></View>
+			</ScrollView>
+		</View>
+		<View id="closeView" class="closeViewProperty" onClick="showLeftPanel"></View>
+		<View id="backView"></View>
+		<View id="loginView" class="loginView">
+			<View id="topView" class="titleBG" isToExclude_contrast="true">
+				<Button id="btnLogin" class="btnLogin"></Button>
+				<Button id="btnCancel" class="btnLogin" onClick="closeLoginView"></Button>
+			</View>
+			<Label id="lblLoginDesc" class="lblLoginDesc"></Label>
+			<View id="credentialView" class="credentialView">
+				<View id="usernameView" class="credentialBackView">
+					<ImageView id="imgUserName" class="imgLoginUser"></ImageView>
+					<TextField id="txtUsername" class="txtLoginFldProperty"></TextField>
+				</View>
+				<View id="hSeparator" class="hSeparator"></View>
+				<View id="passwordView" class="credentialBackView">
+					<ImageView id="imgPassword" class="imgLoginPassword"></ImageView>
+					<TextField id="txtPassword" class="txtLoginFldProperty"></TextField>
+				</View>
+			</View>
+			<Button id="btnLoginBig" class="btnLoginBig" onClick="doLogin"></Button>
+			<Button id="btnRegistrationBig" onClick="gotoRegistration"></Button>
+			<Label id="lblForgotPassword" class="lblProperty" onClick="showForgotPasswordView"></Label>
+		</View>
+		<View id="changePwdPopupView" class="loginView">
+			<View id="topChangePwdView" class="titleBG" isToExclude_contrast="true">
+				<Button id="btnChangePwd" class="btnLogin"></Button>
+				<Button id="btnChangePwdCancel" class="btnLogin" onClick="closeChangePwdView"></Button>
+			</View>
+			<Label id="lblOldPwd" class="lblLoginDesc"></Label>
+			<View id="txtOldPwdbackView">
+				<TextField id="txtOldPwd"></TextField>
+			</View>
+			<Label id="lblChangePwd" class="lblLoginDesc"></Label>
+			<View id="txtChangePwdbackView">
+				<TextField id="txtNewPwd"></TextField>
+			</View>
+			<Label id="lblChangeConfirmPwd" class="lblLoginDesc"></Label>
+			<View id="txtChangeConfirmPwdbackView">
+				<TextField id="txtNewConfirmPwd"></TextField>
+			</View>
+			<Button id="btnChangePwdBig" class="btnLoginBig" onClick="callChangePwd"></Button>
+			<Label  class="lblProperty"></Label>
+		</View>
+		<View id="forgotPasswordView" class="loginView">
+			<View id="topforgotPwdView" class="titleBG">
+				<Button id="btnForgotPwd" class="btnLogin"></Button>
+				<Button id="btnForgotPwdCancel" class="btnLogin" onClick="closeForgotPasswordView"></Button>
+			</View>
+			<Label id="lblForgotUserName" class="lblLoginDesc"></Label>
+			<View id="txtForgotPwdbackView">
+				<TextField id="txtForgotUserName" class="txtLoginFldProperty"></TextField>
+			</View>
+			<Button id="btnForgotPwdBig" class="btnLoginBig" onClick="callForgotPwd"></Button>
+			<Label  class="lblProperty"></Label>
+		</View>
+		<View id="instructionView" class="instructionViewProperty" onClick="openHelpScreen">
+			<View id="instructionPopup" class="instructionPopupProperty">
+				<View id="tabBarView" class="instructionTabViewProperty">
+					<Label id="lblDescription" class="tabLabelProperty" onClick="showDescription"></Label>
+					<Label id="lblSteps" class="tabLabelProperty" onClick="showSteps"></Label>
+					<View id="tabSeparator" class="tabSeparatorProperty"></View>
+				</View>
+				<View id="scrInstruction">
+					<Label id="lblInstTitle" class="instLblTitleProperty" height="0"></Label>
+					<Label id="lblInstContent" class="instLblContentProperty" height="0"></Label>
+					<WebView id="wb" ></WebView>
+				</View>
+				<View id="instructionSeparator" class="instructionSeparatorProperty"></View>
+				<View id="instructionToolBar" class="instructionToolBarProperty">
+					<View id="buttonView" class="buttonViewProperty">
+						<ImageView id="imgTheme" class="imgToolProperty" onClick="changeTheme"></ImageView>
+						<ImageView id="imgFontSize" class="imgToolProperty" onClick="showSlider"></ImageView>
+					</View>
+					<View id="sliderView" class="sliderViewProperty">
+						<Label id="lblAMinus" class="lblAMinusProperty"></Label>
+						<Slider id="fontSlider" class="fontSliderProperty"></Slider>
+						<Label id="lblAPlus" class="lblAPlusProperty"></Label>
+						<ImageView id="imgSliderClose" class="imgSliderCloseProperty" onClick="showSlider"></ImageView>
+					</View>
+				</View>
+				<View id="instructionButtonView">
+					<Button id="btnApply" class="instructionButtonProperty"></Button>
+					<Button id="btnNo" class="instructionButtonProperty"></Button>
+				</View>
+			</View>
+		</View>
+		<!-- <Require src="common/viewInstructions" id="viewInstructions"/> -->
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

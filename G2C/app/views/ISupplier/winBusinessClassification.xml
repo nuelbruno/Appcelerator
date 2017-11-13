@@ -1,0 +1,137 @@
+<Alloy>
+	<Window id="winBusinessClassification" class="win"  onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<Button id="btnSave" class="navBarRightTextButton" onClick="saveBusinessInfo"></Button>
+				</View>
+			</View>
+			<ScrollView id="view2">
+				<View id="sectionView2" class="sectionViewProperty">
+					<Label id="lblHeaderCompanyDetails" class="lblSectionTitle"></Label>
+				</View>
+				<Label id="lblBasicClassification" class="lblHeaderProperty"></Label>
+				<Label class="lblEngNoProperty"></Label>
+				<!-- <Label id="lblClassification" class="lblHeaderProperty"></Label> -->
+				<View id="companyDetailsView" class="viewBackProperty">
+					<Label id="lblCertificate1" class="lblClassicProperty"></Label>
+					<TextField id="txtCertificate1" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblExpiryDate1" class="lblClassicProperty"></Label>
+					<Label id="lblExpiryDate1Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblCertificate2" class="lblClassicProperty"></Label>
+					<TextField id="txtCertificate2" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblExpiryDate2" class="lblClassicProperty"></Label>
+					<Label id="lblExpiryDate2Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblCertificate3" class="lblClassicProperty"></Label>
+					<TextField id="txtCertificate3" class="txtFldProperty"></TextField>
+					<ImageView class="separator"></ImageView>
+					<Label id="lblExpiryDate3" class="lblClassicProperty"></Label>
+					<Label id="lblExpiryDate3Value" class="lblDateProperty" onClick="selectExpiryDate"></Label>
+				</View>
+				<!-- <View id="addressDetailsView" class="innerViewProperty" onClick="openAddressWindow">
+					<Label id="lblAddressDetails"></Label>
+					<Label id="lblPlus"></Label>
+				</View>
+				<View id="addressSectionView" class="tableSectionProperty">
+					<Label id="lblSecAddressName" class="lblSectionProperty"></Label>
+					<Label id="lblSecAddressDetail" class="lblSectionProperty"></Label>
+				</View>
+				<View id="bgAddressTableView">
+					<ListView id="addressTableViewItems" defaultItemTemplate="addressTemplate">
+						<Templates>
+							<ItemTemplate name="addressTemplate" id="addressRow">
+								<Label id="lblRowAddressName" bindId="lblRowAddressName"></Label>
+								<Label id="lblRowAddressDetail" bindId="lblRowAddressDetail"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+							</ItemTemplate>
+						</Templates>
+						<ListSection name="addressElements" id="addressListSection"></ListSection>
+					</ListView>
+					<Label id="lblNoItemsAddress" class="lblNoItemsProperty"></Label>
+				</View>
+				<View id="bankDetailsView" class="innerViewProperty" onClick="openBankWindow">
+					<Label id="lblBankDetails"></Label>
+					<Label id="lblBankPlus"></Label>
+				</View>
+				<View id="bankSectionView" class="tableSectionProperty">
+					<Label id="lblSecBankAccNo" class="lblSectionProperty"></Label>
+					<Label id="lblSecBankName" class="lblSectionProperty"></Label>
+				</View>
+				<View id="bgBankTableView">
+					<ListView id="bankTableViewItems" defaultItemTemplate="bankTemplate">
+						<Templates>
+							<ItemTemplate name="bankTemplate" id="bankRow">
+								<Label id="lblRowBankAccNo" bindId="lblRowBankAccNo"></Label>
+								<Label id="lblRowBankName" bindId="lblRowBankName"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+							</ItemTemplate>
+						</Templates>
+						<ListSection name="bankElements" id="bankListSection"></ListSection>
+					</ListView>
+					<Label id="lblNoItemsBank" class="lblNoItemsProperty"></Label>
+				</View>
+				<View id="contactDetailsView" class="innerViewProperty" onClick="openContactWindow">
+					<Label id="lblContactDetails"></Label>
+					<Label id="lblContactPlus" visible="false"></Label>
+				</View>
+				<View id="contactSectionView" class="tableSectionProperty">
+					<Label id="lblSecContactName" class="lblSectionProperty"></Label>
+					<Label id="lblSecContactPhNo" class="lblSectionProperty"></Label>
+				</View>
+				<View id="bgContactTableView">
+					<ListView id="contactTableViewItems" defaultItemTemplate="contactTemplate">
+						<Templates>
+							<ItemTemplate name="contactTemplate" id="contactRow">
+								<Label id="lblRowContactName" bindId="lblRowContactName"></Label>
+								<Label id="lblRowContactPhNo" bindId="lblRowContactPhNo"></Label>
+							</ItemTemplate>
+						</Templates>
+						<ListSection name="contactElements" id="contactListSection"></ListSection>
+					</ListView>
+					<Label id="lblNoItemsContact" class="lblNoItemsProperty"></Label>
+				</View> -->
+				
+				
+				
+				
+				
+				<View id="sectionView4" class="sectionViewProperty">
+					<Label id="lblAttachementsInfo" class="lblSectionTitle"></Label>
+				</View>
+				<View id="AttachmentsView" class="innerViewProperty" onClick="openAttachmentsWindow">
+					<Label id="lblAttachment"></Label>
+					<Label id="lblAttachmentPlus"></Label>
+				</View>
+				<View id="attachmentsSectionView" class="tableSectionProperty">
+					<Label id="lblSecAttachmentTitle" class="lblSectionProperty"></Label>
+					<Label id="lblSecAttachmentCategory" class="lblSectionProperty"></Label>
+				</View>
+				<View id="bgAttachmentTableView">
+					<ListView id="attachmentsTableViewItems" defaultItemTemplate="attachmentTemplate">
+						<Templates>
+							<ItemTemplate name="attachmentTemplate" id="attachmentRow">
+								<Label id="lblRowAttachmentsTitle" bindId="lblRowAttachmentsTitle"></Label>
+								<Label id="lblRowAttachmentCategory" bindId="lblRowAttachmentCategory"></Label>
+								<ImageView class="tableSeparator"></ImageView>
+							</ItemTemplate>
+						</Templates>
+						<ListSection name="contactElements" id="attachmentListSection"></ListSection>
+					</ListView>
+					<Label id="lblNoItemsAttachment" class="lblNoItemsProperty"></Label>
+				</View>
+
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>
+

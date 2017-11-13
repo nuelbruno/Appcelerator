@@ -1,0 +1,85 @@
+<Alloy>
+	<Window id="winUserProfile" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<Button id="btnRegister" class="navBarRightTextButton" onClick="SaveVatTaxUser"></Button>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<View id="namePasswordView" class="namePasswordViewProperty">
+					<View id="emailView" class="viewProperty">
+						<Label id="lblEmailAstrik" class="astricProperty"></Label>
+						<Label id="lblEmail" class="labelProperty"></Label>
+						<TextField id="txtEmail" class="textFieldProperty"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="passwordView" class="viewProperty">
+						<Label id="lblPasswordAstrik" class="astricProperty"></Label>
+						<Label id="lblPassword" class="labelProperty"></Label>
+						<TextField id="txtPassword" class="textFieldProperty"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="confPasswordView" class="viewProperty">
+						<Label id="lblConfPasswordAstrik" class="astricProperty"></Label>
+						<Label id="lblConfPassword" class="labelProperty"></Label>
+						<TextField id="txtConfPassword" class="textFieldProperty"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="nameView" class="viewProperty" height="0">
+						<Label id="lblName" class="labelProperty"></Label>
+						<TextField id="txtName" class="textFieldProperty"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+				</View>
+				<View class="namePasswordViewProperty">
+					<View id="addressView">
+						<Label id="lblAdressAstrik" class="astricProperty" top="10"></Label>
+						<Label id="lblAdress" class="labelProperty"></Label>
+						<TextArea id="txtAddress" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur"></TextArea>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="mobileNoView" class="viewProperty">
+						<Label id="lblMobileNoAstrik" class="astricProperty"></Label>
+						<Label id="lblMobileNo" class="labelProperty"></Label>
+						<TextField id="txtMobileNo" class="detailTextFieldProperty" maxLength="10"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="telNoView" class="viewProperty">
+						<Label id="lblTelNo" class="labelProperty"></Label>
+						<TextField id="txtTelNo" class="detailTextFieldProperty" maxLength="10"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="faxNoView" class="viewProperty">
+						<Label id="lblFaxNo" class="labelProperty"></Label>
+						<TextField id="txtFaxNo" class="detailTextFieldProperty" maxLength="10"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="POBoxView" class="viewProperty">
+						<Label id="lblPOBoxAstrik" class="astricProperty"></Label>
+						<Label id="lblPOBox" class="labelProperty"></Label>
+						<TextField id="txtPOBox" class="detailTextFieldProperty" maxLength="10"></TextField>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="SecQuestionView" class="viewProperty">
+						<Label id="lblSecQuestionAstrik" class="astricProperty"></Label>
+						<Label id="lblSecQuestion" class="labelProperty"></Label>
+						<TextField id="txtSecQuestion" class="detailTextFieldProperty"></TextField>
+						<ImageView id="imgSecQuestion" onClick="selectSecQuestion"></ImageView>
+					</View>
+				</View>
+				<!-- <Button id="btnSave"></Button> -->
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

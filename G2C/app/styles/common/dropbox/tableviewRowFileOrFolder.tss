@@ -1,0 +1,42 @@
+".row":{
+	height: 50,
+	color: '#000000',
+	selectionStyle : 0,	
+},
+"#imageview":{
+	width: 25,
+	left: 5
+},
+"#label":{
+	// width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	left: 55,
+	right : 25,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+
+"#imgRowArrow[formFactor=handheld]":{
+	right : 10,
+	width:8,
+	height:15,
+	image : Alloy.Globals.path.icnArrowRightBlack,
+	//backgroundColor:Alloy.Globals.path.goldColor,
+	visible : false,
+	touchEnabled:false
+	
+}
+"#imgRowArrow[formFactor=tablet]":{
+	right : 10,
+	width:12,
+	height:23,
+	image : Alloy.Globals.path.icnArrowRightBlack,
+	visible : false,
+	touchEnabled : false,
+}
+
+"#imgSeparator":{
+	width : "100%",
+	height : 1,
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.borderColor
+}

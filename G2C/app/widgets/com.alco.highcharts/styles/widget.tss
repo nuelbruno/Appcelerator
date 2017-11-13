@@ -1,0 +1,14 @@
+"#chartWebView": {
+	color: '#000',
+	font: {
+		fontSize: 18,
+		fontWeight: 'bold'
+	},
+//	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	backgroundColor : "transparent",
+	enableZoomControls : false,
+	disableBounce : true,
+	hideLoadIndicator : true,
+	borderRadius : 1
+}

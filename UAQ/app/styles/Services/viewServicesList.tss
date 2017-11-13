@@ -1,0 +1,15 @@
+"#viewServices":{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0
+}
+
+"#listviewServices[platform=android]":{
+ separatorHeight : 0
+}
+
+
+"#listviewServices[platform=ios]": {
+   separatorStyle: Titanium.UI.iPhone.ListViewSeparatorStyle.NONE,
+}

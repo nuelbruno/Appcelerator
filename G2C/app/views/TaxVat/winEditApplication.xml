@@ -1,0 +1,42 @@
+<Alloy>
+	<Window id="winEditApplication" class="win">
+		<View id="leftView" class="leftPanelProperty"></View>
+		<View id="homeView">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View class="rightView">
+						<ImageView id="icnDelete"></ImageView>
+					</View>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<View id="detailView">
+					<Label id="lblTitle"></Label>
+					<ImageView class="hSeperatorProperty"></ImageView>
+					<View id="dateView">
+						<ImageView id="imgCalendar"></ImageView>
+						<Label id="lblDate"></Label>
+						<ImageView id="imgTime"></ImageView>
+						<Label id="lblTime"></Label>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<TextArea id="txtContent"></TextArea>
+				</View>
+				<View id="buttonBackView">
+					<Button id="btnSave"></Button>
+					<Button id="btnCancel"></Button>
+				</View>
+			</ScrollView>
+		</View>
+		<View id="closeView" class="closeViewProperty" onClick="showLeftPanel"></View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

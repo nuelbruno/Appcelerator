@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="winFGFinalAccount" class="winLayout">
+		<View class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		<View id= "viewTableView" class="tableView"  >
+			<TableView id="tableViewItems"></TableView>
+			<Label id="lblNoItems"/>
+		</View>
+	</Window>
+</Alloy>

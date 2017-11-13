@@ -1,0 +1,33 @@
+<Alloy>
+	<Window id="winBudgetGuidesDetail" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<!-- <View id="searchBar">
+			<View id="searchView" class="searchViewProperty" >
+			<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+			<TextField id="txtSearch" class="txtSearchProperty"></TextField>
+			</View>
+			</View> -->
+			<View id="webBackView">
+				<WebView id="webView"></WebView>
+				<View id="buttonView">
+					<Button id="btnPrevious" class="buttonProperty"></Button>
+					<Label id="lblCurrentPage"></Label>
+					<Button id="btnNext" class="buttonProperty"></Button>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,29 @@
+<Alloy>
+	<TableViewRow id="tblRow">
+		<View id="topBackView">
+			<Label id="lblOrderNumber"></Label>
+			<Button id="btnStatus"></Button>
+			<ImageView id="imgUpDown"></ImageView>
+		</View>
+		<!-- <View id="separatorView" class="hSeparator"></View> -->
+		<View id="mainBackView">
+			<Label id="lblDescription"></Label>
+			<View id="entityView" class="backViewProperty">
+				<Label id="lblEntityTitle" class="titlePropety"></Label>
+				<Label id="lblEntityValue" class="valueProperty"></Label>
+			</View>
+			<View class="hSeparator"></View>
+			<View id="orderDateView" class="backViewProperty">
+				<Label id="lblOrdDateTitle" class="titlePropety"></Label>
+				<Label id="lblOrdDateValue" class="valueProperty"></Label>
+			</View>
+			<View class="hSeparator"></View>
+			<View id="amountView" class="backViewProperty">
+				<Label id="lblAmoutTitle" class="titlePropety"></Label>
+				<Label id="lblAmoutValue" class="valueProperty"></Label>
+			</View>
+			<Button id="btnViewInv" onClick="openInvoices"></Button>
+		</View>
+		<View class="separator"></View>
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_GFS_FederalPie.js"></script>
+		<script src="highcharts_GFS_IndiciesPie_3D.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, mtd, ytd, xLabel, yLabel, abc, axisFontSize,abc,abc,isArabic) {
+				//    Ti.API.info('Webview: plotChart()');
+				//    Ti.API.info('arr Pie =' +JSON.stringify(arr));
+				//    Ti.API.info('mtd ='+mtd);
+				//    Ti.API.info('ytd ='+ytd);
+
+				/*
+				 // Radialize the colors
+				 new Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function(color) {
+				 return {
+				 radialGradient : {
+				 cx : 0.5,
+				 cy : 0.3,
+				 r : 0.7
+				 },
+				 stops : [[0, color], [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+				 ]
+				 };
+				 });*/
+
+				function setTranslation(p, slice) {
+					p.sliced = slice;
+					if (p.sliced) {
+						p.graphic.animate(p.slicedTranslation);
+					} else {
+						p.graphic.animate({
+							translateX : 0,
+							translateY : 0
+						});
+					}
+				}
+
+				new Highcharts.Chart({
+					chart : {
+						renderTo : 'container',
+						plotBackgroundColor : null,
+						plotBorderWidth : null,
+						plotShadow : false,
+						backgroundColor : "transparent",
+						height : ytd,
+						options3d : {
+							enabled : true,
+							alpha : 45,
+							beta : 0
+						}
+					},
+					title : {
+						text : ''
+					},
+					legend : {
+						rtl : isArabic,
+						layout : 'vertical',
+						itemMarginTop : 7,
+						itemMarginBottom : 7,
+						itemStyle : {
+							"fontSize" : (axisFontSize)
+						},
+					},
+					tooltip : {
+						useHTML : true,
+						shared : false,
+						//	backgroundColor : '#D3D3D3',
+						//	borderColor : 'black',
+						//	formatter : function() {
+						//		return 'The value for <b>' + this.key + '</b> is <br>' + this.y + '</br> and <br>' + 'point.percentage:.1f%' + '</br>';
+						//	},
+						//headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px;color:{series.color}">{point.key}</td></tr>', //'<center><span style="font-size: 14px; color:{series.color}">{point.key} </span></center><br/>',
+						headerFormat : '<table><tr><td style="text-align: center; font-size:' + (axisFontSize) + 'px">{point.key}</td></tr>', //'<center><span style="font-size: 14px; color:{series.color}">{point.key} </span></center><br/>',
+						//	headerFormat : '<small>{point.key} : </small><table>',
+						pointFormat : '<tr><td style="text-align: center; font-size:' + (axisFontSize - 2) + 'px">{point.percentage:.1f}%</td></tr></table>',//'{point.percentage:.1f}%',//'{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions : {
+						pie : {
+							depth : 25,
+							allowPointSelect : true,
+							animation : 0,
+							cursor : 'pointer',
+							dataLabels : {
+								enabled : false
+							},
+							showInLegend : true,
+							point : {
+								events : {
+									mouseOut : function() {
+										setTranslation(this, false);
+									},
+									mouseOver : function() {
+										setTranslation(this, true);
+									},
+									legendItemClick : function() {
+										return false;
+										// <== returning false will cancel the default action
+									}
+								}
+							},
+						}
+					},
+					series : [{
+						type : 'pie',
+						name : 'Browser share',
+						data : arr,
+						/*data: [
+						 ['Firefox',   45.0],
+						 ['IE',       26.8],
+						 {
+						 name: 'Chrome',
+						 y: 12.8,
+						 sliced: false,
+						 selected: false
+						 },
+						 ['Safari',    8.5],
+						 ['Opera',     6.2],
+						 ['Others',   0.7]
+						 ]*/
+					}]
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

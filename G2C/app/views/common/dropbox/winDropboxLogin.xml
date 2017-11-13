@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="winDropboxLogin" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"/>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"/>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"/>
+				</View>
+			</View>
+			<WebView id="dropboxWebView" class="drobboxWebView" />
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,179 @@
+"#mainView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	bottom: 0,
+	layout: "vertical"
+}
+
+"#composeView":{
+	top : 15,
+	left : 0,
+	right : 0,
+	horizontalWrap : false,
+	height : Titanium.UI.SIZE
+}
+
+"#lblCompose":{
+	left: 10,
+	right: 10,
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: Titanium.UI.SIZE,
+}
+"#lblCompose[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+"#lblComposeAstrik":{
+	top : 0,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font15Bold,
+	color: Alloy.Globals.path.navBarColor,
+	isToExclude_contrast: true,
+	text: "*"
+}
+
+".lblProperty":{
+	top: 15,
+	left: 10,
+	right: 10,
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: 20
+}
+".lblProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+"#viewDesc":{
+	top: 10,
+	left: 10,
+	right: 10,
+	borderColor: "gray",
+	//borderRadius: 3,
+	height: 200
+}
+
+"#txtDesc":{
+	width: "100%",
+	height: "100%",
+	backgroundColor: "transparent",
+	font: Alloy.Globals.path.font13,
+	color :Alloy.Globals.path.blackColor,
+}
+"#txtDesc[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+"#viewPersonalDetails":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	borderColor: "gray",
+	//borderRadius: 3,
+	layout: "vertical"
+}
+
+".viewProperty":{
+	left: 10,
+	right: 10,
+	height: 40
+}
+".viewProperty[formFactor=tablet]":{
+	height: 45
+}
+
+".lblTextProperty":{
+	width: "35%",
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: "100%"
+}
+".lblTextProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".txtProperty":{
+	width: "65%",
+	backgroundColor: "transparent",
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: "100%"
+}
+".txtProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".txtProperty[Alloy.Globals.platform=android]":{
+	height: "120%"
+}
+
+".txtDropdownProperty":{
+	width: "65%",
+	backgroundColor: "transparent",
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: "100%",
+	editable: false
+}
+".txtDropdownProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".txtDropdownProperty[Alloy.Globals.platform=android]":{
+	height: "120%"
+}
+
+".dropdownProperty":{
+	top: 14,
+	width: 13,
+	height: 8,
+	image: Alloy.Globals.path.arrowDown
+}
+
+".lblTextValueProperty":{
+	width: "65%",
+	backgroundColor: "transparent",
+	color: "black",
+	font: Alloy.Globals.path.font13,
+	height: "100%"
+}
+".lblTextValueProperty[formFactor=tablet]":{
+	font: Alloy.Globals.path.font17
+}
+
+".separator":{
+	top: 0,
+	width: "100%",
+	height: 1,
+	backgroundColor: "gray",//Alloy.Globals.path.SeparatorColor
+}
+
+"#lblAddMoreDetail":{
+	top: 15,
+	left: 10,
+	right: 10,
+	height: 20,
+	color: "gray",
+	font: Alloy.Globals.path.font13
+}
+
+"#btnSubmit":{
+	top: 25,
+	width : 150,
+	height: 37,
+	bottom: 35,
+	backgroundColor: Alloy.Globals.path.navBarColor,
+	borderRadius: 3,
+	color: "white",
+	font: Alloy.Globals.path.font15,
+}
+
+"#btnSubmit[formFactor=tablet]":{
+	height: 42,
+	font: Alloy.Globals.path.font18
+}
+
+

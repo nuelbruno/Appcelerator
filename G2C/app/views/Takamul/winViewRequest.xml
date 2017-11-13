@@ -1,0 +1,45 @@
+<Alloy>
+	<Window id="winViewRequest" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="mainView" layout="vertical">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<Label id="lblViewReq"></Label>
+			<ListView id="listView" defaultItemTemplate="template">
+				<Templates>
+					<ItemTemplate name="template" id="tblRow">
+						<View id="rowBackView">
+							<View height="Ti.UI.SIZE">
+								<Label id="lblSubjTit" class="lblProperty" bindId="lblSubjTit"></Label>
+								<Label id="lblSubject" class="lblProperty" bindId="lblSubject"></Label>
+							</View>
+							<View id="seperator1" class="lineSeparator"></View>
+							<View height="Ti.UI.SIZE">
+								<ImageView id="imgDate"></ImageView>
+								<Label id="lblDate" class="lblProperty" bindId="lblDate"></Label>
+								<ImageView id="imgTime"></ImageView>
+								<Label id="lblTime" class="lblProperty" bindId="lblTime"></Label>
+							</View>
+							<View id="seperator2" class="lineSeparator"></View>
+							<Label id="lblComments" class="lblProperty" bindId="lblComments"></Label>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate name="template1" id="tblRow">
+						<Button id="btnReply" onClick="replyRequest"></Button>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="listSection"></ListSection>
+			</ListView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

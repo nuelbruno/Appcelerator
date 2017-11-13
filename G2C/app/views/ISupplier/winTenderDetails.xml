@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="winTendersDetails" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrlView">
+				<Label id="lblEventTit" class="lblTitle"></Label>
+				<Label id="lblEventVal" class="lblValue"></Label>
+				<Label id="lblTitleTit" class="lblTitle"></Label>
+				<Label id="lblTitleVal" class="lblValue"></Label>
+				<Label id="lblDescTit" class="lblTitle"></Label>
+				<Label id="lblDescVal" class="lblValue"></Label>
+				<Label id="lblOpenDateTit" class="lblTitle"></Label>
+				<Label id="lblOpenDateVal" class="lblValue"></Label>
+				<Label id="lblCloseDateTit" class="lblTitle"></Label>
+				<Label id="lblCloseDateVal" class="lblValue"></Label>
+				<Label id="lblPriceTit" class="lblTitle"></Label>
+				<Label id="lblPriceVal" class="lblValue"></Label>
+				<Label id="lblNumberTit" class="lblTitle"></Label>
+				<Label id="lblNumberVal" class="lblValue"></Label>
+			</ScrollView>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

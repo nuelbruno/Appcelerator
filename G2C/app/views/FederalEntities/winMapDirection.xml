@@ -1,0 +1,67 @@
+<Alloy>
+	<Window id="winMapDirection" class="win">
+		<View id="navBarBackView" class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty">
+			</View>
+			<View id="navBar" class="navBarProperty">
+				<View id ="bgView"class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn">
+					</ImageView>
+				</View>
+				<View class="backHomeBtnView" onClick="gotoHome">
+					<ImageView class="imgHomeBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty">
+				</Label>
+			</View>
+		</View>
+		<View id = "mapDetails">
+			<View id = "innerView">
+				<View id ="topView" >
+					<View id="viewContents" class="viewContentsProperty" >
+						<Label id="lblTitle">
+						</Label>
+						<Label id="lblAddress">
+						</Label>
+						<View id="viewButtons">
+							<ImageView id="phoneCall" class="imgButtonsProperty">
+							</ImageView>
+							<ImageView id="browse" class="imgButtonsProperty">
+							</ImageView>
+						</View>
+					</View>
+					<View id = "viewImages">
+						<ImageView id="imgView" class="imgThumbProperty">
+						</ImageView>
+					</View>
+				</View>
+				<View id="mapView" ns="Alloy.Globals.Map">
+					<View id="viewTurnByNav" onClick="getTurnByTurnDirection">
+						<Label id="lblturnByNav">
+						</Label>
+					</View>
+				</View>
+			</View>
+			<View id = "directionView">
+				<View id="viewContentsTop" visible="true" class="viewContentsProperty" onClick="showDirectionView">
+					<View class="viewButtonsProperty">
+						<ImageView id="imgTravelmode">
+						</ImageView>
+						<Label id="lblTime">
+						</Label>
+						<Label id="lblDistance">
+						</Label>
+					</View>
+					<Label id="lblRoute">
+					</Label>
+				</View>
+				<View id="viewStart" onClick="getTurnByTurnDirection">
+					<ImageView id="imgStart" >
+					</ImageView>
+					<Label id="lblStart">
+					</Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

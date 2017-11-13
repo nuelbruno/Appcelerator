@@ -1,0 +1,11 @@
+<Alloy>
+	<TableViewRow id="row">
+		
+		<Label id="lblCode" class="lblProperty"></Label>
+		<Label id="lblGroup21" class="lblProperty"></Label>
+		<Label id="lblGroup22" class="lblProperty"></Label>
+		<Label id="lblGroup31" class="lblProperty"></Label>
+		<Label id="lblTotal" class="lblProperty"></Label>
+			
+	</TableViewRow>
+</Alloy>

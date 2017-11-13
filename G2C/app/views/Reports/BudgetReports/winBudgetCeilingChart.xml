@@ -1,0 +1,121 @@
+<Alloy>
+	<Window id="winBudgetCeilingChart" class="win">
+		<View id="mainView">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty">
+				</View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn">
+						</ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty">
+					</Label>
+					<!-- <View id="navSectorBackView" onClick="showSectorView">
+					<ImageView id="imgSector">
+					</ImageView>
+					</View>
+					<View id="navCarouselBackView" onClick="showCarouselView">
+					<ImageView id="imgCarousel">
+					</ImageView>
+					</View>
+					<View id="navChartBackView" onClick="showChartStyleView">
+					<ImageView id="imgChartStyle">
+					</ImageView>
+					</View> -->
+				</View>
+			</View>
+			<View id="budgetActivityView" onClick="showBudgetView">
+				<Label id="lblBudgetActivity">
+				</Label>
+				<ImageView id="arrowView">
+				</ImageView>
+			</View>
+			<!-- <Label id="lblBudgetTitle"></Label> -->
+		<View id="chartView">
+			<!-- <View id="pieChartView">
+			<Widget src="com.alco.highcharts" id="pieChart" class="chartViewProperty" />
+			</View> -->
+			<View id="normalChartView">
+				<Widget src="com.alco.highcharts" id="normalChart" class="chartViewProperty" />
+			</View>
+			<!-- <View id="stackedChartView">
+			<Widget src="com.alco.highcharts" id="stackedChart" class="chartViewProperty" />
+			</View> -->
+		</View>
+		<!-- <View id="sectionView">
+		<Label id="lblStrategic" class="lblSectionProperty">
+		</Label>
+		<Label id="lblChapter2" class="lblSectionProperty">
+		</Label>
+		<Label id="lblChapter3" class="lblSectionProperty">
+		</Label>
+		<Label id="lblTotal" class="lblSectionProperty">
+		</Label>
+		</View>
+		<TableView id="tableView">
+		</TableView> -->
+	</View>
+	<View id="fullTransparentView" onClick="showBudgetView">
+	</View>
+	<View id="budgetView">
+		<TableView id="budgetTableView">
+		</TableView>
+		<ImageView id="imgClose" onClick="showBudgetView">
+		</ImageView>
+	</View>
+	<!-- <View id="transparentView" onClick="showHideView">
+	</View>
+	<View id="sectorView">
+	<Label id="lblSector">
+	</Label>
+	<TableView id="sectorTableView">
+	</TableView>
+	<View class="bottomView">
+	<View class="doneBtnView">
+	<Label id="lblSectorDone" class="lblDone">
+	</Label>
+	</View>
+	</View>
+	</View>
+	<View id="chartStyleView">
+	<Label id="lblChart">
+	</Label>
+	<TableView id="chartStyleTableView">
+	</TableView>
+	<View class="bottomView">
+	<View class="doneBtnView" onClick="chartTypeSelected">
+	<Label id="lblChartDone" class="lblDone">
+	</Label>
+	</View>
+	</View>
+	</View>
+	<View id="carouselBackView">
+	</View>
+	<View id="budgetView1">
+	<Label id="lblBudgetView1" class="lblBudgetProperty">
+	Budget By Activity 2010
+	</Label>
+	</View>
+	<View id="budgetView2">
+	<Label id="lblBudgetView2" class="lblBudgetProperty">
+	Budget By Activity 2011
+	</Label>
+	</View>
+	<View id="budgetView3">
+	<Label id="lblBudgetView3" class="lblBudgetProperty">
+	Budget By Activity 2012
+	</Label>
+	</View>
+	<View id="budgetView4">
+	<Label id="lblBudgetView4" class="lblBudgetProperty">
+	Budget By Activity 2013
+	</Label>
+	</View>
+	<View id="budgetView5">
+	<Label id="lblBudgetView5" class="lblBudgetProperty">
+	Budget By Activity 2014
+	</Label>
+	</View> -->
+</Window>
+</Alloy>

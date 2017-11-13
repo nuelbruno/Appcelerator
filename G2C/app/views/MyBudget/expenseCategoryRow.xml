@@ -1,0 +1,21 @@
+<Alloy>
+	<TableViewRow id="row">
+		<View id="viewExpenseCategory">
+			<View id="viewCategory" class="leftImageView">
+				<ImageView id="imgExpenseCategory_bg"></ImageView>
+				<ImageView id="imgExpenseCategory"></ImageView>
+			</View>
+			<View id="viewTitle">
+				<View id="viewCatTitle" height="Ti.UI.SIZE">
+					<Label id="lblTitle"></Label>
+					<Label id="lblDate" visible="false" height="0"></Label>
+				</View>
+				<TextField id="txtBudget" class="revenueTextBoxProperty" onBlur="validateBudget" maxLength="5"></TextField>
+				<View id="viewAmount">
+					<Label id="lblBudget" visible="false"></Label>
+					<Label id="lblActual" visible="false"></Label>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,38 @@
+"#leftPanelView" :{
+	height:"100%",
+	width:"100%",
+	backgroundColor:Alloy.Globals.path.bgColor,
+	layout : "vertical"
+}
+
+".backView":{
+	top : "1%",
+	width : "100%",
+	height : "20%"
+}
+
+"#homeView" :{
+	top:"8%"
+}
+
+".innerView":{
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	layout : "vertical"
+}
+
+".imgProperty":{
+	width : 40,//
+	height : 40,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+".lblProperty":{
+	top : 5,
+	left : 5,
+	right : 5,
+	height : 20,
+	textAlign : "center",
+	font:Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.navBarColor
+}

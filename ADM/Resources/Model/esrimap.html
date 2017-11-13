@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Query State Info without Map</title>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.6"></script>
+    <script type="text/javascript" language="Javascript">
+      dojo.require("esri.tasks.query");
+
+      var queryTask, query;
+
+      function init() {
+        //build query
+        queryTask = new esri.tasks.QueryTask("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer/0");
+        //dojo.connect(queryTask, "onComplete", showResults);
+
+        //build query filter
+        query = new esri.tasks.Query();
+        query.returnGeometry = true;
+        query.outFields = ["SQMI"];
+        query.where = "PLOTNUMBER='1' and SECTORTPSSNUMBER ='Lulu Island'";
+        //execute query
+        queryTask.execute(query,showResults);
+      }
+
+      function execute(stateName) {
+        query.where = "PLOTNUMBER='1' and SECTORTPSSNUMBER ='Lulu Island'";
+        //execute query
+        queryTask.execute(query,showResults);
+      }
+
+      function showResults(results) {
+
+        var extent = results.features[0].geometry.getExtent();
+        
+        //alert(JSON.stringify(results.features[0].geometry));
+        
+        var lods = [
+	    {"level" : 0, "scale" : 3000000, "resolution" : 793.75158750317507}, 
+	    {"level" : 1, "scale" : 2000000, "resolution" : 529.16772500211675}, 
+	    {"level" : 2, "scale" : 1000000, "resolution" : 264.58386250105838}, 
+	    {"level" : 3, "scale" :  500000, "resolution" : 132.29193125052919}, 
+	    {"level" : 4, "scale" :  250000, "resolution" : 66.145965625264594}, 
+	    {"level" : 5, "scale" :  125000, "resolution" : 33.072982812632297}, 
+	    {"level" : 6, "scale" :   50000, "resolution" : 13.229193125052918}, 
+	    {"level" : 7, "scale" :   30000, "resolution" : 7.9375158750317505}, 
+	    {"level" : 8, "scale" :   12500, "resolution" : 3.3072982812632294}, 
+	    {"level" : 9, "scale" :    5000, "resolution" : 1.3229193125052918}, 
+	    {"level" :10, "scale" :    2500, "resolution" : 0.66145965625264591}, 
+	    {"level" :11, "scale" :    1000, "resolution" : 0.26458386250105836}, 
+	    {"level" :12, "scale" :     500, "resolution" : 0.13229193125052918}, 
+	    {"level" :13, "scale" :     250, "resolution" : 0.066145965625264591}, 
+	    {"level" :14, "scale" :     100, "resolution" : 0.026458386250105836}, 
+	    ];
+        
+        map = new esri.Map("map",{ basemap: "topo", extent: extent});
+        
+        //var centerLocation = map.extent.getCenter();
+       // alert(JSON.stringify(centerLocation));
+       
+       //map.centerAt(centerLocation);
+        //map = new esri.Map("map");
+        
+       // esri.geometry.Point(x, y, spatialReference)
+        
+       // map.centerAt(new esri.geometry.Point(extent)); 
+       // map.setLevel(3); 
+       
+      // alert(JSON.stringify(extent));
+      
+     
+         var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/Images/ortho_2012_adm_t/MapServer");
+        map.addLayer(tiledMapServiceLayer);
+        
+
+        //Use the ImageParameters to set map service layer definitions and map service visible layers before adding to the client map.
+        var imageParameters = new esri.layers.ImageParameters();
+
+        //sec: Abu Al Abyad Island | plot: AUH2496  || sec: EB1  | plot:P8 || P23 P24 P24b P25
+        var layerDefs = [];
+        layerDefs[0] = "PLOTNUMBER='1' and SECTORTPSSNUMBER ='Lulu Island'  ";
+        imageParameters.layerDefinitions = layerDefs;
+
+        //I want layers 5,4, and 3 to be visible
+        imageParameters.layerIds = [2,1,0];
+        imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
+        imageParameters.transparent = true;
+
+        //construct ArcGISDynamicMapServiceLayer with imageParameters from above
+        var dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer", {"imageParameters":imageParameters});
+    
+        dynamicMapServiceLayer.setLayerDefinitions(layerDefs);
+        map.addLayer(dynamicMapServiceLayer);
+      }
+
+      dojo.addOnLoad(init);
+    </script>
+  </head>
+  <body>
+    US state name : <input type="text" id="stateName" value="California" />
+    <input type="button" value="Get Details" onclick="execute(dojo.byId('stateName').value);" />
+    <br />
+    <br />
+    <div id="info" style="padding:5px; margin:5px; background-color:#eee;">
+    </div>
+    <div id="map" style="width:900px; height:600px; border:1px solid #000;"></div>
+  </body>
+</html>

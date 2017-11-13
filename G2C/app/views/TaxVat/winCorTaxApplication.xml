@@ -1,0 +1,206 @@
+<Alloy>
+	<Window id="winCorTaxApplication" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View id="homeView">
+			<View id="navBarBackView"  class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrollView">
+				<Label id="lblApplicationDetail" class="lblCategoryProperty"></Label>
+				<View id="certificateDMethodView" height="0" top="0" class="fieldViewProperty">
+					<Label id="lblCertificateDAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblCertificateDMethod" class="lblTitleProperty"></Label>
+					<Label id="cDMethodColon" class="colonProperty"></Label>
+					<TextField id="txtCertificateDMethod" class="txtDropdownProperty" onClick="selectDeliveryMethod"></TextField>
+					<ImageView id="imgcDMethodArrow" class="icnDropdownProperty" onClick="selectDeliveryMethod"></ImageView>
+				</View>
+				<View id="financialYearView" class="fieldViewProperty">
+					<Label id="lblFinancialYearAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblFinancialYear" class="lblTitleProperty"></Label>
+					<Label id="financialYearColon" class="colonProperty"></Label>
+					<TextField id="txtFinancialYear" class="txtDropdownProperty" onClick="selectYear"></TextField>
+					<ImageView id="imgFinancialYearArrow" class="icnDropdownProperty" onClick="selectYear"></ImageView>
+				</View>
+				<Label id="lblFiniacialNote"></Label>
+				<View id="companyNameView" class="fieldViewProperty">
+					<Label id="lblCompanyNameAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblCompanyName" class="lblTitleProperty"></Label>
+					<Label id="companyNameColon" class="colonProperty"></Label>
+					<TextField id="txtCompanyName" class="txtFieldProperty"></TextField>
+				</View>
+				<View id="chamberOfComView" class="fieldViewProperty">
+					<!-- <Label id="lblChamberOfComAstrik" class="astricPropertyVT"></Label> -->
+					<Label id="lblChamberOfCom" class="lblTitleProperty"></Label>
+					<Label id="chamberOfComColon" class="colonProperty"></Label>
+					<TextField id="txtchamberOfCom" class="txtFieldProperty"></TextField>
+				</View>
+				<View id="licenseNoView" class="fieldViewProperty">
+					<Label id="lblLicenseNoAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblLicenseNo" class="lblTitleProperty"></Label>
+					<Label id="licenseNoColon" class="colonProperty"></Label>
+					<TextField id="txtLicenseNo" class="txtFieldProperty"></TextField>
+				</View>
+				<View id="emirateView" class="fieldViewProperty">
+					<Label id="lblEmirateAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblEmirate" class="lblTitleProperty"></Label>
+					<Label id="emirateColon" class="colonProperty"></Label>
+					<TextField id="txtEmirate" class="txtDropdownProperty" onClick="selectEmirate"></TextField>
+					<ImageView id="imgEmirate" class="icnDropdownProperty" onClick="selectEmirate"></ImageView>
+				</View>
+				<View id="addressView" class="fieldViewProperty">
+					<Label id="lblAddressAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblAddress" class="lblTitleProperty"></Label>
+					<Label id="addressColon" class="colonProperty"></Label>
+					<TextArea id="txtAddress" onFocus="multilineTextBoxFocus" onBlur="multilineTextBoxBlur"></TextArea>
+				</View>
+				<View id="mobileNoView" class="fieldViewProperty">
+					<Label id="lblMobileNoAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblMobileNo" class="lblTitleProperty"></Label>
+					<Label id="mobileNoColon" class="colonProperty"></Label>
+					<TextField id="txtMobileNo" class="txtFieldProperty" maxLength="10"></TextField>
+				</View>
+				<!-- <View id="secondaryMNoView" class="fieldViewProperty">
+				<Label id="lblSecondaryMNo" class="lblTitleProperty"></Label>
+				<Label id="secondaryMNoColon" class="colonProperty"></Label>
+				<TextField id="txtSecondaryMNo" class="txtFieldProperty"></TextField>
+				</View> -->
+				<View id="phoneNoView" class="fieldViewProperty">
+					<Label id="lblPhoneNo" class="lblTitleProperty"></Label>
+					<Label id="phoneNoColon" class="colonProperty"></Label>
+					<TextField id="txtPhoneNo" class="txtFieldProperty" maxLength="10"></TextField>
+				</View>
+				<View id="faxNoView" class="fieldViewProperty">
+					<Label id="lblFaxNo" class="lblTitleProperty"></Label>
+					<Label id="faxNoColon" class="colonProperty"></Label>
+					<TextField id="txtFaxNo" class="txtFieldProperty" maxLength="10"></TextField>
+				</View>
+				<View id="POBoxView" class="fieldViewProperty">
+					<Label id="lblPOBoxAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblPOBox" class="lblTitleProperty"></Label>
+					<Label id="POBoxColon" class="colonProperty"></Label>
+					<TextField id="txtPOBox" class="txtFieldProperty" maxLength="10"></TextField>
+				</View>
+				<View id="emailView" class="fieldViewProperty">
+					<Label id="lblEmailAstrik" text="" class="astricPropertyVT"></Label>
+					<Label id="lblEmail" class="lblTitleProperty"></Label>
+					<Label id="emailColon" class="colonProperty"></Label>
+					<TextField id="txtEmail" class="txtFieldProperty"></TextField>
+				</View>
+				<View id="countryIssuedView" class="fieldViewProperty">
+					<Label id="lblCountryIssuedAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblCountryIssued" class="lblTitleProperty"></Label>
+					<Label id="countryIssuedColon" class="colonProperty"></Label>
+					<TextField id="txtCountryIssued" class="txtDropdownProperty" onClick="selectContryIssuedFor"></TextField>
+					<ImageView id="imgCountryIssued" class="icnDropdownProperty" onClick="selectContryIssuedFor"></ImageView>
+				</View>
+				<View id="placeOfIssuingView" class="fieldViewProperty">
+					<Label id="lblPlaceOfIssueingAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblPlaceOfIssuing" class="lblTitleProperty"></Label>
+					<Label id="placeOfIssuingColon" class="colonProperty"></Label>
+					<TextField id="txtPlaceOfIssuing" class="txtDropdownProperty" onClick="selectPlaceOfIssuing"></TextField>
+					<ImageView id="imgPlaceOfIssuing" class="icnDropdownProperty" onClick="selectPlaceOfIssuing"></ImageView>
+				</View>
+				<View id="cLanguageView" height="0" top="0" class="fieldViewProperty">
+					<Label id="lblcLanguageAstrik" text="" class="astricPropertyVT"></Label>
+					<Label id="lblcLanguage" class="lblTitleProperty"></Label>
+					<Label id="cLanguageColon" class="colonProperty"></Label>
+					<TextField id="txtcLanguage" class="txtDropdownProperty" onClick="selectCertificateLanguage"></TextField>
+					<ImageView id="imgcLanguage" class="icnDropdownProperty" height="0" width="0" onClick="selectCertificateLanguage"></ImageView>
+				</View>
+				<View id="natureOfBusinessView" class="fieldViewProperty">
+					<!-- <Label id="lblNatureOfBusinessAstrik" class="astricPropertyVT"></Label> -->
+					<Label id="lblNatureOfBusiness" class="lblTitleProperty"></Label>
+					<Label id="natureOfBusinessColon" class="colonProperty"></Label>
+					<TextField id="txtNatureOfBusiness" class="txtFieldProperty"></TextField>
+				</View>
+				<Label id="lblAttachment" class="lblCategoryProperty"></Label>
+				<View id="attachmentNoteView">
+					<Label id="lblAttacmentNoteAstrik" class="astricPropertyVT"></Label>
+					<Label id="lblAttacmentNote" class="lblNoteProperty"></Label>
+				</View>
+				<View id="attachmentView">
+					<View id="tradeLicenseView" class="attachmentViewProperty">
+						<View id="tradeDetail" class="attachmentDetailProperty">
+							<Label id="lblTradeLicenseAstrik" class="astricPropertyVT"></Label>
+							<Label id="lblTradeLicense" class="lblTitleProperty"></Label>
+							<Label id="tradeLicenseColon" class="colonProperty"></Label>
+							<Label id="lblTradeLicenseValue" class="txtDropdownProperty"></Label>
+							<ImageView id="imgTradeLicense" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						</View>
+						<View id="tradeLicenseAttachmentView" class="attachmentListViewProperty"></View>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="signedLetterView" class="attachmentViewProperty">
+						<View id="signedLetterDetail" class="attachmentDetailProperty">
+							<Label id="lblSignedLetterAstrik" class="astricPropertyVT"></Label>
+							<Label id="lblSignedLetter" class="lblTitleProperty"></Label>
+							<Label id="signedLetterColon" class="colonProperty"></Label>
+							<Label id="lblSignedLetterValue" class="txtDropdownProperty"></Label>
+							<ImageView id="imgSignedLetter" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						</View>
+						<View id="signedLetterAttachmentView" class="attachmentListViewProperty"></View>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="officialLetterView" height="0" class="attachmentViewProperty">
+						<View id="officialLetter" class="attachmentDetailProperty">
+							<Label id="lblOfficialLetterAstrik" class="astricPropertyVT"></Label>
+							<Label id="lblOfficialLetter" class="lblTitleProperty"></Label>
+							<Label id="officialLetterColon" class="colonProperty"></Label>
+							<Label id="lblOfficialLetterValue" class="txtDropdownProperty"></Label>
+							<ImageView id="imgOfficialLetter" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						</View>
+						<View id="officialLetterAttachmentView" class="attachmentListViewProperty"></View>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="establishmentView" height="0" class="attachmentViewProperty">
+						<View id="establishment" class="attachmentDetailProperty">
+							<Label id="lblEstablishmentAstrik" class="astricPropertyVT"></Label>
+							<Label id="lblEstablishment" class="lblTitleProperty"></Label>
+							<Label id="establishmentColon" class="colonProperty"></Label>
+							<Label id="lblEstablishmentValue" class="txtDropdownProperty"></Label>
+							<ImageView id="imgEstablishment" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						</View>
+						<View id="establishmentAttachmentView" class="attachmentListViewProperty"></View>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="auditCopyView" height="0" class="attachmentViewProperty">
+						<Label id="lblAuditCopyAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblAuditCopy" class="lblTitleProperty"></Label>
+						<Label id="auditCopyColon" class="colonProperty"></Label>
+						<Label id="lblAuditCopyValue" class="txtDropdownProperty"></Label>
+						<ImageView id="imgAuditCopy" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+					<View id="leaseCopyView" height="0" class="attachmentViewProperty">
+						<Label id="lblLeaseCopyAstrik" class="astricPropertyVT"></Label>
+						<Label id="lblLeaseCopy" class="lblTitleProperty"></Label>
+						<Label id="leaseCopyColon" class="colonProperty"></Label>
+						<Label id="lblLeaseCopyValue" class="txtDropdownProperty"></Label>
+						<ImageView id="imgLeaseCopy" class="imgAttachmentProperty" onClick="addImageAttachment"></ImageView>
+						<ImageView class="hSeperatorProperty"></ImageView>
+					</View>
+
+				</View>
+				<Label id="lblComments" class="lblCategoryProperty"></Label>
+				<View id="attachmentView">
+					<TextArea id="txtComments"></TextArea>
+				</View>
+				<View id="adminCommentView"></View>
+				<View id="buttonBackView">
+					<Button id="btnSave" onClick="submitTax"></Button>
+					<Button id="btnCancel" onClick="closeWindow"></Button>
+				</View>
+			</ScrollView>
+		</View>
+		<Require src="common/viewInstructions" id="viewInstructions"/>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

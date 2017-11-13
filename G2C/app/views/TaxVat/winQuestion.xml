@@ -1,0 +1,29 @@
+<Alloy>
+	<Window id="winQuestion" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<!-- <View class="backHomeBtnView" onClick="gotoHome">
+					<ImageView class="imgHomeBtn"></ImageView>
+					</View> -->
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="mainView">
+				<Label id="lblQuestion"></Label>
+				<View id="answerView">
+					<TextField id="txtAnswer"></TextField>
+				</View>
+				<View id="buttonView">
+					<Button id="btnNext" class="btnProperty" onClick="SubmitQuestion"></Button>
+					<Button id="btnRetry" class="btnProperty" onClick="skipQuestion"></Button>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

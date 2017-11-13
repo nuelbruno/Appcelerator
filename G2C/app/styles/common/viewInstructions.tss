@@ -1,0 +1,175 @@
+
+".instructionViewProperty[platform=ios]":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: "#80000000",
+	opacity: 0,
+	zIndex: 21,
+	isOpen: false
+}
+".instructionViewProperty[platform=android]":{
+	top: 0,
+	bottom: 0,
+	width: "100%",
+	backgroundColor: "#80000000",
+	visible: false,
+	opacity: 0,
+	zIndex: 21,
+	isOpen: false
+}
+
+".instructionPopupProperty[formFactor=handheld]":{
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+	borderRadius: 3,
+	bubbleParent: false,
+	layout: "vertical"
+}
+".instructionPopupProperty[formFactor=tablet]":{
+	width: 600,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+	borderRadius: 3,
+	bubbleParent: false,
+	layout: "vertical"
+}
+
+".instructionTabViewProperty":{
+	left: 0,
+	right: 0,
+	backgroundColor: "transparent",
+	height: 40,
+	horizontalWrap: false
+}
+
+".tabLabelProperty":{
+	width: "50%",
+	height: "100%",
+	font: Alloy.Globals.path.font14,
+	color: "black",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".tabSeparatorProperty":{
+	backgroundColor: Alloy.Globals.path.navBarColor,
+	height: 3,
+	width: "50%",
+	bottom: 0,
+	left: 0
+}
+
+".instructionToolBarProperty":{
+	top: 8,
+	height: 60,
+	width: "100%"
+}
+
+".instLblContentProperty":{
+	top: 10,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font14,
+	color: "black"
+}
+".instLblTitleProperty":{
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font15Bold,
+	color: "black"
+}
+
+".buttonViewProperty":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent"
+}
+".imgToolProperty":{
+	left: 10,
+	right: 10,
+	height: 25,
+	width: 25,
+	backgroundColor: "transparent"
+}
+".sliderViewProperty":{
+	height: 60,
+	width: "100%",
+	bottom: -60,
+	isOpen: false,
+	backgroundColor: "white"
+}
+".fontSliderProperty":{
+	left: 30,
+	right: 70,
+	height: 25,
+	max: 30,
+	min: 8,
+	value: 14
+}
+".fontSliderProperty[platform=android]":{
+	height: 30
+}
+
+".imgSliderCloseProperty":{
+	right: 10,
+	height: 20,
+	width: 20,
+	image: Alloy.Globals.path.icnInfoDone
+}
+
+".instructionSeparatorProperty":{
+	top: 18,
+	left: 15,
+	right: 15,
+	height: 1.5,
+	backgroundColor: Alloy.Globals.path.grayColor
+}
+
+".lblAMinusProperty":{
+	left: 10,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	text: "A-",
+	font: Alloy.Globals.path.font13
+}
+".lblAPlusProperty":{
+	right: 45,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	text: "A+",
+	font: Alloy.Globals.path.font18
+},
+"#lblDescription":{
+	left: 0,
+	text: Alloy.Globals.selectedLanguage.serviceDescription,
+	color: Alloy.Globals.path.navBarColor,
+	isSelected: true
+}
+"#lblSteps":{
+	left: "50%",
+	text: Alloy.Globals.selectedLanguage.serviceProcessing,
+	color: Alloy.Globals.path.darkGrayColor,
+	isSelected: false
+}
+"#scrInstruction":{
+	top: 10,
+	height: 300,
+	width: "100%",
+	backgroundColor: "transparent",
+	//layout: "vertical"
+}
+"#scrInstruction[formFactor=tablet]":{
+	height: 450
+}
+"#imgTheme":{
+	image: Alloy.Globals.path.icnThemeDark
+}
+"#imgFontSize":{
+	image: Alloy.Globals.path.icnFontChangeDark
+}
+

@@ -1,0 +1,15 @@
+<Alloy>
+	<TableViewRow id="row">
+		<View id="leftBackView">
+			<ImageView id="imgRow"></ImageView>
+			<Label id="lblTitle"></Label>
+		</View>
+		
+		<View id="rightBackView"></View>		
+		
+		<View id="dateView">
+			<Label id="lblDate"></Label>
+		</View>
+		
+	</TableViewRow>
+</Alloy>

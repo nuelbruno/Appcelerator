@@ -1,0 +1,751 @@
+"#commentHiddenView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	height : 25,
+	backgroundColor : "#FBEEC9",
+}
+
+"#imgClose" :{
+	left : 10,
+	width : 10,
+	height : 10,
+	backgroundImage : Alloy.Globals.path.icnCloseMParticipation
+}
+
+"#lblCommentSuccess" :{
+	left : 40,
+	right : 10,
+	height : "100%",
+	text : Alloy.Globals.selectedLanguage.commentAdded,
+	font : Alloy.Globals.path.font11,
+	color:Alloy.Globals.path.lblBlackColor,
+}
+
+"#mainBackView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+}
+
+"#mainView" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	layout : "vertical"
+}
+
+"#imgTop" :{
+	top : 0,
+	right : 15,
+	width : 19,
+	height : 34,
+//	backgroundImage : Alloy.Globals.path.icnTagArticle,
+	zIndex : 5,
+}
+
+"#scrBackView" :{
+	top : 0,
+	height : "30%",
+	width : "100%",
+	layout : "vertical",
+//	backgroundColor : "green"
+}
+
+
+"#lblTitle" :{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+	font : Alloy.Globals.path.font16,
+	color:Alloy.Globals.path.lblBlackColor,
+}
+
+"#lblTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+
+
+
+"#viewDate" :{
+	top : 5,
+	height:Ti.UI.SIZE,
+	bottom : 2,
+	left : 0,
+	right : 0,
+}
+
+"#lblEndDate" :{
+	top : 2,
+	width : 155,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.lblGrayColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.endDate,
+//	backgroundColor : "red"
+}
+
+"#lblEndDate[formFactor=tablet]" :{
+	width : 210,
+	font : Alloy.Globals.path.font16
+}
+
+
+"#lblEndDate[if=Alloy.Globals.isEnglish]" :{
+	left : 10,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDate[if!=Alloy.Globals.isEnglish]" :{
+	right : 10,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+
+"#lblEndDateValue" :{
+	top : 2,
+	width : 100,
+	height :Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.navBarColor,
+	touchEnabled:false,
+	text : Alloy.Globals.selectedLanguage.endDate,
+//	backgroundColor : "yellow"
+}
+
+"#lblEndDateValue[formFactor=tablet]" :{
+	width : 150,
+	font : Alloy.Globals.path.font16
+}
+
+
+"#lblEndDateValue[formFactor=handheld if=Alloy.Globals.isEnglish]" :{
+	left : 170,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDateValue[formFactor=handheld if!=Alloy.Globals.isEnglish]" :{
+	right : 135,
+	left : undefined,
+	textAlign : "right",
+}
+
+"#lblEndDateValue[formFactor=tablet if=Alloy.Globals.isEnglish]" :{
+	left : 220,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblEndDateValue[formFactor=tablet if!=Alloy.Globals.isEnglish]" :{
+	right : 185,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+
+"#viewDuration" :{
+	top : 15,
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	borderColor : Alloy.Globals.path.goldColor,
+	borderRadius : 2,
+	left : 10,
+}
+
+"#lblDuration" :{
+	left : 5,
+	right : 5,
+	top :5,
+	bottom : 5,
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	text : "6 days ago",
+	textAlign : "center",
+	color : Alloy.Globals.path.lblBlackColor,
+	font : Alloy.Globals.path.font10
+}
+"#lblDuration[formFactor=tablet]" :{
+	top : 8,
+	bottom : 8,
+	font : Alloy.Globals.path.font14
+}
+
+"#lblDesc" :{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+	font : Alloy.Globals.path.font13,
+	color:Alloy.Globals.path.lblBlackColor,
+}
+"#lblDesc[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font17,
+}
+"#commentView" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : 50,//Titanium.UI.SIZE,
+//	backgroundColor : "yellow"
+}
+
+"#lblComment" :{
+	left : 10,
+	width : 150,
+	height : 30,
+	text : "Comments (100)",
+	font : Alloy.Globals.path.font14,
+	color:Alloy.Globals.path.lblBlackColor,
+}
+"#lblComment[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font18,
+}
+
+"#viewAddComment" :{
+	right : 10,
+	width : Ti.UI.SIZE,//120,
+	height : 30,
+	borderColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 3,
+}
+"#viewAddComment[formFactor=tablet]" :{
+	// width : 160,
+	height : 36,
+}
+
+"#icnAddComment" :{
+	right : 5,
+	width : 13,
+	height : 12,
+	backgroundImage : Alloy.Globals.path.icnAddComment
+}
+
+"#lblAddComment" :{
+	right : 15,
+	left : 2,
+	text : "Add Comment",
+	width : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.navBarColor,
+//	text : Alloy.Globals.selectedLanguage.addComment,
+	height : "100%",
+	textAlign : "right",
+	backgroundColor : "transparent"
+}
+"#lblAddComment[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font15,
+}
+
+"#separator" :{
+	top : 5,
+	left : 10,
+	right : 10,
+	height : 1,
+	backgroundColor : Alloy.Globals.path.SeparatorColor
+}
+
+
+"#bgTableView" :{
+	top : 5,
+	left : 0,
+	right : 0,
+	bottom : 30,
+//	backgroundColor : "green"
+}
+
+"#tableViewItems" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	separatorColor:'transparent',
+}
+
+
+"#row":{
+	height:Titanium.UI.SIZE,
+	width:'100%',
+	selectedColor:'transparent',
+	selectedBackgroundColor:'transparent',
+	selectionStyle:'none',
+	backgroundColor : "transparent"
+}
+
+
+"#viewRow" : {
+	top : 10,
+	height:73,
+	bottom : 10,
+	left : 10,
+	right : 10,
+}
+
+"#viewRow[if=Alloy.Globals.isEnglish]" :{
+	backgroundImage : Alloy.Globals.path.bgRowmParticipation_left
+}
+
+"#viewRow[if!=Alloy.Globals.isEnglish]" :{
+	backgroundImage : Alloy.Globals.path.bgRowmParticipation_right
+}
+
+
+"#lblRowTitle" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height :30,
+	font : Alloy.Globals.path.font12,
+	color:Alloy.Globals.path.lblBlackColor,
+	touchEnabled:false,
+}
+"#lblRowTitle[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font15,
+}
+"#lblRowTitle[if=Alloy.Globals.isEnglish]" :{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+}
+"#lblRowTitle[if!=Alloy.Globals.isEnglish]" :{
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+
+"#viewContents" :{
+	top : 70,
+	left : 70,
+	right : 10,
+	height : 20,
+//	backgroundColor : "red"
+}
+
+"#viewContents[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 70,
+	right : 10,
+}
+"#viewContents[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 60,
+	left : 10,
+}
+
+"#viewContents[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	top : 70,
+	left : "15%",
+	right : 10,
+}
+"#viewContents[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	top : 70,
+	right : "15%",
+	left : 10,
+}
+
+
+"#lblRowBy" :{
+	left : 2,
+	width : 20,
+	color : "gray",
+	height : "100%",
+//	backgroundColor  :"red",
+	font : Alloy.Globals.path.font12,
+	text : Alloy.Globals.selectedLanguage.by
+}
+"#lblRowBy[formFactor=tablet]" :{
+	width : 40,
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblRowBy[if=Alloy.Globals.isEnglish]" :{
+	left : 2,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblRowBy[if!=Alloy.Globals.isEnglish]" :{
+	right : 7,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblRowBy[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 30,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblRowBy[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 30,
+	left : undefined,
+	textAlign : "right",
+}
+
+"#lblRowName" :{
+	left : 25,
+	width : 100,
+//	text : "Ahmed Rashid",
+	color : Alloy.Globals.path.goldColor,
+	height : "100%",
+	font : Alloy.Globals.path.font11,
+}
+"#lblRowName[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font14,
+	width : 150,
+}
+
+"#lblRowName[if=Alloy.Globals.isEnglish]" :{
+	left : 25,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblRowName[if!=Alloy.Globals.isEnglish]" :{
+	right : 45,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblRowName[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 75,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblRowName[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 75,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+"#lblDot" :{
+	left : 125,
+	width : 3,
+	text : ".",
+	color : "gray",
+	height : "100%",
+	font : Alloy.Globals.path.font17,
+}
+"#lblDot[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font20,
+}
+"#lblDot[if=Alloy.Globals.isEnglish]" :{
+	left : 125,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblDot[if!=Alloy.Globals.isEnglish]" :{
+	right : 130,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+"#lblRowDuration" :{
+	// left : 130,
+	width : 75,
+//	text : "6 minutes",
+	color : Alloy.Globals.path.goldColor,
+	height : "100%",
+	font : Alloy.Globals.path.font11,
+}
+"#lblRowDuration[formFactor=tablet]" :{
+	width : 90,
+	font : Alloy.Globals.path.font14,
+}
+"#lblRowDuration[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 130,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblRowDuration[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 240,
+}
+
+"#lblRowDuration[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 145,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblRowDuration[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 240,
+}
+
+
+"#lblRowAgo" :{
+	// left : 205,
+	width : 30,
+	text : "ago",
+	color : "gray",
+	height : "100%",
+	font : Alloy.Globals.path.font13,
+}
+"#lblRowAgo[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblRowAgo[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 205,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblRowAgo[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 330
+}
+
+"#lblRowAgo[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 220,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblRowAgo[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 330
+}
+
+
+"#commentPopUp" :{
+	left : 20,
+	right : 20,
+	height : 250,
+	backgroundColor : Alloy.Globals.path.lightGrayColor,
+	borderColor :  Alloy.Globals.path.navBarColor,
+}
+
+"#commentPopUp[formFactor=tablet]" :{
+	height : 350,
+}
+
+"#lblCommentBy" :{
+	top : 10,
+	left : 10,
+//	width : 25,
+	color : "gray",
+	height : 20,
+//	backgroundColor  :"red",
+	font : Alloy.Globals.path.font12,
+	text : Alloy.Globals.selectedLanguage.by
+}
+"#lblCommentBy[formFactor=tablet]" :{
+	width : 40,
+	font : Alloy.Globals.path.font15,
+}
+
+"#lblCommentBy[if=Alloy.Globals.isEnglish]" :{
+	width : 25,
+	left : 10,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblCommentBy[if!=Alloy.Globals.isEnglish]" :{
+	width : 35,
+	right : 10,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblCommentBy[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 10,
+	right : undefined,
+	textAlign : "left",
+}
+
+"#lblCommentBy[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 10,
+	left : undefined,
+	textAlign : "right",
+}
+
+"#lblCommentName" :{
+	top : 10,
+	left : 25,
+	width : 100,
+//	text : "Ahmed Rashid",
+	color : Alloy.Globals.path.goldColor,
+	height : 20,
+	font : Alloy.Globals.path.font11,
+}
+"#lblCommentName[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font14,
+	width : 150,
+}
+
+"#lblCommentName[if=Alloy.Globals.isEnglish]" :{
+	left : 30,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblCommentName[if!=Alloy.Globals.isEnglish]" :{
+	right : 50,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblCommentName[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 75,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblCommentName[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 75,
+	left : undefined,
+	textAlign : "right",
+}
+
+
+"#lblCommentDuration" :{
+	top : 10,
+	// left : 130,
+	width : 75,
+//	text : "6 minutes",
+	color : Alloy.Globals.path.goldColor,
+	height : 20,
+	font : Alloy.Globals.path.font11,
+}
+"#lblCommentDuration[formFactor=tablet]" :{
+	width : 90,
+	font : Alloy.Globals.path.font14,
+}
+"#lblCommentDuration[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 130,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblCommentDuration[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 240,
+}
+
+"#lblCommentDuration[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 145,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblCommentDuration[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 240,
+}
+
+
+"#lblCommentAgo" :{
+	top : 10,
+	// left : 205,
+	width : 30,
+	text : Alloy.Globals.selectedLanguage.ago,
+	color : "gray",
+	height : 20,
+	font : Alloy.Globals.path.font13,
+}
+"#lblCommentAgo[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font14,
+}
+
+"#lblCommentAgo[if=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	left : 200,
+	right : undefined,
+	textAlign : "left",
+}
+"#lblCommentAgo[if=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	left : 330
+}
+
+"#lblCommentAgo[if!=Alloy.Globals.isEnglish formFactor=handheld]" :{
+	right : 210,
+	left : undefined,
+	textAlign : "right",
+}
+"#lblCommentAgo[if!=Alloy.Globals.isEnglish formFactor=tablet]" :{
+	right : 330
+}
+
+
+
+"#lblCompose" :{
+	top : 10,
+	left: 15,
+	right: 15,
+	color: "black",
+	font: Alloy.Globals.path.font14Bold,
+	height: Titanium.UI.SIZE,
+}
+"#lblCompose[formFactor=tablet]" :{
+	font: Alloy.Globals.path.font18Bold
+}
+
+"#backTxtDesc" :{
+	top: 45,
+	left: 10,
+	right: 10,
+	borderColor: Alloy.Globals.path.newsRowColor,
+	//borderRadius: 3,
+	borderWidth : 1,
+	bottom : 10,
+//	height: 150,
+	backgroundColor: "white",
+}
+"#backTxtDesc[formFactor=tablet]" :{
+	top: 65,
+}
+
+"#txtDesc" :{
+	top: 10,
+	left: 10,
+	right: 10,
+	bottom : 10,
+//	backgroundColor: "white",
+	font: Alloy.Globals.path.font13,
+	color :Alloy.Globals.path.blackColor,
+	editable : false,
+}
+"#txtDesc[formFactor=tablet]" :{
+	font: Alloy.Globals.path.font17
+}
+
+"#imgCross" :{
+	top : 5,
+	right : 5,
+	width : 27,
+	height : 27,
+	backgroundImage : Alloy.Globals.path.icnCross
+}
+
+"#imgCross[formFactor=tablet]" :{
+	width : 45,
+	height : 45,
+}
+
+/*
+".viewProperty":{
+	top : 10,
+	width : "100%",
+	height:Ti.UI.SIZE,
+	bottom : 10,
+//	backgroundColor:"green"
+}
+
+
+".innerViewProperty":{
+	top : 5,
+	bottom : 5,
+	width : 100,
+	height:Ti.UI.SIZE,
+	borderColor : "red",
+	borderRadius : 2, 
+//	backgroundColor:"yellow"
+}
+
+"#viewTime" :{
+	left : 10,
+}
+
+"#viewComments" :{
+	left : 120,
+}
+
+".lblProperty":{
+	height : Titanium.UI.SIZE,
+	width : "100%",
+	textAlign : "center"
+//	backgroundColor:"gray"
+}
+*/
+

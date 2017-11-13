@@ -1,0 +1,76 @@
+"#tblRow":{
+	height: 46,
+	left: 0,
+	right: 0,
+	className: "orderList",
+	layout: "vertical",
+	selectedColor: "none",
+	selectionStyle: 0
+}
+
+"#topBackView":{
+	top: 0,
+	height: 45,
+	left: 0,
+	right: 0,
+	//backgroundColor : Alloy.Globals.path.rowDropDownBgColor
+}
+"#separatorView":{
+	isToExclude_contrast: true,
+	backgroundColor : Alloy.Globals.path.SeparatorColor
+}
+"#lblOrderNumber":{
+	width: 100,
+	height: 20,
+	font: Alloy.Globals.path.font14Bold,
+	//color: Alloy.Globals.path.whiteColor
+	color: Alloy.Globals.path.blackColor
+}
+"#btnStatus":{
+	style: "plain",
+	height: 16,
+	width : 100,//width: 70,
+	borderRadius : 4,
+	borderColor : Alloy.Globals.path.greenColor,
+	borderWidth : 1,
+	font: Alloy.Globals.path.font11Bold,
+	//backgroundColor : Alloy.Globals.path.whiteColor,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.greenColor
+}
+"#imgUpDown":{
+	height: 12,
+	width: 21,
+	image:	Alloy.Globals.path.iconArrow2Down,
+	isClick: false
+}
+"#mainBackView":{
+	top: 0,
+	left: 0,
+	right: 0,
+	height: 0,
+	visible: false,
+	layout: "vertical"
+}
+
+".titlePropety":{
+	top: 0,
+	height: 20,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor,
+	width: 100
+}
+".valueProperty":{
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font12,
+	color: Alloy.Globals.path.borderColor
+}
+".backViewProperty":{
+	top: 0,
+	height: Titanium.UI.SIZE,
+	left: 0,
+	right: 0
+}
+"#entityView":{
+	top : 10
+}

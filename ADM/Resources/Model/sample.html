@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Layer Extent</title>
+
+    <script type="text/javascript">djConfig = { debug:true }</script>
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.1"></script>
+    
+    <script type="text/javascript">
+      dojo.require("esri.utils");
+      
+        var imageParameters = new esri.layers.ImageParameters();
+
+        //layer.setLayerDefinitions takes an array.  The index of the array corresponds to the layer id.
+        //In the sample below I add an element in the array at 3,4, and 5.
+        //Those array elements correspond to the layer id within the remote ArcGISDynamicMapServiceLayer
+        
+        //sec: Abu Al Abyad Island | plot: AUH2496  || sec: EB1  | plot:P8 || P23 P24 P24b P25
+        var layerDefs = [];
+       // layerDefs[2] = "ZONETPSSNAMEENG='Al Nahda' ";
+        //layerDefs[1] = "SECTORTPSSNAMEENG='Al Nahda Al Askaria' ";
+        layerDefs[0] = "PLOTNUMBER='1' and SECTORTPSSNUMBER ='Lulu Island'  ";
+        imageParameters.layerDefinitions = layerDefs;
+
+        //I want layers 5,4, and 3 to be visible
+        imageParameters.layerIds = [2,1,0];
+        imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
+        imageParameters.transparent = true;
+      
+      function init() {
+        esri.request({
+          url: "http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer/0",
+          
+          content: { f:"json" , imageParameters:imageParameters},
+          callbackParamName: "callback",
+          load: layerHandler
+        });
+      }
+      
+      function layerHandler(response, io) {
+      	
+      	
+        var extent = new esri.geometry.Extent(response.extent);
+        dojo.byId("extent").innerHTML = dojo.toJson(extent.toJson());
+        var map = new esri.Map("map", {extent:extent});
+        var tiledMapServiceLayer = new esri.layers.ArcGISTiledMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/Images/ortho_2012_adm_t/MapServer");
+        map.addLayer(tiledMapServiceLayer);
+        
+         var imageParameters = new esri.layers.ImageParameters();
+
+        //layer.setLayerDefinitions takes an array.  The index of the array corresponds to the layer id.
+        //In the sample below I add an element in the array at 3,4, and 5.
+        //Those array elements correspond to the layer id within the remote ArcGISDynamicMapServiceLayer
+        
+        //sec: Abu Al Abyad Island | plot: AUH2496  || sec: EB1  | plot:P8 || P23 P24 P24b P25
+        var layerDefs = [];
+       // layerDefs[2] = "ZONETPSSNAMEENG='Al Nahda' ";
+        //layerDefs[1] = "SECTORTPSSNAMEENG='Al Nahda Al Askaria' ";
+        layerDefs[0] = "PLOTNUMBER='1' and SECTORTPSSNUMBER ='Lulu Island'  ";
+        imageParameters.layerDefinitions = layerDefs;
+
+        //I want layers 5,4, and 3 to be visible
+        imageParameters.layerIds = [2,1,0];
+        imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
+        imageParameters.transparent = true;
+
+        //construct ArcGISDynamicMapServiceLayer with imageParameters from above
+        var dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://gis.adm.gov.ae/sddgisms/rest/services/MyLand_ZoneSectorPlot/MapServer", {"imageParameters":imageParameters});
+    
+       //console.log(dynamicMapServiceLayer.getDetails());
+        dynamicMapServiceLayer.setLayerDefinitions(layerDefs);
+        map.addLayer(dynamicMapServiceLayer);
+      }
+      
+      dojo.addOnLoad(init);
+    </script>
+    
+  </head>
+  <body class="tundra">
+    <div>This sample makes a <a href="http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer/0?f=pjson">request</a> to a particular layer in a map service and display's the layer's extent.<br />
+    <br />
+    <br />
+    <span id="extent"></span></div>
+    <div id="map" style="width:900px; height:600px; border:1px solid #000;"></div>
+  </body>
+</html>

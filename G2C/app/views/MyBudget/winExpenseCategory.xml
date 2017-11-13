@@ -1,0 +1,30 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View id="viewRightView" class="rightView" onClick="upDateBudgetCategoryValues">
+						<Button id="btnDone" class="navBarButton"></Button>
+					</View>
+				</View>
+			</View>
+			<View id="viewExpenseHeader">
+				<Label id="lblActual" visible="false"></Label>
+				<Label id="lblBudget"></Label>
+			</View>
+			<View id= "bgTableView" class="bgTableViewProperty">
+				<TableView id="tableView"></TableView>
+				<Label id="lblNoItems"/>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

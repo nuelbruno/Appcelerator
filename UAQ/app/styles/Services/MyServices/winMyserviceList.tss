@@ -1,0 +1,45 @@
+
+"#viewMyRequestList" : {
+    top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0
+}
+"#btnActionMyRequest": {
+	//width : "80%",
+	height : 25,
+	borderRadius : 5,
+	left : 5,
+	right: 5,
+	title : Alloy.Globals.selectedLanguage.actionBtn,
+	//backgroundColor : "#80FFFFFF",
+	backgroundImage : Alloy.Globals.path.btnRed,
+	//color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font12,
+	
+}
+"#viewItemBtn": {
+	width : "100%",	
+	backgroundColor : "transparent"
+}
+"#itemButton":{
+	left : 0,
+	right : 0,
+	height: 40,
+	backgroundColor: "#80FFFFFF"
+}
+
+".listContainerRequest":{
+	top : 0, 
+	bottom : 0,
+	width : "100%",
+	//separatorHeight :0,
+	separatorColor : "transparent",
+	backgroundColor : "transparent"
+}
+".listContainerRequest[platform=android]": {
+    separatorHeight :0
+}
+".listContainerRequest[platform=ios]": {
+    separatorStyle: Titanium.UI.iPhone.ListViewSeparatorStyle.NONE,
+}

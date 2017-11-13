@@ -1,0 +1,43 @@
+<Alloy>
+	<Window id="winTopManagement"  class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<WebView id="webView"></WebView>
+
+			<!-- <ScrollView id="scrollView">
+			<View id="mainView" >
+			<ImageView id="imgView"></ImageView>
+			<View id= "viewDetails">
+
+			<Label id="lblMinisterName" ></Label>
+			<Label id="lblMinistry" ></Label>
+			<ImageView id="imgMinister"></ImageView>
+
+			<View id = "viewAddress">
+			<Label id="lblDescription" ></Label>
+
+			</View>
+
+			</View>
+			<View id = "separator"></View>
+			<View id="customView">
+			</View>
+			</View>
+			</ScrollView> -->
+
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="winRevAndExpChart" class="win">
+		<View id="mainView">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+
+				</View>
+			</View>
+			<View id="budgetActivityView">
+				<Label id="lblBudgetActivity"></Label>
+			</View>
+			<View id="normalChartView">
+				<Widget src="com.alco.highcharts" id="normalChart" class="chartViewProperty" />
+			</View>
+
+		</View>
+		<!-- <View id="fullTransparentView" onClick="showBudgetView">
+		</View>
+		<View id="budgetView">
+		<TableView id="budgetTableView">
+		</TableView>
+		<ImageView id="imgClose" onClick="showBudgetView">
+		</ImageView>
+		</View> -->
+
+	</Window>
+</Alloy>

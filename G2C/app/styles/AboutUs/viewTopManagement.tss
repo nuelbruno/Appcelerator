@@ -1,0 +1,48 @@
+
+"#viewTop": {
+	height: 41,
+	width: "100%",
+	backgroundColor:"transparent",
+}
+"#lblTitle":{
+	top: 0,
+	height: 40,
+	left: 10,
+	right: 10,
+	touchEnabled: false,
+	bubbleParent: false,
+	font : Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.blackColor,
+}
+
+
+"#lblContent":{
+	top: 40,
+	height:Titanium.UI.SIZE,
+	left: 10,
+	right: 10,
+	bottom: 10,
+	touchEnabled: false,
+	bubbleParent: false,
+	visible: false,
+	font : Alloy.Globals.path.font12,
+	color : Alloy.Globals.path.lblGrayColor,
+}
+"#separator":{
+	bottom: 0,
+	height: 1,
+	width: '100%',
+	backgroundColor: Alloy.Globals.path.grayColor,
+	touchEnabled: false,
+				isToExclude_contrast: true
+}
+
+//Creating an Imagview for setting arrows in tableviewRow
+"#imgArrow":{
+	top: 14,
+	width: 21,
+	height: 11,
+	backgroundImage: Alloy.Globals.path.icnArrowDown,
+	touchEnabled: false,
+	bubbleParent: false
+}

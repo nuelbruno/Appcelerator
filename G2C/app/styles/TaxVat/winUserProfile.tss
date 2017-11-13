@@ -1,0 +1,201 @@
+"#winUserProfile[platform=android]":{
+	// windowSoftInputMode : Titanium.UI.Android.SOFT_KEYBOARD_HIDE_ON_FOCUS
+}
+
+"#homeView": {
+	width : "100%",
+	height : "100%",
+	backgroundColor : Alloy.Globals.path.bgColor,
+	layout : "vertical"	
+}
+"#scrollView":{
+	width : "100%",
+	top : 0,
+	bottom : 0,
+	layout : "vertical"
+}
+"#scrollView[formFactor=tablet]":{
+	width : "99%"
+}
+
+".namePasswordViewProperty" :{
+	top : 15,
+	left : 5,
+	right : 5,
+	height : Titanium.UI.SIZE,
+	borderColor : Alloy.Globals.path.grayColor,
+	borderWidth : 1,
+	layout : "vertical",
+	backgroundColor : "transprent"
+}
+".namePasswordViewProperty[platform=ios]" :{
+	borderRadius : 5,	
+}
+
+
+".viewProperty" :{
+	top : 0,
+	left : 0,
+	right : 0,
+	height : 40,
+	backgroundColor : "transparent"
+}
+".viewProperty[formFactor=tablet]" :{
+	height : 45,
+}
+
+".labelProperty" :{
+	width : 130,
+	height : Titanium.UI.SIZE,
+	font : Alloy.Globals.path.font13Bold,
+	color : "black",
+}
+".labelProperty[formFactor=tablet]" :{
+	width : 145,
+	font : Alloy.Globals.path.font16Bold,
+}
+
+".textFieldProperty" :{
+	right : 10,
+	height : "100%",
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	// hintText:Alloy.Globals.VTaxSelectedLanguage.enterHintText
+}
+".textFieldProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#txtUserType":{
+	editable : false,
+}
+
+"#imgUserType": {
+	top : 14,
+	width: 13,
+	height: 8,
+	image: Alloy.Globals.path.arrowDown
+}
+
+".hSeperatorProperty" :{
+	left : 0,
+	right : 0,
+	height : 1,
+	bottom : 0,
+	isToExclude_contrast: true,
+	
+	backgroundColor : Alloy.Globals.path.grayColor
+}
+
+"#txtPassword":{
+	passwordMask : true,
+}
+"#txtConfPassword":{
+	passwordMask : true,
+}
+
+".detailTextFieldProperty" :{
+	left : 130,
+	right : 10,
+	height : "100%",
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	// hintText:Alloy.Globals.VTaxSelectedLanguage.enterHintText
+}
+".detailTextFieldProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+".lblCountryCodeProperty":{
+	width : 0,//Titanium.UI.SIZE,
+	height : "100%",
+	font : Alloy.Globals.path.font13,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent",
+	text : "+971"
+}
+".lblCountryCodeProperty[formFactor=tablet]" :{
+	font : Alloy.Globals.path.font16,
+}
+
+"#addressView":{
+	top : 0,
+	left : 0,
+	right : 0,
+	height : 120,
+	backgroundColor : "transparent"
+}
+
+"#txtAddress":{
+	top : 5,
+	bottom : 0,
+	left : 130,
+	right : 10,
+	font : Alloy.Globals.path.font13,
+	//color : Alloy.Globals.path.grayColor,
+	color : Alloy.Globals.path.borderColor,
+	backgroundColor : "transparent"
+}
+"#txtAddress[platform=android]":{
+	color : "#888888"	
+}
+"#txtAddress[formFactor=tablet]":{
+	font : Alloy.Globals.path.font16,
+}
+"#lblAdress":{
+	top : 15,
+}
+"#lblAddressAstrik":{
+	top : 15
+}
+
+"#btnSave":{
+	top : 25,
+	height : 35,
+	width : 175,
+	backgroundColor : Alloy.Globals.path.buttonBackgroundColor,
+	font : Alloy.Globals.path.font15,
+	borderRadius : 3,
+	title : "Submit",
+	color : "White",
+}
+"#btnRegister":{
+	right : 10,
+}
+
+"#namePasswordView":{
+	bottom : 35
+}
+
+".colonProperty":{
+	top : 10,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font13,
+	color: "black",
+	//text: ":",
+}
+".colonProperty[formFactor=tablet]": {
+	font: Alloy.Globals.path.font16,
+}
+
+"#txtSecQuestion":{
+	editable : false,
+	isSelected : false,
+}
+
+"#imgSecQuestion":{
+	top : 5,
+	bottom : 5,
+	// right: 10,
+	width: 30,
+	height: 30,
+	image: Alloy.Globals.path.icnAttachBlack,
+	selectedImage : undefined
+}
+"#imgSecQuestion[formFactor=tablet]":{
+	height : 35,
+	width : 35
+}

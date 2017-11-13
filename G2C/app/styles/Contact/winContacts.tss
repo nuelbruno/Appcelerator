@@ -1,0 +1,262 @@
+
+"#tabView":{
+	height : 40,
+	width : "100%",
+}
+"#tabView[formFactor=tablet]":{
+	height : 45
+}
+
+"#vSeparator":{
+	height : "100%",
+	width : 1,
+	backgroundColor : Alloy.Globals.path.navBarColor	
+}
+"#hSeparator":{
+	height : 1,
+	width : "100%",
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	bottom : 0,
+	isToExclude_contrast: true
+}
+
+".tablLabelProperty":{
+	height : 37,
+	width : "50%",
+	font : Alloy.Globals.path.font15,
+	color : Alloy.Globals.path.darkGrayColor,
+	isSelected : false,
+	textAlign : Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".tablLabelProperty[formFactor=tablet]":{
+	height : 42,
+	font : Alloy.Globals.path.font18,
+}
+
+"#lblDetail":{
+	left : 0,
+}
+"#lblMap": {
+	right : 0
+}
+
+"#tabSeparator":{
+	width : "50%",
+	height : 3,
+	left : 0,
+	bottom : 0,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+"#mainView":{
+	top : 0,
+	bottom : 0,
+	width : "100%",
+	backgroundColor : "transparent"
+}
+
+"#scrollView":{
+	top : 0,
+	bottom : 0,
+	width : "100%",
+	layout : "vertical",
+	backgroundColor : "transparent"
+}
+
+".lblTitleProperty":{
+	top : 15,
+	left : 10,
+	right : 10,
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.goldColor,
+	font : 	Alloy.Globals.path.font16,
+}
+".lblTitleProperty[formFactor=tablet]":{
+	font : 	Alloy.Globals.path.font20,
+}
+
+".detailViewProperty":{
+	height : Titanium.UI.SIZE,
+	top : 10,
+	left : 10,
+	right : 10,
+	backgroundColor : "transparent"
+}
+
+".icnProperty":{
+	height : 15,
+	width : 15,
+	image : "",
+	backgroundColor : "transparent"
+}
+
+".lblDetailTitleProperty":{
+	width : 80,
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.darkGrayColor,
+	font : 	Alloy.Globals.path.font14,
+}
+".lblDetailTitleProperty[formFactor=tablet]":{
+	width : 110,
+	font : 	Alloy.Globals.path.font18,
+}
+
+".lblDetailColonProperty":{
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.darkGrayColor,
+	font : 	Alloy.Globals.path.font14,
+	text : ":"
+}
+".lblDetailColonProperty[formFactor=tablet]":{
+	font : 	Alloy.Globals.path.font18,
+}
+".lblDetailValueProperty":{
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent",
+	color : Alloy.Globals.path.darkGrayColor,
+	font : 	Alloy.Globals.path.font14,
+}
+".lblDetailValueProperty[formFactor=tablet]":{
+	font : 	Alloy.Globals.path.font18,
+}
+
+"#imgPhoneB1":{
+	image : Alloy.Globals.path.icnPhoneSmall,
+}
+"#imgFaxB1":{
+	image : Alloy.Globals.path.icnFax,
+}
+"#imgPOBoxB1":{
+	image : Alloy.Globals.path.icnPOBox,
+}
+
+"#imgPhoneB2":{
+	image : Alloy.Globals.path.icnPhoneSmall,
+}
+"#imgFaxB2":{
+	image : Alloy.Globals.path.icnFax,
+}
+"#imgPOBoxB2":{
+	image : Alloy.Globals.path.icnPOBox,
+}
+
+".sharIconProperty":{
+	left : 8,
+	right : 8,
+	backgroundColor : "transparent",
+	height : 32,
+	width : 32
+}
+
+".sharIconProperty[platform=ios]":{
+	viewShadowColor : Alloy.Globals.path.darkGrayColor,
+	viewShadowOffset : {
+		x : 2,
+		y : 2
+	}
+	
+}
+".sharIconProperty[formFactor=tablet]":{
+	height : 55,
+	width : 55
+}
+"#imgFacebook":{
+	image : Alloy.Globals.path.icnFacebook,
+	socialID : "facebook"
+}
+"#imgTwitter":{
+	image : Alloy.Globals.path.icnTwitter,
+	socialID : "twitter"
+}
+"#imgYoutube":{
+	image : Alloy.Globals.path.icnYoutube,
+	socialID : "youtube"
+}
+"#imgInstagram":{
+	image : Alloy.Globals.path.icnInstagram,
+	socialID : "instagram"
+}
+
+"#sharingButtonView":{
+	top : 20,
+	width : Titanium.UI.SIZE,
+	height : 38,//Titanium.UI.SIZE,
+	layout : "horizontal"
+}
+"#sharingButtonView[formFactor=tablet]":{
+	height : 61
+}
+
+
+"#buttonBackView":{
+	top : 20,
+	// left : 15,
+	// right : 15,
+	width : 280,
+	height : Titanium.UI.SIZE,
+	backgroundColor : "transparent"
+}
+"#buttonBackView[formFactor=tablet]":{
+	width : 320
+}
+
+".btnViewProperty":{
+	borderColor : Alloy.Globals.path.goldColor,
+	borderRadius : 3,
+	borderWidth : 1,
+	width : 130,
+	height : 35,
+}
+".btnViewProperty[formFactor=tablet]":{
+	width : 150,
+	height : 40 
+}
+
+".btnIconProperty":{
+	width : 15,
+	height : 15,
+	image : "",
+	touchEnabled : false,	
+}
+
+".btnLabelProperty":{
+	color : Alloy.Globals.path.darkGrayColor,
+	font : 	Alloy.Globals.path.font14,
+	height : "100%",
+	backgroundColor : "transparent",
+	width : Titanium.UI.SIZE,
+	color  : Alloy.Globals.path.goldColor,
+	touchEnabled : false,
+}
+".btnLabelProperty[formFactor=tablet]":{
+	font : 	Alloy.Globals.path.font17,
+}
+
+"#imgWeb":{
+	image :  Alloy.Globals.path.icnWeb,
+}
+"#imgEmail":{
+	image :  Alloy.Globals.path.icnEmail,
+}
+
+"#mapView":{
+	top: 0,
+	bottom : 0,
+	width: "100%",
+}
+"#mapBackView":{
+	top: 0,
+	bottom : 0,
+	width: "100%",
+	opacity : 0,
+}
+
+"#mapBackView[platform=android]":{
+	visible : false,	
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highstock Example</title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts_NormalBar.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(arr, xAxis, ytd,abc,abc,abc,axisFontSize,abc,abc,isArabic) {
+			//	Ti.API.info('Webview: plotChart()');
+			//	Ti.API.info('arrNormal Bar =' +JSON.stringify(arr));
+			//	Ti.API.info('mtd =' + mtd);
+			//	Ti.API.info('ytd =' + ytd);
+
+				new Highcharts.Chart({
+					chart : {
+						type : 'bar',
+						renderTo : 'container',
+						plotBackgroundColor : null,
+						backgroundColor : "transparent",
+						plotBorderWidth : null,
+						plotShadow : false,
+						marginLeft : 120
+						//height : 200
+					},
+					title : {
+						text : ''
+					},
+					tooltip : {
+					//	pointFormat : '{series.name}: ',//<b>{point.percentage:.1f}%</b>'
+						// pointFormat : '{point.percentage:.1f}%',//
+					},
+					plotOptions : {
+						pie : {
+							allowPointSelect : true,
+							cursor : 'pointer',
+							dataLabels : {
+								enabled : false
+							},
+							showInLegend : false
+						}
+					},
+					xAxis : {
+						categories : xAxis
+					},
+					yAxis : {
+						lineWidth : 0,
+						minorGridLineWidth : 0,
+						lineColor : 'transparent',
+						labels : {
+							enabled : false
+						},
+						minorTickLength : 0,
+						tickLength : 0,
+						gridLineWidth : 0,
+						minorGridLineWidth : 0,
+						title : {
+							text : "",
+						},
+					},
+					series :arr
+					//series : [{
+						//type : 'bar',
+						//    name: 'Browser share',
+						//data : arr,
+					//}]
+				});
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+	</body>
+</html>

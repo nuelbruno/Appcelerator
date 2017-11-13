@@ -1,0 +1,538 @@
+<Alloy>
+	<Window id="winRegistration" class="win1" onOpen="winOpen" onFocus="winFocus">
+		<View id="mainView" class="verticalMainContainer" backgroundColor="#FFFFFF">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty" onClick="closeWindow"></Label>
+				</View>
+			</View>
+			<ScrollView id="scrollviewRegister">
+				<View id="viewUserChoosingContainer" layout="vertical" >
+					<View id="viewIndividualCitz" class= "viewSubscriptionClass" onClick="doIndivCitizen">
+						<Label id="labelIndividCitizen"></Label>
+						<ImageView id="imageviewIndividCitizen" ></ImageView>
+					</View>
+					<View id="viewIndivResident" class="viewSubscriptionClass" onClick="doIndivResident">
+						<Label id="labelIndividResident"></Label>
+						<ImageView id="imageviewIndividResident"></ImageView>
+					</View>
+					<View id="viewIndivGccCitizen"  class="viewSubscriptionClass" onClick="doIndivGccCitizen">
+						<Label id="labelIndividGCCcitizen"></Label>
+						<ImageView id="imageviewIndividGCCcitizen"></ImageView>
+					</View>
+					<View id="viewIndivGccResident"  class="viewSubscriptionClass" onClick="doIndividGccResident">
+						<Label id="labelIndividGccResident"></Label>
+						<ImageView id="imageviewIndividGccResident"></ImageView>
+					</View>
+					<View id="viewIndivVisitor" class="viewSubscriptionClass" onClick="doIndivlVisitor">
+						<Label id="labelIndividVisitor"></Label>
+						<ImageView id="imageviewIndividVisitor"></ImageView>
+					</View>
+					<View id="viewEstablishment" bottom="10" class="viewSubscriptionClass" onClick="doEstablishment">
+						<Label id="labelEstablishment"></Label>
+						<ImageView id="imageviewEstablishment"></ImageView>
+					</View>
+					<Label id="lblRegUserTypeStore" visible="false" width="0" height="0"></Label>
+					<Label id="lblRegApplicantTypeStore" visible="false" width="0" height="0"></Label>
+				</View>
+				<!-- ################# ACCOUNT DETAILS VIEW FOR ALL USERS  EXCEP ESTABLISH ##################-->
+				<View id="viewShowHideAccountDetailsIndivid">
+					<View class="splitterRegView">
+						<Label class="splitterLabelReg" id="splitLblAccountdetails"></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="dropdownSpaceView">
+							<View class="textBackViewCompress" onClick="selectCitizenShip">
+								<TextField id="textfieldNationality" class="txtfldDropDownProCompress"/>
+								<View id="imageviewNationalityDropDown" class="icnDropDown">
+									<ImageView class="icnDropDownArrow"></ImageView>
+								</View>
+							</View>
+							<View id="showImageDetailsView1" class="showImageDetails" onClick="showIDcardImage">
+								<ImageView class="icnShowDetails" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="selectCtryResidence">
+							<TextField id="textCountryResidence" class="txtfldDropDownProperty"/>
+							<View id="imageviewCountryResidence" class="icnDropDown">
+								<ImageView class="icnDropDownArrow"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label  class="hintTextLabel" text="[05x]--xxxxxxx" ></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="textMobileNum"  class="txtfldProperty"  maxLength="11" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+						</View>
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label  class="hintTextLabel" text="[05x]--xxxxxxx" ></Label>
+					</View>
+					<View class="textBackView">
+						<TextField id="textMobileNum2" class="txtfldProperty" maxLength="11" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label class="hintTextLabel" text="[0x]-xxxxxxx" ></Label>
+					</View>
+					<View class="viewTextField">
+						<View class="textBackView">
+							<TextField id="landLine" class="txtfldProperty" maxLength="10"  keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD"/>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtAddressIndiv" class="txtfldProperty"  maxLength="100"/>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="textfieldEmail" class="txtfldProperty"  keyboardType="Titanium.UI.KEYBOARD_EMAIL"    />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="textfieldEmailConfirm" class="txtfldProperty"  keyboardType="Titanium.UI.KEYBOARD_EMAIL"  />
+						</View>
+					</View>
+				</View>
+				<!-- ################# ACCOUNT DETAILS VIEW FOR ESTABLISH ##################-->
+				<View id="viewShowAccountDetailsEstablish">
+					<View class="splitterRegView">
+						<Label class="splitterLabelReg" id="splitLblAccountdetailsEstablish"></Label>
+					</View>
+					<View id="hintTextViewFullnameEst" class ="hintTextViewClass">
+						<Label id="hintTextEstFullname" class="hintTextLabel" ></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFieldEstablishName" class="txtfldProperty" maxLength="100" keyboardType="Titanium.UI.KEYBOARD_NAMEPHONE_PAD" />
+						</View>
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label class="hintTextLabel" text="[05x]--xxxxxxx" ></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFieldEstablishMobileNum" class="txtfldProperty" maxLength="11" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+						</View>
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label class="hintTextLabel" text="[0x]-xxxxxxx" ></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFieldOfficePhone" class="txtfldProperty" maxLength="10" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFieldEmailAddressEstabsh" class="txtfldProperty"  keyboardType="Titanium.UI.KEYBOARD_EMAIL" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFieldEmailAddressEstabshConfirm" class="txtfldProperty"  keyboardType="Titanium.UI.KEYBOARD_EMAIL"  />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtAddressEstblsh" class="txtfldProperty"  maxLength="100"/>
+						</View>
+					</View>
+					<View class="textBackView">
+						<TextField id="txtWebstieEstblsh" class="txtfldProperty" maxLength="100"/>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView"  onClick="selectEmiratesReg" id="establishEmiratesChoo">
+							<TextField id="textEmiratesEstablish" class="txtfldDropDownProperty"/>
+							<View id="imageviewEmiratesEstablish" class="icnDropDown">
+								<ImageView class="icnDropDownArrow"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiratesIdEstb" class="validField" text="*"></Label>
+						<View class="textSpaceView">
+							<View top="10">
+								<View class="textBackViewUpdate" >
+									<TextField id="textfEmiratesIdEstb" class="txtfldProperty" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" maxLength="15"  onReturn="emiratesCloseEstb"  />
+								</View>
+								<View id="showImageDetailsView3" class="showImageDetails" onClick="showIDcardImage">
+									<ImageView class="icnShowDetails"></ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtPostBoxEstblsh" class="txtfldProperty" maxLength="10" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtTradeLicNumEstblsh" class="txtfldProperty" maxLength="20" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View id="viewTradeLicExp" class="textBackView" onClick="selectDate">
+							<TextField id="txtTradeLicExpiry" class="txtfldDropDownProperty"/>
+							<View id="imageviewTradeLicExpiry" class="icnDropDown">
+								<ImageView class="icnDropDownCalender"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView"  onClick="selectTradeLicType" >
+							<TextField id="textTradelicTypeEstablish" class="txtfldDropDownProperty"/>
+							<View id="imageviewTradelicTypeEstablish" class="icnDropDown">
+								<ImageView class="icnDropDownArrow"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewTradeLicenseAttch" >
+							<TextField id="txtTradeLicenseAttch" class="txtfldDropDownProperty" touchEnabled="false"/>
+							<View id="imageviewTradeLicenseAttch" class="iconAttach">
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<View class="textBackView" onClick="AttachImage" id="viewSignatureAttest" >
+							<TextField id="txtSignatureAttest" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewSignatureAttest" class="iconAttach">
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiFront" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage"  id="viewEmiratesAttach">
+							<TextField id="txtEmiratedFrontAttchEst" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewEmiratesFrontAttchEst" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiBack" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewEmiratedBackAttch">
+							<TextField id="txtEmiratedBackAttchEst" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewEmiratesBackAttchEst" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<Label id="validField" class="validField" text=""></Label>
+				</View>
+				<!-- ################# CREDENTIAL VIEW FOR ALL USERS ##################-->
+				<View class="splitterRegView">
+					<Label class="splitterLabelReg" id="splitCredentials"></Label>
+				</View>
+				<View class="viewTextField">
+					<Label id="validField" class="validField" text="*"></Label>
+					<View class="textBackView">
+						<TextField id="textfieldUserName" class="txtfldProperty" maxLength="30"/>
+					</View>
+				</View>
+				<View class="viewTextField">
+					<Label id="validField" class="validField" text="*"></Label>
+					<View class="textSpaceView">
+						<View class="textBackViewpassword"> 
+							<TextField id="textfieldPassword" class="txtfldProperty" maxLength="15" />
+						</View>
+						<View  class="showPasswordHint" onClick="showPasswordHint">
+							<ImageView class="icnShowDetails"></ImageView>
+						</View>
+					</View>
+				</View>
+				
+				<View class ="hintTextViewClass">
+					<Label id="passwordStrength" class="hintTextLabel" ></Label>
+				</View>
+				<View class="viewTextField">
+					<Label id="validField" class="validField" text="*"></Label>
+					<View class="textBackView">
+						<TextField id="textfieldConfirmPassword" class="txtfldProperty" maxLength="15" />
+					</View>
+				</View>
+				<!-- ################# ID INFORMATION VIEW FOR ALL USERS ##################-->
+				<View id="viewShowHideIDInformation" onClick="emiratesClose" >
+					<View class="splitterRegView" >
+						<Label class="splitterLabelReg" id="splitIdInformation"></Label>
+					</View>
+					<View id="hintTextViewFullname" class ="hintTextViewClass">
+						<Label id="hintTextIDFullname" class="hintTextLabel"></Label>
+					</View>
+					<View class="viewTextField">
+						<Label id="lblidFulName" class="validField" text="*"></Label>
+						<View class="textSpaceView">
+							<View top="10">
+								<View class="textBackViewUpdate" >
+									<TextField id="textfieldFullName" class="txtfldProperty" maxLength="100" keyboardType="Titanium.UI.KEYBOARD_NAMEPHONE_PAD"  />
+								</View>
+								<View id="showImageDetailsView2" class="showImageDetails" onClick="showIDcardImage">
+									<ImageView class="icnShowDetails"></ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View class ="hintTextViewClassAll">
+						<Label class="hintTextLabel" text="XXX-XXXX-XXXXXXX-X"></Label>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiratesId" class="validField" text="*"></Label>
+						<View class="textSpaceView">
+							<View top="10">
+								<View class="textBackViewUpdate" >
+									<TextField id="textfEmiratesId" class="txtfldProperty" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" maxLength="15"  onReturn="emiratesClose"  />
+								</View>
+								<View id="showImageDetailsView3" class="showImageDetails" onClick="showIDcardImage">
+									<ImageView class="icnShowDetails"></ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="lblIdExpiry" class="validField" text="*"></Label>
+						<View class="textSpaceView">
+							<View top="10">
+								<View id="viewIdExpiry" class="textBackViewUpdate" onClick="selectDate">
+									<TextField id="textfieldIdExpiry" class="txtfldDropDownProCompress"/>
+									<View id="imageviewIdExpiryDropDown" class="icnDropDown">
+										<ImageView class="icnDropDownCalender"></ImageView>
+									</View>
+								</View>
+								<View id="showImageDetailsView4" class="showImageDetails" onClick="showIDcardImage">
+									<ImageView class="icnShowDetails"></ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<TextField id="txthiddenfocusFiled" visible="false" height="0" />
+					<View class="viewTextField">
+						<Label id="lblEmiratesCh" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="selectEmiratesReg" id="idInformEmirates">
+							<TextField id="textfieldEmirates" class="txtfldDropDownProperty"/>
+							<View id="imageviewEmirates" class="icnDropDown">
+								<ImageView class="icnDropDownArrow"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="lblDOBvalid" class="validField" text="*"></Label>
+						<View class="textSpaceView">
+							<View top="10">
+								<View id="viewDOB" class="textBackViewUpdate" onClick="selectDate">
+									<TextField id="textfieldDOB" class="txtfldDropDownProCompress"/>
+									<View id="imageviewDOBDropDown" class="icnDropDown">
+										<ImageView class="icnDropDownCalender"></ImageView>
+									</View>
+								</View>
+								<View id="showImageDetailsView5" class="showImageDetails" onClick="showIDcardImage">
+									<ImageView class="icnShowDetails"></ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiFront" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage"  id="viewEmiratesAttach">
+							<TextField id="txtEmiratedFrontAttch" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewEmiratesFrontAttch" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="lblEmiBack" class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewEmiratedBackAttch">
+							<TextField id="txtEmiratedBackAttch" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewEmiratesBackAttch" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+
+				</View>
+				<!-- ################# PASSPPORT INFOR VIEW FOR ALL USERS ##################-->
+				<View id="viewShowHidePassportInformation" >
+					<View class="splitterRegView">
+						<Label class="splitterLabelReg" id="splitPassportInfo"></Label>
+					</View>
+					<View id="hintTextViewPassport" class ="hintTextViewClass">
+						<Label id="hintTextPassportName" class="hintTextLabel"></Label>
+					</View>
+					<View class="viewTextField" id="passportFullnameShow">
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView" >
+							<TextField id="fullNamePassport" class="txtfldProperty" maxLength="100" keyboardType="Titanium.UI.KEYBOARD_NAMEPHONE_PAD"  />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="textfPassportNum" class="txtfldProperty" maxLength="20"/>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewPassportFrontAttch" >
+							<TextField id="txtPassportFrontAttch" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewPassportFontAttch" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" id="pssportBackShow" >
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewPassportResidentpage">
+							<TextField id="txtPassportResidentpage" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewPassportResidentpage" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField" id="visaPageHide" >
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView" onClick="AttachImage" id="viewPassportVisaPage">
+							<TextField id="txtVisaPage" class="txtfldDropDownProperty" touchEnabled="false" />
+							<View id="imageviewVisaPage" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+				</View>
+				<!-- ################# FAMILY BOOK VIEW FOR ALL USERS ##################-->
+				<View id="viewHideFamilyBookSplitter">
+					<View class="splitterRegView"  id="familyBookSplitId">
+						<Label class="splitterLabelReg" id="splitFamilyBook"></Label>
+					</View>
+					<View id="viewfamilbookSubscription" class="viewfamilSubscriptionclass" onClick="doHasFamilybook">
+						<Label id="labelHasFamilyBook"></Label>
+						<ImageView id="imageviewHasfamilyBook" ></ImageView>
+
+					</View>
+				</View>
+				<View id="viewShowHideFamilyBook">
+					<View id="hintTextViewBook" class ="hintTextViewClass">
+						<Label id="hintTextBookFName" class="hintTextLabel"></Label>
+					</View>
+					<View class="viewTextField">
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFullNameBook" class="txtfldProperty" maxLength="50" keyboardType="Titanium.UI.KEYBOARD_NAMEPHONE_PAD" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label  class="validField" text="*"></Label>
+						<View class="textBackView"  onClick="selectEmiratesReg" id="bookEmiratesChoos">
+							<TextField id="textfieldEmiratesBook" class="txtfldDropDownProperty"/>
+							<View id="imageviewEmiratesBook" class="icnDropDown">
+								<ImageView class="icnDropDownArrow"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtTownName" class="txtfldProperty" maxLength="20" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtTownNumber" class="txtfldProperty" maxLength="50" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtFamilyNum" class="txtfldProperty" maxLength="20" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtTribeName" class="txtfldProperty" maxLength="50" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtClanNumber" class="txtfldProperty" maxLength="50" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View id="viewIssueDate" class="textBackView" onClick="selectDate">
+							<TextField id="txtfIssueDate" class="txtfldDropDownProperty" maxLength="20"/>
+							<View id="imageviewDIsseuDate" class="icnDropDown">
+								<ImageView class="icnDropDownCalender"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtMotherName" class="txtfldProperty" maxLength="100" />
+						</View>
+					</View>
+					<View class="viewTextField">
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView">
+							<TextField id="txtMothersFatherNme" class="txtfldProperty" maxLength="100"/>
+						</View>
+					</View>
+					<View class="viewTextField" >
+						<Label id="validField" class="validField" text="*"></Label>
+						<View class="textBackView"  onClick="AttachImage" id= "viewFamilyBookAttchnew" >
+							<TextField id="txtFamilyBookAttch" class="txtfldDropDownProperty" touchEnabled="false"/>
+							<View id="imageviewFamilybookAttch" class="iconAttach" >
+								<ImageView class="iconAttachpin" ></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="textBackView" id="hiddenfiledtostore" >
+						<Label id="validField" class="validField" text="*"></Label>
+						<TextField id="txtHiddenfieldtoStore" class="txtfldProperty"/>
+					</View>
+				</View>
+				<View id="viewSubscription" onClick="doSubscribe"  >
+					<ImageView id="imageviewSubscription" ></ImageView>
+					<Label id="labelSubscription"></Label>
+				</View>
+				<View id="viewButtonBack">
+					<Button id="btnSubmit" onClick="submitRegistration"></Button>
+					<Button id="btnCancel" onClick="cancelRegistration"></Button>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

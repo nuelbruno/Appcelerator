@@ -1,0 +1,187 @@
+
+"#viewIntroduction":{
+	top:40,
+	bottom:40,
+	left:10,
+	right:10,
+	height:Ti.UI.SIZE,
+	borderWidth:1,
+	borderColor:'#C0C0C0',
+	layout:'vertical'
+}
+"#lblIntroduction[formFactor=handheld]":{
+	top:40,
+	left:10,
+	right:10,
+	text:Alloy.Globals.selectedLanguage.budgetIndtroductionMsg,
+	textAlign:'center',
+	font : Alloy.Globals.path.font14,
+	color : Alloy.Globals.path.darkGrayColor,
+}
+"#lblIntroduction[formFactor=tablet]":{
+	top:40,
+	left:10,
+	right:10,
+	text:Alloy.Globals.selectedLanguage.budgetIndtroductionMsg,
+	textAlign:'center',
+	font : Alloy.Globals.path.font18,
+	color : Alloy.Globals.path.darkGrayColor,
+}
+"#btnInstructions[formFactor=handheld]":{
+	font :Alloy.Globals.path.font17,
+	color : Alloy.Globals.path.whiteColor,
+	title:Alloy.Globals.selectedLanguage.instructionsTitle,
+	top:40,
+	bottom:40,
+	width:120,
+	height:30,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+"#btnInstructions[formFactor=tablet]":{
+	font :Alloy.Globals.path.font24,
+	color : Alloy.Globals.path.whiteColor,
+	title:Alloy.Globals.selectedLanguage.instructionsTitle,
+	top:50,
+	bottom:50,
+	width:200,
+	height:50,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+"#viewButtonsLanding[formFactor=handheld]":{
+	top:20,
+	//width : Titanium.UI.SIZE,
+	height :Titanium.UI.SIZE,
+	width:280,
+	//height:70,
+}
+"#viewButtonsLanding[formFactor=tablet]":{
+	top:20,
+	//width : Titanium.UI.SIZE,
+	height :Titanium.UI.SIZE,
+	width:350,
+	//height:70,
+}
+"#viewNewBudget":{
+	top:0,
+	//width:100,
+	width : Titanium.UI.SIZE,
+	height :Titanium.UI.SIZE,
+	layout:'vertical'
+}
+"#viewExistingBudget":{
+	top:0,
+	right:0,
+	//width:100,
+	height :Titanium.UI.SIZE,
+	width : Titanium.UI.SIZE,
+	layout:'vertical'
+}
+
+"#imgNewBudget[formFactor=handheld]":{
+	width:50,
+	height:50,
+	image:Alloy.Globals.path.icnCreateNewBudget,
+}
+"#imgNewBudget[formFactor=tablet]":{
+	width:80,
+	height:80,
+	image:Alloy.Globals.path.icnCreateNewBudget,
+}
+"#lblNewBudget":{
+	top : 5,
+	font : Alloy.Globals.path.font15,
+	text:Alloy.Globals.selectedLanguage.createBudgetTitle,
+	color : Alloy.Globals.path.blackColor,
+}
+
+"#lblNewBudget[formFactor=tablet]":{
+	font : Alloy.Globals.path.font21,
+}
+
+"#imgExistingBudget[formFactor=handheld]":{
+	width:50,
+	height:50,
+	image:Alloy.Globals.path.icnExistingBudget,
+}
+"#imgExistingBudget[formFactor=tablet]":{
+	width: 80,
+	height:80,
+	image:Alloy.Globals.path.icnExistingBudget,
+}
+"#lblExistingBudget":{
+	top : 5,
+	font : Alloy.Globals.path.font15,
+	text:Alloy.Globals.selectedLanguage.existingBudget,
+	color : Alloy.Globals.path.blackColor,
+}
+
+"#lblExistingBudget[formFactor=tablet]":{
+	font : Alloy.Globals.path.font21,
+}
+
+// Back View
+
+"#backView" :{
+	width : "100%",
+	height : "100%",
+	backgroundColor : "black",
+	opacity : 0.6,
+	zIndex : 15,
+	visible: false
+}
+
+// instructionsView View
+"#instructionsView" :{
+	left : 30,
+	right : 30,
+	height : 400,
+	borderRadius : 5,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	borderColor : "#FFF",
+	zIndex : 20,
+	visible : false,
+	//layout : "vertical"
+}
+"#instructionsView[formFactor=tablet]" :{
+	height : 500	
+}
+"#closeInstructionsView" :{
+	bottom : 15,
+	left : 20,
+	right : 20,
+	height : 30,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+"#closeInstructionsView[formFactor=tablet]" :{
+	height : 45,
+}
+"#lblClose":{
+	color: Alloy.Globals.path.whiteColor,
+	text:Alloy.Globals.selectedLanguage.closeTitle,
+	font : Alloy.Globals.path.font17,
+}
+"#lblClose[formFactor=handheld if!=Alloy.Globals.isEnglish]":{
+	font : Alloy.Globals.path.font17,
+}
+"#lblClose[formFactor=tablet]":{
+	font : Alloy.Globals.path.font21,
+}
+"#lblClose[formFactor=tablet if!=Alloy.Globals.isEnglish]":{
+	font : Alloy.Globals.path.font21,
+}
+"#lblInstructions":{
+	top:20
+}
+
+
+
+"#tableInstructions":{
+	backgroundColor : Alloy.Globals.path.bgColor,
+	separatorColor:'transparent',
+	left:0,
+	right:0,
+	top:0,
+	bottom : 60,
+	scrollable : false
+}

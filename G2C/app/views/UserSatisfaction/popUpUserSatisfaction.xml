@@ -1,0 +1,12 @@
+<Alloy>
+	<View id="backView"></View>	
+		
+	<View id="popView">
+		<Label id="lblUserSatisfaction"></Label>
+		<Label id="lblSuggestion"></Label>
+		<View id="viewFeedback" onClick="openUserSatisfaction">
+			<Label id="lblFeedback"></Label>
+		</View>
+		<Label id="lblSkip" onClick="closePopUP"></Label>
+	</View>
+</Alloy>

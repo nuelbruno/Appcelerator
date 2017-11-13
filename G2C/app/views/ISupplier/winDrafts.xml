@@ -1,0 +1,41 @@
+<Alloy>
+	<Window id="winDrafts"  class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="bgTableView">
+				<ListView id="tableViewItems" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="row">
+							<View id="imgBackView">
+								<ImageView id="imgThumbNail"></ImageView>
+							</View>
+							<View id="viewContents">
+								<Label id="lblTitle" bindId="lblTitle"></Label>
+								<View id="createdView" class="innerViewProperty">
+									<Label id="lblCreatedByTitle" class="lblProperty"  bindId="lblCreatedByTitle"></Label>
+									<Label id="lblCreatedByValue" class="lblValueProperty" bindId="lblCreatedByValue"></Label>
+								</View>
+								<View id="dateView" class="innerViewProperty">
+									<Label id="lblDateTitle" class="lblProperty" bindId="lblDateTitle"></Label>
+									<Label id="lblDateValue" class="lblValueProperty" bindId="lblDateValue"></Label>
+								</View>
+							</View>
+							<View  id="rowsep"></View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="elements" id="listSection"></ListSection>
+				</ListView>
+				<Label id="lblNoItems" class = "lblNoItemsProperty" />
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

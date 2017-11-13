@@ -1,0 +1,276 @@
+
+"#mainView" :{
+	width : "100%",
+	height : "100%",
+	layout : "vertical"
+}
+
+"#scrollableBannerView" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	height : 110,
+	borderRadius : 5,
+	backgroundColor : "red"
+}
+
+"#scrollableMenuView" :{
+	top : 10,
+	left : 10,
+	right : 10,
+	bottom : 10,
+	borderRadius : 5,
+	backgroundColor : "green",
+}
+
+".viewProperty":{
+	width : "100%",
+	height : "100%",
+	layout : "horizontal"
+}
+
+"#pagingView" :{
+	bottom : 25,
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE,
+	layout : "horizontal",
+	zIndex : 10
+}
+
+"#img1" :{
+	width : 10,
+	height : 10,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+"#img2" :{
+	left : 5,
+	width : 10,
+	height : 10,
+	backgroundColor : Alloy.Globals.path.whiteColor
+}
+
+
+// Back View
+
+"#backView" :{
+	width : "100%",
+	height : "100%",
+	backgroundColor : "black",
+	opacity : 0.6,
+	zIndex : 15,
+	visible: false
+}
+
+// Login View
+
+
+"#loginView" :{
+	left : 30,
+	right : 30,
+	height : 450,
+//	bottom : 100,
+	borderRadius : 5,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	zIndex : 20,
+	visible : false,
+	layout : "vertical"
+}
+
+"#imgMOF" :{
+	top : 20,
+	width : 60,
+	height : 60,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	visible : false
+}
+
+".backViewProperty":{
+	top : 10,
+	left : 20,
+	right : 20,
+	height : 30,
+	backgroundColor : Alloy.Globals.path.whiteColor,
+	borderRadius : 3,
+	borderColor : Alloy.Globals.path.navBarColor
+}
+
+"#usernameView" :{
+	top : 125
+}
+
+".iconProperty":{
+	left : 5,
+	width : 25,//Titanium.UI.SIZE,
+	height : 25,//Titanium.UI.SIZE,
+	backgroundColor:Alloy.Globals.path.navBarColor
+}
+
+".txtFldProperty":{
+	left : 40,
+	right : 5,
+	height : "100%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font15,
+	backgroundColor:"transparent"
+}
+
+"#loginBtnView" :{
+	top : 10,
+	left : 20,
+	right : 20,
+	height : 30,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.whiteColor,
+	borderColor : Alloy.Globals.path.goldColor
+}
+
+"#lblLogin" :{
+	height : 25,
+	left: 5,
+	right : 5,
+	text : "Login",
+	textAlign : "center",
+	font : Alloy.Globals.path.font13,
+	touchEnabled : false,
+	color : Alloy.Globals.path.navBarColor
+}
+
+"#bottomView" :{
+	top:3,
+	left : 20,
+	right : 20,
+	height : 35,
+	backgroundColor : "transparent"
+}
+
+".lblProperty":{
+	height : 15,
+	width : "50%",
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font10
+}
+
+"#lblForgotPassword" :{
+	left : 0,
+	textAlign : "left",
+	text : "Forgot Password?"
+}
+
+"#lblNewRegister" :{
+	right : 0,
+	textAlign : "right",
+	text : "New User Registration"
+}
+
+"#cancelLoginView" :{
+	top : 15,
+	left : 20,
+	right : 20,
+	height : 30,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+"#lblCancel" :{
+	height : 25,
+	left: 5,
+	right : 5,
+	text : "Cancel",
+	textAlign : "center",
+	font : Alloy.Globals.path.font13,
+	touchEnabled : false,
+	color : Alloy.Globals.path.whiteColor
+}
+
+
+// Forgot Password View
+
+
+"#forgotPasswordView" :{
+	left : 30,
+	right : 30,
+	height : 450,
+//	bottom : 5,
+	borderRadius : 5,
+	backgroundColor : Alloy.Globals.path.bgColor,
+	zIndex : 10,
+	visible : false,
+	layout : "vertical",
+	zIndex : 30
+}
+
+"#lblForgortPassword" :{
+	top : 175,
+	left : 15,
+	right : 15,
+	color : Alloy.Globals.path.blackColor,
+	text : "Forgot Password?",
+	textAlign : "center",
+	font : Alloy.Globals.path.font17
+}
+
+"#lblContactAdmin" :{
+	top : 20,
+	left : 15,
+	right : 15,
+	color : Alloy.Globals.path.blackColor,
+	text : "Contact Administrator",
+	textAlign : "center",
+	font : Alloy.Globals.path.font15
+}
+
+
+".txtBackViewProperty":{
+	left : 20,
+	right : 20,
+	height : 30,
+	borderRadius : 3,
+	backgroundColor : "transparent",
+	borderColor : Alloy.Globals.path.navBarColor,
+}
+
+"#txtAdminView" :{
+	top : 25
+}
+
+"#txtCallView" :{
+	top : 15
+}
+
+".txtProperty":{
+	left : 5,
+	right : 5,
+	textAlign : "center",
+	height : "100%",
+	color : Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font15,
+	backgroundColor : "transparent"
+}
+
+"#separator" :{
+	top : 25,
+	width : "100%",
+	height : 1,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+"#cancelForgotView" :{
+	top : 15,
+	left : 20,
+	right : 20,
+	height : 30,
+	borderRadius : 3,
+	backgroundColor : Alloy.Globals.path.navBarColor
+}
+
+"#lblCancel" :{
+	height : 25,
+	left: 5,
+	right : 5,
+	text : "Cancel",
+	textAlign : "center",
+	font : Alloy.Globals.path.font13,
+	touchEnabled : false,
+	color : Alloy.Globals.path.whiteColor
+}

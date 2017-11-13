@@ -1,0 +1,51 @@
+<Alloy>
+	<Window id="winFMISSupport" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View class="rightView" onClick="openCreateTicketWindow">
+						<ImageView id="imgCreateTicket"></ImageView>
+					</View>
+				</View>
+			</View>
+			<View id="backViewAll">
+				<Label id="lblStatusTitle"></Label>
+				<View id="searchView">
+					<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+					<TextField id="txtSearch" class="txtSearchProperty" onChange="seachFmisData"></TextField>
+				</View>
+				<View id="optionView">
+					<View id="inProgressView" class="optionViewProperty" onClick="optionSelected">
+						<ImageView id="imgProgressTick" class="checkMarkProperty"></ImageView>
+						<Label id="lblInProgress" class="lblOptionProperty"></Label>
+					</View>
+					<View id="closedView" class="optionViewProperty" onClick="optionSelected">
+						<ImageView id="imgClosedTick" class="checkMarkProperty"></ImageView>
+						<Label id="lblClosed" class="lblOptionProperty"></Label>
+					</View>
+					<View id="reOpenView" class="optionViewProperty" onClick="optionSelected">
+						<ImageView id="imgReopenTick" class="checkMarkProperty"></ImageView>
+						<Label id="lblReopen" class="lblOptionProperty"></Label>
+					</View>
+				</View>
+				<View id="tblHeaderView">
+					<Label id="lblTicket" class="lblHeaderTitle"></Label>
+					<View id="separatorFir" class="vSeparator"></View>
+					<Label id="lblDate" class="lblHeaderTitle"></Label>
+					<View  id="separatorSec" class="vSeparator"></View>
+					<Label id="lblStatus" class="lblHeaderTitle"></Label>
+				</View>
+				<View id="mainView">
+					<TableView id="tblFmisSupport"></TableView>
+					<Label id="lblNoRecord" class="lblNoRecordFound"></Label>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,40 @@
+<Alloy>
+	<Window id="winGFS_Asse_Lia" class="win">
+		<View id="mainView">
+			<View class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					
+				</View>
+			</View>
+			<!-- <View id="budgetActivityView" onClick="showBudgetView">
+				<Label id="lblBudgetActivity"></Label>
+				<ImageView id="arrowView"></ImageView>
+			</View> -->
+			
+			<View id="chartView">
+				<Label id="lblReprotTitle"></Label>
+				<View id="normalChartView">
+					<Widget src="com.alco.highcharts" id="normalChart"/>
+				</View>
+				
+			</View>
+
+		</View>
+		<View id="TableBackView" onClick="hideTableView"></View>
+		<View id="slidingView">
+			<View id="sectionView">
+				<Label id="lblCode" class="lblSectionProperty"></Label>
+				<Label id="lblDesc" class="lblSectionProperty"></Label>
+				<!-- <Label id="lblChapter3" class="lblSectionProperty">
+				</Label> -->
+				<Label id="lblTotal" class="lblSectionProperty"></Label>
+			</View>
+			<TableView id="tableView"></TableView>
+		</View>
+	</Window>
+</Alloy>

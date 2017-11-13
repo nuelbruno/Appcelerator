@@ -1,0 +1,67 @@
+"#backView" :{
+	top : 0,
+	bottom : 0,
+	left : 0,
+	right : 0,
+	backgroundColor : "black",
+	opacity : 0.6
+}
+
+"#popView" :{
+	top : 100,
+	left : 25,
+	right : 25,
+	height : 220,
+	borderColor : Alloy.Globals.path.borderColor,
+	backgroundColor : Alloy.Globals.path.whiteColor,
+	borderRadius : 3,
+	layout : "vertical"
+}
+
+"#lblUserSatisfaction" :{
+	top : 35,
+	width : "100%",
+	height : Titanium.UI.SIZE,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font16,
+	text : Alloy.Globals.selectedLanguage.userSatisfaction,
+	textAlign : "center"
+}
+
+"#lblSuggestion" :{
+	top : 10,
+	width : "100%",
+	height : Titanium.UI.SIZE,
+	color : Alloy.Globals.path.blackColor,
+	font : Alloy.Globals.path.font16,
+	text : Alloy.Globals.selectedLanguage.userSatisfactionSuggestion,
+	textAlign : "center"
+}
+
+"#viewFeedback" :{
+	top : 20,
+	width : 115,
+	height : 35,
+	backgroundColor : Alloy.Globals.path.navBarColor,
+	borderRadius : 2,
+}
+
+"#lblFeedback" :{
+	width : 115,
+	height : 30,
+	text : Alloy.Globals.selectedLanguage.feedback,
+	color : Alloy.Globals.path.whiteColor,
+	font : Alloy.Globals.path.font16,
+	textAlign : "center"
+}
+
+"#lblSkip" :{
+	top : 30,
+	width : "100%",
+	height : Titanium.UI.SIZE,
+	color : Alloy.Globals.path.navBarColor,
+	font : Alloy.Globals.path.font16,
+	text : Alloy.Globals.selectedLanguage.skip,
+	textAlign : "center"
+}
+

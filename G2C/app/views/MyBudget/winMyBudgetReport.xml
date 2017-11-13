@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="win" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View layout="vertical">
+			<View id="navBarBackView" class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<View class="backHomeBtnView" onClick="gotoHome">
+						<ImageView class="imgHomeBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+				</View>
+			</View>
+			<View id="topOptionView">
+				<View id="btnRevenueSourcesView" class="btnOptionView" onClick="showRevenueSources">
+					<Label id="lblRevenueSources" class="lblOption"></Label>
+				</View>
+				<View id="btnExpenseCategoriesView" class="btnOptionView" onClick="showExpenseCategories">
+					<Label id="lblExpenseCategories" class="lblOption"></Label>
+				</View>
+				<View class="viewSeperator" bottom="0"></View>
+				<ImageView id="imgselection"></ImageView>
+			</View>
+			<View width="100%" top="0" bottom="0" height="Ti.UI.SIZE">
+				<View id="chartView">
+					<Widget src="com.alco.highcharts" id="pieChart"/>
+				</View>
+				<View id="barChartView" visible="false">
+					<Widget src="com.alco.highcharts" id="barChart"/>
+					<Label id="lblNoExpense" visible="false"></Label>
+				</View>
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

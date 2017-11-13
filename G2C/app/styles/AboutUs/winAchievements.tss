@@ -1,0 +1,100 @@
+".imgShareBtn":{
+	right: 15,
+	width: 9,
+	height: 17,
+	//backgroundImage : Alloy.Globals.path.icnBack
+	backgroundColor: "transparent"
+}
+
+"#imgView":{
+	left: 0,
+	right: 0,
+	height: Titanium.UI.SIZE,
+	//image: Alloy.Globals.path.bgAchievements
+
+	defaultImage: Alloy.Globals.path.defaultImageBanner
+}
+".lblTitleProperty[formFactor=handheld]":{
+	top: 15,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font16,
+	color: Alloy.Globals.path.goldColor
+}
+".lblTitleProperty[formFactor=tablet]":{
+	top: 15,
+	left: 10,
+	right: 10,
+	height: Titanium.UI.SIZE,
+	font: Alloy.Globals.path.font23,
+	color: Alloy.Globals.path.goldColor
+}
+
+".lblTitleProperty[if=Alloy.Globals.isEnglish formFactor=handheld]":{
+	font: Alloy.Globals.path.font18TitleEn
+}
+
+".lblTitleProperty[if=Alloy.Globals.isEnglish formFactor=tablet]":{
+	font: Alloy.Globals.path.font28TitleEn
+}
+
+".lblTitleProperty[if=!Alloy.Globals.isEnglish formFactor=handheld]":{
+	font: Alloy.Globals.path.font18TitleAr
+}
+
+".lblTitleProperty[if=!Alloy.Globals.isEnglish formFactor=tablet]":{
+	font: Alloy.Globals.path.font28TitleAr
+}
+
+
+"#webView[if!=Alloy.Globals.isEnglish]":{
+	top: 0,
+	bottom: 30,
+	//backgroundColor: "transparent"
+	backgroundColor : "white",
+	loading : false,
+	hideLoadIndicator : true
+}
+
+"#webView[if=Alloy.Globals.isEnglish]":{
+	top: 0,
+	bottom: 30,
+	//backgroundColor: "transparent"
+	backgroundColor : "white",
+	loading : false
+}
+
+
+"#mainView":{
+	left: 0,
+	right: 0,
+	top: 0,
+	bottom: 0,
+	layout: "vertical"
+}
+
+".separator":{
+	top: 10,
+	height: 1,
+	left: 10,
+	right: 10,
+	backgroundColor:Alloy.Globals.path.separatorColor,
+	isToExclude_contrast: true
+}
+
+
+"#bgTableView":{
+	top: 0,
+	bottom: 0,
+	left: 10,
+	right: 10
+}
+
+"#tableViewItems":{
+	top: 0,
+	width: '100%',
+	bottom: 0,
+	separatorColor: "transparent"
+}
+

@@ -1,0 +1,44 @@
+<Alloy>
+	<Window id="winDirections" class="winLayout">
+		<View class="navBarBackViewProperty">
+			<View id="statusBar" class="statusBarProperty"></View>
+			<View class="navBarProperty">
+				<View class="backView" onClick="closeWindow">
+					<ImageView class="imgBackBtn"></ImageView>
+				</View>
+				<View class="backHomeBtnView" onClick="gotoHome">
+					<ImageView class="imgHomeBtn"></ImageView>
+				</View>
+				<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+			</View>
+		</View>
+		
+			<View id="mainView">
+				<Label id="lblDirection"></Label>
+				<View class="viewDirections">
+					<Label id="lblFromTitle"></Label>
+					<Label id="lblFromColon"></Label>
+					<Label id="lblFromValue"></Label>
+				</View>
+				<View class="viewDirections">
+					<Label id="lblToTitle"></Label>
+					<Label id="lblToColon"></Label>
+					<Label id="lblToValue"></Label>
+				</View>
+				<View class="viewDirections">
+					<Label id="lblTotalDurationTitle"></Label>
+					<Label id="lblTotalDurationColon"></Label>
+					<Label id="lblTotalDurationValue"></Label>
+				</View>
+				<View class="viewDirections">
+					<Label id="lblTotalLengthTitle"></Label>
+					<Label id="lblTotalLengthColon"></Label>
+					<Label id="lblTotalLengthValue"></Label>
+				</View>
+				<Label id="lblSteps"></Label>
+				<TableView id="tableViewItems"></TableView>>
+			</View>
+		
+
+	</Window>
+</Alloy>

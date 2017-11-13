@@ -1,0 +1,50 @@
+<Alloy>
+	<Window id="winLocationFederal" class="win" onOpen="windowOpened" onClose="windowClosed">
+		<View class="winLayout">
+			<View id="navBarBackView"  class="navBarBackViewProperty">
+				<View id="statusBar" class="statusBarProperty"></View>
+				<View class="navBarProperty">
+					<View class="backView" onClick="closeWindow">
+						<ImageView class="imgBackBtn"></ImageView>
+					</View>
+					<Label id="lblNavTitle" class="lblNavTitleProperty"></Label>
+					<View class="rightView" onClick="sortItems">
+						<ImageView id="imgSorting"></ImageView>
+					</View>
+				</View>
+			</View>
+			<View class="searchBgViewProperty">
+				<View id="backView"/>
+				<View id="searchView" class="searchViewProperty" >
+					<ImageView id="imgSearch" class="imgSearchProperty" ></ImageView>
+					<TextField id="txtSearch" onChange="searchList"  class="txtSearchProperty"></TextField>
+				</View>
+			</View>
+			<View id= "bgTableView" class="bgTableViewProperty" >
+				<ListView id="tableViewItems" defaultItemTemplate="template">
+					<Templates>
+						<ItemTemplate name="template" id="row">
+							<View id="viewContents" bindId="viewContents">
+								<Label id="lblTitle" bindId="lblTitle"></Label>
+								<Label id="lblAddress" bindId="lblAddress"></Label>
+								<View id="viewButtons" bindId="viewButton">
+									<ImageView id="phoneCall" class="imgButtonsProperty" onClick="openCall"></ImageView>
+									<ImageView id="browse" class="imgButtonsProperty" onClick="openWebsite"></ImageView>
+									<ImageView id="map" class="imgButtonsProperty" onClick="openMapDirection"></ImageView>
+								</View>
+							</View>
+							<View id = "viewImage">
+								<ImageView id="imgView" bindId="imgView"></ImageView>
+							</View>
+							<View  id="rowsep"></View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection name="elements" id="listSection"></ListSection>
+				</ListView>
+				<!-- <TableView id="tableViewItems"></TableView> -->
+				<Label id="lblNoItems" class = "lblNoRecordFound" />
+			</View>
+		</View>
+		<Require src="common/viewBottomToolbar" id="viewBottomToolbar"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,218 @@
+
+"#headerView":{
+	width: "100%",
+	height: 60,
+	backgroundImage : Alloy.Globals.path.imgNormalRow,
+	top : 20
+}
+
+"#headerImage":{
+	backgroundImage : Alloy.Globals.path.icnServiceHeader,
+	top : -80,
+	width : 40,
+	height : 40
+}
+
+"#headerLabel":{
+	color:"white",
+	width:"98%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font : Alloy.Globals.path.font16Bold,
+}
+
+"#scrollView":{
+	width: "100%",
+	height : Ti.UI.FILL,
+	top : 50,
+	//contentHeight: Ti.UI.SIZE, 
+    contentWidth: "100%",
+    horizontalWrap : false,
+}
+
+"#timeLable":{
+		top: 5,
+		width: "95%",
+		height: 50,
+		backgroundColor: "transperent",
+		color: "white",
+		font: Alloy.Globals.path.font14,
+		left: 10
+	}
+
+".viewProperty":{
+	height: Titanium.UI.SIZE,
+}
+
+".titleViewProperty":{
+	height: 30,
+	backgroundColor : Alloy.Globals.path.titleRedColor,
+	width : "100%"
+}
+
+".titleLabelProperty":{
+	color:Alloy.Globals.path.silverColor,
+	font : Alloy.Globals.path.font15Bold,
+	width : "95%",
+	//left : 10,
+    textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,   
+}
+
+ ".textAreaProperty":{
+	top : 5,
+	width : "95%",
+	backgroundColor : "transperent",
+	color:"white",
+	font : Alloy.Globals.path.font14,
+	//left : 10,
+	//right : 20,
+	editable : "false",
+	scrollable: "false",
+	//textAlign : (Alloy.Globals.isEnglish) ? Titanium.UI.TEXT_ALIGNMENT_LEFT : Titanium.UI.TEXT_ALIGNMENT_RIGHT
+ }
+
+
+"#startServicesButton":{
+	color:"white",
+	backgroundColor:Alloy.Globals.path.titleRedColor,
+	borderColor :  Alloy.Globals.path.titleRedColor,
+	font : Alloy.Globals.path.font15,
+	top : 30,
+	width : 150,
+	height :35,
+	bottom : 40,
+	borderRadius : 5,
+	borderWidth : 2
+}
+
+"#listviewFees":{
+	top:1,
+	width : "100%",
+	height :Titanium.UI.SIZE,
+}
+
+"#serviceFeesView":{
+	height: Titanium.UI.SIZE,
+	width : "100%",
+}
+
+// "#serviceTitleView":{
+	// height: 40,
+	// width : "100%",
+	// top : 10
+// }
+
+// "#serviceTitleLabel":{
+	// color:Alloy.Globals.path.silverColor,
+	// font: Alloy.Globals.path.font18Bold,
+	// width : "100%",
+	// left : 10,
+    // textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+// }
+
+"#desTitle":{
+		left: "2%",
+		width: "30%",
+		height: Titanium.UI.SIZE,
+		touchEnabled: false,
+		font: Alloy.Globals.path.font13Bold,
+		text: Alloy.Globals.selectedLanguage.serviceDescription,
+		textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+		color : "white"
+	}
+
+"#paymentTitle":{
+		left: "34%",
+		// width: "30%",
+		width: "39%",
+		height: Titanium.UI.SIZE,
+		touchEnabled: false,
+		font: Alloy.Globals.path.font13Bold,
+		text: Alloy.Globals.selectedLanguage.servicePayment,
+		textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+		color : "white"
+	}
+
+"#amountTitle":{
+		// left: "66%",
+		left: "75%",
+		right:1,
+		// width: "30%",
+		height: Titanium.UI.SIZE,
+		touchEnabled: false,
+		font: Alloy.Globals.path.font13Bold,
+		text: Alloy.Globals.selectedLanguage.serviceAmount,
+		textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+		color : "white"
+	}
+
+"#listHeaderView":{
+	top :1,
+	height: 30,
+	backgroundColor : "#333",
+	width : "100%"
+}
+
+
+"#serviceRequestLabel":{
+	color:Alloy.Globals.path.silverColor,
+	font: Alloy.Globals.path.font18Bold,
+	width : "95%",
+	left : 10,
+    textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+    top : 30
+}
+
+
+"#contactsCustomerLabel":{
+	color:Alloy.Globals.path.silverColor,
+	font: Alloy.Globals.path.font18Bold,
+	width : "95%",
+	left : 10,
+    textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+    top : 5
+}
+
+
+".contactLabelProperty":{
+	color:Alloy.Globals.path.silverColor,
+	font : Alloy.Globals.path.font15,
+	width : "80%",
+	left : 5,
+	top : 5,
+    textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT,
+}
+
+".contactViewProperty":{
+	height: Titanium.UI.SIZE,
+	width : "100%",
+	top: 5,
+	left : 5,
+	right : 5,
+}
+
+".contactImageProperty":{
+	heigth : 20,
+	width : 20,
+	top : 7
+}
+
+"#emailImage":{
+	image : Alloy.Globals.path.icnMailWhite
+}
+
+"#faxImage":{
+	image : Alloy.Globals.path.icnFaxWhite
+}
+
+"#calImage":{
+	image :Alloy.Globals.path.icnCallWhite
+}
+
+"#emailView":{
+	top : 20
+}
+
+
+
+
+

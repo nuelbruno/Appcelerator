@@ -1,0 +1,7 @@
+<Alloy>
+	<TabGroup id="tabGroup" platform="ios">
+		<Tab id="tab1">
+			<Require src="winHome"></Require>
+		</Tab>
+	</TabGroup>
+</Alloy>
